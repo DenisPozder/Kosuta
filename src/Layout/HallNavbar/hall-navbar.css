@@ -1,0 +1,214 @@
+.hall-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    transition: background .3s ease;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hall-navbar.background {
+    background-color: rgba(250,250,250,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.hall-navbar-relative {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 9999;
+}
+
+.hn-top, .hn-bottom {
+    width: 100%;
+    height: auto;
+}
+
+.hn-top-content, .hn-bottom-content {
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+}
+
+/*----- Hall Navbar Top Content -----*/
+.hn-top-content {
+    justify-content: center;
+    height: auto;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.hn-top-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5px 0;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: var(--hall-font);
+}
+
+.hn-top-content .hn-top-location {
+    margin-right: 1rem;
+}
+
+.hn-top-content .hn-top-location svg {
+    padding-right: .4rem;
+}
+
+.hn-top-content .hn-top-instagram {
+    margin-right: 1rem;
+}
+
+.hn-top-content .hn-top-facebook {
+    margin-right: 1rem;
+}
+
+.hn-top-content .hn-top-phone svg {
+    padding-right: .4rem;
+}
+
+.hn-top-content a svg {
+    font-size: 1.2rem;
+}
+
+/*----- Hall Navbar Bottom Content -----*/
+.hn-bottom-content {
+    justify-content: space-between !important;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.hn-bottom-logo {
+    width: auto;
+    height: 70px;
+}
+
+.hn-bottom-logo img {
+    width: auto;
+    height: 70px;
+}
+
+.hn-bottom-menu {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.hn-bottom-menu svg {
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+/*----- Hall Navbar Pages -----*/
+.hall-navbar-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: transform .3s ease;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hall-navbar-links.open {
+    transform: translateX(0);
+}
+
+.hall-navbar-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    margin: .3rem 0;
+    padding: .5rem 0;
+    font-family: var(--hall-font);
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+.hall-navbar-links a.active {
+    color: var(--dark-color);
+    opacity: 1;
+    font-weight: bold;
+}
+
+.hn-close-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+@media only screen and (max-width: 1440px) {
+    .hn-top-content, .hn-bottom-content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hn-top-content, .hn-bottom-content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hn-top-content, .hn-bottom-content {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hn-top-content, .hn-bottom-content {
+        margin: 0 10px;
+    }
+
+    .hn-top-location span {
+        display: none;
+    }
+
+    .hn-top-location svg {
+        padding: 0 !important;
+    }
+
+    .hall-navbar-links {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .hn-top-content, .hn-bottom-content {
+        margin: 0 5px;
+    }
+}

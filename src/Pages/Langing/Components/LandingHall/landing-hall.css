@@ -1,0 +1,68 @@
+.landing-hall {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*----- Hall Table -----*/
+.lh-table {
+    top: calc(50% + 30%);
+    left: calc(50% - 20%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+}
+
+/*----- Text -----*/
+.lh-text {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    color: var(--restaurant-title);
+    font-family: var(--restaurant-font);
+    font-size: 3.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    pointer-events: auto !important;
+}
+
+.lh-text span {
+    color: var(--dark-color);
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.parallax-hall {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .lh-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .lh-text {
+        font-size: 2.8rem;
+    }
+
+    .landing-hall {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .lh-text {
+        font-size: 2.2rem;
+    }
+}

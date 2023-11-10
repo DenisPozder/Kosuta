@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Open+Sans&family=Poly:ital@0;1&display=swap');
+
+:root {
+  --restaurant-font: 'Old Standard TT', serif;
+  --hall-font: 'Poly', serif;
+  --restaurant-background: #9AB498;
+  --restaurant-title: #01B636;
+  --white: #fff;
+  --dark-color: #0b372dbb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }

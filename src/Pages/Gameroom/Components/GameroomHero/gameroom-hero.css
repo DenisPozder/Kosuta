@@ -1,0 +1,69 @@
+.gameroom-hero {
+    height: calc(100vh - 110px);
+    width: 100%;
+    position: relative;
+}
+
+.gameroom-hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+}
+
+.gh-overlay {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 30%, rgba(250,250,250) );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.gh-second-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: .4;
+    z-index: 2;
+}
+
+.gh-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10 !important;
+}
+
+.ghc-text {
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ghc-text h1 {
+    font-family: var(--hall-font);
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+    text-align: center;
+    user-select: none;
+}
+
+.ghc-text h3 {
+    font-family: var(--hall-font);
+    color: var(--dark-color);
+    text-align: center;
+    user-select: none;
+}

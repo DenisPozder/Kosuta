@@ -1,0 +1,74 @@
+.restaurant-hero {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--restaurant-background);
+    overflow: hidden;
+    max-height: 1000px;
+    position: relative;
+}
+
+/*----- Main Tree -----*/
+.rh-right-tree {
+    position: absolute;
+    top: calc(50% - 15%);
+    left: calc(50% - 26%);
+    transform: translate(-50%, -50%);
+    height: 110%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.rh-right-tree img {
+    height: 110%;
+}
+
+/*----- Ground -----*/
+.rh-ground {
+    height: auto;
+    width: 110%;
+    position: absolute;
+    top: calc(50% + 5%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.rh-ground img {
+    width: 110%;
+}
+
+/*----- Animal -----*/
+.rh-animal {
+    position: absolute;
+    top: calc(50% + -1%);
+    left: calc(50% + 10%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    height: 300px;
+    pointer-events: none;
+}
+
+.rh-animal img {
+    height: 300px;
+}
+
+/*----- Overlay -----*/
+.rh-back-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #c1e2be, transparent);
+}
+
+.rh-front-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #c1e2be, transparent 35%);
+    z-index: 5;
+}
