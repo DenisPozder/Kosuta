@@ -13,6 +13,7 @@ import Gameroom from './Pages/Gameroom/Gameroom';
 import BigHallPage from './Pages/BigHallPage/BigHallPage';
 import MediumHallPage from './Pages/MediumHallPage/MediumHallPage';
 import SmallHallPage from './Pages/SmallHallPage/SmallHallPage';
+import HallGalleryPage from './Pages/HallGalleryPage/HallGalleryPage';
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
       <Route path='/proslave/seminari' element={<HallSeminars />} />
       <Route path='/proslave/rođendani' element={<HallBirthdays />} />
       <Route path='/proslave/igraonica' element={<Gameroom />} />
-      <Route path='/proslave/galerija' element={<HallHome />} />
+      <Route path='/proslave/galerija' element={<HallGalleryPage />} />
     </Routes>
   );
 }
