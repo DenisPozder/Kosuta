@@ -38,7 +38,7 @@
 
 .hgc-inner::before {
     position: absolute;
-    content: 'Restoran';
+    content: 'Sale';
     width: 120px;
     height: 45px;
     background-color: var(--restaurant-background);
@@ -51,7 +51,7 @@
     justify-content: center;
     font-family: var(--hall-font);
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .hgc-inner img {

@@ -1,12 +1,10 @@
 import React from 'react'
 import './big-hall-component.css'
 
-const BigHallComponent = () => {
+const BigHallComponent = ({slides}) => {
   return (
     <div className="big-hall-component">
-        <div className="bhc-content">
-            
-        </div>
+        BigHallComponent
     </div>
   )
 }

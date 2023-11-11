@@ -18,9 +18,9 @@
 
 .his-decoration1 {
     position: absolute;
-    top: -80px;
-    left: -80px;
-    transform: rotate(-20deg);
+    top: calc(50% - 38%);
+    left: calc(50% - 40%);
+    transform: translate(-50%, -50%) rotate(-20deg);
     width: 400px;
     height: auto;
     z-index: 100;
@@ -30,14 +30,14 @@
 
 @keyframes fromLeft {
     0% {
-        transform: translateX(-100%) rotate(-20deg);
+        left: calc(50% - 60%);
         opacity: 0;
     }
     50% {
         opacity: 0;
     }
     100% {
-        transform: translateX(0%) rotate(-20deg);
+        left: calc(50% - 40%);
         opacity: 1;
     }
 }
@@ -49,9 +49,9 @@
 
 .his-decoration2 {
     position: absolute;
-    bottom: -100px;
-    right: -90px;
-    transform: rotate(10deg);
+    top: calc(50% + 42%);
+    left: calc(50% + 43%);
+    transform: translate(-50%, -50%) rotate(10deg);
     width: 400px;
     height: auto;
     z-index: 100;
@@ -61,15 +61,15 @@
 
 @keyframes fromRight {
     0% {
-        transform: translateX(100%) rotate(10deg);
         opacity: 0;
+        left: calc(50% + 63%);
     }
     50% {
         opacity: 0;
     }
     100% {
-        transform: translateX(0%) rotate(10deg);
         opacity: 1;
+        left: calc(50% + 43%);
     }
 }
 

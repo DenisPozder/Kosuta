@@ -7,7 +7,7 @@ import forestTree1 from '../../../../Assets/Hall/forestTree2.png'
 const HallHomeAbout = () => {
   return (
     <div className="hall-home-about">
-      <img className='hhb-tree parallax' src={forestTree1} alt="Dekorativna slika" />
+      <img className='hhb-tree parallax' data-speedx="0.043" data-speedy="0.056" data-speedz="0.01" data-rotation="0.01" src={forestTree1} alt="Dekorativna slika" />
         <div className="hhb-content">
             <div className="hhb-column">
                 <h1>Kratko o nama</h1>
