@@ -2,6 +2,58 @@
     width: 100%;
     height: auto;
     padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hgs-tree1-img {
+    position: absolute;
+    top: calc(50% + 30%);
+    left: calc(50% - 48%);
+    transform: translate(-50%, -50%);
+    height: 400px;
+    z-index: 1;
+}
+
+.hgs-tree1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: .5;
+    z-index: 2;
+}
+
+.hgs-tree2-img {
+    position: absolute;
+    top: calc(50% + 20%);
+    left: calc(50% - 30%);
+    transform: translate(-50%, -50%);
+    height: 600px;
+    z-index: 3;
+}
+
+.hgs-tree2-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: .3;
+    z-index: 4;
+}
+
+.hgs-main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--white), transparent 30%);
+    z-index: 29;
 }
 
 .hgs-content {
@@ -11,6 +63,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 30;
+    position: relative;
 }
 
 .hgs-content h1 {

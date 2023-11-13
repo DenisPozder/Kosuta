@@ -5,6 +5,8 @@ import HallHomeAbout from './Components/HallHomeAbout/HallHomeAbout'
 import HallGameroom from './Components/HallGameroom/HallGameroom'
 import BigHall from './Components/BigHall/BigHall'
 import MediumHall from './Components/MediumHall/MediumHall'
+import HallMenuHomeComponent from './Components/HallMenuHomeComponent/HallMenuHomeComponent'
+import SmallHall from './Components/SmallHall/SmallHall'
 
 const HallHome = () => {
 
@@ -51,8 +53,10 @@ const HallHome = () => {
         <HallHero />
         <BigHall />
         <HallHomeAbout />
+        <HallMenuHomeComponent />
         <MediumHall />
         <HallGameroom />
+        <SmallHall />
       </section>
     </HallLayout>
   )

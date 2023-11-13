@@ -1,0 +1,114 @@
+.big-hall-component {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.bhc-tree1-img {
+    position: absolute;
+    top: calc(50% + 12%);
+    left: calc(50% + 50%);
+    transform: translate(-50%, -50%);
+    height: 420px;
+    z-index: 1;
+    opacity: .7;
+}
+
+.bhc-tree2-img {
+    position: absolute;
+    top: calc(50% + 10%);
+    left: calc(50% + 42%);
+    transform: translate(-50%, -50%);
+    height: 460px;
+    z-index: 31;
+}
+
+.bhc-content {
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    z-index: 30;
+    position: relative;
+}
+
+.bhc-column {
+    height: 380px;
+    width: 100%;
+}
+
+.bhc-column:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+}
+
+.bhc-column:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.bhc-column:nth-child(1) h3 {
+    text-align: left;
+    color: var(--dark-color);
+    font-family: var(--hall-font);
+    user-select: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .bhc-content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .bhc-content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bhc-content {
+        margin: 0 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .bhc-column:nth-child(1) {
+        height: auto;
+    }
+
+    .bhc-column:nth-child(1) h3 {
+        font-size: .9rem;
+    }
+
+    .bhc-tree2-img {
+        position: absolute;
+        top: calc(50% + 18%);
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bhc-content {
+        margin: 0 10px;
+    }
+
+    .bhc-tree2-img {
+        position: absolute;
+        top: calc(50% + 20%);
+        left: calc(50% + 50%);
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .bhc-content {
+        margin: 0 5px;
+    }
+}
