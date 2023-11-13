@@ -114,7 +114,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     width: 100%;
     height: 65%;
     position: relative;
@@ -157,13 +156,31 @@
     font-size: 3rem;
     font-weight: 100;
     user-select: none;
+    animation: slideFromLeft .5s ease forwards;
+    transform: translateX(-200px);
+    opacity: 0;
 }
 
-.hhcw-left h3 {
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hhcw-left .hhcw-h3 {
     margin-left: 10px;
     color: #000;
     font-family: var(--hall-font);
     user-select: none;
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: slideFromLeft .5s ease forwards;
+    animation-delay: .3s;
 }
 
 .hhcw-left a {
@@ -177,6 +194,10 @@
     position: relative;
     justify-content: center;
     text-decoration: none;
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: slideFromLeft .5s ease forwards;
+    animation-delay: .6s;
 }
 
 .hhcw-left a::after {
@@ -215,6 +236,18 @@
     border-top-right-radius: 20px;
     user-select: none;
     pointer-events: none;
+    animation: slideFromRight 1s ease forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1440px) {

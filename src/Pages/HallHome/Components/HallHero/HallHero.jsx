@@ -67,7 +67,7 @@ const HallHero = () => {
                     <div className="hhcw-card-content-slide">
                       <div className="hhcw-left">
                         <h1>{slide.title}</h1>
-                        <h3>{slide.desc}</h3>
+                        <h3 className='hhcw-h3'>{slide.desc}</h3>
                         <Link to={slide.link}><h3>Pogledajte još</h3></Link>
                       </div>
                       <div className="hhcw-right">
