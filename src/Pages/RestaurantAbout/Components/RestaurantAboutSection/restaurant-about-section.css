@@ -1,0 +1,201 @@
+.restaurant-about-section {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background-color: var(--restaurant-background);
+    position: relative;
+}
+
+.ras-content {
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.ras-column {
+    width: 100%;
+    height: 380px;
+}
+
+.ras-column:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ras-radial-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 15%, var(--restaurant-background) );
+    z-index: 20;
+}
+
+.ras-bottom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
+    z-index: 21;
+}
+
+.ras-top-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--restaurant-background), transparent 30%);
+    z-index: 21;
+}
+
+.ras-tree1 {
+    position: absolute;
+    top: calc(50% + 25%);
+    left: calc(50% - 20%);
+    transform: translate(-50%, -50%);
+    height: 70%;
+    z-index: 3;
+}
+
+.ras-tree1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .3;
+    z-index: 4;
+}
+
+.ras-tree3 {
+    position: absolute;
+    top: calc(50% + 25%);
+    left: calc(50% + 20%);
+    transform: translate(-50%, -50%);
+    height: 70%;
+    z-index: 5;
+}
+
+.ras-tree3-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .3;
+    z-index: 6;
+}
+
+.ras-tree2 {
+    position: absolute;
+    top: calc(50% + 10%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 7;
+}
+
+.ras-tree2-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .3;
+    z-index: 8;
+}
+
+.ras-tree4 {
+    position: absolute;
+    top: calc(50% + 10%);
+    left: calc(50% - 25%);
+    transform: translate(-50%, -50%);
+    height: 80%;
+    z-index: 1;
+}
+
+.ras-tree4-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .2;
+    z-index: 2;
+}
+
+.ras-column:nth-child(1) h3 {
+    font-family: var(--restaurant-font);
+    text-align: left;
+    color: var(--white);
+    user-select: none;
+    z-index: 30;
+}
+
+.ras-column:nth-child(2) {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.ras-column:nth-child(2) .ras-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .ras-content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .ras-content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ras-content {
+        margin: 0 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ras-content {
+        margin: 0 10px;
+    }
+
+    .ras-column:nth-child(1) h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .ras-content {
+        margin: 0 5px;
+    }
+
+    .ras-column:nth-child(1) h3 {
+        font-size: .9rem;
+    }
+}

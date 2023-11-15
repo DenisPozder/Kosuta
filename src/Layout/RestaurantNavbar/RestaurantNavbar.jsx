@@ -31,7 +31,12 @@ const restaurantNavbarLinks = [
 const RestaurantNavbar = () => {
 
   const location = useLocation()
-  console.log(location.pathname)
+  const isRelativePage = [
+    "/restoran/o-nama",
+    "/restoran/jelovnik",
+    "/restoran/igraonica",
+    "/restoran/galerija"
+  ].includes(location.pathname)
 
   // Toggle Navbar
   const [menuVisible, setMenuVisible] = useState(false);
@@ -62,8 +67,8 @@ const RestaurantNavbar = () => {
       }
   },[])
 
-  return location.pathname === '/restoran/po%C4%8Detna' ? (
-    <div className={`restaurant-navbar ${back ? "background" : ""}`}>
+  return (
+    <div className={`restaurant-navbar ${back ? "background" : ""} ${isRelativePage ? "restaurant-relative" : ""}`}>
       <div className="rn-content">
         <Link to='/restoran/početna' className="rn-logo">
           <img src={kosutaLogo} alt="Kosuta Logo" />
@@ -84,28 +89,6 @@ const RestaurantNavbar = () => {
         </div>
       </div>
     </div>
-  ) : (
-  <div className="restaurant-relative">
-    <div className="rn-content">
-      <Link to='/restoran/početna' className="rn-logo">
-        <img src={kosutaLogo} alt="Kosuta Logo" />
-      </Link>
-      <div className={`rn-links ${menuVisible ? 'active' : ''}`}>
-        <div className='rn-close'>
-          <button onClick={closeMenu}><AiOutlineClose /></button>
-        </div>
-        {
-          restaurantNavbarLinks.map((restaurantLink, index) => (
-            <NavLink to={restaurantLink.link} key={index}>{restaurantLink.title}</NavLink>
-          ))
-        }
-      </div>
-      <div className="rn-btn-content">
-        <Link to='#' className='rn-contact'>Kontaktirajte nas</Link>
-        <button className='rn-menu' onClick={toggleMenu}><BiMenuAltRight /></button>
-      </div>
-    </div>
-  </div>
   )
 }
 
