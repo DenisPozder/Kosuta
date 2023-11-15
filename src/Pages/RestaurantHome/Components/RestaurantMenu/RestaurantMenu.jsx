@@ -4,10 +4,12 @@ import tree1 from '../../../../Assets/Hall/forestTree4.png'
 import tree2 from '../../../../Assets/Hall/forestTree2.png'
 import { Link } from 'react-router-dom'
 import restaurantMeal from '../../../../Assets/Restaurant/restaurantMeal2.png'
+import branchLeftLeaves from '../../../../Assets/Restaurant/branchLeft.png'
 
 const RestaurantMenu = () => {
   return (
     <div className="restaurant-menu">
+        <img src={branchLeftLeaves} alt="Dekorativna slika" className='rm-branch-left parallax' data-speedx="0.018" data-speedy="0.014" data-speedz="0.05" data-rotation="0.02" />
         <div className="rm-content">
             <div className="rmc-column">
                 <img src={tree1} alt="Dekorativna slika" className='rmc-tree1 parallax' data-speedx="0.03" data-speedy="0.024" data-speedz="0.05" data-rotation="0.02" />

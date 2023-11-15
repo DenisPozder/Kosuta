@@ -5,10 +5,12 @@ import tree1 from '../../../../Assets/Hall/forestTree1.png'
 import tree2 from '../../../../Assets/Hall/forestTree2.png'
 import tree3 from '../../../../Assets/Hall/forestTree3.png'
 import restaurantMeal from '../../../../Assets/Restaurant/restaurantMeal.png'
+import branchRightLeave from '../../../../Assets/Restaurant/branchRight.png'
 
 const RestaurantAboutComponent = () => {
   return (
     <div className="restaurant-about-component">
+      <img src={branchRightLeave} alt="Dekorativna slika" className='rac-branch-right parallax'  data-speedx="0.018" data-speedy="0.014" data-speedz="0.05" data-rotation="0.02" />
         <div className="rac-content">
             <div className="rac-column">
                 <h1>O nama</h1>
