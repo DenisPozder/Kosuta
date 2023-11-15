@@ -5,77 +5,32 @@
     overflow: hidden;
 }
 
-.sh-tree1-img {
+.sh-table {
     position: absolute;
-    top: calc(50% + 30%);
-    left: calc(50% - 25%);
+    top: calc(50% + 25%);
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    height: 400px;
-    width: auto;
-}
-
-.sh-tree1-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    opacity: .3;
-    z-index: 3;
-}
-
-.sh-tree2-img {
-    position: absolute;
-    top: calc(50% + 20%);
-    left: calc(50% - 40%);
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    height: 440px;
-    width: auto;
-}
-
-.sh-tree2-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    opacity: .1;
+    width: 60%;
+    height: auto;
     z-index: 5;
 }
 
-.sh-tree3-overlay {
+.sh-curtain-left {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    opacity: .3;
-    z-index: 7;
-}
-
-.sh-tree3-img {
-    position: absolute;
-    top: calc(50% + 15%);
-    left: calc(50% - 50%);
+    top: 50%;
+    left: calc(50% - 45%);
     transform: translate(-50%, -50%);
-    z-index: 6;
     height: 120%;
-    width: auto;
+    z-index: 6;
 }
 
-.sh-bushes-img {
+.sh-curtain-right {
     position: absolute;
-    top: calc(50% + 25%);
-    left: calc(50% + 40%);
+    top: 50%;
+    left: calc(50% + 45%);
     transform: translate(-50%, -50%);
+    height: 120%;
     z-index: 6;
-    height: 300px;
-    width: auto;
 }
 
 .sh-content {
@@ -88,6 +43,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.sh-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: .3;
+    z-index: 4;
 }
 
 .sh-main-overlay {
@@ -196,6 +162,11 @@
     .sh-content-inner {
         margin: 0 25px;
     }
+
+    .sh-table {
+        width: 80%;
+        top: calc(50% + 22%);
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -211,21 +182,9 @@
         font-size: .9rem;
     }
 
-    .sh-tree1-img {
-        height: 360px;
-        width: auto;
-        top: calc(50% + 35%);
-    }
-
-    .sh-tree2-img {
-        height: 400px;
-        width: auto;
-        top: calc(50% + 30%);
-    }
-
-    .sh-tree3-img {
-        height: 440px;
-        width: auto;
+    .sh-table {
+        width: 80%;
+        top: calc(50% + 28%);
     }
 }
 
@@ -234,26 +193,9 @@
         margin: 0 10px;
     }
 
-    .sh-tree1-img {
-        height: 360px;
-        width: auto;
-        top: calc(50% + 35%);
-        left: calc(50% + 50%);
-    }
-
-    .sh-tree2-img {
-        height: 400px;
-        width: auto;
-        top: calc(50% + 30%);
-    }
-
-    .sh-tree3-img {
-        height: 440px;
-        width: auto;
-    }
-
-    .sh-bushes-img {
-        left: calc(50% + 60%) !important;
+    .sh-table {
+        width: 120%;
+        top: calc(50% + 32%);
     }
 }
 
@@ -262,7 +204,8 @@
         margin: 0 5px;
     }
 
-    .sh-bushes-img {
-        left: calc(50% + 75%) !important;
+    .sh-table {
+        width: 140%;
+        top: calc(50% + 34%);
     }
 }

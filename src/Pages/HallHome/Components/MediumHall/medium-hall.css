@@ -111,34 +111,22 @@
     height: 100%;
 }
 
-.mh-tree4 {
+.mh-curtain-left {
     position: absolute;
-    width: 280px;
-    height: auto;
-    top: calc(50% + 33%);
+    top: 50%;
+    left: calc(50% - 45%);
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    height: 120%;
+}
+
+.mh-curtain-right {
+    position: absolute;
+    top: 50%;
     left: calc(50% + 45%);
     transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.mh-tree5 {
-    position: absolute;
-    width: 220px;
-    height: auto;
-    top: calc(50% + 26%);
-    left: calc(50% + 47%);
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.mh-tree6 {
-    position: absolute;
-    width: 180px;
-    height: auto;
-    top: calc(50% + 26%);
-    left: calc(50% + 37%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 6;
+    height: 120%;
 }
 
 .mh-content {

@@ -107,17 +107,29 @@
     .hgs-content {
         margin: 0 25px;
     }
+
+    .hgs-tree2-img {
+        left: calc(50% - 20%);
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .hgs-content {
         margin: 0 15px;
     }
+
+    .hgs-tree2-img {
+        left: calc(50% - 10%);
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .hgs-content {
         margin: 0 10px;
+    }
+
+    .hgs-tree2-img {
+        left: calc(50% + 25%);
     }
 }
 

@@ -3,10 +3,11 @@ import './medium-hall.css'
 import tree1 from '../../../../Assets/Hall/tree1.png'
 import tree2 from '../../../../Assets/Hall/tree2.png'
 import tree3 from '../../../../Assets/Hall/tree3.png'
-import forestTree1 from '../../../../Assets/Hall/forestTree4.png'
 import hall2Img from '../../../../Assets/Hall/hall2.jpg'
 import { Link } from 'react-router-dom'
 import decorationHall from '../../../../Assets/Hall/decorationHall.png'
+import curtainLeft from '../../../../Assets/Hall/curtainLeft.png'
+import curtainRight from '../../../../Assets/Hall/curtainRight.png'
 
 const MediumHall = () => {
   return (
@@ -18,9 +19,8 @@ const MediumHall = () => {
         <img className='mh-tree2 parallax' data-speedx="0.03" data-speedy="0.03" data-speedz="0" data-rotation="0" src={tree2} alt="Dekorativna slika" />
         <div className="mh-tree2-overlay"></div>
         <img className='mh-tree3 parallax' data-speedx="0.08" data-speedy="0.08" data-speedz="0.5" data-rotation="0.5" src={tree3} alt="Dekorativna slika" />
-        <img src={tree1} className='mh-tree4 parallax' data-speedx="0.01" data-speedy="0.01" data-speedz="0" data-rotation="0" alt="Dekorativna slika" />
-        <img src={tree2} className='mh-tree5 parallax' data-speedx="0.02" data-speedy="0.02" data-speedz="0" data-rotation="0" alt="Dekorativna slika" />
-        <img src={forestTree1} className='mh-tree6 parallax' data-speedx="0.04" data-speedy="0.04" data-speedz="0.2" data-rotation="0.2" alt="Dekorativna slika" />
+        <img src={curtainLeft} alt="Dekorativna slika" className='mh-curtain-left parallax' data-speedx="0.035" data-speedy="0.024" data-speedz="0.032" data-rotation="0.018" />
+        <img src={curtainRight} alt="Dekorativna slika" className='mh-curtain-right parallax' data-speedx="0.035" data-speedy="0.024" data-speedz="0.032" data-rotation="0.018" />
         <img src={decorationHall} alt="Dekorativna slika" className='mh-decoration' />
         <div className="mh-content">
             <img src={hall2Img} alt="Slika srednje sale" />

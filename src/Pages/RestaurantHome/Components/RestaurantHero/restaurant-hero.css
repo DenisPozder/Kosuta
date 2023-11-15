@@ -1,74 +1,330 @@
 .restaurant-hero {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: var(--restaurant-background);
     overflow: hidden;
-    max-height: 1000px;
-    position: relative;
 }
 
-/*----- Main Tree -----*/
-.rh-right-tree {
+.forest-circle-gradient {
     position: absolute;
-    top: calc(50% - 15%);
-    left: calc(50% - 26%);
-    transform: translate(-50%, -50%);
-    height: 110%;
-    z-index: 4;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 35%, var(--restaurant-background) );
+    z-index: 30;
 }
 
-.rh-right-tree img {
-    height: 110%;
-}
-
-/*----- Ground -----*/
-.rh-ground {
-    height: auto;
-    width: 110%;
+.rh-tree-ground {
     position: absolute;
-    top: calc(50% + 5%);
-    left: 50%;
+    top: calc(50% + 30%);
+    left: calc(50% - 4%);
     transform: translate(-50%, -50%);
-    z-index: 2;
-    pointer-events: none;
+    z-index: 10;
+    width: 900px;
 }
 
-.rh-ground img {
-    width: 110%;
+.rh-tree-img {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 46%);
+    height: 120%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
 }
 
-/*----- Animal -----*/
 .rh-animal {
     position: absolute;
-    top: calc(50% + -1%);
+    top: calc(50% + 30%);
+    left: calc(50% + 46%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 500px;
+    height: auto;
+}
+
+.rh-right-tree {
+    position: absolute;
+    top: calc(50% + 10%);
+    left: calc(50% + 50%);
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.rhrt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: var(--restaurant-background);
+    opacity: .2;
+}
+
+.rh-forest-tree1 {
+    position: absolute;
+    top: calc(50% - 15%);
     left: calc(50% + 10%);
     transform: translate(-50%, -50%);
-    z-index: 5;
-    height: 300px;
-    pointer-events: none;
+    height: 400px;
+    width: auto;
+    z-index: 1;
 }
 
-.rh-animal img {
-    height: 300px;
-}
-
-/*----- Overlay -----*/
-.rh-back-overlay {
+.rhft1-overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, #c1e2be, transparent);
-}
-
-.rh-front-overlay {
-    position: absolute;
     width: 100%;
     height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .5;
+    z-index: 2;
+}
+
+.rh-forest-tree2 {
+    position: absolute;
+    top: calc(50% - 20%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 460px;
+    width: auto;
+    z-index: 3;
+}
+
+.rh-forest-tree3 {
+    position: absolute;
+    top: calc(50% - 15%);
+    left:calc(50% - 15%);
+    transform: translate(-50%, -50%);
+    height: 420px;
+    width: auto;
+    z-index: 3;
+}
+
+.rhft2-overlay {
+    position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, #c1e2be, transparent 35%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .4;
+    z-index: 4;
+}
+
+.rh-forest-tree4 {
+    position: absolute;
+    top: calc(50% - 10%);
+    left: calc(50% - 8%);
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: auto;
     z-index: 5;
+}
+
+.rh-forest-tree5 {
+    position: absolute;
+    top: calc(50% - 15%);
+    left: calc(50% - 20%);
+    transform: translate(-50%, -50%);
+    height: 420px;
+    width: auto;
+    z-index: 1;
+}
+
+.rhft3-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .3;
+    z-index: 6;
+}
+
+.forest-bottom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
+    z-index: 31;
+}
+
+.rh-content {
+    position: relative;
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    z-index: 50;
+}
+
+@media only screen and (max-width: 1440px) {
+    .rh-content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .rh-content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rh-content {
+        margin: 0 15px;
+    }
+
+    .rh-tree-ground {
+        width: 800px;
+    }
+
+    .rh-tree-img {
+        left: calc(50% - 52%);
+    }
+
+    .rh-animal {
+        left: calc(50% + 56%);
+    }
+    
+    .rh-right-tree {
+        left: calc(50% + 58%);
+    }
+
+    .rh-forest-tree1 {
+        left: calc(50% + 30%);
+        height: 340px;
+    }
+
+    .rh-forest-tree2 {
+        top: calc(50% - 20%);
+        left: calc(50% + 15%);
+        height: 400px;
+    }
+    
+    .rh-forest-tree3 {
+        top: calc(50% - 15%);
+        left:calc(50% - 15%);
+        height: 360px;
+    }
+
+    .rh-forest-tree4 {
+        left: 50%;
+    }
+    
+    .rh-forest-tree5 {
+        top: calc(50% - 15%);
+        left: calc(50% - 30%);
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rh-content {
+        margin: 0 10px;
+    }
+
+    .rh-tree-ground {
+        width: 600px;
+    }
+
+    .rh-tree-img {
+        left: calc(50% - 58%);
+    }
+
+    .rh-animal {
+        left: calc(50% + 56%);
+        width: 400px;
+    }
+    
+    .rh-right-tree {
+        left: calc(50% + 70%);
+    }
+
+    .rh-forest-tree1 {
+        left: calc(50% + 30%);
+        height: 280px;
+    }
+
+    .rh-forest-tree2 {
+        top: calc(50% - 20%);
+        left: calc(50% + 15%);
+        height: 300px;
+    }
+    
+    .rh-forest-tree3 {
+        top: calc(50% - 15%);
+        left:calc(50% - 15%);
+        height: 290px;
+    }
+
+    .rh-forest-tree4 {
+        left: 50%;
+        height: 300px;
+    }
+    
+    .rh-forest-tree5 {
+        top: calc(50% - 15%);
+        left: calc(50% - 30%);
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .rh-content {
+        margin: 0 5px;
+    }
+
+    .rh-tree-ground {
+        width: 600px;
+    }
+
+    .rh-tree-img {
+        left: calc(50% - 62%);
+    }
+
+    .rh-animal {
+        left: calc(50% + 56%);
+        width: 360px;
+    }
+    
+    .rh-right-tree {
+        left: calc(50% + 80%);
+    }
+
+    .rh-forest-tree1 {
+        left: calc(50% + 30%);
+        height: 240px;
+    }
+
+    .rh-forest-tree2 {
+        top: calc(50% - 20%);
+        left: calc(50% + 15%);
+        height: 260px;
+    }
+    
+    .rh-forest-tree3 {
+        top: calc(50% - 15%);
+        left:calc(50% - 15%);
+        height: 250px;
+    }
+
+    .rh-forest-tree4 {
+        left: 50%;
+        height: 280px;
+    }
+    
+    .rh-forest-tree5 {
+        top: calc(50% - 15%);
+        left: calc(50% - 30%);
+        height: 300px;
+    }
 }
