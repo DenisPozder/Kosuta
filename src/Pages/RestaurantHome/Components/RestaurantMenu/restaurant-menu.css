@@ -166,6 +166,10 @@
     .rmc-column:nth-child(1) .rmc-tree2 {
         left: calc(50% + 50%);
     }
+
+    .rmc-column:nth-child(1) .rmc-meal {
+        width: 120%;
+    }
 }
 
 @media only screen and (max-width: 376px) {

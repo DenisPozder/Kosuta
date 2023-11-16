@@ -168,6 +168,10 @@
     .rac-column:nth-child(2) .racc-tree2 {
         left: calc(50% + 45%);
     }
+
+    .racc-meal {
+        width: 120%;
+    }
 }
 
 @media only screen and (max-width: 376px) {
