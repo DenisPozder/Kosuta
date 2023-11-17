@@ -4,6 +4,7 @@ import BigHallComponent from './Components/BigHallComponent/BigHallComponent'
 import HallsHeroImages from '../../Components/HallsHeroImages/HallsHeroImages'
 import { BigHallGallery, BigHallGallerySlider } from '../../HallData/GallerySliderData'
 import HallGallerySlider from '../../Components/HallGallerySlider/HallGallerySlider'
+import BigHallVectors from './Components/BigHallVectors/BigHallVectors'
 
 const BigHallPage = () => {
 
@@ -49,6 +50,7 @@ const BigHallPage = () => {
         <section className="page-section">
             <HallsHeroImages slides={BigHallGallery} />
             <BigHallComponent />
+            <BigHallVectors />
             <HallGallerySlider data={BigHallGallerySlider} />
         </section>
     </HallLayout>

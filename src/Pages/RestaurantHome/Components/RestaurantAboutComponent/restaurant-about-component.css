@@ -6,6 +6,24 @@
     position: relative;
 }
 
+.rac-decoration1 {
+    position: absolute;
+    top: calc(50% - 50%);
+    left: calc(50% + 44%);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    height: 200px;
+}
+
+.rac-decoration2 {
+    position: absolute;
+    top: calc(50% + 50%);
+    left: calc(50% - 44%);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    height: 200px;
+}
+
 .rac-branch-right {
     position: absolute;
     top: calc(50% + 45%);
@@ -61,6 +79,7 @@
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     position: relative;
+    z-index: 200;
 }
 
 .rac-column:nth-child(1) a::after {
@@ -150,6 +169,24 @@
         margin: 0 15px;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .rac-decoration1 {
+        position: absolute;
+        top: calc(50% - 50%);
+        left: calc(50% + 44%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 160px;
+    }
+    
+    .rac-decoration2 {
+        position: absolute;
+        top: calc(50% + 50%);
+        left: calc(50% - 44%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 200px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -172,10 +209,46 @@
     .racc-meal {
         width: 120%;
     }
+
+    .rac-decoration1 {
+        position: absolute;
+        top: calc(50% - 50%);
+        left: calc(50% + 50%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 140px;
+    }
+    
+    .rac-decoration2 {
+        position: absolute;
+        top: calc(50% + 50%);
+        left: calc(50% - 44%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 180px;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .rac-content {
         margin: 0 5px;
+    }
+
+    .rac-decoration1 {
+        position: absolute;
+        top: calc(50% - 50%);
+        left: calc(50% + 52%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 120px;
+    }
+    
+    .rac-decoration2 {
+        position: absolute;
+        top: calc(50% + 50%);
+        left: calc(50% - 44%);
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        height: 180px;
     }
 }

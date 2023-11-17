@@ -6,13 +6,22 @@
     background-color: var(--restaurant-background);
 }
 
-.rm-branch-left {
+.rm-decoration1 {
     position: absolute;
-    top: calc(50% + 45%);
-    left: calc(50% - 30%);
+    top: calc(50% - 50%);
+    left: calc(50% + 45%);
     transform: translate(-50%, -50%);
-    z-index: 50;
-    width: 700px;
+    height: 200px;
+    z-index: 100;
+}
+
+.rm-decoration2 {
+    position: absolute;
+    top: calc(50% + 50%);
+    left: calc(50% - 45%);
+    transform: translate(-50%, -50%);
+    height: 200px;
+    z-index: 100;
 }
 
 .rm-content {
@@ -148,6 +157,15 @@
         z-index: 50;
         width: 500px;
     }
+
+    .rm-decoration1 {
+        position: absolute;
+        top: calc(50% - 50%);
+        left: calc(50% + 45%);
+        transform: translate(-50%, -50%);
+        height: 180px;
+        z-index: 100;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -170,10 +188,28 @@
     .rmc-column:nth-child(1) .rmc-meal {
         width: 120%;
     }
+
+    .rm-decoration1 {
+        position: absolute;
+        top: calc(50% - 50%);
+        left: calc(50% + 45%);
+        transform: translate(-50%, -50%);
+        height: 150px;
+        z-index: 100;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .rm-content {
         margin: 0 5px;
+    }
+
+    .rm-decoration2 {
+        position: absolute;
+        top: calc(50% + 50%);
+        left: calc(50% - 48%);
+        transform: translate(-50%, -50%);
+        height: 200px;
+        z-index: 100;
     }
 }

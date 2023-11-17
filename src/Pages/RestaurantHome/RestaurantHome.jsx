@@ -4,6 +4,8 @@ import RestaurantHero from './Components/RestaurantHero/RestaurantHero'
 import RestaurantAboutComponent from './Components/RestaurantAboutComponent/RestaurantAboutComponent'
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu'
 import RestaurantGameroom from './Components/RestaurantGameroom/RestaurantGameroom'
+import RestaurantGallerySlider from '../../Components/RestaurantGallerySlider/RestaurantGallerySlider'
+import { RestaurantGalleryData } from '../../RestaurantData/RestaurantGalleryData'
 
 const RestaurantHome = () => {
 
@@ -52,6 +54,7 @@ const RestaurantHome = () => {
         <RestaurantAboutComponent />
         <RestaurantGameroom />
         <RestaurantMenu />
+        <RestaurantGallerySlider data={RestaurantGalleryData} />
       </section>
     </RestaurantLayout>
     </>

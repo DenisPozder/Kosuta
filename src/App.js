@@ -14,6 +14,8 @@ import BigHallPage from './Pages/BigHallPage/BigHallPage';
 import MediumHallPage from './Pages/MediumHallPage/MediumHallPage';
 import SmallHallPage from './Pages/SmallHallPage/SmallHallPage';
 import HallGalleryPage from './Pages/HallGalleryPage/HallGalleryPage';
+import RestaurantGallery from './Pages/RestaurantGallery/RestaurantGallery';
+import RestaurantMenuPage from './Pages/RestaurantMenu/RestaurantMenuPage';
 
 function App() {
   return (
@@ -22,8 +24,8 @@ function App() {
       <Route path='/restoran/početna' element={<RestaurantHome />} />
       <Route path='/restoran/o-nama' element={<RestaurantAbout />} />
       <Route path='/restoran/igraonica' element={<Gameroom />} />
-      <Route path='/restoran/jelovnik' element={<RestaurantHome />} />
-      <Route path='/restoran/galerija' element={<RestaurantHome />} />
+      <Route path='/restoran/jelovnik' element={<RestaurantMenuPage />} />
+      <Route path='/restoran/galerija' element={<RestaurantGallery />} />
       <Route path='/proslave/početna' element={<HallHome />} />
       <Route path='/proslave/o-nama' element={<HallAbout />} />
       <Route path='/proslave/velika-sala' element={<BigHallPage />} />
