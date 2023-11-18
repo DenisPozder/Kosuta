@@ -15,7 +15,7 @@ import MediumHallPage from './Pages/MediumHallPage/MediumHallPage';
 import SmallHallPage from './Pages/SmallHallPage/SmallHallPage';
 import HallGalleryPage from './Pages/HallGalleryPage/HallGalleryPage';
 import RestaurantGallery from './Pages/RestaurantGallery/RestaurantGallery';
-import RestaurantMenuPage from './Pages/RestaurantMenu/RestaurantMenuPage';
+import RestaurantMenuPage from './Pages/RestaurantMenuPage/RestaurantMenuPage';
 
 function App() {
   return (

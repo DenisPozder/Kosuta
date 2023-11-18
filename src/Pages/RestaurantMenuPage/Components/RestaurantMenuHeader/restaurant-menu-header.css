@@ -1,0 +1,139 @@
+.restaurant-menu-header {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background-color: var(--restaurant-background);
+}
+
+.rmh-content {
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rmh-content h1 {
+    text-transform: uppercase;
+    font-family: var(--restaurant-font);
+    color: var(--dark-color);
+    font-weight: 100;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 3rem;
+}
+
+.rmhc-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    width: 100%;
+}
+
+.rmhc-item {
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.rmhc-item::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all .4s ease;
+}
+
+.rmhc-item:hover::after {
+    width: 100%;
+}
+
+.rmhc-item:hover h3 {
+    color: var(--dark-color);
+}
+
+.rmhc-item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 100;
+    font-family: var(--restaurant-font);
+    color: var(--white);
+    transition: color .4s ease;
+    z-index: 2;
+}
+
+.rmhc-item h3 svg {
+    font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .rmh-content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .rmh-content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rmh-content {
+        margin: 0 15px;
+    }
+
+    .rmh-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .rmhc-items {
+        column-gap: 15px;
+    }
+
+    .rmhc-item h3 {
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rmh-content {
+        margin: 0 10px;
+    }
+
+    .rmh-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .rmhc-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .rmhc-item h3 svg {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .rmh-content {
+        margin: 0 5px;
+    }
+}
