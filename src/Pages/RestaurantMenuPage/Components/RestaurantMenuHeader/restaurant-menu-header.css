@@ -7,84 +7,12 @@
     overflow: hidden;
 }
 
-.rmh-top-overlay {
+.rmh-tree1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--restaurant-background), transparent 30%);
-    z-index: 20;
-}
-
-.rmh-bottom-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
-    z-index: 20;
-}
-
-.rmh-tree1-image {
-    position: absolute;
-    top: calc(50% + 22%);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 800px;
-    z-index: 5;
-}
-
-.rmh-tree1-image-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--restaurant-background);
-    opacity: .2;
-    z-index: 6;
-}
-
-.rmh-tree2-image {
-    position: absolute;
-    top: calc(50% + 32%);
-    left: calc(50% + 20%);
-    transform: translate(-50%, -50%);
-    height: 480px;
-    z-index: 3;
-}
-
-.rmh-tree2-image-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--restaurant-background);
-    opacity: .2;
-    z-index: 4;
-}
-
-.rmh-tree3-image {
-    position: absolute;
-    top: calc(50% + 32%);
-    left: calc(50% - 20%);
-    transform: translate(-50%, -50%);
-    height: 500px;
     z-index: 1;
-}
-
-.rmh-tree3-image-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--restaurant-background);
-    opacity: .2;
-    z-index: 2;
+    left: -20px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .rmh-content {
@@ -97,15 +25,15 @@
     flex-direction: column;
 }
 
-.rmh-content h1 {
+.rmh-content .rmh-h1 {
     text-transform: uppercase;
     font-family: var(--restaurant-font);
-    color: var(--dark-color);
+    color: var(--white);
     font-weight: 100;
     text-align: center;
     user-select: none;
     margin-bottom: 3rem;
-    z-index: 21;
+    z-index: 101;
 }
 
 .rmhc-items {
@@ -176,6 +104,69 @@
     font-size: 2.2rem;
 }
 
+.rmhc-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.rmhcw-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rmhcw-item {
+    width: 100%;
+    z-index: 100;
+}
+
+.rmhcw-item h1 {
+    font-size: 2.4rem;
+    font-family: var(--restaurant-font);
+    color: var(--dark-color);
+    font-weight: 100;
+    user-select: none;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.rmhcw-meal-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.rmhcwm-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rmhcwm-item h3 {
+    color: var(--white);
+    font-family: var(--restaurant-font);
+    user-select: none;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.rmhcwm-item h2{
+    color: var(--white);
+    font-family: var(--restaurant-font);
+    user-select: none;
+    font-weight: 100;
+    z-index: 100;
+}
+
 @media only screen and (max-width: 1440px) {
     .rmh-content {
         margin: 0 50px;
@@ -185,6 +176,10 @@
 @media only screen and (max-width: 1024px) {
     .rmh-content {
         margin: 0 25px;
+    }
+
+    .rmhcw-content {
+        width: 80%;
     }
 }
 
@@ -203,6 +198,18 @@
 
     .rmhc-item h3 {
         margin: 0.5rem;
+    }
+
+    .rmhcwm-item {
+        margin: 0.3rem 0;
+    }
+
+    .rmhcwm-item h3 {
+        font-size: 1rem;
+    }
+
+    .rmhcwm-item h2 {
+        font-size: 1.1rem;
     }
 }
 
@@ -229,6 +236,22 @@
 
     .rmhc-item {
         width: 100%;
+    }
+
+    .rmhcw-content {
+        width: 100%;
+    } 
+
+    .rmhcwm-item {
+        flex-direction: column;
+    }
+
+    .rmhcwm-item h3 {
+        text-align: center;
+    }
+
+    .rmhcwm-item h2 {
+        text-align: center;
     }
 }
 

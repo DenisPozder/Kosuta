@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './restaurant-menu-header.css'
 import { MdRestaurantMenu } from "react-icons/md";
 import { BiSolidDrink } from "react-icons/bi";
-import tree1 from '../../../../Assets/Hall/forestTree2.png'
-import tree2 from '../../../../Assets/Hall/forestTree1.png'
-import tree3 from '../../../../Assets/Hall/forestTree3.png'
+import branchTree from '../../../../Assets/Restaurant/branchLeft.png'
 
 const RestaurantMenuHeader = () => {
 
@@ -1081,14 +1079,36 @@ const RestaurantMenuHeader = () => {
 
   return (
     <div className="restaurant-menu-header">
+        <img src={branchTree} alt="Dekorativna slika" className='rmh-tree1' />
         <div className="rmh-content">
-            <h1>restoran srpske nacionalne kuhinje</h1>
+            <h1 className='rmh-h1'>restoran srpske nacionalne kuhinje</h1>
             <div className="rmhc-items">
                 <div className={`rmhc-item ${category === "MEALS" ? "rmhc-item-active" : ""}`} onClick={() => setCategory("MEALS")}>
                     <h3 className='rmhc-h3'><span>Jelovnik</span> <MdRestaurantMenu /></h3>
                 </div>
                 <div className={`rmhc-item ${category === "DRINKS" ? "rmhc-item-active" : ""}`} onClick={() => setCategory("DRINKS")}>
                     <h3 className='rmhc-h3'><span>Pića</span> <BiSolidDrink /></h3>
+                </div>
+            </div>
+            <div className="rmhc-wrap">
+                <div className="rmhcw-content">
+                    {
+                        menu.map((menuItem, index) => (
+                            <div className="rmhcw-item" key={index}>
+                                <h1>{menuItem.title}</h1>
+                                <div className="rmhcw-meal-price">
+                                {
+                                    menuItem.items.map((item, indexMenu) => (
+                                        <div className="rmhcwm-item" key={indexMenu}>
+                                            <h3>{item.title}</h3>
+                                            <h2>{item.price} RSD</h2>
+                                        </div>
+                                    ))
+                                }
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
