@@ -70,6 +70,17 @@ const RestaurantHero = ({slides}) => {
 
   return (
     <div className="restaurant-hero">
+      <div className="rh-bird-container">
+        <div className="rh-bird"></div>
+      </div>
+
+      <div className="rh-bird-container2">
+        <div className="rh-bird2"></div>
+      </div>
+
+      <div className="rh-bird-container3">
+        <div className="rh-bird3"></div>
+      </div>
       <div className="rh-wrap">
         <button className='rhw-btn rhw-prev' onClick={prevSlide}><AiOutlineLeft /></button>
         {

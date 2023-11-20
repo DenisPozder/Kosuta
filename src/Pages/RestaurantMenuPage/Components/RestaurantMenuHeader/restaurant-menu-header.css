@@ -4,12 +4,12 @@
     padding: 3rem 0;
     background-color: var(--restaurant-background);
     position: relative;
-    overflow: hidden;
 }
 
 .rmh-tree1 {
     position: absolute;
-    z-index: 1;
+    top: -100px;
+    z-index: 100;
     left: -20px;
     user-select: none;
     pointer-events: none;
@@ -54,7 +54,7 @@
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
-    z-index: 21;
+    z-index: 101;
 }
 
 .rmhc-item-active {

@@ -26,8 +26,10 @@ const RestaurantMenuPage = () => {
   return (
     <>
     <RestaurantLayout>
+      <section className='page-section'>
       <RestaurantMenuHero slides={MenuPageFood} />
       <RestaurantMenuHeader />
+      </section>
     </RestaurantLayout>
     </>
   )
