@@ -1081,14 +1081,6 @@ const RestaurantMenuHeader = () => {
 
   return (
     <div className="restaurant-menu-header">
-        <div className="rmh-top-overlay"></div>
-        <div className="rmh-bottom-overlay"></div>
-        <img src={tree1} alt="Dekorativna slika" className='rmh-tree1-image' />
-        <div className="rmh-tree1-image-overlay"></div>
-        <img src={tree2} alt="Dekorativna slika" className='rmh-tree2-image' />
-        <div className="rmh-tree2-image-overlay"></div>
-        <img src={tree3} alt="Dekorativna slika" className='rmh-tree3-image' />
-        <div className="rmh-tree3-image-overlay"></div>
         <div className="rmh-content">
             <h1>restoran srpske nacionalne kuhinje</h1>
             <div className="rmhc-items">
@@ -1098,25 +1090,6 @@ const RestaurantMenuHeader = () => {
                 <div className={`rmhc-item ${category === "DRINKS" ? "rmhc-item-active" : ""}`} onClick={() => setCategory("DRINKS")}>
                     <h3 className='rmhc-h3'><span>Pića</span> <BiSolidDrink /></h3>
                 </div>
-            </div>
-            <div className="rmhc-wrap">
-                {
-                    menu.map((menuItem, index) => (
-                        <div className="rmhc-wrap-item" key={index}>
-                            <h1>{menuItem.title}</h1>
-                            <div className="rmhcw-items">
-                                {
-                                    menuItem.items.map((menu, innerIndex) => (
-                                        <div className="rmhcw-item" key={innerIndex}>
-                                            <h3>{menu.title}</h3>
-                                            <h2>{menu.price} RSD</h2>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    ))
-                }
             </div>
         </div>
     </div>

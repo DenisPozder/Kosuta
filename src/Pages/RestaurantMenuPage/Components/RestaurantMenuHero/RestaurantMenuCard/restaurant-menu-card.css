@@ -1,0 +1,177 @@
+.restaurant-menu-card {
+    width: 100%;
+    height: 100%;
+}
+
+.rmc-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: opacity 1s ease-out forwards;
+    z-index: 100;
+}
+
+.rmc-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rmcs-radial-overlay {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 35%, var(--restaurant-background) );
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.rmcs-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
+    z-index: 2;
+    position: absolute;
+}
+
+.rmcs-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--restaurant-background);
+    opacity: .3;
+    z-index: 3;
+}
+
+.rmcs-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.rmcs-wrap {
+    width: auto;
+    height: 100%;
+    z-index: 5;
+    margin: 0 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rmcs-inner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rmcs-left, .rmcs-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rmcs-right img {
+    width: 100%;
+    height: auto;
+}
+
+.rmcs-left h1 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    color: var(--dark-color);
+    font-family: var(--restaurant-font);
+    font-weight: 100;
+    user-select: none;
+}
+
+.rmcs-left h3 {
+    color: #000;
+    font-family: var(--restaurant-font);
+    user-select: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .rmcs-wrap {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .rmcs-wrap {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rmcs-wrap {
+        margin: 0 15px;
+    }
+
+    .rmcs-left h1 {
+        font-size: 2rem;
+    }
+
+    .rmcs-left h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rmcs-wrap {
+        margin: 0 10px;
+    }
+
+    .rmcs-left, .rmcs-right {
+        width: 100% !important;
+    }
+
+    .rmcs-right {
+        position: relative !important;
+        z-index: 1;
+    }
+
+    .rmcs-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: rgba(154, 180, 152, 0.3);
+        backdrop-filter: blur(0.4px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .rmcs-left h1, .rmcs-left h3 {
+        text-align: center;
+    }
+
+    .rmcs-left h1 {
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .rmcs-wrap {
+        margin: 0 5px;
+    }
+}

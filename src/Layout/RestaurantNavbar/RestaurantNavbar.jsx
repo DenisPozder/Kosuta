@@ -33,7 +33,6 @@ const RestaurantNavbar = () => {
   const location = useLocation()
   const isRelativePage = [
     "/restoran/o-nama",
-    "/restoran/jelovnik",
     "/restoran/igraonica",
     "/restoran/galerija"
   ].includes(location.pathname)

@@ -17,7 +17,8 @@
 }
 
 .restaurant-navbar.background {
-    background-color: var(--restaurant-background) !important;
+    background-color: rgba(154, 180, 152, 0.6);
+    backdrop-filter: blur(2px);
 }
 
 .rn-content {

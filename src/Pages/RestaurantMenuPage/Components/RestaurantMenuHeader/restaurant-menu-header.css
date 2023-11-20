@@ -112,11 +112,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
-    width: 100%;
+    width: auto;
 }
 
 .rmhc-item {
-    width: 100%;
+    width: 200px;
     height: 60px;
     background-color: var(--dark-color);
     display: flex;
@@ -176,63 +176,6 @@
     font-size: 2.2rem;
 }
 
-.rmhc-wrap {
-    width: 80%;
-    height: auto;
-    max-height: 1000px;
-    background-color: var(--dark-color);
-    margin-top: 3rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow-y: scroll;
-    z-index: 21;
-}
-
-.rmhc-wrap::-webkit-scrollbar {
-    display: none;
-}
-
-.rmhc-wrap .rmhc-wrap-item {
-    margin: 2rem 0;
-}
-
-.rmhc-wrap .rmhc-wrap-item h1 {
-    color: var(--white);
-    margin: 0 !important;
-    text-align: center;
-}
-
-.rmhcw-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem 0;
-}
-
-.rmhcw-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.rmhcw-item h3 {
-    color: var(--white);
-    font-family: var(--restaurant-font);
-    margin: 0.5rem 0;
-    user-select: none;
-    font-weight: 100;
-}
-
-.rmhcw-item h2 {
-    color: var(--white);
-    font-family: var(--restaurant-font);
-    margin: 0.5rem 0;
-    user-select: none;
-    font-weight: 100;
-}
-
 @media only screen and (max-width: 1440px) {
     .rmh-content {
         margin: 0 50px;
@@ -242,14 +185,6 @@
 @media only screen and (max-width: 1024px) {
     .rmh-content {
         margin: 0 25px;
-    }
-
-    .rmhcw-item {
-        width: 90% !important;
-    }
-
-    .rmhcw-item h2 {
-        font-size: 1.2rem;
     }
 }
 
@@ -268,24 +203,6 @@
 
     .rmhc-item h3 {
         margin: 0.5rem;
-    }
-
-    .rmhcw-item {
-        width: 95% !important;
-    }
-
-    .rmhcw-item h3 {
-        font-size: 1rem !important;
-    }
-
-    .rmh-tree2-image {
-        top: calc(50% + 32%);
-        left: calc(50% + 35%);
-    }
-
-    .rmh-tree3-image {
-        top: calc(50% + 32%);
-        left: calc(50% - 35%);
     }
 }
 
@@ -306,24 +223,12 @@
         font-size: 1.8rem;
     }
 
-    .rmhc-wrap {
+    .rmhc-items {
         width: 100%;
     }
 
-    .rmhcw-item {
-        flex-direction: column;
-        width: 98% !important;
-        margin: 0.3rem 0;
-    }
-
-    .rmhcw-item h3 {
-        font-size: .9rem;
-        text-align: center;
-        margin: 0.2rem 0;
-    }
-
-    .rmhcw-item h2 {
-        font-size: 1rem;
+    .rmhc-item {
+        width: 100%;
     }
 }
 
