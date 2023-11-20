@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 import RestaurantHero from './Components/RestaurantHero/RestaurantHero'
-import RestaurantAboutComponent from './Components/RestaurantAboutComponent/RestaurantAboutComponent'
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu'
 import RestaurantGameroom from './Components/RestaurantGameroom/RestaurantGameroom'
 import RestaurantGallerySlider from '../../Components/RestaurantGallerySlider/RestaurantGallerySlider'
 import { RestaurantGalleryData } from '../../RestaurantData/RestaurantGalleryData'
+import { RestaurantHeroData } from '../../RestaurantData/RestaurantHeroData'
 
 const RestaurantHome = () => {
 
@@ -50,8 +50,7 @@ const RestaurantHome = () => {
     <>
     <RestaurantLayout>
       <section className='page-section'>
-        <RestaurantHero />
-        <RestaurantAboutComponent />
+        <RestaurantHero slides={RestaurantHeroData} />
         <RestaurantGameroom />
         <RestaurantMenu />
         <RestaurantGallerySlider data={RestaurantGalleryData} />

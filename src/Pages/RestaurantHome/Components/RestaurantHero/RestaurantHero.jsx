@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-hero.css'
 import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
-import kosuta from '../../../../Assets/Landing/animal.png'
-import forestTree1 from '../../../../Assets/Hall/forestTree1.png'
 import forestTree2 from '../../../../Assets/Hall/forestTree2.png'
-import forestTree3 from '../../../../Assets/Hall/forestTree3.png'
-import forestTree4 from '../../../../Assets/Hall/forestTree4.png'
 import treeOnTheGround from '../../../../Assets/Restaurant/treeOnTheGround.png'
 import HeroMenuImg from '../../../../Assets/Restaurant/HeroMenuImg.png'
 import HeroAboutUsImg from '../../../../Assets/Restaurant/HeroAboutUs.png'
 import HeroGameroomImg from '../../../../Assets/Restaurant/HeroGameroomImg.png'
+import video from '../../../../Assets/Igraliste.mp4'
 import { Link } from 'react-router-dom'
+import RestaurantHeroCard from './RestaurantHeroCard/RestaurantHeroCard'
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 const HeroItems = [
   {
@@ -33,68 +32,57 @@ const HeroItems = [
   },
 ]
 
-const RestaurantHero = () => {
+const RestaurantHero = ({slides}) => {
 
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [autoplay, setAutoplay] = useState(true);
+  const [ current, setCurrent ] = useState(0)
+  const length = slides.length
+  const timeout = useRef(null)
 
   useEffect(() => {
-    let interval;
+      const nextSlide = () => {
+          setTimeout(() => {
+              setCurrent(current => (current === length - 1 ? 0 : current + 1))
+          }, 7000)
+          timeout.current = setTimeout(nextSlide, 12000)
+      }
 
-    if (autoplay) {
-      interval = setInterval(() => {
-        handleNext();
-      }, 8000);
-    }
+      timeout.current = setTimeout(nextSlide, 12000)
 
-    return () => clearInterval(interval);
-  }, [currentSlide, autoplay]);
+      return function() {
+          if(timeout.current) {
+              clearTimeout(timeout.current)
+          }
+      }
+  },[current, length])
 
-  const handlePrev = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? HeroItems.length - 1 : prevSlide - 1));
-  };
+  const nextSlide = () => {
+      if(timeout.current) {
+          clearTimeout(timeout.current)
+      }
+      setCurrent(current === length - 1 ? 0 : current + 1)
+  }
 
-  const handleNext = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === HeroItems.length - 1 ? 0 : prevSlide + 1));
-  };
+  const prevSlide = () => {
+      if(timeout.current) {
+          clearTimeout(timeout.current)
+      }
+      setCurrent(current === 0 ? length - 1 : current - 1)
+  }
+
+  if(!Array.isArray(slides) || slides.length <= 0) {
+      return null
+  }
 
   return (
     <div className="restaurant-hero">
-      <img src={treeOnTheGround} alt="Dekorativna slika" className='rh-tree-ground parallax' data-speedx="0.06" data-speedy="0.055" data-speedz="0.09" data-rotation="0.09" />
-      <img src={restaurantTree} alt="Dekorativna slika" className='rh-tree-img parallax' data-speedx="0.035" data-speedy="0.025" data-speedz="0.056" data-rotation="0.048" />
-      <img src={kosuta} alt="Dekorativna slika" className='rh-animal parallax' data-speedx="0.035" data-speedy="0.025" data-speedz="0.056" data-rotation="0.048" />
-      <img src={forestTree2} alt="Dekorativna slika" className='rh-right-tree parallax' data-speedx="0.009" data-speedy="0.010" data-speedz="0.026" data-rotation="0.018" />
-      <div className="rhrt-overlay"></div>
-      <img src={forestTree1} alt="Dekorativna slika" className='rh-forest-tree1 parallax' data-speedx="0.005" data-speedy="0.006" data-speedz="0" data-rotation="0" />
-      <div className="rhft1-overlay"></div>
-      <img src={forestTree2} alt="Dekorativna slika" className='rh-forest-tree2 parallax' data-speedx="0.014" data-speedy="0.016" data-speedz="0.016" data-rotation="0.028" />
-      <div className="rhft2-overlay"></div>
-      <img src={forestTree2} alt="Dekorativna slika" className='rh-forest-tree5 parallax' data-speedx="0.007" data-speedy="0.009" data-speedz="0" data-rotation="0" />
-      <img src={forestTree3} alt="Dekorativna slika" className='rh-forest-tree3 parallax' data-speedx="0.0018" data-speedy="0.01" data-speedz="0.2" data-rotation="0.25" />
-      <img src={forestTree4} alt="Dekorativna slika" className='rh-forest-tree4 parallax' data-speedx="0.029" data-speedy="0.045" data-speedz="0.23" data-rotation="0.34" />
-      <div className="rhft3-overlay"></div>
-      <div className="forest-trees-overlay"></div>
-      <div className="forest-main-overlay"></div>
-      <div className="forest-circle-gradient"></div>
-      <div className="forest-bottom-overlay"></div>
-      <div className="restaurant-hero-content">
-        <div className="rh-wrap">
-          <div className="rh-inner" onMouseEnter={() => setAutoplay(false)} onMouseLeave={() => setAutoplay(true)}>
-            <div className="rh-inner-container" style={{ transform: `translateX(${-currentSlide * 100}%)`}}>
-              {
-                HeroItems.map((slide, index) => (
-                <div className="rh-card" key={index}>
-                  <div className="rh-text">
-                    <h1>{slide.title}</h1>
-                    <h3 className='rh-text-h3'>{slide.desc}</h3>
-                    <Link to={slide.link}><h3>Pogledajte još</h3></Link>
-                  </div>
-                </div>
-                ))
-              }
-            </div>
-          </div>
-        </div>
+      <div className="rh-wrap">
+        <button className='rhw-btn rhw-prev' onClick={prevSlide}><AiOutlineLeft /></button>
+        {
+          slides.map((slide, index) => (
+            <RestaurantHeroCard key={index} slide={slide} index={index} current={current} />
+          ))
+        }
+        <button className='rhw-btn rhw-next' onClick={nextSlide}><AiOutlineRight /></button>
       </div>
     </div>
   )

@@ -1,22 +1,14 @@
 import React from 'react'
 import './restaurant-menu.css'
-import tree1 from '../../../../Assets/Hall/forestTree4.png'
-import tree2 from '../../../../Assets/Hall/forestTree2.png'
 import { Link } from 'react-router-dom'
 import restaurantMeal from '../../../../Assets/Restaurant/restaurantMeal2.png'
-import restaurantMeal1 from '../../../../Assets/Restaurant/restaurantMeal7.png'
-import restaurantMeal2 from '../../../../Assets/Restaurant/restaurantMeal8.png'
 
 const RestaurantMenu = () => {
   return (
     <div className="restaurant-menu">
-      <img src={restaurantMeal1} alt="Dekorativna slika" className='rm-decoration1 parallax' data-speedx="0.01" data-speedy="0.019" data-speedz="0.1" data-rotation="0.02" />
-      <img src={restaurantMeal2} alt="Dekorativna slika" className='rm-decoration2 parallax' data-speedx="0.01" data-speedy="0.019" data-speedz="0.1" data-rotation="0.02" />
         <div className="rm-content">
             <div className="rmc-column">
-                <img src={tree1} alt="Dekorativna slika" className='rmc-tree1 parallax' data-speedx="0.03" data-speedy="0.024" data-speedz="0.05" data-rotation="0.02" />
                 <img src={restaurantMeal} alt="Dekorativna slika" className='rmc-meal parallax' data-speedx="0.015" data-speedy="0.014" data-speedz="0.01" data-rotation="0.02" />
-                <img src={tree2} alt="Dekorativna slika" className='rmc-tree2 parallax' data-speedx="0.035" data-speedy="0.024" data-speedz="0.03" data-rotation="0.06" />
             </div>
             <div className="rmc-column">
                 <h1>Jelovnik</h1>
