@@ -1,13 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-hero.css'
-import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
-import forestTree2 from '../../../../Assets/Hall/forestTree2.png'
-import treeOnTheGround from '../../../../Assets/Restaurant/treeOnTheGround.png'
 import HeroMenuImg from '../../../../Assets/Restaurant/HeroMenuImg.png'
 import HeroAboutUsImg from '../../../../Assets/Restaurant/HeroAboutUs.png'
 import HeroGameroomImg from '../../../../Assets/Restaurant/HeroGameroomImg.png'
-import video from '../../../../Assets/Igraliste.mp4'
-import { Link } from 'react-router-dom'
 import RestaurantHeroCard from './RestaurantHeroCard/RestaurantHeroCard'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
