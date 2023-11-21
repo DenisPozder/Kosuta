@@ -3,13 +3,12 @@ import './restaurant-menu-header.css'
 import { MdRestaurantMenu } from "react-icons/md";
 import { BiSolidDrink } from "react-icons/bi";
 import branchTree from '../../../../Assets/Restaurant/branchLeft.png'
-import leavesLeft from '../../../../Assets/Restaurant/leavesLeft.png'
-import leavesRight from '../../../../Assets/Restaurant/leavesRight.png'
 import branchRight from '../../../../Assets/Restaurant/branchRight.png'
 import mealDecoration1 from '../../../../Assets/Restaurant/restaurantMeal3.png'
 import mealDecoration2 from '../../../../Assets/Restaurant/restaurantMeal4.png'
 import mealDecoration3 from '../../../../Assets/Restaurant/restaurantMeal5.png'
 import mealDecoration4 from '../../../../Assets/Restaurant/restaurantMeal6.png'
+import leaves from '../../../../Assets/Restaurant/leaves.png'
 
 const RestaurantMenuHeader = () => {
 
@@ -1098,8 +1097,7 @@ const RestaurantMenuHeader = () => {
                 </div>
             </div>
             <div className="rmhc-wrap">
-                <img src={leavesLeft} alt="Dekorativna slika" className='rmhcw-leaves-left' />
-                <img src={leavesRight} alt="Dekorativna slika" className='rmhcw-leaves-right' />
+                <img src={leaves} alt="Dekorativna slika" className='rmhcw-leave1' />
                 <img src={branchRight} alt="Dekorativna slika" className='rmhcw-branch-right' />
                 <img src={mealDecoration1} alt="Dekorativna slika" className='meal-decoration1' />
                 <img src={mealDecoration2} alt="Dekorativna slika" className='meal-decoration2' />

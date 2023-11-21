@@ -6,24 +6,6 @@
     overflow: hidden;
 }
 
-.grc-tree1 {
-    position: absolute;
-    top: 50%;
-    left: calc(50% + 50%);
-    transform: translate(-50% , -50%);
-    z-index: 2;
-    height: 420px;
-}
-
-.grc-tree2 {
-    position: absolute;
-    top: calc(50% + 23%);
-    left: calc(50% + 45%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    height: 200px;
-}
-
 .grc-content {
     width: auto;
     height: 100%;
@@ -86,31 +68,11 @@
     .grc-column:nth-child(1) h3 {
         font-size: 1rem;
     }
-
-    .grc-tree1 {
-        top: calc(50% + 13%);
-        left: calc(50% + 50%);
-    }
-    
-    .grc-tree2 {
-        top: calc(50% + 31%);
-        left: calc(50% + 42%);
-    }
 }
 
 @media only screen and (max-width: 480px) {
     .grc-content {
         margin: 0 10px;
-    }
-
-    .grc-tree1 {
-        top: calc(50% + 14%);
-        left: calc(50% + 50%);
-    }
-    
-    .grc-tree2 {
-        top: calc(50% + 30%);
-        left: calc(50% + 35%);
     }
 
     .grc-column:nth-child(1) h3 {

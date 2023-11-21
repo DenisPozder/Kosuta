@@ -5,6 +5,16 @@
     overflow: hidden;
 }
 
+.gh-main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
 .gameroom-hero video {
     width: 100%;
     height: 100%;
@@ -14,86 +24,6 @@
     pointer-events: none;
 }
 
-.gh-tree1 {
-    position: absolute;
-    top: calc(50% + 25%);
-    left: calc(50% - 37%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    height: 400px;
-}
-
-.gh-tree1-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    background-color: var(--white);
-    opacity: .1;
-}
-
-.gh-tree2 {
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 49%);
-    transform: translate(-50%, -50%);
-    z-index: 7;
-    height: 120%;
-}
-
-.gh-tree2-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 8;
-    background-color: var(--white);
-    opacity: .3;
-}
-
-.gh-tree3 {
-    position: absolute;
-    top: calc(50% + 20%);
-    left: calc(50% + 46%);
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    height: 500px;
-}
-
-.gh-tree3-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    background-color: var(--white);
-    opacity: .2;
-}
-
-.gh-top-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom , var(--white), transparent 30%);
-    z-index: 11;
-}
-
-.gh-bottom-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top , var(--white), transparent 30%);
-    z-index: 11;
-}
-
 .gh-content {
     position: absolute;
     top: 0;
@@ -101,6 +31,7 @@
     width: 100%;
     height: 100%;
     z-index: 100;
+    z-index: 10;
 }
 
 .ghc-text {
@@ -115,7 +46,7 @@
 
 .ghc-text h1 {
     font-family: var(--hall-font);
-    color: #000;
+    color: var(--white);
     margin-bottom: 3rem;
     text-align: center;
     user-select: none;
@@ -123,7 +54,7 @@
 
 .ghc-text h3 {
     font-family: var(--hall-font);
-    color: #000;
+    color: var(--white);
     text-align: center;
     user-select: none;
 }
@@ -144,52 +75,16 @@
     .ghc-text {
         margin: 0 15px;
     }
-
-    .gh-tree1 {
-        left: calc(50% - 30%);
-    }
-
-    .gh-tree2 {
-        left: calc(50% - 54%);
-    }
-
-    .gh-tree3 {
-        left: calc(50% + 52%);
-    }
 }
 
 @media only screen and (max-width: 480px) {
     .ghc-text {
         margin: 0 10px;
     }
-
-    .gh-tree1 {
-        left: calc(50% - 30%);
-    }
-
-    .gh-tree2 {
-        left: calc(50% - 70%);
-    }
-
-    .gh-tree3 {
-        left: calc(50% + 56%);
-    }
 }
 
 @media only screen and (max-width: 376px) {
     .ghc-text {
         margin: 0 5px;
-    }
-
-    .gh-tree1 {
-        left: calc(50% - 30%);
-    }
-
-    .gh-tree2 {
-        left: calc(50% - 75%);
-    }
-
-    .gh-tree3 {
-        left: calc(50% + 62%);
     }
 }

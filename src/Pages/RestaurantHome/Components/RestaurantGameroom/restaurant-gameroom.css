@@ -214,10 +214,19 @@
     .rg-tree2 {
         left: calc(50% - 70%);
         top: 50%;
+        opacity: .5;
     }
     
     .rg-tree3 {
         left: calc(50% - 30%);
+    }
+
+    .rgcw-h3 {
+        font-weight: bold !important;
+    }
+
+    .rg-tree3-overlay {
+        opacity: .4 !important;
     }
 }
 
