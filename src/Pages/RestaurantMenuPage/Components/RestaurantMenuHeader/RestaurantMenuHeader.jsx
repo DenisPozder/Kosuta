@@ -8,7 +8,7 @@ import mealDecoration1 from '../../../../Assets/Restaurant/restaurantMeal3.png'
 import mealDecoration2 from '../../../../Assets/Restaurant/restaurantMeal4.png'
 import mealDecoration3 from '../../../../Assets/Restaurant/restaurantMeal5.png'
 import mealDecoration4 from '../../../../Assets/Restaurant/restaurantMeal6.png'
-import leaves from '../../../../Assets/Restaurant/leaves.png'
+import treeDown from '../../../../Assets/Restaurant/bigTree.png'
 import background from '../../../../Assets/Restaurant/background.jpg'
 
 const RestaurantMenuHeader = () => {
@@ -1088,6 +1088,9 @@ const RestaurantMenuHeader = () => {
     <div className="restaurant-menu-header">
         <img src={background} alt="Pozadina" className='rmhc-background' />
         <img src={branchTree} alt="Dekorativna slika" className='rmh-tree1' />
+        <img src={treeDown} alt="Dekorativna slika" className='rmh-down-tree' />
+        <div className="rmh-ot"></div>
+        <div className="rmh-ob"></div>
         <div className="rmh-content">
             <h1 className='rmh-h1'>restoran srpske nacionalne kuhinje</h1>
             <div className="rmhc-items">

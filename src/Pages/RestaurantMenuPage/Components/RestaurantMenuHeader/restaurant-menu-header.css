@@ -15,6 +15,35 @@
     pointer-events: none;
 }
 
+.rmh-down-tree {
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 15;
+}
+
+.rmh-ot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--restaurant-background), transparent 30%);
+    z-index: 20;
+}
+
+.rmh-ob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
+    z-index: 20;
+}
+
 .rmh-content {
     width: auto;
     height: 100%;
@@ -150,7 +179,7 @@
 
 .rmhcw-branch-right {
     position: absolute;
-    right: -20%;
+    right: -40%;
     top: 25%;
     user-select: none;
     pointer-events: none;
@@ -262,6 +291,15 @@
     .rmhcw-content {
         width: 80%;
     }
+
+    .rmhcw-branch-right {
+        position: absolute;
+        right: -68%;
+        top: 25%;
+        user-select: none;
+        pointer-events: none;
+        z-index: 3;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -323,6 +361,16 @@
         width: 340px;
         height: auto;
         right: 5%;
+    }
+
+    .rmhcw-branch-right {
+        position: absolute;
+        right: -68%;
+        top: 25%;
+        user-select: none;
+        pointer-events: none;
+        z-index: 3;
+        opacity: .5;
     }
 }
 
