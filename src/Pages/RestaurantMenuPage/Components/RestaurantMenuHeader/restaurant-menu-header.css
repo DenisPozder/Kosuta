@@ -15,15 +15,6 @@
     pointer-events: none;
 }
 
-.rmh-down-tree {
-    position: absolute;
-    bottom: -1%;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 15;
-}
-
 .rmh-ot {
     position: absolute;
     top: 0;
@@ -151,7 +142,6 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    opacity: .6;
     z-index: 1;
 }
 
@@ -234,12 +224,14 @@
 .rmhcw-item {
     width: 100%;
     z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
 }
 
 .rmhcw-item h1 {
     font-size: 2.4rem;
     font-family: var(--restaurant-font);
-    color: var(--dark-color);
+    color: var(--white);
     font-weight: 100;
     user-select: none;
     margin: 1rem 0;
@@ -262,7 +254,7 @@
 }
 
 .rmhcwm-item h3 {
-    color: #000;
+    color: var(--white);
     font-family: var(--restaurant-font);
     user-select: none;
     font-weight: bold;
@@ -270,7 +262,7 @@
 }
 
 .rmhcwm-item h2{
-    color: #000;
+    color: var(--restaurant-background);
     font-family: var(--restaurant-font);
     user-select: none;
     font-weight: 100;
@@ -408,7 +400,6 @@
     }
 
     .rmhcw-item h1 {
-        color: var(--dark-color);
         font-weight: bold;
     }
 
