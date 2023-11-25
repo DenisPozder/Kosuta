@@ -24,6 +24,15 @@
     z-index: 100;
 }
 
+.rm-leaves-img {
+    position: absolute;
+    left: -100px;
+    height: 800px;
+    z-index: 100;
+    top: -150px;
+    transform: scaleY(-1);
+}
+
 .rm-content {
     width: auto;
     height: 100%;
@@ -166,6 +175,10 @@
         height: 180px;
         z-index: 100;
     }
+
+    .rmc-column:nth-child(2) h1 {
+        color: var(--white);
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -196,6 +209,15 @@
         transform: translate(-50%, -50%);
         height: 150px;
         z-index: 100;
+    }
+
+    .rm-leaves-img {
+        position: absolute;
+        left: -150px;
+        height: 800px;
+        z-index: 100;
+        top: -150px;
+        transform: scaleY(-1);
     }
 }
 

@@ -3,6 +3,7 @@ import './restaurant-celebrations.css'
 import restaurantImage from '../../../../Assets/Restaurant/restaurantImage.jpg'
 import branchLeftImg from '../../../../Assets/Restaurant/branchLeft.png'
 import branchRightImg from '../../../../Assets/Restaurant/branchRight.png'
+import LeavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 
 const ResCelebrationsImg = [
     {
@@ -58,6 +59,7 @@ const RestaurantCelebrations = () => {
     <div className="restaurant-celebrations">
         <img src={branchLeftImg} alt="Dekorativna slika" className='rc-branch1-img parallax' data-speedx="0.015" data-speedy="0.014" data-speedz="0.01" data-rotation="0.02" />
         <img src={branchRightImg} alt="Dekorativna slika" className='rc-branch2-img parallax' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
+        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
                 <h1>Proslave u našem restoranu</h1>

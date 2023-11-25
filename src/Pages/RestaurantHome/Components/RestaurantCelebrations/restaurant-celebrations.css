@@ -21,6 +21,15 @@
     z-index: 100;
 }
 
+.rc-leaves-img {
+    position: absolute;
+    z-index: 99;
+    transform: scale(-1);
+    right: -100px;
+    height: 800px;
+    top: 0;
+}
+
 .restaurant-celebrations-content {
     width: auto;
     height: 100%;
@@ -40,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    z-index: 10;
+    z-index: 100;
 }
 
 .rcc-column:nth-child(1) h1 {
@@ -124,6 +133,7 @@
 
     .rcc-column:nth-child(1) h1 {
         margin-bottom: 1rem;
+        color: var(--white);
     }
 
     .rc-branch1-img {
@@ -142,6 +152,15 @@
         transform: translate(-50%, -50%);
         width: 120%;
         z-index: 100;
+    }
+
+    .rc-leaves-img {
+        position: absolute;
+        z-index: 99;
+        transform: scale(-1);
+        right: -150px;
+        height: 800px;
+        top: 0;
     }
 }
 
@@ -174,6 +193,15 @@
         transform: translate(-50%, -50%);
         width: 180%;
         z-index: 100;
+    }
+
+    .rc-leaves-img {
+        position: absolute;
+        z-index: 99;
+        transform: scale(-1);
+        right: -200px;
+        height: 800px;
+        top: 0;
     }
 }
 

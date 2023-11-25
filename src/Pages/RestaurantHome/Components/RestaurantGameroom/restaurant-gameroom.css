@@ -195,6 +195,10 @@
         top: calc(50% + 25%);
         left: calc(50% + 45%);
     }
+
+    .rgcw-content h1 {
+        color: var(--white);
+    }
 }
 
 @media only screen and (max-width: 480px) {

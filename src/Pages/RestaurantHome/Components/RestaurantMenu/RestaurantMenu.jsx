@@ -2,10 +2,12 @@ import React from 'react'
 import './restaurant-menu.css'
 import { Link } from 'react-router-dom'
 import restaurantMeal from '../../../../Assets/Restaurant/restaurantMeal2.png'
+import leavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 
 const RestaurantMenu = () => {
   return (
     <div className="restaurant-menu">
+      <img src={leavesLeft} alt="Dekorativna slika" className='rm-leaves-img' />
         <div className="rm-content">
             <div className="rmc-column">
                 <img src={restaurantMeal} alt="Dekorativna slika" className='rmc-meal parallax' data-speedx="0.015" data-speedy="0.014" data-speedz="0.01" data-rotation="0.02" />
