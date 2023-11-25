@@ -11,7 +11,6 @@ import mealDecoration4 from '../../../../Assets/Restaurant/restaurantMeal6.png'
 import leavesLeft from '../../../../Assets/Restaurant/leavesLeft.png'
 import leavesRight from '../../../../Assets/Restaurant/leavesRight.png'
 import background from '../../../../Assets/Restaurant/background.jpg'
-import bigTree from '../../../../Assets/Restaurant/bigTree.png'
 
 const RestaurantMenuHeader = () => {
 
@@ -1092,7 +1091,6 @@ const RestaurantMenuHeader = () => {
         <img src={leavesLeft} alt="Dekorativna slika" className='rmh-leaves-left' />
         <img src={leavesRight} alt="Dekorativna slika" className='rmh-leaves-right' />
         <img src={background} alt="Pozadina" className='rmh-background' />
-        <img src={bigTree} alt="Dekorativna slika" className='rmh-big-tree' />
         <div className="rmh-ot"></div>
         <div className="rmh-ob"></div>
         <div className="rmh-content">
