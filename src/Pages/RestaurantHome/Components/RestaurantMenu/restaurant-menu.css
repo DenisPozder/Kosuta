@@ -36,7 +36,7 @@
 .rm-tree-right {
     position: absolute;
     left: calc(50% + 38%);
-    top: 50%;
+    top: calc(50% + 30%);
     transform: translate(-50%, -50%);
     z-index: 100;
     height: 680px;
@@ -54,44 +54,15 @@
 
 .rmc-column {
     width: 100%;
-    height: 380px;
+    height: 380px !important;
 }
 
 .rmc-column:nth-child(1) {
     position: relative;
-}
-
-.rmc-column:nth-child(1) .rmc-tree1 {
-    position: absolute;
-    height: 380px;
-    top: 50%;
-    left: calc(50% - 30%);
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.rmc-column:nth-child(1) .rmc-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    position: relative;
+    z-index: 100;
     overflow: hidden;
-}
-
-.rmc-column:nth-child(1) .rmc-svg svg {
-    height: 100% !important;
-    width: auto;
-}
-
-.rmc-column:nth-child(1) .rmc-tree2 {
-    position: absolute;
-    height: 380px;
-    top: 50%;
-    left: calc(50% + 30%);
-    transform: translate(-50%, -50%);
-    z-index: 2;
 }
 
 .rmc-column:nth-child(2) {
