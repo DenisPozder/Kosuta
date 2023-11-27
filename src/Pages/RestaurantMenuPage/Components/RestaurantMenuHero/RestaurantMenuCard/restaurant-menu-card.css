@@ -114,6 +114,14 @@
     flex-direction: column;
 }
 
+.rmcs-left {
+    margin-right: 1rem;
+}
+
+.rmcs-right {
+    margin-left: 1rem;
+}
+
 .rmcs-right img {
     width: 100%;
     height: auto;
@@ -121,7 +129,16 @@
     pointer-events: none;
 }
 
-.rmcs-left h1 {
+.rmcs-items {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(154, 180, 152, 0.6);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+}
+
+.rmcs-left .rmcs-items h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
     color: var(--dark-color);
@@ -130,7 +147,7 @@
     user-select: none;
 }
 
-.rmcs-left h3 {
+.rmcs-left .rmcs-items h3 {
     color: #000;
     font-family: var(--restaurant-font);
     user-select: none;

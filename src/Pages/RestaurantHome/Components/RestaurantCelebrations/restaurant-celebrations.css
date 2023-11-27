@@ -4,12 +4,13 @@
     position: relative;
 }
 
-.rc-branch1-img {
+.rc-tree-left {
     position: absolute;
-    top: calc(50% - 34%);
-    left: calc(50% - 25%);
+    top: calc(50% - 25%);
+    left: calc(50% - 40%);
     transform: translate(-50%, -50%);
-    z-index: 2;
+    height: 680px;
+    z-index: 20;
 }
 
 .rc-branch2-img {
@@ -24,10 +25,12 @@
 .rc-leaves-img {
     position: absolute;
     z-index: 99;
-    transform: scale(-1);
-    right: -100px;
+    top: 50%;
+    left: calc(50% + 42%);
+    transform: translate(-50%, -50%) scaleX(-1);
     height: 800px;
-    top: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
 .restaurant-celebrations-content {
@@ -47,22 +50,29 @@
 
 .rcc-column:nth-child(1) {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: center;
     z-index: 100;
+    background-color: rgba(154, 180, 152, 0.6);
+    backdrop-filter: blur(2px);
 }
 
 .rcc-column:nth-child(1) h1 {
     font-size: 2.4rem;
-    color: var(--dark-color);
+    color: var(--white);
     font-family: var(--restaurant-font);
     user-select: none;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 .rcc-column:nth-child(1) h3 {
     color: var(--white);
     font-family: var(--restaurant-font);
     user-select: none;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 .rcc-slider {
@@ -135,15 +145,6 @@
         margin-bottom: 1rem;
         color: var(--white);
     }
-
-    .rc-branch1-img {
-        position: absolute;
-        top: calc(50% - 40%);
-        left: calc(50% - 25%);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 140%;
-    }
     
     .rc-branch2-img {
         position: absolute;
@@ -157,10 +158,10 @@
     .rc-leaves-img {
         position: absolute;
         z-index: 99;
-        transform: scale(-1);
-        right: -150px;
+        top: 50%;
+        left: calc(50% + 45%);
+        transform: translate(-50%, -50%) scaleX(-1);
         height: 800px;
-        top: 0;
     }
 }
 
@@ -176,15 +177,6 @@
     .rcc-column:nth-child(1) h3 {
         font-size: 1rem;
     }
-
-    .rc-branch1-img {
-        position: absolute;
-        top: calc(50% - 42%);
-        left: calc(50% - 25%);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 180%;
-    }
     
     .rc-branch2-img {
         position: absolute;
@@ -198,10 +190,10 @@
     .rc-leaves-img {
         position: absolute;
         z-index: 99;
-        transform: scale(-1);
-        right: -200px;
+        top: 50%;
+        left: calc(50% + 48%);
+        transform: translate(-50%, -50%) scaleX(-1);
         height: 800px;
-        top: 0;
     }
 }
 

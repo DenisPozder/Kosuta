@@ -1,72 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import './restaurant-hero.css'
-import HeroMenuImg from '../../../../Assets/Restaurant/HeroMenuImg.png'
-import HeroAboutUsImg from '../../../../Assets/Restaurant/HeroAboutUs.png'
-import HeroGameroomImg from '../../../../Assets/Restaurant/HeroGameroomImg.png'
-import RestaurantHeroCard from './RestaurantHeroCard/RestaurantHeroCard'
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import igraliste from '../../../../Assets/Igraliste.mp4'
+import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
+import restaurantTree2 from '../../../../Assets/Hall/forestTree2.png'
+import { Link } from 'react-router-dom'
 
-const HeroItems = [
-  {
-    title: "Dobrodošli u restoran Košuta",
-    image: HeroMenuImg,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "/restoran/jelovnik"
-  },
-  {
-    title: "O našem restoranu",
-    image: HeroAboutUsImg,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "/restoran/o-nama"
-  },
-  {
-    title: "O našem igralištu",
-    image: HeroGameroomImg,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    link: "/restoran/igralište"
-  },
-]
-
-const RestaurantHero = ({slides}) => {
-
-  const [ current, setCurrent ] = useState(0)
-  const length = slides.length
-  const timeout = useRef(null)
-
-  useEffect(() => {
-      const nextSlide = () => {
-          setTimeout(() => {
-              setCurrent(current => (current === length - 1 ? 0 : current + 1))
-          }, 7000)
-          timeout.current = setTimeout(nextSlide, 12000)
-      }
-
-      timeout.current = setTimeout(nextSlide, 12000)
-
-      return function() {
-          if(timeout.current) {
-              clearTimeout(timeout.current)
-          }
-      }
-  },[current, length])
-
-  const nextSlide = () => {
-      if(timeout.current) {
-          clearTimeout(timeout.current)
-      }
-      setCurrent(current === length - 1 ? 0 : current + 1)
-  }
-
-  const prevSlide = () => {
-      if(timeout.current) {
-          clearTimeout(timeout.current)
-      }
-      setCurrent(current === 0 ? length - 1 : current - 1)
-  }
-
-  if(!Array.isArray(slides) || slides.length <= 0) {
-      return null
-  }
+const RestaurantHero = () => {
 
   return (
     <div className="restaurant-hero">
@@ -82,13 +21,21 @@ const RestaurantHero = ({slides}) => {
         <div className="rh-bird3"></div>
       </div>
       <div className="rh-wrap">
-        <button className='rhw-btn rhw-prev' onClick={prevSlide}><AiOutlineLeft /></button>
-        {
-          slides.map((slide, index) => (
-            <RestaurantHeroCard key={index} slide={slide} index={index} current={current} />
-          ))
-        }
-        <button className='rhw-btn rhw-next' onClick={nextSlide}><AiOutlineRight /></button>
+        <video src={igraliste} loop muted autoPlay></video>
+        <div className="rhw-overlay"></div>
+        <div className="rhw-top">4</div>
+        <img src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax fade-in' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
+        <img src={restaurantTree2} alt="Dekorativna slika" className='rhw-tree2-img parallax fade-in' data-speedx="0.007" data-speedy="0.07" data-speedz="0.04" data-rotation="0.1" />
+        <div className="rhw-tree2-overlay"></div>
+        <div className="rhw-content">
+          <div className="rhwc-text">
+            <div className="rhwct-items">
+              <h1>Dobrodošli u restoran Košuta</h1>
+              <h3 className='rhcwt-h3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+              <Link to='/restoran/jelovnik'><h3>Pogledajte još</h3></Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

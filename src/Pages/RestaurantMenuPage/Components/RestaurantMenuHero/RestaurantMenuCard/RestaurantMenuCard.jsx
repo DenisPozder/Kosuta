@@ -1,7 +1,6 @@
 import React from 'react'
 import './restaurant-menu-card.css'
 import topLeaves from '../../../../../Assets/Landing/topLeaves.png'
-import branchRight from '../../../../../Assets/Restaurant/branchRight.png'
 
 const RestaurantMenuCard = ({ slide, index, current }) => {
   return (
@@ -10,7 +9,6 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
             index === current && (
                 <div className="rmc-slide">
                     <img src={topLeaves} alt="Dekorativna slika" className='rs-top-leaves' />
-                    <img src={branchRight} alt="Dekorativna slika" className='rs-branch-img' />
                     <img src={slide.fullImage} alt={`Slika ${index + 1}`} className='rs-full-image' />
                     <div className="rmcs-radial-overlay"></div>
                     <div className="rmcs-overlay"></div>
@@ -19,8 +17,10 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
                         <div className="rmcs-wrap">
                             <div className="rmcs-inner">
                                 <div className="rmcs-left">
+                                    <div className="rmcs-items">
                                     <h1>{slide.title}</h1>
                                     <h3>{slide.desc}</h3>
+                                    </div>
                                 </div>
                                 <div className="rmcs-right">
                                     <img src={slide.image} alt={`Slika ${index + 1}`} />

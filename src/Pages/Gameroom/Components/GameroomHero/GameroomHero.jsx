@@ -1,10 +1,12 @@
 import React from 'react'
 import './gameroom-hero.css'
 import video from '../../../../Assets/Igraliste.mp4'
+import gamerommImg from '../../../../Assets/gameroomImg.png'
 
 const GameroomHero = () => {
   return (
     <div className="gameroom-hero">
+      <img src={gamerommImg} alt="Dekorativna slika" className='gh-img parallax' />
       <div className="gh-main-overlay"></div>
         <video src={video} muted loop autoPlay></video>
         <div className="gh-content">

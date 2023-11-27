@@ -2,7 +2,15 @@
     height: calc(100vh - 100px);
     width: 100%;
     position: relative;
-    overflow: hidden;
+}
+
+.gh-img {
+    position: absolute;
+    top: calc(50% + 35%);
+    left: calc(50% - 38%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 500px;
 }
 
 .gh-main-overlay {
@@ -50,6 +58,18 @@
     margin-bottom: 3rem;
     text-align: center;
     user-select: none;
+    animation: 1s ease fromTop forwards;
+}
+
+@keyframes fromTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .ghc-text h3 {
@@ -57,6 +77,18 @@
     color: var(--white);
     text-align: center;
     user-select: none;
+    animation: 1s ease fromBottom forwards;
+}
+
+@keyframes fromBottom {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -74,6 +106,15 @@
 @media only screen and (max-width: 768px) {
     .ghc-text {
         margin: 0 15px;
+    }
+
+    .gh-img {
+        position: absolute;
+        top: calc(50% + 33%);
+        left: calc(50% - 38%);
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        height: 400px;
     }
 }
 

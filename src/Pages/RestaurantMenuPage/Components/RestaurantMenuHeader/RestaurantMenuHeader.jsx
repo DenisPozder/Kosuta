@@ -1077,11 +1077,11 @@ const RestaurantMenuHeader = () => {
         if (category === "MEALS") {
             const filteredItems = RestaurantMenuData.filter(menu => menu.category === 'meals')
             setMenu(filteredItems)
-        }
-    
-        if (category === "DRINKS") {
+        }else if (category === "DRINKS") {
             const filteredItems = RestaurantMenuData.filter(menu => menu.category === 'drinks')
             setMenu(filteredItems)
+        }else {
+            setMenu(RestaurantMenuData)
         }
     },[category])
 
@@ -1109,7 +1109,7 @@ const RestaurantMenuHeader = () => {
                 <img src={mealDecoration2} alt="Dekorativna slika" className='meal-decoration2' />
                 <img src={mealDecoration3} alt="Dekorativna slika" className='meal-decoration3' />
                 <img src={mealDecoration4} alt="Dekorativna slika" className='meal-decoration4' />
-                <div className="rmhcw-content">
+                <div className={`rmhcw-content`}>
                     {
                         menu.map((menuItem, index) => (
                             <div className="rmhcw-item" key={index}>

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-celebrations.css'
 import restaurantImage from '../../../../Assets/Restaurant/restaurantImage.jpg'
-import branchLeftImg from '../../../../Assets/Restaurant/branchLeft.png'
 import branchRightImg from '../../../../Assets/Restaurant/branchRight.png'
 import LeavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
+import TreeLeft from '../../../../Assets/Restaurant/TreeLeft.png'
 
 const ResCelebrationsImg = [
     {
@@ -57,16 +57,16 @@ const RestaurantCelebrations = () => {
 
   return (
     <div className="restaurant-celebrations">
-        <img src={branchLeftImg} alt="Dekorativna slika" className='rc-branch1-img parallax' data-speedx="0.015" data-speedy="0.014" data-speedz="0.01" data-rotation="0.02" />
-        <img src={branchRightImg} alt="Dekorativna slika" className='rc-branch2-img parallax' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
-        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
+        <img src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
+        <img src={branchRightImg} alt="Dekorativna slika" className='rc-branch2-img parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
+        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img fade-in' />
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
-                <h1>Proslave u našem restoranu</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <h1 className='slide-in from-left'>Proslave u našem restoranu</h1>
+                <h3 className='slide-in from-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
             </div>
             <div className="rcc-column">
-                <div className="rcc-slider">
+                <div className="rcc-slider slide-in from-right">
                     {
                         ResCelebrationsImg.map((celebrations, index) => (
                             <div className="rcc-slider-content" key={index}>
