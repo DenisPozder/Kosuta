@@ -16,7 +16,7 @@
 }
 
 .rm-slider-inner {
-    height: 40rem;
+    height: 380px;
     position: relative;
     width: calc((var(--slide_width) * 3));
 }
