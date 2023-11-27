@@ -21,7 +21,7 @@ const RestaurantHero = () => {
         <div className="rh-bird3"></div>
       </div>
       <div className="rh-wrap">
-        <video src={igraliste} loop muted autoPlay></video>
+        <video src={igraliste} loop muted autoPlay playsInline></video>
         <div className="rhw-overlay"></div>
         <div className="rhw-top">4</div>
         <img src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax fade-in' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />

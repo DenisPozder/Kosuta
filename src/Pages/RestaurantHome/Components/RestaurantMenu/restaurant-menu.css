@@ -70,6 +70,8 @@
     justify-content: space-between;
     flex-direction: column;
     z-index: 100;
+    background-color: rgba(154, 180, 152, 0.6);
+    backdrop-filter: blur(2px);
 }
 
 .rmc-column:nth-child(2) h1 {
@@ -77,12 +79,14 @@
     color: var(--dark-color);
     font-family: var(--restaurant-font);
     user-select: none;
+    padding: .4rem 1rem;
 }
 
 .rmc-column:nth-child(2) .rmc-h3 {
     color: var(--white);
     font-family: var(--restaurant-font);
     user-select: none;
+    padding: 0 1rem;
 }
 
 .rmc-column:nth-child(2) a {
@@ -96,6 +100,7 @@
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     position: relative;
+    margin: .4rem 1rem;
 }
 
 .rmc-column:nth-child(2) a::after {
@@ -205,6 +210,18 @@
         z-index: 100;
         top: -150px;
         transform: scaleY(-1);
+    }
+
+    .rmc-column:nth-child(2) h1 {
+        padding: .4rem .6rem;
+    }
+    
+    .rmc-column:nth-child(2) .rmc-h3 {
+        padding: 0 .6rem;
+    }
+    
+    .rmc-column:nth-child(2) a {
+        margin: .4rem .6rem;
     }
 }
 
