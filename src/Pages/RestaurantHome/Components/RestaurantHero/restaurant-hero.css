@@ -290,7 +290,7 @@
 
 .rhwct-items .rhcwt-h3 {
     text-align: center;
-    color: #000;
+    color: var(--white);
     font-family: var(--restaurant-font);
     font-weight: bold;
     user-select: none;

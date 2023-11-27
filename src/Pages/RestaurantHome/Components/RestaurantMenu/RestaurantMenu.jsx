@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
       <img src={leavesLeft} alt="Dekorativna slika" className='rm-leaves-img fade-in' />
       <img src={TreeRight} alt="Dekorativna slika" className='rm-tree-right parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
         <div className="rm-content">
-            <div className="rmc-column">
+            <div className="rmc-column slide-in from-left">
               <RMSlider />
             </div>
             <div className="rmc-column">
