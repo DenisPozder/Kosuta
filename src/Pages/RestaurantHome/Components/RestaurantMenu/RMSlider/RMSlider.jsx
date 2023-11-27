@@ -131,18 +131,18 @@ const RMSlider = () => {
     }, [items]);
 
   return (
-    <div className="rm-slider-wrap">
-        <div className="rm-slider-inner">
-            <div className="rm-slider-container">
-                <button className='rm-slider-btn rm-slider-prev' onClick={() => prevClick()}><AiOutlineLeft /></button>
-                <div className="rm-slider-list">
+    <div className="rm-slider-wrap-carousel">
+        <div className="rm-slider-inner-carousel">
+            <div className="rm-slider-container-carousel">
+                <button className='rm-carousel-btn rm-carousel-prev' onClick={() => prevClick()}><AiOutlineLeft /></button>
+                <div className="rm-slider-carousel-list">
                     {
                         items.map((pos, i) => (
                             <RMItem idx={i} key={i}  pos={pos} />
                         ))
                     }
                 </div>
-                <button className='rm-slider-btn rm-slider-next' onClick={() => nextClick()}><AiOutlineRight /></button>
+                <button className='rm-carousel-btn rm-carousel-next' onClick={() => nextClick()}><AiOutlineRight /></button>
             </div>
         </div>
     </div>
