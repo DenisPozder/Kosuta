@@ -34,7 +34,7 @@ const RestaurantFooter = () => {
   }
   
   return (
-    <div className="restaurant-footer">
+    <div className="restaurant-footer fade-in">
       <div className="rf-content">
         <div className="rf-column">
           <Link className="rfc-logo">
