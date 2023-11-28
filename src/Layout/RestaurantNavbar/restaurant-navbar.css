@@ -6,6 +6,7 @@
     left: 0;
     z-index: 9999;
     transition: background-color .3s ease;
+    animation: comingFromTop 1s ease forwards;
 }
 
 .restaurant-relative {
@@ -15,6 +16,7 @@
     top: 0;
     z-index: 9999;
     background-color: var(--restaurant-background);
+    animation: comingFromTop 1s ease forwards;
 }
 
 .restaurant-navbar.background {
@@ -29,7 +31,6 @@
     margin: 0 80px;
     height: 100%;
     position: relative;
-    animation: comingFromTop 1s ease forwards;
 }
 
 @keyframes comingFromTop {
