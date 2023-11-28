@@ -15,3 +15,18 @@
     opacity: .5;
     object-fit: cover;
 }
+
+.ht-crack {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+
+.ht-crack.visible {
+    opacity: 1;
+}

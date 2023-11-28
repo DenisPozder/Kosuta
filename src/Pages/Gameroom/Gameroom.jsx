@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 import RestaurantLayout from "../../Layout/RestaurantLayout/RestaurantLayout";
 import GameroomHero from "./Components/GameroomHero/GameroomHero";
 import GameroomComponent from "./Components/GameroomComponent/GameroomComponent";
+import './gameroom.css'
+import background  from '../../Assets/Restaurant/background.jpg'
 
 const Gameroom = () => {
   const location = useLocation();
@@ -80,15 +82,21 @@ useEffect(() => {
   return ifIsCelebration ? (
     <HallLayout>
       <section className="page-section">
-      <GameroomHero />
-      <GameroomComponent />
+        <div className="gr-textures">
+          <img src={background} alt="Dekorativna slika" className="gr-background" />
+        <GameroomHero />
+        <GameroomComponent />
+        </div>
       </section>
     </HallLayout>
   ) : (
     <RestaurantLayout>
       <section className="page-section">
-      <GameroomHero />
+        <div className="gr-texture">
+          <img src={background} alt="Dekorativna slika" className="gr-background" />
+        <GameroomHero />
       <GameroomComponent />
+        </div>
       </section>
     </RestaurantLayout>
   );

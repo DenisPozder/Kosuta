@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-menu.css'
 import { Link } from 'react-router-dom'
 import leavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 import TreeRight from '../../../../Assets/Restaurant/TreeRight.png'
 import RMSlider from './RMSlider/RMSlider'
+import crackInTheWall from '../../../../Assets/crackInTheWall.png'
 
 const RestaurantMenu = () => {
   return (

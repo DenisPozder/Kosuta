@@ -1,10 +1,6 @@
 import React from "react";
 import "./restaurant-about-section.css";
 import restaurantimage from "../../../../Assets/Restaurant/restaurantImage.jpg";
-import tree1 from "../../../../Assets/Hall/forestTree1.png";
-import tree2 from "../../../../Assets/Hall/forestTree2.png";
-import tree3 from "../../../../Assets/Hall/forestTree3.png";
-import tree4 from "../../../../Assets/Hall/forestTree4.png";
 
 const RestaurantAboutSection = () => {
   return (

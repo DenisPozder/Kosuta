@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-celebrations.css'
 import restaurantImage from '../../../../Assets/Restaurant/restaurantImage.jpg'
-import branchRightImg from '../../../../Assets/Restaurant/branchRight.png'
 import LeavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 import TreeLeft from '../../../../Assets/Restaurant/TreeLeft.png'
 

@@ -5,24 +5,6 @@
     padding: 3rem 0;
 }
 
-.rm-decoration1 {
-    position: absolute;
-    top: calc(50% - 50%);
-    left: calc(50% + 45%);
-    transform: translate(-50%, -50%);
-    height: 200px;
-    z-index: 100;
-}
-
-.rm-decoration2 {
-    position: absolute;
-    top: calc(50% + 50%);
-    left: calc(50% - 45%);
-    transform: translate(-50%, -50%);
-    height: 200px;
-    z-index: 100;
-}
-
 .rm-leaves-img {
     position: absolute;
     top: 50%;

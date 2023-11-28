@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 import RestaurantHero from './Components/RestaurantHero/RestaurantHero'
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu'
@@ -9,6 +9,7 @@ import { RestaurantHeroData } from '../../RestaurantData/RestaurantHeroData'
 import RestaurantCelebrations from './Components/RestaurantCelebrations/RestaurantCelebrations'
 import './restaurant-home.css'
 import background from '../../Assets/Restaurant/background.jpg'
+import crackInTheWall from '../../Assets/crackInTheWall.png'
 
 const RestaurantHome = () => {
 
@@ -54,7 +55,6 @@ useEffect(() => {
 
   const faders = document.querySelectorAll('.fade-in')
   const sliders = document.querySelectorAll('.slide-in')
-  const parallaxes = document.querySelectorAll('.parallax')
 
   const appearOptions = {
     threshold: 0,
@@ -82,12 +82,32 @@ useEffect(() => {
 
 },[])
 
+const crackRef = useRef(null)
+
+useEffect(() => {
+  const handleScroll = () => {
+    const crackPosition = crackRef.current.getBoundingClientRect().top;
+    const threshold = window.innerHeight * 1.2;
+
+    const opacity = Math.max(0, Math.min(1, 1 - crackPosition / threshold));
+
+    crackRef.current.style.opacity = opacity.toString();
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   return (
     <>
     <RestaurantLayout>
       <section className='page-section'>
         <div className="home-texture">
-          <img src={background} alt="Dekorativna slika" className='ht-background' />
+        <img src={background} alt="Dekorativna slika" className='ht-background' />
+        <img src={crackInTheWall} alt="Rupa u zidu" className='ht-crack' ref={crackRef} />
         <RestaurantHero slides={RestaurantHeroData} />
         <RestaurantCelebrations />
         <RestaurantGameroom />

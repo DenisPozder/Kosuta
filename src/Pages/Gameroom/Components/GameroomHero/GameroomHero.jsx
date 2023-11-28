@@ -8,7 +8,7 @@ const GameroomHero = () => {
     <div className="gameroom-hero">
       <img src={gamerommImg} alt="Dekorativna slika" className='gh-img parallax' />
       <div className="gh-main-overlay"></div>
-        <video src={video} muted loop autoPlay></video>
+        <video src={video} muted loop autoPlay playsInline></video>
         <div className="gh-content">
             <div className="ghc-text">
                 <h1>Igraonica</h1>

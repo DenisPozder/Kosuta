@@ -1094,8 +1094,8 @@ const RestaurantMenuHeader = () => {
         <div className="rmh-ot"></div>
         <div className="rmh-ob"></div>
         <div className="rmh-content">
-            <h1 className='rmh-h1'>restoran srpske nacionalne kuhinje</h1>
-            <div className="rmhc-items">
+            <h1 className='rmh-h1 slide-in from-top'>restoran srpske nacionalne kuhinje</h1>
+            <div className="rmhc-items fade-in">
                 <div className={`rmhc-item ${category === "MEALS" ? "rmhc-item-active" : ""}`} onClick={() => setCategory("MEALS")}>
                     <h3 className='rmhc-h3'><span>Jelovnik</span> <MdRestaurantMenu /></h3>
                 </div>
@@ -1112,7 +1112,7 @@ const RestaurantMenuHeader = () => {
                 <div className={`rmhcw-content`}>
                     {
                         menu.map((menuItem, index) => (
-                            <div className="rmhcw-item" key={index}>
+                            <div className="rmhcw-item fade-in" key={index}>
                                 <h1>{menuItem.title}</h1>
                                 <div className="rmhcw-meal-price">
                                 {
