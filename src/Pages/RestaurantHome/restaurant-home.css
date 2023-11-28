@@ -24,7 +24,7 @@
     width: auto;
     height: 100%;
     opacity: 0;
-    transition: opacity 5s ease;
+    transition: opacity 10s ease;
 }
 
 .ht-crack.visible {

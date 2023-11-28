@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 import RestaurantHero from './Components/RestaurantHero/RestaurantHero'
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu'
@@ -87,7 +87,7 @@ const crackRef = useRef(null)
 useEffect(() => {
   const handleScroll = () => {
     const crackPosition = crackRef.current.getBoundingClientRect().top;
-    const threshold = window.innerHeight * 1.2;
+    const threshold = window.innerHeight * 0.8;
 
     const opacity = Math.max(0, Math.min(1, 1 - crackPosition / threshold));
 
@@ -107,7 +107,7 @@ useEffect(() => {
       <section className='page-section'>
         <div className="home-texture">
         <img src={background} alt="Dekorativna slika" className='ht-background' />
-        <img src={crackInTheWall} alt="Rupa u zidu" className='ht-crack' ref={crackRef} />
+        <img src={crackInTheWall} alt="Rupa u zidu" className={`ht-crack`} ref={crackRef} />
         <RestaurantHero slides={RestaurantHeroData} />
         <RestaurantCelebrations />
         <RestaurantGameroom />
