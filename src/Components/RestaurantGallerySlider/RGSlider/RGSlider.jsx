@@ -25,7 +25,7 @@ const RGSlider = ({ data }) => {
     },[])
 
   return (
-    <div className="rg-slider-section fade-in">
+    <div className="rg-slider-section slide-in from-left">
         <button id='left' className='rg-slider-btn rg-slider-prev'><AiOutlineLeft /></button>
         <div className="rg-slider-component">
             {

@@ -4,6 +4,7 @@
     height: 100vh;
     background-color: var(--restaurant-background);
     overflow: hidden;
+    z-index: 2;
 }
 
 .rh-bird {
@@ -155,6 +156,18 @@
     left: calc(50% - 48%);
     transform: translate(-50%, -50%);
     z-index: 3;
+    animation: hiddenLeft 1s ease;
+}
+
+@keyframes hiddenLeft {
+    0% {
+        transform: translate(-80%, -50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 
 .rhw-tree2-img {
@@ -165,6 +178,18 @@
     height: 620px;
     width: auto;
     z-index: 1;
+    animation: hiddenRight 1s ease;
+}
+
+@keyframes hiddenRight {
+    0% {
+        transform: translate(10%, -50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 
 .rhw-tree2-overlay {

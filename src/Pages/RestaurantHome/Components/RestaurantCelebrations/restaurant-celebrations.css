@@ -1,6 +1,5 @@
 .restaurant-celebrations {
     padding: 3rem 0;
-    background-color: var(--restaurant-background);
     position: relative;
 }
 
@@ -24,13 +23,11 @@
 
 .rc-leaves-img {
     position: absolute;
-    z-index: 99;
-    top: 50%;
-    left: calc(50% + 42%);
-    transform: translate(-50%, -50%) scaleX(-1);
+    right: -100px;
+    top: -200px;
+    z-index: 100;
+    transform: scaleX(-1);
     height: 800px;
-    pointer-events: none;
-    user-select: none;
 }
 
 .restaurant-celebrations-content {
@@ -83,6 +80,7 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    z-index: 2;
 }
 
 .rcc-slider-content {

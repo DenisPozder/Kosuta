@@ -58,8 +58,7 @@ const RestaurantCelebrations = () => {
   return (
     <div className="restaurant-celebrations">
         <img src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
-        <img src={branchRightImg} alt="Dekorativna slika" className='rc-branch2-img parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
-        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img fade-in' />
+        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
                 <h1 className='slide-in from-left'>Proslave u našem restoranu</h1>

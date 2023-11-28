@@ -7,6 +7,8 @@ import RestaurantGallerySlider from '../../Components/RestaurantGallerySlider/Re
 import { RestaurantGalleryData } from '../../RestaurantData/RestaurantGalleryData'
 import { RestaurantHeroData } from '../../RestaurantData/RestaurantHeroData'
 import RestaurantCelebrations from './Components/RestaurantCelebrations/RestaurantCelebrations'
+import './restaurant-home.css'
+import background from '../../Assets/Restaurant/background.jpg'
 
 const RestaurantHome = () => {
 
@@ -52,10 +54,11 @@ useEffect(() => {
 
   const faders = document.querySelectorAll('.fade-in')
   const sliders = document.querySelectorAll('.slide-in')
+  const parallaxes = document.querySelectorAll('.parallax')
 
   const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -100px 0px"
+    rootMargin: "0px 0px -200px 0px"
   }
 
   const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
@@ -83,11 +86,14 @@ useEffect(() => {
     <>
     <RestaurantLayout>
       <section className='page-section'>
+        <div className="home-texture">
+          <img src={background} alt="Dekorativna slika" className='ht-background' />
         <RestaurantHero slides={RestaurantHeroData} />
         <RestaurantCelebrations />
         <RestaurantGameroom />
         <RestaurantMenu />
         <RestaurantGallerySlider data={RestaurantGalleryData} />
+        </div>
       </section>
     </RestaurantLayout>
     </>
