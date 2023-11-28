@@ -16,28 +16,31 @@ import SmallHallPage from './Pages/SmallHallPage/SmallHallPage';
 import HallGalleryPage from './Pages/HallGalleryPage/HallGalleryPage';
 import RestaurantGallery from './Pages/RestaurantGallery/RestaurantGallery';
 import RestaurantMenuPage from './Pages/RestaurantMenuPage/RestaurantMenuPage';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Landing />} />
-      <Route path='/restoran/početna' element={<RestaurantHome />} />
-      <Route path='/restoran/o-nama' element={<RestaurantAbout />} />
-      <Route path='/restoran/igraonica' element={<Gameroom />} />
-      <Route path='/restoran/jelovnik' element={<RestaurantMenuPage />} />
-      <Route path='/restoran/galerija' element={<RestaurantGallery />} />
-      <Route path='/proslave/početna' element={<HallHome />} />
-      <Route path='/proslave/o-nama' element={<HallAbout />} />
-      <Route path='/proslave/velika-sala' element={<BigHallPage />} />
-      <Route path='/proslave/srednja-sala' element={<MediumHallPage />} />
-      <Route path='/proslave/mala-sala' element={<SmallHallPage />} />
-      <Route path='/proslave/jelovnik' element={<HallMenu />} />
-      <Route path='/proslave/venčanja' element={<HallWeddings />} />
-      <Route path='/proslave/seminari' element={<HallSeminars />} />
-      <Route path='/proslave/rođendani' element={<HallBirthdays />} />
-      <Route path='/proslave/igraonica' element={<Gameroom />} />
-      <Route path='/proslave/galerija' element={<HallGalleryPage />} />
-    </Routes>
+    <ScrollToTop>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/restoran/početna' element={<RestaurantHome />} />
+        <Route path='/restoran/o-nama' element={<RestaurantAbout />} />
+        <Route path='/restoran/igraonica' element={<Gameroom />} />
+        <Route path='/restoran/jelovnik' element={<RestaurantMenuPage />} />
+        <Route path='/restoran/galerija' element={<RestaurantGallery />} />
+        <Route path='/proslave/početna' element={<HallHome />} />
+        <Route path='/proslave/o-nama' element={<HallAbout />} />
+        <Route path='/proslave/velika-sala' element={<BigHallPage />} />
+        <Route path='/proslave/srednja-sala' element={<MediumHallPage />} />
+        <Route path='/proslave/mala-sala' element={<SmallHallPage />} />
+        <Route path='/proslave/jelovnik' element={<HallMenu />} />
+        <Route path='/proslave/venčanja' element={<HallWeddings />} />
+        <Route path='/proslave/seminari' element={<HallSeminars />} />
+        <Route path='/proslave/rođendani' element={<HallBirthdays />} />
+        <Route path='/proslave/igraonica' element={<Gameroom />} />
+        <Route path='/proslave/galerija' element={<HallGalleryPage />} />
+      </Routes>
+    </ScrollToTop>
   );
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './rm-slider.css'
 import restaurantImage from '../../../../../Assets/Restaurant/restaurantMealImg.jpg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { MdDinnerDining } from "react-icons/md";
 
 const slideWidth = 280;
 
@@ -9,35 +10,35 @@ const _items = [
     {
         meal: {
             title: "Prvo Jelo",
-            desc: "Some simple desc goes right here",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: restaurantImage
         }
     },
     {
         meal: {
             title: "Drugo Jelo",
-            desc: "Some simple desc goes right here",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: restaurantImage
         }
     },
     {
         meal: {
             title: "Treće Jelo",
-            desc: "Some simple desc goes right here",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: restaurantImage
         }
     },
     {
         meal: {
             title: "Četvrto Jelo",
-            desc: "Some simple desc goes right here",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: restaurantImage
         }
     },
     {
         meal: {
             title: "Peto Jelo",
-            desc: "Some simple desc goes right here",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             image: restaurantImage
         }
     },
@@ -86,8 +87,10 @@ const RMItem = ({pos, idx, activeIdx}) => {
                 <img src={item.meal.image} alt="" />
             </div>
             <div className="rm-item-bottom">
-                <h1>{item.meal.title}</h1>
-                <p>{item.meal.desc}</p>
+                <div className="rm-itemb-text">
+                    <h1><MdDinnerDining /><span>{item.meal.title}</span></h1>
+                    <p>{item.meal.desc}</p>
+                </div>
             </div>
             </div>
         </div>
