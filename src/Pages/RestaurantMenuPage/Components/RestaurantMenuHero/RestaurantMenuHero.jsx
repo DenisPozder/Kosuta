@@ -5,43 +5,44 @@ import RestaurantMenuCard from './RestaurantMenuCard/RestaurantMenuCard'
 
 const RestaurantMenuHero = ({ slides }) => {
 
-    const [ current, setCurrent ] = useState(0)
-    const length = slides.length
-    const timeout = useRef(null)
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+    const timeout = useRef(null);
   
     useEffect(() => {
-        const nextSlide = () => {
-            setTimeout(() => {
-                setCurrent(current => (current === length - 1 ? 0 : current + 1))
-            }, 7000)
-            timeout.current = setTimeout(nextSlide, 12000)
-        }
+      const nextSlide = () => {
+        setTimeout(() => {
+          setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+        });
+        timeout.current = setTimeout(nextSlide, 12000);
+      };
+
+      timeout.current = setTimeout(nextSlide, 12000);
   
-        timeout.current = setTimeout(nextSlide, 12000)
-  
-        return function() {
-            if(timeout.current) {
-                clearTimeout(timeout.current)
-            }
+      return () => {
+        if (timeout.current) {
+          clearTimeout(timeout.current);
         }
-    },[current, length])
+      };
+    }, [current, length]);
   
     const nextSlide = () => {
-        if(timeout.current) {
-            clearTimeout(timeout.current)
-        }
-        setCurrent(current === length - 1 ? 0 : current + 1)
-    }
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+    };
   
     const prevSlide = () => {
-        if(timeout.current) {
-            clearTimeout(timeout.current)
-        }
-        setCurrent(current === 0 ? length - 1 : current - 1)
-    }
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+      setCurrent((current) => (current === 0 ? length - 1 : current - 1));
+    };
+
   
-    if(!Array.isArray(slides) || slides.length <= 0) {
-        return null
+    if (!Array.isArray(slides) || slides.length <= 0) {
+      return null;
     }
 
   return (

@@ -81,9 +81,9 @@
     .rmh-btn {
         width: 30px;
         height: 30px;
+    }
 
-        svg {
-            font-size: .8rem;
-        }
+    .rmh-btn svg {
+        font-size: .8rem;
     }
 }

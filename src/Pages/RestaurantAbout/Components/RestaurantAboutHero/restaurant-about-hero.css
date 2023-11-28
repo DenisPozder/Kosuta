@@ -2,296 +2,229 @@
     width: 100%;
     height: calc(100vh - 100px);
     position: relative;
-    overflow: hidden;
-    background-color: var(--restaurant-background);
-}
-
-.rah-radial-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, var(--restaurant-background) );
-    z-index: 30;
-}
-
-.rah-bottom-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, var(--restaurant-background), transparent 30%);
-    z-index: 30;
-}
-
-.rah-top-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--restaurant-background), transparent 30%);
-    z-index: 30;
-}
-
-.rah-tree1 {
-    position: absolute;
-    top: calc(50% + 20%);
-    left: calc(50% - 30%);
-    transform: translate(-50%, -50%);
-    height: 400px;
-    z-index: 1;
-}
-
-.rah-meal1 {
-    position: absolute;
-    top: calc(50% - 35%);
-    left: calc(50% + 45%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    height: 260px;
-}
-
-.rah-meal2 {
-    position: absolute;
-    top: calc(50% + 30%);
-    left: calc(50% - 20%);
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    height: 240px;
-}
-
-.rah-tree1-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--restaurant-background);
-    opacity: .3;
     z-index: 2;
 }
 
-.rah-tree2 {
-    position: absolute;
-    top: calc(50% + 15%);
-    left: calc(50% - 49.5%);
-    transform: translate(-50%, -50%);
-    height: 120%;
-    z-index: 20;
-}
-
-.rah-tree4 {
-    position: absolute;
-    top: calc(50% + 12%);
-    left: calc(50% + 50%);
-    transform: translate(-50%, -50%);
-    height: 120%;
-    z-index: 20;
-}
-
-.rah-tree3 {
-    position: absolute;
-    top: calc(50% + 25%);
-    left: calc(50% - 40%);
-    transform: translate(-50%, -50%);
-    height: 400px;
-    z-index: 3;
-}
-
-.rah-tree3-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.rah-slider {
     width: 100%;
     height: 100%;
-    background-color: var(--restaurant-background);
-    opacity: .3;
-    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .rah-content {
-    width: auto;
-    height: 100%;
-    margin: 0 80px;
-    position: relative;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rah-wrap {
     width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.rah-wrap h1 {
-    font-size: 2.4rem;
-    font-family: var(--restaurant-font);
-    color: var(--dark-color);
-    user-select: none;
-}
-
-.rah-wrap .rah-h3 {
-    font-family: var(--restaurant-font);
-    color: var(--white);
-    user-select: none;
-    text-align: center;
-}
-
-.rah-wrap .rah-read {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.rah-wrap .rah-read p {
-    color: var(--white);
-    font-weight: bold;
-    user-select: none;
-    font-family: var(--restaurant-font);
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.rah-wrap .rah-read a {
-    width: 200px;
-    height: 45px;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: relative;
-    cursor: pointer;
-}
-
-.rah-wrap .rah-read a::after {
-    content: '';
+    height: 100%;
     position: absolute;
-    left: 0;
+}
+
+.rah-card-wrap {
+    position: absolute;
     top: 0;
-    background-color: var(--dark-color);
-    width: 0%;
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: all .3s ease;
-}
-
-
-.rah-wrap .rah-read a:hover::after {
+    left: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: aboutOpacity 1s ease forwards;
 }
 
-.rah-wrap .rah-read a h3 {
-    color: var(--dark-color);
-    font-family: var(--restaurant-font);
-    z-index: 1;
-    transition: color .3s ease;
-    user-select: none;
+@keyframes aboutOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.rah-wrap .rah-read a:hover h3 {
+.rah-card-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rah-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.rah-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.rah-card-text {
+    position: relative;
+    width: auto;
+    margin: 0 80px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rah-card-text .rahc-title {
+    margin-bottom: 3rem;
     color: var(--white);
+    font-family: var(--restaurant-font);
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: 100;
+    font-size: 2.4rem;
+    animation: appearFromLeft .5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes appearFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.rah-card-text .rahc-desc {
+    color: var(--white);
+    max-width: 60%;
+    font-family: var(--restaurant-font);
+    font-weight: 600;
+    user-select: none;
+    animation: appearFromLeft .5s ease forwards;
+    opacity: 0;
+    animation-delay: .25s;
+}
+
+.rahs-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 199;
+    opacity: 0.5;
+    transition: opacity .3s ease;
+}
+
+.rahs-btn:hover {
+    opacity: 1;
+}
+
+.rahs-btn svg {
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+.rahs-prev {
+    left: 30px;
+}
+
+.rahs-next {
+    right: 30px;
 }
 
 @media only screen and (max-width: 1440px) {
-    .rah-content {
+    .rah-card-text {
         margin: 0 50px;
+    }
+
+    .rahs-prev {
+        left: 20px;
+    }
+
+    .rahs-next {
+        right: 20px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .rah-content {
+    .rah-card-text {
         margin: 0 25px;
+    }
+    
+    .rah-card-text .rahc-desc {
+        max-width: 70%;
+    }
+
+    .rahs-prev {
+        left: 5px;
+    }
+
+    .rahs-next {
+        right: 5px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .rah-content {
+    .rah-card-text {
         margin: 0 15px;
     }
 
-    .rah-tree2 {
-        top: calc(50% + 15%);
-        left: calc(50% - 57%);
+    .rah-card-text .rahc-title {
+        font-size: 2.2rem;
     }
     
-    .rah-tree4 {
-        top: calc(50% + 12%);
-        left: calc(50% + 57%);
-    }
-    
-    .rah-tree3 {
-        top: calc(50% + 25%);
-        left: calc(50% - 40%);
+    .rah-card-text .rahc-desc {
+        max-width: 80%;
     }
 
-    .rah-tree1 {
-        top: calc(50% + 20%);
-        left: calc(50% - 25%);
+    .rmh-prev {
+        left: 0px;
+    }
+
+    .rmh-next {
+        right: 0px;
+    }
+
+    .rahs-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rahs-btn svg {
+        font-size: .8rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .rah-content {
+    .rah-card-text {
         margin: 0 10px;
     }
 
-    .rah-tree2 {
-        top: calc(50% + 15%);
-        left: calc(50% - 75%);
-    }
-    
-    .rah-tree4 {
-        top: calc(50% + 12%);
-        left: calc(50% + 75%);
-    }
-    
-    .rah-tree3 {
-        top: calc(50% + 25%);
-        left: calc(50% - 40%);
-    }
-
-    .rah-tree1 {
-        top: calc(50% + 20%);
-        left: calc(50% - 20%);
-    }
-
-    .rah-meal1 {
-        left: calc(50% + 58%);
-    }
-
-    .rah-meal2 {
-        left: calc(50% + 15%);
-    }
-
-    .rah-h3 {
-        font-size: 1rem !important;
-    }
-
-    .rah-wrap h1 {
+    .rah-card-text .rahc-title {
         font-size: 2rem;
+    }
+    
+    .rah-card-text .rahc-desc {
+        max-width: 100%;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .rah-content {
+    .rah-card-text {
         margin: 0 5px;
-    }
-
-    .rah-h3 {
-        font-size: 0.9rem !important;
     }
 }

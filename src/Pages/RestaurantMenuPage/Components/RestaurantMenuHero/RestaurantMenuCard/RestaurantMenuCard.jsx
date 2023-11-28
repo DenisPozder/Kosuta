@@ -23,7 +23,7 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
                                     </div>
                                 </div>
                                 <div className="rmcs-right">
-                                    <img src={slide.image} alt={`Slika ${index + 1}`} />
+                                    <img src={slide.image} alt={slide.title} />
                                 </div>
                             </div>
                         </div>

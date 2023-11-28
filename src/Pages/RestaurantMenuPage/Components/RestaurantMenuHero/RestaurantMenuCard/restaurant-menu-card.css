@@ -127,6 +127,18 @@
     height: auto;
     user-select: none;
     pointer-events: none;
+    animation: appearMFRight .8s ease forwards;
+}
+
+@keyframes appearMFRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .rmcs-items {
@@ -136,6 +148,18 @@
     background-color: rgba(154, 180, 152, 0.6);
     backdrop-filter: blur(2px);
     padding: 1rem;
+    animation: appearMFLeft .4s ease forwards;
+}
+
+@keyframes appearMFLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .rmcs-left .rmcs-items h1 {
@@ -145,12 +169,18 @@
     font-family: var(--restaurant-font);
     font-weight: 100;
     user-select: none;
+    animation: appearMFLeft .4s ease forwards;
+    animation-delay: .3s;
+    opacity: 0;
 }
 
 .rmcs-left .rmcs-items h3 {
     color: #000;
     font-family: var(--restaurant-font);
     user-select: none;
+    opacity: 0;
+    animation: appearMFLeft .4s ease forwards;
+    animation-delay: .6s;
 }
 
 @media only screen and (max-width: 1440px) {
