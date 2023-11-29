@@ -1,0 +1,20 @@
+.hall-slider-text-layout {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    display: flex;
+}
+
+.hstl-content {
+    width: 50%;
+    height: 540px;
+}
+
+.hstl-content .hstl-text {
+    margin-left: 80px;
+}
+
+.hstl-slider {
+    height: 540px;
+    width: 50%;
+}

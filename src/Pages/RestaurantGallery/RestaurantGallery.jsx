@@ -5,7 +5,9 @@ const RestaurantGallery = () => {
   return (
     <>
     <RestaurantLayout>
-        RestaurantGallery
+        <section className="page-section">
+          
+        </section>
     </RestaurantLayout>
     </>
   )

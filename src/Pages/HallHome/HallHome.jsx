@@ -1,12 +1,107 @@
 import React, { useEffect } from 'react'
 import HallLayout from '../../Layout/HallLayout/HallLayout'
 import HallHero from './Components/HallHero/HallHero'
-import HallHomeAbout from './Components/HallHomeAbout/HallHomeAbout'
-import HallGameroom from './Components/HallGameroom/HallGameroom'
-import BigHall from './Components/BigHall/BigHall'
-import MediumHall from './Components/MediumHall/MediumHall'
-import HallMenuHomeComponent from './Components/HallMenuHomeComponent/HallMenuHomeComponent'
-import SmallHall from './Components/SmallHall/SmallHall'
+import HallSliderTextLayout from '../../Components/HallSliderTextLayout/HallSliderTextLayout'
+import hall1 from '../../Assets/Hall/hall1.jpg'
+
+const HallData = [
+  {
+    title1: "Sala",
+    title2: "Grande",
+    desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
+    images: [
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+    ],
+    layout: 'left',
+    capacity: "200 - 400",
+    autoplayDuration: 8000,
+    link: "#"
+  },
+  {
+    title1: "Svečana",
+    title2: "Sala",
+    desc: "Svečana sala pruža ugodan prostor koji se svojim raskošnim enterijerom i pripodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
+    images: [
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+    ],
+    layout: 'right',
+    capacity: "100 - 170",
+    autoplayDuration: 6000,
+    link: "#"
+  },
+  {
+    title1: "Kamin",
+    title2: "Sala",
+    desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
+    images: [
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+      {
+        image: hall1
+      },
+    ],
+    layout: 'left',
+    capacity: "80",
+    autoplayDuration: 8000,
+    link: "#"
+  },
+]
 
 const HallHome = () => {
 
@@ -51,12 +146,11 @@ const HallHome = () => {
     <HallLayout>
       <section className='page-section'>
         <HallHero />
-        <BigHall />
-        <HallHomeAbout />
-        <HallMenuHomeComponent />
-        <MediumHall />
-        <HallGameroom />
-        <SmallHall />
+        {
+          HallData.map((hall, index) => (
+            <HallSliderTextLayout key={index} {...hall} />
+          ))
+        }
       </section>
     </HallLayout>
   )
