@@ -128,7 +128,7 @@
 
 .rgcw-content .rgcw-h3 {
     font-family: var(--restaurant-font);
-    color: var(--restaurant-text);
+    color: var(--white);
     text-align: center;
     user-select: none;
     font-weight: bold;
