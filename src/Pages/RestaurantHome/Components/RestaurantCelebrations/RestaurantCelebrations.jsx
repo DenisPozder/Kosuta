@@ -1,29 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-celebrations.css'
-import restaurantImage from '../../../../Assets/Restaurant/restaurantImage.jpg'
 import LeavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 import TreeLeft from '../../../../Assets/Restaurant/TreeLeft.png'
+import restaurantImg1 from '../../../../Assets/Restaurant/restaurantImg4.jpg'
+import restaurantImg2 from '../../../../Assets/Restaurant/restaurantImg7.jpg'
+import restaurantImg3 from '../../../../Assets/Restaurant/restaurantImg12.jpg'
+import restaurantImg4 from '../../../../Assets/Restaurant/restaurantImg27.jpg'
+import restaurantImg5 from '../../../../Assets/Restaurant/restaurantImg40.jpg'
 
 const ResCelebrationsImg = [
     {
         id: 1,
-        image: restaurantImage
+        image: restaurantImg1
     },
     {
-        id: 1,
-        image: restaurantImage
+        id: 2,
+        image: restaurantImg2
     },
     {
-        id: 1,
-        image: restaurantImage
+        id: 3,
+        image: restaurantImg3
     },
     {
-        id: 1,
-        image: restaurantImage
+        id: 4,
+        image: restaurantImg4
     },
     {
-        id: 1,
-        image: restaurantImage
+        id: 5,
+        image: restaurantImg5
     },
 ]
 
@@ -37,11 +41,11 @@ const RestaurantCelebrations = () => {
         const nextSlide = () => {
             setTimeout(() => {
                 setCurrentSlide(currentSlide => (currentSlide === lengthCel - 1 ? 0 : currentSlide + 1))
-            }, 7000)
-            timeoutCel.currentSlide = setTimeout(nextSlide, 3000)
+            })
+            timeoutCel.currentSlide = setTimeout(nextSlide, 6000)
         }
   
-        timeoutCel.currentSlide = setTimeout(nextSlide, 3000)
+        timeoutCel.currentSlide = setTimeout(nextSlide, 6000)
   
         return function() {
             if(timeoutCel.currentSlide) {

@@ -2,22 +2,25 @@ import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-about-hero.css'
 import restaurantImage from '../../../../Assets/Restaurant/restaurantImage.jpg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import restaurantImg from '../../../../Assets/Restaurant/restaurantImg32.jpg'
+import restaurantMenuImg from '../../../../Assets/Restaurant/restaurantMenu.jpg'
+import gameroomImg from '../../../../Assets/Hall/gameroom.jpg'
 
 const RestaurantAboutSlider = [
   {
     title: "Restoran Košuta",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: restaurantImage,
+    image: restaurantImg,
   },
   {
     title: "Igraonica",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: restaurantImage,
+    image: gameroomImg,
   },
   {
     title: "Jelovnik",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: restaurantImage,
+    image: restaurantMenuImg,
   },
   {
     title: "Galerija našeg restorana",

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 import RestaurantHero from './Components/RestaurantHero/RestaurantHero'
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu'
