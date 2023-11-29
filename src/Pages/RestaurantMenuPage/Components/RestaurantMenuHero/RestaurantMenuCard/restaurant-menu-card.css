@@ -175,7 +175,7 @@
 }
 
 .rmcs-left .rmcs-items h3 {
-    color: #000;
+    color: var(--restaurant-text);
     font-family: var(--restaurant-font);
     user-select: none;
     opacity: 0;
