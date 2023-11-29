@@ -29,7 +29,7 @@
 }
 
 .grc-column:nth-child(1) h3 {
-    color: var(--dark-color);
+    color: var(--restaurant-text);
     font-family: var(--hall-font);
     user-select: none;
 }

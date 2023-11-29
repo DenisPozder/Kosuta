@@ -317,9 +317,10 @@
     text-align: center;
     color: var(--white);
     font-family: var(--restaurant-font);
-    font-weight: bold;
+    font-weight: bold !important;
     user-select: none;
     animation: h3Opacity 1s ease forwards;
+    font-size: 1.4rem;
 }
 
 @keyframes h3Opacity {
@@ -453,10 +454,6 @@
         font-size: 2rem;
         text-align: center;
     }
-
-    .rhwct-items .rhcwt-h3 {
-        font-size: 1rem;
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -488,7 +485,7 @@
     }
 
     .rhwct-items .rhcwt-h3 {
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -513,6 +510,10 @@
 
     .rhwc-text {
         margin: 0 5px;
+    }
+
+    .rhwct-items .rhcwt-h3 {
+        font-size: 1rem;
     }
 }
 

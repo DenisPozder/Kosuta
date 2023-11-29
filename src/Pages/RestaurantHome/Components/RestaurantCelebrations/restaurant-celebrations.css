@@ -65,11 +65,12 @@
 }
 
 .rcc-column:nth-child(1) h3 {
-    color: var(--white);
+    color: var(--restaurant-text);
     font-family: var(--restaurant-font);
     user-select: none;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .rcc-slider {
@@ -174,7 +175,7 @@
     }
 
     .rcc-column:nth-child(1) h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .rc-branch2-img {
@@ -202,6 +203,6 @@
     }
 
     .rcc-column:nth-child(1) h3 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }

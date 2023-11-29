@@ -64,10 +64,11 @@
 }
 
 .rmc-column:nth-child(2) .rmc-h3 {
-    color: var(--white);
+    color: var(--restaurant-text);
     font-family: var(--restaurant-font);
     user-select: none;
     padding: 0 1rem;
+    font-size: 1.3rem;
 }
 
 .rmc-column:nth-child(2) a {
@@ -160,7 +161,7 @@
     }
 
     .rmc-column:nth-child(2) .rmc-h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .rmc-column:nth-child(1) .rmc-tree1 {
@@ -218,5 +219,9 @@
         transform: translate(-50%, -50%);
         height: 200px;
         z-index: 100;
+    }
+
+    .rmc-column:nth-child(2) .rmc-h3 {
+        font-size: 1rem;
     }
 }

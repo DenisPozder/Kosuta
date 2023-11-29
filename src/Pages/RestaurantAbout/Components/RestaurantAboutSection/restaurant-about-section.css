@@ -33,7 +33,7 @@
 .ras-column:nth-child(1) h3 {
     font-family: var(--restaurant-font);
     text-align: left;
-    color: var(--dark-color);
+    color: var(--restaurant-text);
     user-select: none;
     z-index: 30;
 }
