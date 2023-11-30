@@ -50,162 +50,289 @@ import restaurantImg49 from '../Assets/Restaurant/restaurantImg49.jpg'
 import restaurantImg50 from '../Assets/Restaurant/restaurantImg50.jpg'
 import restaurantImg51 from '../Assets/Restaurant/restaurantImg51.jpg'
 import restaurantImg52 from '../Assets/Restaurant/restaurantImg52.jpg'
+import restaurantImg53 from '../Assets/Restaurant/restaurantGarden1.jpg'
+import restaurantImg54 from '../Assets/Restaurant/restaurantGarden2.jpg'
+import restaurantImg55 from '../Assets/Restaurant/restaurantGarden3.jpg'
+import restaurantImg56 from '../Assets/Restaurant/restaurantGarden4.jpg'
+import restaurantImg57 from '../Assets/Restaurant/restaurantGarden5.jpg'
+import restaurantImg58 from '../Assets/Restaurant/restaurantGarden6.jpg'
+import restaurantImg59 from '../Assets/Restaurant/restaurantGarden7.jpg'
+import restaurantImg60 from '../Assets/Restaurant/restaurantGarden8.jpg'
+import restaurantImg61 from '../Assets/Restaurant/restaurantGarden9.jpg'
+import restaurantImg62 from '../Assets/Restaurant/restaurantGarden10.jpg'
+import restaurantImg63 from '../Assets/Restaurant/restaurantGarden11.jpg'
+import restaurantImg64 from '../Assets/Restaurant/restaurantGarden12.jpg'
+import restaurantImg65 from '../Assets/Restaurant/restaurantGarden13.jpg'
+import restaurantImg66 from '../Assets/Restaurant/restaurantGarden14.jpg'
+import restaurantImg67 from '../Assets/Restaurant/restaurantGarden15.jpg'
 
 export const RestaurantGalleryData = [
     {
-        image: restaurantImg1
+        image: restaurantImg1,
+        tag: "interijer"
     },
     {
-        image: restaurantImg2
+        image: restaurantImg2,
+        tag: "interijer"
     },
     {
-        image: restaurantImg3
+        image: restaurantImg3,
+        tag: "interijer"
     },
     {
-        image: restaurantImg4
+        image: restaurantImg4,
+        tag: "interijer"
     },
     {
-        image: restaurantImg5
+        image: restaurantImg5,
+        tag: "interijer"
     },
     {
-        image: restaurantImg6
+        image: restaurantImg6,
+        tag: "interijer"
     },
     {
-        image: restaurantImg7
+        image: restaurantImg7,
+        tag: "interijer"
     },
     {
-        image: restaurantImg8
+        image: restaurantImg8,
+        tag: "interijer"
     },
     {
-        image: restaurantImg9
+        image: restaurantImg9,
+        tag: "interijer"
     },
     {
-        image: restaurantImg10
+        image: restaurantImg10,
+        tag: "interijer"
     },
     {
-        image: restaurantImg11
+        image: restaurantImg11,
+        tag: "interijer"
     },
     {
-        image: restaurantImg12
+        image: restaurantImg12,
+        tag: "interijer"
     },
     {
-        image: restaurantImg13
+        image: restaurantImg13,
+        tag: "interijer"
     },
     {
-        image: restaurantImg14
+        image: restaurantImg14,
+        tag: "interijer"
     },
     {
-        image: restaurantImg15
+        image: restaurantImg15,
+        tag: "interijer"
     },
     {
-        image: restaurantImg16
+        image: restaurantImg16,
+        tag: "interijer"
     },
     {
-        image: restaurantImg17
+        image: restaurantImg17,
+        tag: "interijer"
     },
     {
-        image: restaurantImg18
+        image: restaurantImg18,
+        tag: "interijer"
     },
     {
-        image: restaurantImg19
+        image: restaurantImg19,
+        tag: "interijer"
     },
     {
-        image: restaurantImg20
+        image: restaurantImg20,
+        tag: "interijer"
     },
     {
-        image: restaurantImg21
+        image: restaurantImg21,
+        tag: "interijer"
     },
     {
-        image: restaurantImg22
+        image: restaurantImg22,
+        tag: "interijer"
     },
     {
-        image: restaurantImg23
+        image: restaurantImg23,
+        tag: "interijer"
     },
     {
-        image: restaurantImg24
+        image: restaurantImg24,
+        tag: "interijer"
     },
     {
-        image: restaurantImg25
+        image: restaurantImg25,
+        tag: "interijer"
     },
     {
-        image: restaurantImg26
+        image: restaurantImg26,
+        tag: "interijer"
     },
     {
-        image: restaurantImg27
+        image: restaurantImg27,
+        tag: "interijer"
     },
     {
-        image: restaurantImg28
+        image: restaurantImg28,
+        tag: "interijer"
     },
     {
-        image: restaurantImg29
+        image: restaurantImg29,
+        tag: "interijer"
     },
     {
-        image: restaurantImg30
+        image: restaurantImg30,
+        tag: "interijer"
     },
     {
-        image: restaurantImg31
+        image: restaurantImg31,
+        tag: "interijer"
     },
     {
-        image: restaurantImg32
+        image: restaurantImg32,
+        tag: "interijer"
     },
     {
-        image: restaurantImg33
+        image: restaurantImg33,
+        tag: "interijer"
     },
     {
-        image: restaurantImg34
+        image: restaurantImg34,
+        tag: "interijer"
     },
     {
-        image: restaurantImg35
+        image: restaurantImg35,
+        tag: "interijer"
     },
     {
-        image: restaurantImg36
+        image: restaurantImg36,
+        tag: "interijer"
     },
     {
-        image: restaurantImg37
+        image: restaurantImg37,
+        tag: "interijer"
     },
     {
-        image: restaurantImg38
+        image: restaurantImg38,
+        tag: "interijer"
     },
     {
-        image: restaurantImg39
+        image: restaurantImg39,
+        tag: "interijer"
     },
     {
-        image: restaurantImg40
+        image: restaurantImg40,
+        tag: "interijer"
     },
     {
-        image: restaurantImg41
+        image: restaurantImg41,
+        tag: "interijer"
     },
     {
-        image: restaurantImg42
+        image: restaurantImg42,
+        tag: "interijer"
     },
     {
-        image: restaurantImg43
+        image: restaurantImg43,
+        tag: "interijer"
     },
     {
-        image: restaurantImg44
+        image: restaurantImg44,
+        tag: "interijer"
     },
     {
-        image: restaurantImg45
+        image: restaurantImg45,
+        tag: "interijer"
     },
     {
-        image: restaurantImg46
+        image: restaurantImg46,
+        tag: "interijer"
     },
     {
-        image: restaurantImg47
+        image: restaurantImg47,
+        tag: "interijer"
     },
     {
-        image: restaurantImg48
+        image: restaurantImg48,
+        tag: "interijer"
     },
     {
-        image: restaurantImg49
+        image: restaurantImg49,
+        tag: "interijer"
     },
     {
-        image: restaurantImg50
+        image: restaurantImg50,
+        tag: "interijer"
     },
     {
-        image: restaurantImg51
+        image: restaurantImg51,
+        tag: "interijer"
     },
     {
-        image: restaurantImg52
+        image: restaurantImg52,
+        tag: "interijer"
+    },
+    {
+        image: restaurantImg53,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg54,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg55,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg56,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg57,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg58,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg59,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg60,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg61,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg62,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg63,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg64,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg65,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg66,
+        tag: "bašta"
+    },
+    {
+        image: restaurantImg67,
+        tag: "bašta"
     },
 ]

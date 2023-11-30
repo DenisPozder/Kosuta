@@ -135,6 +135,10 @@
     .hstl-content-wrap .hstl-text {
         margin-left: 15px;
     }
+
+    .hstl-content-wrap .hstl-text .hstl-desc {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -154,6 +158,7 @@
 
     .hstl-slider {
         width: 100%;
+        height: 480px;
     }
 }
 

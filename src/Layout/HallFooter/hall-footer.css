@@ -1,6 +1,7 @@
 .hall-footer {
     width: 100%;
     height: auto;
+    background-color: var(--white);
 }
 
 .hf-content {
@@ -11,7 +12,6 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 15px;
     column-gap: 15px;
-    
     padding: 3rem 0;
 }
 
