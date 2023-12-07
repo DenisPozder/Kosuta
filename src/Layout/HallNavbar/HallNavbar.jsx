@@ -66,7 +66,7 @@ const HallNavbar = () => {
   return (
     <div className={`hall-navbar ${back ? "background" : ""}`}>
         <div className="hall-navbar-content">
-            <Link to={'/rezervacije'} className='hnc-logo'>
+            <Link to={'/početna'} className='hnc-logo'>
                 <img src={kosutaLogo} alt="Košuta logo" />
             </Link>
             <div className={`hnc-links ${menuVisible ? "toggle" : ""}`}>
