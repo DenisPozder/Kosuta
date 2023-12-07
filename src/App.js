@@ -5,18 +5,13 @@ import RestaurantHome from './Pages/RestaurantHome/RestaurantHome';
 import HallHome from './Pages/HallHome/HallHome';
 import RestaurantAbout from './Pages/RestaurantAbout/RestaurantAbout';
 import HallAbout from './Pages/HallAbout/HallAbout';
-import HallSeminars from './Pages/HallSeminars/HallSeminars';
-import HallWeddings from './Pages/HallWeddings/HallWeddings';
-import HallBirthdays from './Pages/HallBirthdays/HallBirthdays';
 import HallMenu from './Pages/HallMenu/HallMenu';
 import Gameroom from './Pages/Gameroom/Gameroom';
-import BigHallPage from './Pages/BigHallPage/BigHallPage';
-import MediumHallPage from './Pages/MediumHallPage/MediumHallPage';
-import SmallHallPage from './Pages/SmallHallPage/SmallHallPage';
-import HallGalleryPage from './Pages/HallGalleryPage/HallGalleryPage';
 import RestaurantGallery from './Pages/RestaurantGallery/RestaurantGallery';
 import RestaurantMenuPage from './Pages/RestaurantMenuPage/RestaurantMenuPage';
 import ScrollToTop from './ScrollToTop';
+import AllHallsPage from './Pages/AllHallsPage/AllHallsPage';
+import HallReservationPage from './Pages/HallReservationPage/HallReservationPage';
 
 function App() {
   return (
@@ -28,17 +23,11 @@ function App() {
         <Route path='/restoran/igraonica' element={<Gameroom />} />
         <Route path='/restoran/jelovnik' element={<RestaurantMenuPage />} />
         <Route path='/restoran/galerija' element={<RestaurantGallery />} />
-        <Route path='/proslave/početna' element={<HallHome />} />
-        <Route path='/proslave/o-nama' element={<HallAbout />} />
-        <Route path='/proslave/velika-sala' element={<BigHallPage />} />
-        <Route path='/proslave/srednja-sala' element={<MediumHallPage />} />
-        <Route path='/proslave/mala-sala' element={<SmallHallPage />} />
-        <Route path='/proslave/jelovnik' element={<HallMenu />} />
-        <Route path='/proslave/venčanja' element={<HallWeddings />} />
-        <Route path='/proslave/seminari' element={<HallSeminars />} />
-        <Route path='/proslave/rođendani' element={<HallBirthdays />} />
-        <Route path='/proslave/igraonica' element={<Gameroom />} />
-        <Route path='/proslave/galerija' element={<HallGalleryPage />} />
+        <Route path='/početna' element={<HallHome />} />
+        <Route path='/o-nama' element={<HallAbout />} />
+        <Route path='/meni' element={<HallMenu />} />
+        <Route path='/sale' element={<AllHallsPage />} />
+        <Route path='/rezervacije' element={<HallReservationPage />} />
       </Routes>
     </ScrollToTop>
   );

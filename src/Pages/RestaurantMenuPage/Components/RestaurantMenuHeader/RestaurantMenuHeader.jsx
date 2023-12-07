@@ -1087,7 +1087,7 @@ const RestaurantMenuHeader = () => {
 
   return (
     <div className="restaurant-menu-header">
-        <img src={branchTree} alt="Dekorativna slika" className='rmh-tree1' />
+        {/* <img src={branchTree} alt="Dekorativna slika" className='rmh-tree1' /> */}
         <img src={leavesLeft} alt="Dekorativna slika" className='rmh-leaves-left' />
         <img src={leavesRight} alt="Dekorativna slika" className='rmh-leaves-right' />
         <img src={background} alt="Pozadina" className='rmh-background' />
@@ -1104,7 +1104,7 @@ const RestaurantMenuHeader = () => {
                 </div>
             </div>
             <div className="rmhc-wrap">
-                <img src={branchRight} alt="Dekorativna slika" className='rmhcw-branch-right' />
+                {/* <img src={branchRight} alt="Dekorativna slika" className='rmhcw-branch-right' /> */}
                 <img src={mealDecoration1} alt="Dekorativna slika" className='meal-decoration1' />
                 <img src={mealDecoration2} alt="Dekorativna slika" className='meal-decoration2' />
                 <img src={mealDecoration3} alt="Dekorativna slika" className='meal-decoration3' />

@@ -1,14 +1,15 @@
 import React from 'react'
 import HallLayout from '../../Layout/HallLayout/HallLayout'
+import HRPComponent from './Components/HRPComponent/HRPComponent'
 
-const HallGalleryPage = () => {
+const HallReservationPage = () => {
   return (
     <HallLayout>
         <section className="page-section">
-            HallGalleryPage
+            <HRPComponent />
         </section>
     </HallLayout>
   )
 }
 
-export default HallGalleryPage
+export default HallReservationPage

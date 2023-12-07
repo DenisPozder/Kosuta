@@ -44,7 +44,7 @@ const LandingHall = () => {
   },[])
 
   return (
-    <Link to="/proslave/početna" className="landing-hall">
+    <Link to="/rezervacije" className="landing-hall">
       <div className="lh-table parallax-hall" data-speedx="0.009" data-speedy="0.09" data-speedz="0.50" data-rotation="0.2">
         <img src={hallTable} alt="Dekorativna slika" />
       </div>

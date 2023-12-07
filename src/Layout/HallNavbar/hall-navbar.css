@@ -1,214 +1,166 @@
 .hall-navbar {
+    width: 100%;
+    height: 100px;
     position: fixed;
     top: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     z-index: 9999;
-    transition: background .3s ease;
+    transition: background-color .4s ease;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 .hall-navbar.background {
-    background-color: rgba(154, 180, 152, 0.6);
-    backdrop-filter: blur(2px);
+    background-color: var(--hall-dark);
 }
 
-.hall-navbar-relative {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--white);
-    z-index: 9999;
-}
-
-.hn-top, .hn-bottom {
-    width: 100%;
-    height: auto;
-}
-
-.hn-top-content, .hn-bottom-content {
+.hall-navbar-content {
+    height: 100%;
     margin: 0 80px;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-/*----- Hall Navbar Top Content -----*/
-.hn-top-content {
-    justify-content: center;
-    height: auto;
-    border-bottom: 1px solid var(--white);
+.hnc-logo {
+    width: auto;
+    height: 90px;
 }
 
-.hn-top-content a {
+.hnc-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.hnc-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5px 0;
+}
+
+.hnc-links a {
     text-decoration: none;
     color: var(--white);
-    font-family: var(--hall-font);
+    text-transform: uppercase;
+    margin: 0 1.2rem;
+    transition: color .4s ease
 }
 
-.hn-top-content .hn-top-location {
-    margin-right: 1rem;
+.hnc-links a:hover {
+    color: var(--restaurant-background);
 }
 
-.hn-top-content .hn-top-location svg {
-    padding-right: .4rem;
+.hnc-links a.active {
+    color: var(--restaurant-background);
 }
 
-.hn-top-content .hn-top-instagram {
-    margin-right: 1rem;
+.hnc-close {
+    display: none;
 }
 
-.hn-top-content .hn-top-facebook {
-    margin-right: 1rem;
-}
-
-.hn-top-content .hn-top-phone svg {
-    padding-right: .4rem;
-}
-
-.hn-top-content a svg {
-    font-size: 1.2rem;
-}
-
-/*----- Hall Navbar Bottom Content -----*/
-.hn-bottom-content {
-    justify-content: space-between !important;
-    height: 75px;
+.hnc-menu-toggle {
     display: flex;
     align-items: center;
-}
-
-.hn-bottom-logo {
-    width: auto;
-    height: 70px;
-}
-
-.hn-bottom-logo img {
-    width: auto;
-    height: 70px;
-}
-
-.hn-bottom-menu {
+    justify-content: center;
     border: none;
     outline: none;
-    cursor: pointer;
-    background-color: var(--dark-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.hn-bottom-menu svg {
-    color: var(--white);
-    font-size: 2.4rem;
-}
-
-/*----- Hall Navbar Pages -----*/
-.hall-navbar-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 425px;
-    height: 100%;
-    background-color: var(--white);
-    z-index: 99999;
-    transform: translateX(100%);
-    transition: transform .3s ease;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.hall-navbar-links.open {
-    transform: translateX(0);
-}
-
-.hall-navbar-links a {
-    text-decoration: none;
-    color: var(--dark-color);
-    margin: .3rem 0;
-    padding: .5rem 0;
-    font-family: var(--hall-font);
-    font-size: 1.2rem;
-    opacity: .8;
-}
-
-.hall-navbar-links a.active {
-    color: var(--dark-color);
-    opacity: 1;
-    font-weight: bold;
-}
-
-.hn-close-menu {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
-    border: none;
-    outline: none;
-    font-size: 2rem;
-    color: var(--dark-color);
+}
+
+.hnc-menu-toggle svg {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.hnc-menu-toggle {
+    display: none;
 }
 
 @media only screen and (max-width: 1440px) {
-    .hn-top-content, .hn-bottom-content {
+    .hall-navbar-content {
         margin: 0 50px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .hn-top-content, .hn-bottom-content {
+    .hall-navbar-content {
         margin: 0 25px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .hn-top-content, .hn-bottom-content {
+    .hall-navbar-content {
         margin: 0 15px;
+    }
+
+    .hnc-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: var(--hall-dark);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        transition: all .4s ease;
+    }
+
+    .hnc-links.toggle {
+        transform: translateY(0);
+    }
+
+    .hnc-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .hnc-close svg {
+        font-size: 1.8rem;
+        color: var(--white);
+    }
+
+    .hnc-links a {
+        margin: 1.2rem 0;
+    }
+
+    .hnc-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .hnc-menu-toggle svg {
+        color: var(--white);
+        font-size: 1.8rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .hn-top-content, .hn-bottom-content {
+    .hall-navbar-content {
         margin: 0 10px;
-    }
-
-    .hn-top-location span {
-        display: none;
-    }
-
-    .hn-top-location svg {
-        padding: 0 !important;
-    }
-
-    .hall-navbar-links {
-        width: 100%;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .hn-top-content, .hn-bottom-content {
+    .hall-navbar-content {
         margin: 0 5px;
     }
 }
