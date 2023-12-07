@@ -14,31 +14,49 @@ const AllHallsData = [
         category: "grande",
         images: [
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
         ]
     },
@@ -48,31 +66,49 @@ const AllHallsData = [
         category: "svecana",
         images: [
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
             {
-                image: sampleImage2
+                image: {
+                    img: sampleImage2
+                }
             },
         ]
     },
@@ -82,31 +118,49 @@ const AllHallsData = [
         category: "kamin",
         images: [
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
             {
-                image: sampleImage3
+                image: {
+                    img: sampleImage3
+                }
             },
         ]
     },
@@ -116,31 +170,49 @@ const AllHallsData = [
         category: "basta",
         images: [
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
             {
-                image: sampleImage
+                image: {
+                    img: sampleImage
+                }
             },
         ]
     }
@@ -155,7 +227,6 @@ const TabButton = ({title, isActive, handleSetButton, category}) => {
 }
 
 const AllHallsTabs = () => {
-
     const [ category, setCategory ] = useState('grande')
     const [ content, setContent ] = useState([])
 
