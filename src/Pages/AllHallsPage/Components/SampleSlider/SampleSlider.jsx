@@ -37,12 +37,32 @@ const _items = [
             img: sampleImage2
         }
     },
+    {
+        image: {
+            img: sampleImage2
+        }
+    },
+    {
+        image: {
+            img: sampleImage2
+        }
+    },
+    {
+        image: {
+            img: sampleImage2
+        }
+    },
+    {
+        image: {
+            img: sampleImage2
+        }
+    },
 ]
 
 const length = _items.length
 _items.push(..._items)
 
-const createItem = (position, idx) => {
+const createItem = ( position, idx ) => {
     const item = {
         styles: {
             transform: `translateX(${position * slideWidth}px)`,
@@ -107,6 +127,11 @@ const SampleSlider = () => {
         }
     };
 
+    const handleDotClick = (idx) => {
+        if (idx < activeIdx) prevClick(activeIdx - idx);
+        if (idx > activeIdx) nextClick(idx - activeIdx);
+    };
+
     useEffect(() => {
         if (isTicking) sleep(300).then(() => setIsTicking(false));
     }, [isTicking]);
@@ -116,6 +141,7 @@ const SampleSlider = () => {
     }, [items]);
 
   return (
+    <>
     <div className="sample-slider-wrap">
         <div className="sample-slider-inner">
             <div className="sample-slider-container">
@@ -131,6 +157,14 @@ const SampleSlider = () => {
             </div>
         </div>
     </div>
+    <div className="sample-slider-indicator">
+        {
+            items.slice(0, length).map((pos, i) => (
+                <button key={i} onClick={() => handleDotClick(i)} className={i === activeIdx ? "ssi-btn active" : "ssi-btn"}></button>
+            ))
+        }
+    </div>
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 :root {
     --slide_width: 1140px;
-    --slide_count: 5;
+    --slide_count: 9;
 }
 
 .sample-slider-wrap {
@@ -13,7 +13,6 @@
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 3rem 0;
 }
 
 .sample-slider-inner {
@@ -79,5 +78,30 @@
 
 .ssc-next {
     right: 30px;
+}
+
+.sample-slider-indicator {
+    width: auto;
+    height: 8px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    margin: 0 80px;
+    padding-top: .6rem;
+    padding-bottom: 2rem;
+}
+
+.sample-slider-indicator .ssi-btn {
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.sample-slider-indicator .ssi-btn.active {
+    background-color: var(--hall-dark);
 }
 
