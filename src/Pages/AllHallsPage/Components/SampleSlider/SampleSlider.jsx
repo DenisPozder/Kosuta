@@ -5,12 +5,6 @@ import sampleImage2 from '../../../../Assets/Hall/hall2.jpg'
 import sampleImage3 from '../../../../Assets/Hall/hall3.jpg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
-const slideWidth = 1140
-
-const sleep = (ms = 0) => {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
 const _items = [
     {
         image: {
@@ -59,8 +53,14 @@ const _items = [
     },
 ]
 
-const length = _items.length
-_items.push(..._items)
+const slideWidth = 1140
+
+const sleep = (ms = 0) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
+    const length = _items.length
+    _items.push(..._items)
 
 const createItem = ( position, idx ) => {
     const item = {

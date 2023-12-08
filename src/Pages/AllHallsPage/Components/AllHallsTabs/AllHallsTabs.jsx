@@ -6,6 +6,7 @@ import sampleImage3 from '../../../../Assets/Hall/hall3.jpg'
 import AllHallsSlider from '../AllHallsSlider/AllHallsSlider'
 import { Link } from 'react-router-dom'
 import { FaChevronRight } from 'react-icons/fa'
+import SampleSlider from '../SampleSlider/SampleSlider'
 
 const AllHallsData = [
     {
