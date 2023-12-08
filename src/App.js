@@ -12,6 +12,7 @@ import RestaurantMenuPage from './Pages/RestaurantMenuPage/RestaurantMenuPage';
 import ScrollToTop from './ScrollToTop';
 import AllHallsPage from './Pages/AllHallsPage/AllHallsPage';
 import HallReservationPage from './Pages/HallReservationPage/HallReservationPage';
+import HallGallery from './Pages/HallGallery/HallGallery';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/meni' element={<HallMenu />} />
         <Route path='/sale' element={<AllHallsPage />} />
         <Route path='/rezervacije' element={<HallReservationPage />} />
+        <Route path='/galerija' element={<HallGallery />} />
       </Routes>
     </ScrollToTop>
   );

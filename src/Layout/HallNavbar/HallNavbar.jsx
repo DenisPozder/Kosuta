@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './hall-navbar.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import kosutaLogo from '../../Assets/kosutaLogo.png'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
@@ -34,6 +34,11 @@ const HallNavbarLinks = [
 
 const HallNavbar = () => {
 
+    const location = useLocation()
+    const isRelativePage = [
+      "/galerija",
+    ].includes(location.pathname)
+
       // Toggle Navbar
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -64,7 +69,7 @@ const HallNavbar = () => {
   },[])
 
   return (
-    <div className={`hall-navbar ${back ? "background" : ""}`}>
+    <div className={`hall-navbar ${back ? "background" : ""} ${isRelativePage ? "hall-navbar-relative" : ""}`}>
         <div className="hall-navbar-content">
             <Link to={'/početna'} className='hnc-logo'>
                 <img src={kosutaLogo} alt="Košuta logo" />
