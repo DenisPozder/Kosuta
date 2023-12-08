@@ -11,8 +11,6 @@ const sleep = (ms = 0) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const SampleSlider = () => {
-
 const _items = [
     {
         image: {
@@ -81,6 +79,8 @@ const SampleItem = ({ pos, idx, activeIdx }) => {
 }
 
 const keys = Array.from(Array(_items.length).keys());
+
+const SampleSlider = () => {
 
     const [items, setItems] = useState(keys);
     const [isTicking, setIsTicking] = useState(false);
