@@ -9,7 +9,7 @@ const HallMenuHero = () => {
         <div className="hmh-overlay"></div>
         <div className="hmh-wrap">
             <div className="hmh-content">
-                <h1 className='hmh-title'><span className='hmh-span1'>rezervišite</span><span className='hmh-span2'>vaš datum</span></h1>
+                <h1 className='hmh-title'><span className='hmh-span1'>odaberite vaš</span><span className='hmh-span2'>poseban meni</span></h1>
                 <p className='hmh-desc'>Uživajte u raznovrsnim ukusima našeg menija koji vas vodi kroz paletu jedinstvenih jela. Od primamljivih zalogaja do obroka ispunjenih raznolikim ukusima, svako jelo predstavlja spoj inspirativnih sastojaka.</p>
                 <div className='hmh-btn'><h3>meniji su prilagodljivi</h3></div>
             </div>
