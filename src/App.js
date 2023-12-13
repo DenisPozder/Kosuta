@@ -13,6 +13,7 @@ import ScrollToTop from './ScrollToTop';
 import AllHallsPage from './Pages/AllHallsPage/AllHallsPage';
 import HallReservationPage from './Pages/HallReservationPage/HallReservationPage';
 import HallGallery from './Pages/HallGallery/HallGallery';
+import HallContact from './Pages/HallContact/HallContact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/sale' element={<AllHallsPage />} />
         <Route path='/rezervacije' element={<HallReservationPage />} />
         <Route path='/galerija' element={<HallGallery />} />
+        <Route path='/kontakt' element={<HallContact />} />
       </Routes>
     </ScrollToTop>
   );

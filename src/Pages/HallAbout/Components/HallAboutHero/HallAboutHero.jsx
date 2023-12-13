@@ -1,74 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './hall-about-hero.css'
-import mainTree from '../../../../Assets/Hall/tree1.png'
-import backTree1 from '../../../../Assets/Hall/tree2.png'
-import backTree2 from '../../../../Assets/Hall/tree3.png'
+import aboutUsImg from '../../../../Assets/Restaurant/restaurantGarden13.jpg'
 
 const HallAboutHero = () => {
-
-    useEffect(() => {
-        const hallAbout = document.querySelector('.hall-about-hero')
-        const parallax_el = document.querySelectorAll('.parallax')
-        let xValue = 0,
-            yValue = 0
-
-        let rotateDegree = 0
-
-        function update (cursorPosition) {
-            parallax_el.forEach((el) => {
-                let speedx = el.dataset.speedx
-                let speedy = el.dataset.speedy
-                let speedz = el.dataset.speedz
-                let rotation = el.dataset.rotation
-
-                let isInLeft = parseFloat(getComputedStyle(el).left) < window.innerWidth / 2 ? 1 : -1
-                let zValue = (cursorPosition - parseFloat(getComputedStyle(el).left)) * isInLeft * 0.1
-
-                el.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px))
-                translateY(calc(-50% + ${yValue * speedy}px))
-                rotateY(${rotateDegree * rotation}deg)
-                perspective(2300px)
-                translateZ(${zValue * speedz}px)`
-            })
-        }
-
-        update(0)
-
-        hallAbout.addEventListener('mousemove', (e) => {
-            xValue = e.clientX - window.innerWidth / 2
-            yValue = e.clientY - window.innerHeight / 2
-
-            rotateDegree = (xValue / (window.innerWidth / 2)) * 20
-
-            update(e.clientX)
-        })
-    },[])
-
   return (
     <div className="hall-about-hero">
-        <div className="hah-main-tree parallax" data-speedx="0.06" data-speedy="0.06" data-speedz="0" data-rotation="0">
-            <img src={mainTree} alt="Dekorativna slika" />
-        </div>
-        <div className="hah-first-overlay"></div>
-        <div className="hah-back-tree1 parallax" data-speedx="0.02" data-speedy="0.02" data-speedz="0.70" data-rotation="0">
-            <img src={backTree1} alt="Dekorativna slika" />
-        </div>
-        <div className="hah-back-tree2 parallax" data-speedx="0.02" data-speedy="0.02" data-speedz="0.80" data-rotation="0.2">
-            <img src={backTree2} alt="Dekorativna slika" />
-        </div>
-        <div className="hah-second-overlay"></div>
-        <div className="hah-back-tree3 parallax" data-speedx="0.01" data-speedy="0.01" data-speedz="0.50" data-rotation="0.2">
-            <img src={backTree2} alt="Dekorativna slika" />
-        </div>
-        <div className="hah-back-tree4 parallax" data-speedx="0.01" data-speedy="0.01" data-speedz="0.40" data-rotation="0.15">
-            <img src={backTree1} alt="Dekorativna slika" />
-        </div>
-        <div className="hah-main-overlay"></div>
-        <div className="hah-main-overlay2"></div>
-        <div className="hah-content">
-            <div className="hah-text parallax" data-speedx="0.01" data-speedy="0.01" data-speedz="0" data-rotation="0">
-                <h1>Sale za sve vrste proslava</h1>
-                <h3>Dobrodošli u restoran "Košuta," gde vaša proslava postaje nezaboravna stvarnost. Sa ponosom se posvećujemo stvaranju savršenih trenutaka za naše goste već godinama. Naša posvećena ekipa razume koliko je važno da svaka proslava bude jedinstvena i posebna. Zato smo osmislili prelepe i funkcionalne sale koje će ispuniti sva vaša očekivanja.</h3>
+        <img src={aboutUsImg} alt="O nama pozadina" />
+        <div className="hah-wrap">
+            <div className="hah-content">
+                <h1 className='hah-title'><span className='hah-span1'>nešto više</span><span className='hah-span2'>o nama</span></h1>
+                <p className='hah-desc1'>Restoran Košuta sa veoma dugom tradicijom, ali u novom ruhu smešten u samom srcu Košutnja, u najlepšem delu Beograda daleko od gradske vreve.</p>
+                <p className='hah-desc2'>Pored niza sala za različite prilike i raznovrsnih menija, našim gostima je na raspolaganju parking, kao i igralište za naše najmlađe goste.</p>
+                <div className='hah-btn'>radno vreme: 10-21h</div>
             </div>
         </div>
     </div>
