@@ -37,6 +37,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 4rem;
+    animation: appearTextLeft .4s ease forwards;
 }
 
 .ahh-title::after {
@@ -53,6 +54,9 @@
 .ahh-desc {
     max-width: 400px;
     color: var(--white);
+    animation: appearTextLeft .4s ease forwards;
+    opacity: 0;
+    animation-delay: .2s;
 }
 
 .ahh-btn {
@@ -65,6 +69,9 @@
     border: 3px solid var(--restaurant-background);
     position: relative;
     margin-top: 2rem;
+    animation: appearTextLeft .4s ease forwards;
+    opacity: 0;
+    animation-delay: .4s;
 }
 
 .ahh-btn h3 {

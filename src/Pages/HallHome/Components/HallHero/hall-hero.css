@@ -58,6 +58,7 @@
     margin-bottom: 4rem;
     user-select: none;
     text-transform: uppercase;
+    animation: appearTextLeft .4s ease forwards;
 }
 
 .hh-content-text .hh-title::after {
@@ -76,6 +77,9 @@
     color: var(--white);
     user-select: none;
     margin-bottom: 2rem;
+    animation: appearTextLeft .4s ease forwards;
+    animation-delay: .2s;
+    opacity: 0;
 }
 
 .hh-content-text a {
@@ -87,6 +91,9 @@
     justify-content: space-around;
     text-decoration: none;
     position: relative;
+    animation: appearTextLeft .4s ease forwards;
+    animation-delay: .4s;
+    opacity: 0;
 }
 
 .hh-content-text a::after {

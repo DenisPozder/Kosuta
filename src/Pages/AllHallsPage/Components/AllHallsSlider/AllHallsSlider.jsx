@@ -45,7 +45,7 @@ const AllHallsSlider = ({images}) => {
 
   return (
     <>
-    <div className="all-halls-slider">
+    <div className="all-halls-slider fade-in">
         <div className="all-halls-slider-wrap">
             <button className='ahsw-btn ahsw-prev' onClick={prevSlide}><AiOutlineLeft /></button>
             <div className={`all-halls-slider-inner`} style={{ transform: `translateX(${-currentSlide * 100}%)`}}>

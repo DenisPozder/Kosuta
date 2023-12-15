@@ -69,3 +69,25 @@
     height: 100%;
     object-fit: cover;
 }
+
+.hst-indicators {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 10px;
+    column-gap: 5px;
+}
+
+.hst-indicators .hst-indicator {
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hst-indicators .hst-indicator.active {
+    background-color: var(--hall-dark);
+}

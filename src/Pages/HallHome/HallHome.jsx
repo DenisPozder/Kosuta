@@ -3,6 +3,8 @@ import HallLayout from '../../Layout/HallLayout/HallLayout'
 import HallHero from './Components/HallHero/HallHero'
 import HallSliderTextLayout from '../../Components/HallSliderTextLayout/HallSliderTextLayout'
 import hall1 from '../../Assets/Hall/hall1.jpg'
+import HallCards from './Components/HallCards/HallCards'
+import HallText from './Components/HallText/HallText'
 
 const HallData = [
   {
@@ -105,6 +107,38 @@ const HallData = [
 
 const HallHome = () => {
 
+  /*----- Intersection Observer -----*/
+useEffect(() => {
+
+  const faders = document.querySelectorAll('.fade-in')
+  const sliders = document.querySelectorAll('.slide-in')
+
+  const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -200px 0px"
+  }
+
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) {
+        return;
+      }else {
+        entry.target.classList.add('appear')
+        appearOnScroll.unobserve(entry.target)
+      }
+    })
+  }, appearOptions)
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader)
+  })
+
+  sliders.forEach(slider => {
+    appearOnScroll.observe(slider)
+  })
+
+},[])
+
   useEffect(() => {
     const parallax_el = document.querySelectorAll('.parallax')
     let xValue = 0,
@@ -151,6 +185,8 @@ const HallHome = () => {
             <HallSliderTextLayout key={index} {...hall} />
           ))
         }
+        <HallText />
+        <HallCards />
       </section>
     </HallLayout>
   )

@@ -34,7 +34,7 @@
     width: 100px;
     height: 8px;
     border-radius: 2px;
-    background-color: var(--dark-color);
+    background-color: var(--hall-dark);
     bottom: -2rem;
     left: 0;
 }
@@ -71,7 +71,7 @@
     justify-content: space-around;
     text-decoration: none;
     position: relative;
-    background-color: var(--dark-color);
+    background-color: var(--hall-dark);
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn a h3 {
@@ -83,7 +83,7 @@
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn a:hover h3 {
-    color: var(--dark-color);
+    color: var(--hall-dark);
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn a svg {
@@ -94,7 +94,7 @@
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn a:hover svg {
-    color: var(--dark-color);
+    color: var(--hall-dark);
 }
 
 

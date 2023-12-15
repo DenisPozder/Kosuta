@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HallLayout from '../../Layout/HallLayout/HallLayout'
 import AllHallsHero from './Components/AllHallsHero/AllHallsHero'
 import AllHallsTabs from './Components/AllHallsTabs/AllHallsTabs'

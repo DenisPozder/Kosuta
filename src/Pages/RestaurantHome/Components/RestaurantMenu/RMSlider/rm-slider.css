@@ -1,6 +1,6 @@
 :root {
-    --slide_width: 280px;
-    --slide_count: 5;
+    --slideWidth: 280px;
+    --slideCount: 5;
 }
 
 .rm-slider-wrap-carousel {
@@ -13,12 +13,13 @@
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 5;
 }
 
 .rm-slider-inner-carousel {
     height: 380px;
     position: relative;
-    width: calc(var(--slide_width) * 3);
+    width: calc(var(--slideWidth) * 3);
 }
 
 .rm-slider-container-carousel {
@@ -72,7 +73,7 @@
     padding: 0;
     position: absolute;
     transform: translateX(-50%);
-    width: calc((var(--slide_count) + 0.5) * (var(--slide_width) * 2));
+    width: calc((var(--slideCount) + 0.5) * (var(--slideWidth) * 2));
 }
 
 .rm-item {
@@ -81,7 +82,7 @@
     margin: 0;
     position: absolute;
     transition: all 0.3s;
-    width: var(--slide_width);
+    width: var(--slideWidth);
     display: flex;
     align-items: center;
     justify-content: center;

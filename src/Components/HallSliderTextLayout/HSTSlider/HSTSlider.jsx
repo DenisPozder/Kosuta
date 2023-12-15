@@ -38,17 +38,26 @@ const HSTSlider = ({data, autoplayDuration}) => {
       }
       setCurrent(current === 0 ? length - 1 : current - 1)
     }
+
+    const handleIndicatorClick = (index) => {
+        if(timeout.current) {
+            clearTimeout(timeout.current)
+        }
+
+        setCurrent(index)
+    }
   
     if(!Array.isArray(data) || data.length <= 0) {
         return null
     }
 
   return (
+    <>
     <div className="hst-slider-wrap">
         <div className="hst-slider">
             <button className='hst-btn hst-prev' onClick={prevSlide}><AiOutlineLeft /></button>
             {
-                data.map((slide, index) => (
+                data.slice(0, 7).map((slide, index) => (
                     <div className="hst-slider-content" key={index}>
                         {
                             index === current && (
@@ -63,6 +72,14 @@ const HSTSlider = ({data, autoplayDuration}) => {
             <button className='hst-btn hst-next' onClick={nextSlide}><AiOutlineRight /></button>
         </div>
     </div>
+    <div className='hst-indicators'>
+        {
+            data.map((_, index) => (
+                <button className={`hst-indicator ${index === current ? 'active' : ''}`} key={index} onClick={() => handleIndicatorClick(index)}></button>
+            ))
+        }
+    </div>
+    </>
   )
 }
 

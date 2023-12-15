@@ -48,6 +48,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 4rem;
+    animation: appearTextLeft .4s ease forwards;
 }
 
 .hah-title::after {
@@ -64,12 +65,18 @@
 .hah-desc1 {
     max-width: 400px;
     color: var(--white);
+    animation: appearTextLeft .4s ease forwards;
+    opacity: 0;
+    animation-delay: .2s;
 }
 
 .hah-desc2 {
     max-width: 400px;
     color: var(--white);
     margin: 2rem 0;
+    animation: appearTextLeft .4s ease forwards;
+    opacity: 0;
+    animation-delay: .4s;
 }
 
 .hah-btn {
@@ -84,6 +91,9 @@
     font-weight: bold;
     pointer-events: none;
     user-select: none;
+    animation: appearTextLeft .4s ease forwards;
+    opacity: 0;
+    animation-delay: .6s;
 }
 
 @media only screen and (max-width: 1440px) {

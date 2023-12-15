@@ -141,7 +141,7 @@ const RMSlider = () => {
                 <div className="rm-slider-carousel-list">
                     {
                         items.map((pos, i) => (
-                            <RMItem idx={i} key={i}  pos={pos} />
+                            <RMItem idx={i} key={i} pos={pos} />
                         ))
                     }
                 </div>

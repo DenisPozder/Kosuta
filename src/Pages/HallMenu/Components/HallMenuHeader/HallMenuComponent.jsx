@@ -736,9 +736,41 @@ const HallMenuComponent = () => {
     setContent(HallMenuData.filter(data => data.category === category))
   },[category])
 
+      /*----- Intersection Observer -----*/
+useEffect(() => {
+
+  const faders = document.querySelectorAll('.fade-in')
+  const sliders = document.querySelectorAll('.slide-in')
+
+  const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -200px 0px"
+  }
+
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) {
+        return;
+      }else {
+        entry.target.classList.add('appear')
+        appearOnScroll.unobserve(entry.target)
+      }
+    })
+  }, appearOptions)
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader)
+  })
+
+  sliders.forEach(slider => {
+    appearOnScroll.observe(slider)
+  })
+
+},[content])
+
   return (
     <div className="hall-menu-component">
-        <div className="hall-menu-header">
+        <div className="hall-menu-header fade-in">
           <HallMenuTab category={'32'} title={"32€ po osobi"} handleTabButton={setCategory} isActive={category === "32"} />
           <HallMenuTab category={'34'} title={"34€ po osobi"} handleTabButton={setCategory} isActive={category === "34"} />
           <HallMenuTab category={'37'} title={"37€ po osobi"} handleTabButton={setCategory} isActive={category === "37"} />
@@ -746,7 +778,7 @@ const HallMenuComponent = () => {
         </div>
         <div className="hmc-content">
           <div className="hmc-container">
-            <div className="hmc-wrap">
+            <div className="hmc-wrap slide-in from-left">
               <div className="hmc-wrap-overlay"></div>
               <div className="hmc-img">
                 <img src={foodImg} alt="Slika hrane" />
@@ -758,19 +790,19 @@ const HallMenuComponent = () => {
             <div className="hmc-menu">
               {
                 content.map((item , index) => (
-                  <div className='hmc-menu-title' key={index}>
-                    <h1>{item.title}</h1>
+                  <div className='hmc-menu-title' key={`${category}-${index}`}>
+                    <h1 className='slide-in from-left'>{item.title}</h1>
                     <div className="hmc-menu2">
                       {
                         item.subTitle.map((subTitle, subIndex) => (
                           <div className='hmc-menu-sub' key={subIndex}>
-                            <h3>{subTitle.title}</h3>
+                            <h3 className='slide-in from-left'>{subTitle.title}</h3>
                             <div className="hmc-menu3">
                               {
                                 subTitle.paragraphs && subTitle.paragraphs.length > 0 &&
                                 subTitle.paragraphs.map((paragraph, parIndex) => (
                                   <div key={parIndex}>
-                                    <p>{paragraph.title}</p>
+                                    <p className='slide-in from-left'>{paragraph.title}</p>
                                   </div>
                                 ))
                               }

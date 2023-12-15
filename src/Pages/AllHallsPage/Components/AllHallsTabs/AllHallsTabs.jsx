@@ -235,9 +235,41 @@ const AllHallsTabs = () => {
         setContent(AllHallsData.filter(data => data.category === category))
     },[category])
 
+        /*----- Intersection Observer -----*/
+useEffect(() => {
+
+    const faders = document.querySelectorAll('.fade-in')
+    const sliders = document.querySelectorAll('.slide-in')
+  
+    const appearOptions = {
+      threshold: 0,
+      rootMargin: "0px 0px -200px 0px"
+    }
+  
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+          return;
+        }else {
+          entry.target.classList.add('appear')
+          appearOnScroll.unobserve(entry.target)
+        }
+      })
+    }, appearOptions)
+  
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader)
+    })
+  
+    sliders.forEach(slider => {
+      appearOnScroll.observe(slider)
+    })
+  
+  },[content])
+
   return (
     <div className="all-halls-tabs">
-        <div className="aht-tabs">
+        <div className="aht-tabs fade-in">
             <TabButton category={'grande'} title={'200 - 400 gostiju'} handleSetButton={setCategory} isActive={category === 'grande'} />
             <TabButton category={'svecana'} title={'100 - 170 gostiju'} handleSetButton={setCategory} isActive={category === 'svecana'} />
             <TabButton category={'kamin'} title={'do 80 gostiju'} handleSetButton={setCategory} isActive={category === 'kamin'} />
@@ -249,11 +281,11 @@ const AllHallsTabs = () => {
                 content.map((item, index) => (
                     <div key={`${category}-${index}`}>
                         <div className="aht-text">
-                            <h1>{item.title}</h1>
-                            <p>{item.desc}</p>
+                            <h1 className='slide-in from-top'>{item.title}</h1>
+                            <p className='slide-in from-bottom'>{item.desc}</p>
                         </div>
                         <AllHallsSlider images={item.images} />
-                        <div className="aht-button-wrap">
+                        <div className="aht-button-wrap slide-in from-bottom">
                             <Link className='aht-button' to={'/rezervacije'}><h3>rezerviši salu</h3><FaChevronRight /></Link>
                         </div>
                     </div>
