@@ -14,10 +14,15 @@ import AllHallsPage from './Pages/AllHallsPage/AllHallsPage';
 import HallReservationPage from './Pages/HallReservationPage/HallReservationPage';
 import HallGallery from './Pages/HallGallery/HallGallery';
 import HallContact from './Pages/HallContact/HallContact';
+import SeasonalAnimation from './Components/SeasonalAnimation/SeasonalAnimation';
 
 function App() {
+
+  const currentDate = new Date()
+  
   return (
     <ScrollToTop>
+      <SeasonalAnimation currentDate={currentDate} />
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/restoran/početna' element={<RestaurantHome />} />

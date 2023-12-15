@@ -12,7 +12,6 @@ import background from '../../Assets/Restaurant/background.jpg'
 import crackInTheWall from '../../Assets/crackInTheWall.png'
 
 const RestaurantHome = () => {
-
   useEffect(() => {
     const parallax_el = document.querySelectorAll('.parallax')
     let xValue = 0,
