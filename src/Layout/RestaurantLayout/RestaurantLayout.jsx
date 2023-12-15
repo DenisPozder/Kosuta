@@ -11,7 +11,7 @@ const RestaurantLayout = ({ children }) => {
         <RestaurantNavbar />
         {children}
         <RestaurantFooter />
-        <Link to='/proslave/početna' className="rl-celebrations">
+        <Link to='/početna' className="rl-celebrations">
           <GiPartyFlags />
           <p>Proslave</p>
         </Link>
