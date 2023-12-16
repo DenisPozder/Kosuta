@@ -6,11 +6,11 @@ const WinterAnimation = () => {
   useEffect(() => {
     const snowfalldiv = document.getElementById('snowfall')
     const canvas = document.createElement('canvas')
-    canvas.height = document.documentElement.clientHeight
+    canvas.height = window.innerHeight
     canvas.width = window.innerWidth
 
     window.addEventListener('resize', function() {
-      canvas.height = document.documentElement.clientHeight
+      canvas.height = window.innerHeight
       canvas.width = window.innerWidth
     })
 
