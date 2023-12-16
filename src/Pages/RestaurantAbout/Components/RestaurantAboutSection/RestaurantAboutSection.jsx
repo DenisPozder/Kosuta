@@ -8,20 +8,7 @@ const RestaurantAboutSection = () => {
       <div className="ras-content">
         <div className="ras-column slide-in from-left">
           <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            Dobrodošli u raskoš restorana Košuta, jedinstvenog gastronomskog dragulja koji se uspinje iznad očekivanja. Naš restoran nije samo mesto gde se služe ukusni obroci, to je i putovanje kroz estetiku, eleganciju i doživljaj najvišeg kulinarskog standarda. Ulazak u naš restoran predstavlja korak ka oazi mira i sofisticiranosti. Prostire se u prostranom ambijentu obogaćenom prirodnim svetlom i zemljanim tonovima. Zidovi obloženi prirodnim drvetom stvaraju toplinu, a sofisticirano osvetljenje dodaje dozu luksuza. Stolovi su postavljeni sa pažnjom prema detaljima, pružajući svakom gostu privatnost i uživanje u svakom zalogaju. 
           </h3>
         </div>
         <div className="ras-column slide-in from-right">

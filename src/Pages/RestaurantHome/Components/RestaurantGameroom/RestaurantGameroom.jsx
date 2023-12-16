@@ -20,7 +20,7 @@ const RestaurantGameroom = () => {
             <div className="rgc-wrap">
                 <div className="rgcw-content">
                     <h1 className='slide-in from-top'>Igraonica</h1>
-                    <h3 className='rgcw-h3 fade-in'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                    <h3 className='rgcw-h3 fade-in'>Dečija igraonica u našem restoranu predstavlja čarobno carstvo zabave za najmlađe posetitelje. Sa svetlim bojama, veselim muralima i sigurnim igralištima, naša igraonica je dizajnirana kako bi pružila deci nezaboravno iskustvo igre i druženja. Sa mnoštvom interaktivnih igračaka, penjalica, tobogana i kreativnih kutaka, naše igralište poziva decu na istraživanje, učenje i smeh.</h3>
                     <Link className='slide-in from-bottom' to='/restoran/igraonica'><h3>Pogledajte još</h3></Link>
                 </div>
             </div>

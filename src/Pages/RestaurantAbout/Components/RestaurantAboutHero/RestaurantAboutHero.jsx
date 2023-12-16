@@ -9,22 +9,22 @@ import restaurantGallery from '../../../../Assets/Restaurant/restaurantGallery.j
 const RestaurantAboutSlider = [
   {
     title: "Restoran Košuta",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    desc: "Srce Prirode - to je ono što naš restoranski doživljaj čini posebnim. Prostire se u idiličnom okruženju, sa prozračnim interijerom obloženim prirodnim drvetom koje stvara toplu i rustičnu atmosferu. Svetlosne instalacije dodaju notu elegancije, stvarajući idealno okruženje za razne prigode - od romantičnih večera do porodičnih okupljanja ili poslovnih sastanaka.",
     image: restaurantImg,
   },
   {
     title: "Igraonica",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    desc: "Roditelji mogu uživati u opuštenom obroku u restoranu, znajući da su njihovi mališani srećni i zauzeti u susedstvu veselih igara. Naša igraonica postaje omiljeno odredište za porodice koje žele spojiti ukusan obrok sa obezbeđenim prostorom za igru, stvarajući tako savršen spoj gastronomske i dečije radosti.",
     image: gameroomImg,
   },
   {
     title: "Jelovnik",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    desc: "Naši kuvari strastveno kombinuju klasične recepte sa inovativnim pristupom, pružajući vam jedinstveno kulinarsko iskustvo. Ponosni smo na to što svaki sastojak nosi pečat kvaliteta i autentičnosti, stvarajući tako jelovnik koji zadovoljava sva čula. Bilo da ste ljubitelj mesa, ribe ili preferirate biljne delikatese, naš jelovnik je kreiran kako bismo zadovoljili različite ukuse i gastronomske preferencije.",
     image: restaurantMenuImg,
   },
   {
     title: "Galerija našeg restorana",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    desc: "Dobrodošli u virtuelnu galeriju slika restorana Košuta, prostor gde se vizuelna estetika susreće sa gastronomskim čarolijama. Ova galerija pruža uvid u šarm našeg restorana kroz objektiv umetničkih fotografija. Pregledajte kolikciju slika koje beleže toplinu našeg elegantnog interijera, bogatstvo boja na tanjirima, osoblje koje sa osmehom dočekuje goste i jedinstvenu atmosferu koja krasi našu destinaciju.",
     image: restaurantGallery,
   },
 ]

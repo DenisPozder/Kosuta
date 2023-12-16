@@ -17,7 +17,7 @@ const RestaurantMenu = () => {
             </div>
             <div className="rmc-column">
                 <h1 className='slide-in from-top'>Jelovnik</h1>
-                <h3 className='rmc-h3 slide-in from-right'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <h3 className='rmc-h3 slide-in from-right'>Jelovnik u našem restoranu Košuta predstavlja harmoničan spoj tradicionalne kuhinje i modernih gastronomskih trendova. Sastoji se od pažljivo odabranih jela koja pružaju nezaboravno iskustvo ukusa. Naš jelovnik odražava posvećenost kvalitetnim sastojcima, lokalnim proizvodima i kreativnom pristupu pripremi hrane. Uživajte u bogatstvu aroma i tekstura koje nudi naša paleta predjela, osvežavajućih salata, sočnih glavnih jela, kao i ukusnih deserta.</h3>
                 <Link className='slide-in from-bottom' to='/restoran/jelovnik'><h3>Pogledajte još</h3></Link>
             </div>
         </div>

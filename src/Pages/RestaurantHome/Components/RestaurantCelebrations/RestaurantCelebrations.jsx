@@ -65,7 +65,7 @@ const RestaurantCelebrations = () => {
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
                 <h1 className='slide-in from-left'>Proslave u našem restoranu</h1>
-                <h3 className='slide-in from-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <h3 className='slide-in from-left'>U restoranu Košuta svaka mala proslava postaje posebna, obasjana toplinom našeg gostoprimstva i ukusa koji će oduševiti sva nepca. Bez obzira na to radi li se o rođendanu, proslavi godišnjice, obiteljskom okupljanju ili prijateljskom sastanku, naš restoran pruža savršeno okruženje za nezaboravne trenutke. Bez obzira na veličinu vaše proslave, naš cilj je osigurati da svaki trenutak bude poseban i da se stvaraju uspomene koje će trajati celi život.</h3>
             </div>
             <div className="rcc-column">
                 <div className="rcc-slider slide-in from-right">
