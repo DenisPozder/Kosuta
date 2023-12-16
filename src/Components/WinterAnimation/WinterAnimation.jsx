@@ -9,11 +9,6 @@ const WinterAnimation = () => {
     canvas.height = window.innerHeight
     canvas.width = window.innerWidth
 
-    window.addEventListener('resize', function() {
-      canvas.height = window.innerHeight
-      canvas.width = window.innerWidth
-    })
-
     snowfalldiv.appendChild(canvas)
 
     const w = canvas.width
@@ -48,13 +43,24 @@ const WinterAnimation = () => {
 
           ctx.beginPath()
           ctx.fillStyle = "rgba(255,255,255,0.8)"
-          ctx.arc(oneFlake.x, oneFlake.y += oneFlake.speed / 2, oneFlake.speed * 0.8, 0, Math.PI * 2);
+          ctx.arc(oneFlake.x, oneFlake.y += oneFlake.speed / 2, oneFlake.speed * 0.9, 0, Math.PI * 2);
           ctx.fill()
         }
       }
 
     }
+    const handleResize = () => {
+      canvas.height = window.innerHeight
+      canvas.width = window.innerWidth
+    }
+
+    window.addEventListener('resize', handleResize)
+
     setInterval(() => snowfall.snowFall(), 20)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
   },[])
 
   return (

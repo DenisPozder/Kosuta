@@ -8,7 +8,7 @@ const HallHero = () => {
   return (
     <div className='hall-hero'>
       <div className="hh-video">
-        <video src={MainHallVideo} muted loop autoPlay></video>
+        <video src={MainHallVideo} muted loop autoPlay playsInline></video>
       </div>
       <div className="hh-overlay"></div>
       <div className="hh-content">
