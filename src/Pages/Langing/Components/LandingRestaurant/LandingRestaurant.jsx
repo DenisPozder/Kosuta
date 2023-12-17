@@ -50,6 +50,8 @@ const LandingRestaurant = () => {
   return (
     <Link to='/restoran/početna' className="landing-restaurant">
         <div className="vignette"></div>
+        <div className="lp-top-overlay"></div>
+        <div className="lp-bottom-overlay"></div>
         <div className="lr-leaves parallax" data-speedx="0.10" data-speedy="0.10" data-speedz="0" data-rotation="0">
             <img src={restaurantLeaves} alt="Dekorativna slika" />
         </div>
@@ -57,6 +59,9 @@ const LandingRestaurant = () => {
             <img src={restaurantTable} alt="Dekorativna slika" />
         </div>
         <h1 className='lr-text parallax' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Restoran</span></h1>
+        <div className='lr-button-content'>
+            <Link className='lr-button' to={'/restoran/početna'}><h3>Posetite restoran</h3></Link>
+        </div>
         <div className="lr-animal parallax" data-speedx="0.03" data-speedy="0.03" data-speedz="0.80" data-rotation="0.18">
             <img src={animalImg} alt="Dekorativna slika" />
         </div>

@@ -49,7 +49,12 @@ const LandingHall = () => {
         <img src={hallTable} alt="Dekorativna slika" />
       </div>
       <h1 className='lh-text parallax-hall' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Proslave</span></h1>
+      <div className='lh-button-content'>
+        <Link className='lh-button' to={'/početna'}><h3>Posetite sale</h3></Link>
+      </div>
       <div className="vignette"></div>
+      <div className="lp-top-overlay"></div>
+      <div className="lp-bottom-overlay"></div>
     </Link>
   )
 }
