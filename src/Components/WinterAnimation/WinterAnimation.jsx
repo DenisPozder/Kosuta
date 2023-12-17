@@ -8,10 +8,10 @@ const WinterAnimation = () => {
     const canvas = document.createElement('canvas')
 
     const pixelRatio = window.devicePixelRatio || 1
-    canvas.height = document.documentElement.clientHeight * pixelRatio
+    canvas.height = window.innerHeight * pixelRatio
     canvas.width = window.innerWidth * pixelRatio
 
-    canvas.style.height = `${document.documentElement.clientHeight}px`
+    canvas.style.height = `${window.innerHeight}px`
     canvas.style.width = `${window.innerWidth}px`
 
     snowfalldiv.appendChild(canvas)
@@ -20,6 +20,7 @@ const WinterAnimation = () => {
     const h = canvas.height
 
     const ctx = canvas.getContext('2d')
+    ctx.scale(pixelRatio, pixelRatio)
     const flakes = []
     class snowfall {
 
@@ -55,8 +56,11 @@ const WinterAnimation = () => {
 
     }
     const handleResize = () => {
-      canvas.height = window.innerHeight
-      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight * pixelRatio
+      canvas.width = window.innerWidth * pixelRatio
+
+      canvas.style.height = `${window.innerHeight}px`
+      canvas.style.width = `${window.innerWidth}px`
     }
 
     window.addEventListener('resize', handleResize)
