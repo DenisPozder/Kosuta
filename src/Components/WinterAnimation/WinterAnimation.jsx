@@ -6,8 +6,13 @@ const WinterAnimation = () => {
   useEffect(() => {
     const snowfalldiv = document.getElementById('snowfall')
     const canvas = document.createElement('canvas')
-    canvas.height = window.innerHeight
-    canvas.width = window.innerWidth
+
+    const pixelRatio = window.devicePixelRatio || 1
+    canvas.height = document.documentElement.clientHeight * pixelRatio
+    canvas.width = window.innerWidth * pixelRatio
+
+    canvas.style.height = `${document.documentElement.clientHeight}px`
+    canvas.style.width = `${window.innerWidth}px`
 
     snowfalldiv.appendChild(canvas)
 

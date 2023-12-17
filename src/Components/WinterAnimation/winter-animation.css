@@ -1,4 +1,5 @@
 .snowfall canvas {
     position: absolute;
     z-index: 99999;
+    height: 100vh;
 }
