@@ -6,8 +6,11 @@ const WinterAnimation = () => {
   useEffect(() => {
     const snowfalldiv = document.getElementById('snowfall')
     const canvas = document.createElement('canvas')
+    const ctx = canvas.getContext('2d')
 
     const pixelRatio = window.devicePixelRatio || 1
+    ctx.scale(pixelRatio, pixelRatio)
+    
     canvas.height = document.documentElement.clientHeight * pixelRatio
     canvas.width = window.innerWidth * pixelRatio
 
@@ -19,8 +22,6 @@ const WinterAnimation = () => {
     const w = canvas.width
     const h = canvas.height
 
-    const ctx = canvas.getContext('2d')
-    ctx.scale(pixelRatio, pixelRatio)
     const flakes = []
     class snowfall {
 
