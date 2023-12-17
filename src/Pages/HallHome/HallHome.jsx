@@ -37,7 +37,7 @@ const HallData = [
     layout: 'left',
     capacity: "200 - 400",
     autoplayDuration: 8000,
-    link: "#"
+    link: "/rezervacije"
   },
   {
     title1: "Svečana",
@@ -69,7 +69,7 @@ const HallData = [
     layout: 'right',
     capacity: "100 - 170",
     autoplayDuration: 6000,
-    link: "#"
+    link: "/rezervacije"
   },
   {
     title1: "Kamin",
@@ -101,7 +101,7 @@ const HallData = [
     layout: 'left',
     capacity: "80",
     autoplayDuration: 8000,
-    link: "#"
+    link: "/rezervacije"
   },
 ]
 

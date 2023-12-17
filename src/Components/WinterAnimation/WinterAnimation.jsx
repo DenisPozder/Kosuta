@@ -10,7 +10,7 @@ const WinterAnimation = () => {
 
     const pixelRatio = window.devicePixelRatio || 1
     ctx.scale(pixelRatio, pixelRatio)
-    
+
     canvas.height = document.documentElement.clientHeight * pixelRatio
     canvas.width = window.innerWidth * pixelRatio
 
@@ -45,7 +45,7 @@ const WinterAnimation = () => {
 
       static addSnow() {
         ctx.clearRect(0, 0, w, h)
-        for(let i=0;i<flakes.length; i++) {
+        for( let i = 0 ; i < flakes.length; i++) {
           let oneFlake = flakes[i]
 
           ctx.beginPath()
