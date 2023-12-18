@@ -47,7 +47,7 @@ const LandingHall = () => {
   return (
     <Link to="/početna" className="landing-hall">
       <div className="lh-table parallax-hall" data-speedx="0.009" data-speedy="0.09" data-speedz="0.50" data-rotation="0.2">
-        <LazyLoadImage src={hallTable} alt="Dekorativna slika" />
+        <img src={hallTable} alt="Dekorativna slika" />
       </div>
       <h1 className='lh-text parallax-hall' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Proslave</span></h1>
       <div className='lh-button-content'>

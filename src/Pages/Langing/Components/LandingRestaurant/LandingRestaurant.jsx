@@ -67,7 +67,7 @@ const LandingRestaurant = () => {
             <LazyLoadImage src={animalImg} alt="Dekorativna slika" />
         </div>
         <div className='lr-plants parallax' data-speedx="0.009" data-speedy="0.09" data-speedz="0.50" data-rotation="0.2">
-            <LazyLoadImage src={plants} alt="Dekorativna slika" />
+            <img src={plants} alt="Dekorativna slika" />
         </div>
         <div className="lr-tree parallax" data-speedx="0.007" data-speedy="0.07" data-speedz="0.40" data-rotation="0.1">
             <LazyLoadImage src={restaurantTree} alt="Dekorativna slika" />
