@@ -7,6 +7,15 @@ import AllHallsSlider from '../AllHallsSlider/AllHallsSlider'
 import { Link } from 'react-router-dom'
 import { FaChevronRight } from 'react-icons/fa'
 import SampleSlider from '../SampleSlider/SampleSlider'
+import kamin1Img from '../../../../Assets/Hall/kamin4.jpg'
+import kamin2Img from '../../../../Assets/Hall/kamin17.jpg'
+import kamin3Img from '../../../../Assets/Hall/kamin26.jpg'
+import kamin4Img from '../../../../Assets/Hall/kamin30.jpg'
+import kamin5Img from '../../../../Assets/Hall/kamin35.jpg'
+import kamin6Img from '../../../../Assets/Hall/kamin39.jpg'
+import kamin7Img from '../../../../Assets/Hall/kamin47.jpg'
+import kamin8Img from '../../../../Assets/Hall/kamin48.jpg'
+import kamin9Img from '../../../../Assets/Hall/kamin50.jpg'
 
 const AllHallsData = [
     {
@@ -120,47 +129,47 @@ const AllHallsData = [
         images: [
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin1Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin2Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin3Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin4Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin5Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin6Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin7Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin8Img
                 }
             },
             {
                 image: {
-                    img: sampleImage3
+                    img: kamin9Img
                 }
             },
         ]
