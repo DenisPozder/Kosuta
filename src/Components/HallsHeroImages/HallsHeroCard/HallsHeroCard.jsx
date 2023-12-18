@@ -1,5 +1,6 @@
 import React from 'react'
 import './halls-hero-card.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallsHeroCard = ({ slide, index, current }) => {
   return (
@@ -7,7 +8,7 @@ const HallsHeroCard = ({ slide, index, current }) => {
         {
             index === current && (
                 <div className="halls-hero-card-slide">
-                    <img src={slide.image} alt="Slika sale" />
+                    <LazyLoadImage src={slide.image} alt="Slika sale" />
                     <div className="hhcs-overlay"></div>
                     <div className="hhcs-second-overlay"></div>
                 </div>

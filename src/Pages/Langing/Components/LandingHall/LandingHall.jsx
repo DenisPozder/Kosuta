@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './landing-hall.css'
 import { Link } from 'react-router-dom'
 import hallTable from '../../../../Assets/Landing/hallTable.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const LandingHall = () => {
 
@@ -46,7 +47,7 @@ const LandingHall = () => {
   return (
     <Link to="/početna" className="landing-hall">
       <div className="lh-table parallax-hall" data-speedx="0.009" data-speedy="0.09" data-speedz="0.50" data-rotation="0.2">
-        <img src={hallTable} alt="Dekorativna slika" />
+        <LazyLoadImage src={hallTable} alt="Dekorativna slika" />
       </div>
       <h1 className='lh-text parallax-hall' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Proslave</span></h1>
       <div className='lh-button-content'>

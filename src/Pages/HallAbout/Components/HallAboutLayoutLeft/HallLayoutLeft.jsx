@@ -1,13 +1,14 @@
 import React from 'react'
 import './hall-layout-left.css'
 import gameroomImg from '../../../../Assets/Hall/gameroom.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallLayoutLeft = () => {
   return (
     <div className="hall-layout-left">
         <div className="hall-layout-left-content">
             <div className="hall-layout-left-column slide-in from-left">
-            <img src={gameroomImg} alt="Igraonica" />
+            <LazyLoadImage src={gameroomImg} alt="Igraonica" />
             </div>
             <div className="hall-layout-left-column slide-in from-right">
                 <h1><span>zabava</span><span>za sve</span></h1>

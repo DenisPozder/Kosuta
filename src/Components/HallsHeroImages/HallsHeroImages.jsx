@@ -3,6 +3,7 @@ import HallsHeroCard from './HallsHeroCard/HallsHeroCard'
 import './halls-hero-images.css'
 import topLeaves from '../../Assets/Hall/topLeaves.png'
 import leftTree from '../../Assets/Hall/rightLeftTree.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallsHeroImages = ({slides}) => {
 
@@ -30,9 +31,9 @@ const HallsHeroImages = ({slides}) => {
 
   return (
     <div className="halls-hero-images">
-        <img className='hhi-top-leaves parallax' data-speedx="0.03" data-speedy="0.03" data-speedz="0.06" data-rotation="0.06" src={topLeaves} alt="Dekorativna slika" />
+        <LazyLoadImage className='hhi-top-leaves parallax' data-speedx="0.03" data-speedy="0.03" data-speedz="0.06" data-rotation="0.06" src={topLeaves} alt="Dekorativna slika" />
         <div className="hhi-top-leaves-overlay"></div>
-        <img src={leftTree} className='hhi-left-tree parallax' data-speedx="0.01" data-speedy="0.01" data-speedz="0.04" data-rotation="0.04" alt="Dekorativna slika" />
+        <LazyLoadImage src={leftTree} className='hhi-left-tree parallax' data-speedx="0.01" data-speedy="0.01" data-speedz="0.04" data-rotation="0.04" alt="Dekorativna slika" />
         <div className="hhi-left-tree-overlay"></div>
         <div className="hhi-bottom-overlay"></div>
         <div className="hhi-content">

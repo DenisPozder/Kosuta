@@ -1,5 +1,6 @@
 import React from 'react'
 import './hall-image-slider-card.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallImageSliderCard = ({ slide, index, current }) => {
   return (
@@ -7,7 +8,7 @@ const HallImageSliderCard = ({ slide, index, current }) => {
         {
             index === current && (
                 <div className="hisc-slide">
-                    <img src={slide.image} alt="Slika u slajderu" />
+                    <LazyLoadImage src={slide.image} alt="Slika u slajderu" />
                     <div className="hisc-text">
                         <h3>{slide.desc}</h3>
                     </div>

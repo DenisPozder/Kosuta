@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './hall-image-slider.css'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import HallImageSliderCard from './HallImageSliderCard/HallImageSliderCard'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallImageSlider = ({ decoration1, decoration2, slides }) => {
 
@@ -45,10 +46,10 @@ const HallImageSlider = ({ decoration1, decoration2, slides }) => {
     <div className="hall-image-slider">
         <div className="his-overlay"></div>
         <div className="his-decoration1">
-            <img src={decoration1} alt="Dekorativna slika" />
+            <LazyLoadImage src={decoration1} alt="Dekorativna slika" />
         </div>
         <div className="his-decoration2">
-            <img src={decoration2} alt="Dekorativna slika" />
+            <LazyLoadImage src={decoration2} alt="Dekorativna slika" />
         </div>
         <div className="his-wrap">
             <button className='his-btn his-prev' onClick={prevSlide}><AiOutlineLeft /></button>

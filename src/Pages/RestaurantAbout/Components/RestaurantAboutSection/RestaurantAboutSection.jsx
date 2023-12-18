@@ -1,6 +1,7 @@
 import React from "react";
 import "./restaurant-about-section.css";
 import restaurantimage from "../../../../Assets/Restaurant/restaurantImg24.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const RestaurantAboutSection = () => {
   return (
@@ -12,7 +13,7 @@ const RestaurantAboutSection = () => {
           </h3>
         </div>
         <div className="ras-column slide-in from-right">
-          <img
+          <LazyLoadImage
             src={restaurantimage}
             alt="Slika restorana"
             className="ras-img"

@@ -2,11 +2,12 @@ import React from 'react'
 import './hrp-component.css'
 import kosutnjakSuma from '../../../../Assets/Hall/kosutnjakSuma.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HRPComponent = () => {
   return (
     <div className="hrp-component">
-        <img src={kosutnjakSuma} alt="Slika šume" />
+        <LazyLoadImage src={kosutnjakSuma} alt="Slika šume" />
         <div className="hrp-wrap">
             <div className="hrp-content">
                 <h1 className='hrp-title'><span className='hrp-span1'>rezervišite</span><span className='hrp-span2'>vaš datum</span></h1>

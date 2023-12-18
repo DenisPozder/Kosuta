@@ -5,6 +5,7 @@ import restaurantImg from '../../../../Assets/Restaurant/restaurantImg32.jpg'
 import restaurantMenuImg from '../../../../Assets/Restaurant/restaurantMenu.jpg'
 import gameroomImg from '../../../../Assets/Hall/gameroom.jpg'
 import restaurantGallery from '../../../../Assets/Restaurant/restaurantGallery.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RestaurantAboutSlider = [
   {
@@ -80,7 +81,7 @@ const RestaurantAboutHero = () => {
               {
                 index === current && (
                   <div className="rah-card-wrap">
-                    <img src={slide.image} alt={slide.title} />
+                    <LazyLoadImage src={slide.image} alt={slide.title} />
                     <div className="rah-card-overlay"></div>
                     <div className="rah-card-content">
                       <div className="rah-card-text">

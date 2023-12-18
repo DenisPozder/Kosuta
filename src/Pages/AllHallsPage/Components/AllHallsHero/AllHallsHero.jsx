@@ -3,11 +3,12 @@ import HallImg from '../../../../Assets/Restaurant/restaurantImg4.jpg'
 import { Link } from 'react-router-dom'
 import { FaChevronRight } from "react-icons/fa";
 import './all-halls-hero.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const AllHallsHero = () => {
   return (
     <div className="all-halls-hero">
-        <img src={HallImg} alt="Slika sale" />
+        <LazyLoadImage src={HallImg} alt="Slika sale" />
         <div className="ahh-wrap">
             <div className="ahh-content">
                 <h1 className='ahh-title'><span className='ahh-span1'>sve sale</span><span className='ahh-span2'>za proslave</span></h1>

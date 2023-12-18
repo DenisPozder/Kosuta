@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './rg-component.css'
 import { RestaurantGalleryData } from '../../../../RestaurantData/RestaurantGalleryData'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const TagButton = ({ name, handleSetTag, isActive }) => {
   return (
@@ -62,7 +63,7 @@ const RGComponent = () => {
             <div className="rgc-gallery">
               {filteredImages.map((image, index) => (
                 <div className={`rgc-gallery-image in-viewport`} key={`${tag}-${index}`}>
-                  <img src={image.image} alt={`Slika ${index + 1}`} />
+                  <LazyLoadImage src={image.image} alt={`Slika ${index + 1}`} />
                 </div>
               ))}
             </div>

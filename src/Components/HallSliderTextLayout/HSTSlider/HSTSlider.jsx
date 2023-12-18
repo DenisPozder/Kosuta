@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './hst-slider.css'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HSTSlider = ({data, autoplayDuration}) => {
 
@@ -62,7 +63,7 @@ const HSTSlider = ({data, autoplayDuration}) => {
                         {
                             index === current && (
                                 <div className="hst-slide-img">
-                                    <img src={slide.image} alt="" />
+                                    <LazyLoadImage src={slide.image} alt="" />
                                 </div>
                             )
                         }

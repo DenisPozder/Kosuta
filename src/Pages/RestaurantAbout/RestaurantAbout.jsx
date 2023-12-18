@@ -4,6 +4,7 @@ import RestaurantAboutHero from './Components/RestaurantAboutHero/RestaurantAbou
 import RestaurantAboutSection from './Components/RestaurantAboutSection/RestaurantAboutSection'
 import './restaurant-about.css'
 import background from '../../Assets/Restaurant/background.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RestaurantAbout = () => {
 
@@ -81,7 +82,7 @@ useEffect(() => {
     <RestaurantLayout>
       <section className='page-section'>
         <div className="about-texture">
-          <img src={background} alt="Dekorativna slika" className='at-background' />
+          <LazyLoadImage src={background} alt="Dekorativna slika" className='at-background' />
         <RestaurantAboutHero />
         <RestaurantAboutSection />
         </div>

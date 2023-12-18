@@ -1,11 +1,12 @@
 import React from 'react'
 import './hall-about-hero.css'
 import aboutUsImg from '../../../../Assets/Restaurant/restaurantGarden13.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallAboutHero = () => {
   return (
     <div className="hall-about-hero">
-        <img src={aboutUsImg} alt="O nama pozadina" />
+        <LazyLoadImage src={aboutUsImg} alt="O nama pozadina" />
         <div className="hah-wrap">
             <div className="hah-content">
                 <h1 className='hah-title'><span className='hah-span1'>nešto više</span><span className='hah-span2'>o nama</span></h1>

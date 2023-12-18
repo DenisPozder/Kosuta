@@ -7,6 +7,7 @@ import restaurantImg2 from '../../../../Assets/Restaurant/restaurantImg7.jpg'
 import restaurantImg3 from '../../../../Assets/Restaurant/restaurantImg12.jpg'
 import restaurantImg4 from '../../../../Assets/Restaurant/restaurantImg27.jpg'
 import restaurantImg5 from '../../../../Assets/Restaurant/restaurantImg40.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const ResCelebrationsImg = [
     {
@@ -60,8 +61,8 @@ const RestaurantCelebrations = () => {
 
   return (
     <div className="restaurant-celebrations">
-        <img src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
-        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
+        <LazyLoadImage src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
+        <LazyLoadImage src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
                 <h1 className='slide-in from-left'>Proslave u našem restoranu</h1>
@@ -75,7 +76,7 @@ const RestaurantCelebrations = () => {
                                 {
                                     index === currentSlide && (
                                         <div className="rcc-slider-card">
-                                            <img src={celebrations.image} alt="" />
+                                            <LazyLoadImage src={celebrations.image} alt="" />
                                         </div>
                                     )
                                 }

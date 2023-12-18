@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './hall-gallery-component.css'
 import { HallGalleryData } from '../../../../HallData/HallGalleryData'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HGCButton = ({ title, isActive, handleGalleryButton, category }) => {
     return (
@@ -30,7 +31,7 @@ const HallGalleryComponent = () => {
             {
                 gallery.map((image, index) => (
                     <div className='hgc-gallery-image' key={`${category}-${index}`}>
-                        <img src={image.image} alt={`Slika ${index + 1}`} />
+                        <LazyLoadImage src={image.image} alt={`Slika ${index + 1}`} />
                     </div>
                 ))
             }

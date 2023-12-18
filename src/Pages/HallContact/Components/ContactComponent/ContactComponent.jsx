@@ -2,11 +2,12 @@ import React from 'react'
 import './contact-component.css'
 import doe from '../../../../Assets/Hall/doe.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const ContactComponent = () => {
   return (
     <div className="contact-component">
-        <img src={doe} alt="Slika košute" />
+        <LazyLoadImage src={doe} alt="Slika košute" />
         <div className="cc-wrap">
             <div className="cc-content">
                 <h1 className='cc-title'><span className='cc-span1'>sva pitanja</span><span className='cc-span2'>i informacije</span></h1>

@@ -1,11 +1,12 @@
 import React from 'react'
 import './hall-menu-hero.css'
 import menuImg from '../../../../Assets/Restaurant/restaurantMenu.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallMenuHero = () => {
   return (
     <div className="hall-menu-hero">
-        <img src={menuImg} alt="Slika šume" />
+        <LazyLoadImage src={menuImg} alt="Slika šume" />
         <div className="hmh-overlay"></div>
         <div className="hmh-wrap">
             <div className="hmh-content">

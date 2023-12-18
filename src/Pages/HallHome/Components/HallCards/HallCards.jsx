@@ -3,6 +3,7 @@ import gardenImg from '../../../../Assets/Restaurant/restaurantGarden13.jpg';
 import gameroomImg from '../../../../Assets/Hall/gameroom.jpg'
 import parkingImg from '../../../../Assets/Hall/parking.jpg'
 import './hall-cards.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const CardsData = [
     {
@@ -70,7 +71,7 @@ const HallCards = () => {
           ref={(el) => (hallCardsRef.current[index] = el)}
           className={`hall-card ${activeCard === index ? 'active' : 'inactive'}`}
         >
-          <img src={_.image} alt="Slika bašte" />
+          <LazyLoadImage src={_.image} alt="Slika bašte" />
           <div className="hall-card-text">
             <h1>
               <span>{_.firstTitle}</span> <span>{_.secondTitle}</span>

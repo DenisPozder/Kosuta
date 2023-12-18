@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import './all-halls-slider.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const AllHallsSlider = ({images}) => {
 
@@ -52,7 +53,7 @@ const AllHallsSlider = ({images}) => {
                 <div className="all-halls-slider-item" onMouseEnter={stopSlideTimer} onMouseLeave={startSlideTimer}>
                     {
                         images.map((image, index) => (
-                            <img src={image.image.img} key={index} alt={`Slajder slika ${index + 1}`} />
+                            <LazyLoadImage src={image.image.img} key={index} alt={`Slajder slika ${index + 1}`} />
                         ))
                     }
                 </div>

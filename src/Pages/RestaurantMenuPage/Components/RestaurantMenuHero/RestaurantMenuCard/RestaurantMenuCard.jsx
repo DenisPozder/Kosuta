@@ -1,6 +1,7 @@
 import React from 'react'
 import './restaurant-menu-card.css'
 import topLeaves from '../../../../../Assets/Landing/topLeaves.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RestaurantMenuCard = ({ slide, index, current }) => {
   return (
@@ -8,8 +9,8 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
         {
             index === current && (
                 <div className="rmc-slide">
-                    <img src={topLeaves} alt="Dekorativna slika" className='rs-top-leaves' />
-                    <img src={slide.fullImage} alt={`Slika ${index + 1}`} className='rs-full-image' />
+                    <LazyLoadImage src={topLeaves} alt="Dekorativna slika" className='rs-top-leaves' />
+                    <LazyLoadImage src={slide.fullImage} alt={`Slika ${index + 1}`} className='rs-full-image' />
                     <div className="rmcs-radial-overlay"></div>
                     <div className="rmcs-overlay"></div>
                     <div className="rmcs-overlay2"></div>
@@ -23,7 +24,7 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
                                     </div>
                                 </div>
                                 <div className="rmcs-right">
-                                    <img src={slide.image} alt={slide.title} />
+                                    <LazyLoadImage src={slide.image} alt={slide.title} />
                                 </div>
                             </div>
                         </div>

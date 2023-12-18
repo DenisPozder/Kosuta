@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './hall-menu-component.css'
 import foodImg from '../../../../Assets/Hall/foodImg.jpg'
 import kosutaLogo from '../../../../Assets/kosutaLogo.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallMenuData = [
     {
@@ -781,10 +782,10 @@ useEffect(() => {
             <div className="hmc-wrap slide-in from-left">
               <div className="hmc-wrap-overlay"></div>
               <div className="hmc-img">
-                <img src={foodImg} alt="Slika hrane" />
+                <LazyLoadImage src={foodImg} alt="Slika hrane" />
               </div>`
               <div className={`hmc-scroll`}>
-                <img src={kosutaLogo} alt="Logo sajta" />
+                <LazyLoadImage src={kosutaLogo} alt="Logo sajta" />
               </div>
             </div>
             <div className="hmc-menu">

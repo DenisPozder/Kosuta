@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './restaurant-menu-header.css'
 import { MdRestaurantMenu } from "react-icons/md";
 import { BiSolidDrink } from "react-icons/bi";
-import branchTree from '../../../../Assets/Restaurant/branchLeft.png'
-import branchRight from '../../../../Assets/Restaurant/branchRight.png'
 import mealDecoration1 from '../../../../Assets/Restaurant/restaurantMeal3.png'
 import mealDecoration2 from '../../../../Assets/Restaurant/restaurantMeal4.png'
 import mealDecoration3 from '../../../../Assets/Restaurant/restaurantMeal5.png'
@@ -11,6 +9,7 @@ import mealDecoration4 from '../../../../Assets/Restaurant/restaurantMeal6.png'
 import leavesLeft from '../../../../Assets/Restaurant/leavesLeft.png'
 import leavesRight from '../../../../Assets/Restaurant/leavesRight.png'
 import background from '../../../../Assets/Restaurant/background.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const RestaurantMenuHeader = () => {
 
@@ -1088,9 +1087,9 @@ const RestaurantMenuHeader = () => {
   return (
     <div className="restaurant-menu-header">
         {/* <img src={branchTree} alt="Dekorativna slika" className='rmh-tree1' /> */}
-        <img src={leavesLeft} alt="Dekorativna slika" className='rmh-leaves-left' />
-        <img src={leavesRight} alt="Dekorativna slika" className='rmh-leaves-right' />
-        <img src={background} alt="Pozadina" className='rmh-background' />
+        <LazyLoadImage src={leavesLeft} alt="Dekorativna slika" className='rmh-leaves-left' />
+        <LazyLoadImage src={leavesRight} alt="Dekorativna slika" className='rmh-leaves-right' />
+        <LazyLoadImage src={background} alt="Pozadina" className='rmh-background' />
         <div className="rmh-ot"></div>
         <div className="rmh-ob"></div>
         <div className="rmh-content">
@@ -1105,10 +1104,10 @@ const RestaurantMenuHeader = () => {
             </div>
             <div className="rmhc-wrap">
                 {/* <img src={branchRight} alt="Dekorativna slika" className='rmhcw-branch-right' /> */}
-                <img src={mealDecoration1} alt="Dekorativna slika" className='meal-decoration1' />
-                <img src={mealDecoration2} alt="Dekorativna slika" className='meal-decoration2' />
-                <img src={mealDecoration3} alt="Dekorativna slika" className='meal-decoration3' />
-                <img src={mealDecoration4} alt="Dekorativna slika" className='meal-decoration4' />
+                <LazyLoadImage src={mealDecoration1} alt="Dekorativna slika" className='meal-decoration1' />
+                <LazyLoadImage src={mealDecoration2} alt="Dekorativna slika" className='meal-decoration2' />
+                <LazyLoadImage src={mealDecoration3} alt="Dekorativna slika" className='meal-decoration3' />
+                <LazyLoadImage src={mealDecoration4} alt="Dekorativna slika" className='meal-decoration4' />
                 <div className={`rmhcw-content`}>
                     {
                         menu.map((menuItem, index) => (

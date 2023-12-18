@@ -4,6 +4,7 @@ import igraliste from '../../../../Assets/Igraliste.mp4'
 import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
 import restaurantTree2 from '../../../../Assets/Hall/forestTree2.png'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RestaurantHero = () => {
 
@@ -24,8 +25,8 @@ const RestaurantHero = () => {
         <video src={igraliste} loop muted autoPlay playsInline></video>
         <div className="rhw-overlay"></div>
         <div className="rhw-top">4</div>
-        <img src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
-        <img src={restaurantTree2} alt="Dekorativna slika" className='rhw-tree2-img parallax' data-speedx="0.007" data-speedy="0.07" data-speedz="0.04" data-rotation="0.1" />
+        <LazyLoadImage src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
+        <LazyLoadImage src={restaurantTree2} alt="Dekorativna slika" className='rhw-tree2-img parallax' data-speedx="0.007" data-speedy="0.07" data-speedz="0.04" data-rotation="0.1" />
         <div className="rhw-tree2-overlay"></div>
         <div className="rhw-content">
           <div className="rhwc-text">

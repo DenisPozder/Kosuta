@@ -6,6 +6,7 @@ import GameroomHero from "./Components/GameroomHero/GameroomHero";
 import GameroomComponent from "./Components/GameroomComponent/GameroomComponent";
 import './gameroom.css'
 import background  from '../../Assets/Restaurant/background.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Gameroom = () => {
   const location = useLocation();
@@ -83,7 +84,7 @@ useEffect(() => {
     <HallLayout>
       <section className="page-section">
         <div className="gr-textures">
-          <img src={background} alt="Dekorativna slika" className="gr-background" />
+          <LazyLoadImage src={background} alt="Dekorativna slika" className="gr-background" />
         <GameroomHero />
         <GameroomComponent />
         </div>
@@ -93,7 +94,7 @@ useEffect(() => {
     <RestaurantLayout>
       <section className="page-section">
         <div className="gr-texture">
-          <img src={background} alt="Dekorativna slika" className="gr-background" />
+          <LazyLoadImage src={background} alt="Dekorativna slika" className="gr-background" />
         <GameroomHero />
       <GameroomComponent />
         </div>
