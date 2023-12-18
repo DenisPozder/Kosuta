@@ -5,6 +5,13 @@ import HallSliderTextLayout from '../../Components/HallSliderTextLayout/HallSlid
 import hall1 from '../../Assets/Hall/hall1.jpg'
 import HallCards from './Components/HallCards/HallCards'
 import HallText from './Components/HallText/HallText'
+import kamin1Img from '../../Assets/Hall/kamin1.jpg'
+import kamin2Img from '../../Assets/Hall/kamin14.jpg'
+import kamin3Img from '../../Assets/Hall/kamin17.jpg'
+import kamin4Img from '../../Assets/Hall/kamin24.jpg'
+import kamin5Img from '../../Assets/Hall/kamin29.jpg'
+import kamin6Img from '../../Assets/Hall/kamin35.jpg'
+import kamin7Img from '../../Assets/Hall/kamin46.jpg'
 
 const HallData = [
   {
@@ -77,25 +84,25 @@ const HallData = [
     desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
     images: [
       {
-        image: hall1
+        image: kamin1Img
       },
       {
-        image: hall1
+        image: kamin2Img
       },
       {
-        image: hall1
+        image: kamin3Img
       },
       {
-        image: hall1
+        image: kamin4Img
       },
       {
-        image: hall1
+        image: kamin5Img
       },
       {
-        image: hall1
+        image: kamin6Img
       },
       {
-        image: hall1
+        image: kamin7Img
       },
     ],
     layout: 'left',
