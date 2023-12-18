@@ -27,7 +27,7 @@ const HallSliderTextLayout = ({title1, title2, desc, images, layout, capacity, a
             ) : (
                 <>
                 <div className="hstl-content-wrap slide-in from-left">
-                    <div className="hstl-text">
+                    <div className="hstl-text hstl-left">
                     <h1 className='hstl-title'><span>{title1}</span><span>{title2}</span></h1>
                     <p className='hstl-desc'>{desc}</p>
                     <h2 className='hstl-capacity'>Kapacitet: <span>{capacity}</span></h2>
@@ -36,7 +36,7 @@ const HallSliderTextLayout = ({title1, title2, desc, images, layout, capacity, a
                     </div>
                     </div>
                 </div>
-                <div className="hstl-slider slide-in from-right">
+                <div className="hstl-slider hstl-right slide-in from-right">
                     <HSTSlider data={images} autoplayDuration={autoplayDuration} />
                 </div>
                 </>

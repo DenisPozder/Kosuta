@@ -15,6 +15,15 @@ import kamin6Img from '../../../../Assets/Hall/kamin39.jpg'
 import kamin7Img from '../../../../Assets/Hall/kamin47.jpg'
 import kamin8Img from '../../../../Assets/Hall/kamin48.jpg'
 import kamin9Img from '../../../../Assets/Hall/kamin50.jpg'
+import svecana1Img from '../../../../Assets/Hall/svecana2.jpg'
+import svecana2Img from '../../../../Assets/Hall/svecana10.jpg'
+import svecana3Img from '../../../../Assets/Hall/svecana12.jpg'
+import svecana4Img from '../../../../Assets/Hall/svecana20.jpg'
+import svecana5Img from '../../../../Assets/Hall/svecana29.jpg'
+import svecana6Img from '../../../../Assets/Hall/svecana35.jpg'
+import svecana7Img from '../../../../Assets/Hall/svecana42.jpg'
+import svecana8Img from '../../../../Assets/Hall/svecana46.jpg'
+import svecana9Img from '../../../../Assets/Hall/svecana61.jpg'
 
 const AllHallsData = [
     {
@@ -76,47 +85,47 @@ const AllHallsData = [
         images: [
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana1Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana2Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana3Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana4Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana5Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana6Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana7Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana8Img
                 }
             },
             {
                 image: {
-                    img: sampleImage2
+                    img: svecana9Img
                 }
             },
         ]

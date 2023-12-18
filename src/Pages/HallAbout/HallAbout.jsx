@@ -4,8 +4,13 @@ import HallAboutHero from './Components/HallAboutHero/HallAboutHero'
 import HallAboutLocation from './Components/HallAboutLocation/HallAboutLocation'
 import HallLayoutRight from './Components/HallAboutLayoutRight/HallLayoutRight'
 import HallLayoutLeft from './Components/HallAboutLayoutLeft/HallLayoutLeft'
+import { useLocation } from 'react-router-dom'
+import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 
 const HallAbout = () => {
+
+  const location = useLocation()
+
 
         /*----- Intersection Observer -----*/
 useEffect(() => {
@@ -39,16 +44,30 @@ useEffect(() => {
 
 },[])
 
-  return (
-    <HallLayout>
+  return location.pathname === "/restoran/o-nama" ? (
+    <RestaurantLayout>
         <section className='page-section'>
           <HallAboutHero />
           <HallAboutLocation />
           <HallLayoutRight />
           <HallLayoutLeft />
         </section>
-    </HallLayout>
+    </RestaurantLayout>
+  ) : (
+    <HallLayout>
+    <section className='page-section'>
+      <HallAboutHero />
+      <HallAboutLocation />
+      <HallLayoutRight />
+      <HallLayoutLeft />
+    </section>
+</HallLayout>
   )
 }
 
 export default HallAbout
+
+// Meal 4 Becka Snicla
+// Meal 3 Pileci File na zaru
+// Meal 2 Pljeskavica
+// Meal 1 Njeguska Prsuta

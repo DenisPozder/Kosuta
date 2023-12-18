@@ -3,43 +3,40 @@ import './rm-slider.css'
 import restaurantImage from '../../../../../Assets/Restaurant/restaurantMealImg.jpg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { MdDinnerDining } from "react-icons/md";
+import mealImg1 from '../../../../../Assets/Restaurant/meal1.jpg'
+import mealImg2 from '../../../../../Assets/Restaurant/meal2.jpg'
+import mealImg3 from '../../../../../Assets/Restaurant/meal3.jpg'
+import mealImg4 from '../../../../../Assets/Restaurant/meal4.jpg'
 
 const slideWidth = 280;
 
 const _items = [
     {
         meal: {
-            title: "Prvo Jelo",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: restaurantImage
+            title: "Njeguška Pršuta",
+            desc: "Njeguška Pršuta, tradicionalni crnogorski delikates, predstavlja vrhunski sušeni i dimljeni pršut koji potiče iz sela Njeguši",
+            image: mealImg1
         }
     },
     {
         meal: {
-            title: "Drugo Jelo",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: restaurantImage
+            title: "Pljeskavica",
+            desc: "Pljeskavica je sočni mesni burger pripremljena od pažljivo odabrane mešavine mlevenog mesa, često kombinujući junetinu i svinjetinu.",
+            image: mealImg2
         }
     },
     {
         meal: {
-            title: "Treće Jelo",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: restaurantImage
+            title: "Pileći file na žaru",
+            desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima.",
+            image: mealImg3
         }
     },
     {
         meal: {
-            title: "Četvrto Jelo",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: restaurantImage
-        }
-    },
-    {
-        meal: {
-            title: "Peto Jelo",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: restaurantImage
+            title: "Bečka šnicla",
+            desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje",
+            image: mealImg4
         }
     },
 ]

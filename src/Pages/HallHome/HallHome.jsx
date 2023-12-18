@@ -12,6 +12,13 @@ import kamin4Img from '../../Assets/Hall/kamin24.jpg'
 import kamin5Img from '../../Assets/Hall/kamin29.jpg'
 import kamin6Img from '../../Assets/Hall/kamin35.jpg'
 import kamin7Img from '../../Assets/Hall/kamin46.jpg'
+import svecana1Img from '../../Assets/Hall/svecana1.jpg'
+import svecana2Img from '../../Assets/Hall/svecana15.jpg'
+import svecana3Img from '../../Assets/Hall/svecana26.jpg'
+import svecana4Img from '../../Assets/Hall/svecana29.jpg'
+import svecana5Img from '../../Assets/Hall/svecana39.jpg'
+import svecana6Img from '../../Assets/Hall/svecana59.jpg'
+import svecana7Img from '../../Assets/Hall/svecana68.jpg'
 
 const HallData = [
   {
@@ -52,25 +59,25 @@ const HallData = [
     desc: "Svečana sala pruža ugodan prostor koji se svojim raskošnim enterijerom i pripodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
     images: [
       {
-        image: hall1
+        image: svecana1Img
       },
       {
-        image: hall1
+        image: svecana2Img
       },
       {
-        image: hall1
+        image: svecana3Img
       },
       {
-        image: hall1
+        image: svecana4Img
       },
       {
-        image: hall1
+        image: svecana5Img
       },
       {
-        image: hall1
+        image: svecana6Img
       },
       {
-        image: hall1
+        image: svecana7Img
       },
     ],
     layout: 'right',

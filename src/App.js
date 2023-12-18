@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Landing from './Pages/Langing/Landing';
 import RestaurantHome from './Pages/RestaurantHome/RestaurantHome';
 import HallHome from './Pages/HallHome/HallHome';
-import RestaurantAbout from './Pages/RestaurantAbout/RestaurantAbout';
+// import RestaurantAbout from './Pages/RestaurantAbout/RestaurantAbout';
 import HallAbout from './Pages/HallAbout/HallAbout';
 import HallMenu from './Pages/HallMenu/HallMenu';
 import Gameroom from './Pages/Gameroom/Gameroom';
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/restoran/početna' element={<RestaurantHome />} />
-        <Route path='/restoran/o-nama' element={<RestaurantAbout />} />
+        <Route path='/restoran/o-nama' element={<HallAbout />} />
         <Route path='/restoran/igraonica' element={<Gameroom />} />
         <Route path='/restoran/jelovnik' element={<RestaurantMenuPage />} />
         <Route path='/restoran/galerija' element={<RestaurantGallery />} />

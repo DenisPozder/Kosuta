@@ -2,23 +2,43 @@ import React, { useEffect } from 'react'
 import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
 import RestaurantMenuHeader from './Components/RestaurantMenuHeader/RestaurantMenuHeader'
 import RestaurantMenuHero from './Components/RestaurantMenuHero/RestaurantMenuHero'
-import restaurantMeal from '../../Assets/Restaurant/restaurantMeal7.png'
-import restaurantMealImage from '../../Assets/Restaurant/restaurantMealImg.jpg'
+import mealImg1 from '../../Assets/Restaurant/meal1.jpg'
+import mealImg2 from '../../Assets/Restaurant/meal2.jpg'
+import mealImg3 from '../../Assets/Restaurant/meal3.jpg'
+import mealImg4 from '../../Assets/Restaurant/meal4.jpg'
+import mealTrans1 from '../../Assets/Restaurant/meal1Transparent.png'
+import mealTrans2 from '../../Assets/Restaurant/meal2Transparent.png'
+import mealTrans3 from '../../Assets/Restaurant/meal3Transparent.png'
+import mealTrans4 from '../../Assets/Restaurant/meal4Transparent.png'
 
 const MenuPageFood = [
   {
     id: 1,
-    title: "First Meal",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: restaurantMeal,
-    fullImage: restaurantMealImage
+    title: "Njeguška pršuta",
+    desc: "Njeguška Pršuta, tradicionalni crnogorski delikates, predstavlja vrhunski sušeni i dimljeni pršut koji potiče iz sela Njeguši. Priprema Njeguškog pršuta počinje odabranim komadom svinjskog buta, koji se najpre soli radi konzerviranja. Nakon soljenja, pršut se ostavlja da odmara, a zatim se izlaže dimu sušenja.",
+    image: mealTrans1,
+    fullImage: mealImg1
   },
   {
     id: 2,
-    title: "Second Meal",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: restaurantMeal,
-    fullImage: restaurantMealImage
+    title: "Pljeskavica",
+    desc: "Pljeskavica je sočni mesni burger pripremljena od pažljivo odabrane mešavine mlevenog mesa, često kombinujući junetinu i svinjetinu. Meso se oblikuje u ravne ploške i peče na roštilju ili tiganju. Ključni elementi pljeskavice su bogat ukus mesa, sočnost i karakteristična tekstura koja ostaje mekana unutar hrskave kore.",
+    image: mealTrans2,
+    fullImage: mealImg2
+  },
+  {
+    id: 3,
+    title: "Pileći file na žaru",
+    desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima kako bi se pojačao ukus i sočnost mesa. Nakom mariniranja, pileći fileti se stavljaju na roštilj, gde se peku do savršene sočnosti i zlatno smeđe boje. Jelo je poznato po blagoj i svežoj aromi piletine, uz dodatnu dimnu notu od roštilja",
+    image: mealTrans3,
+    fullImage: mealImg3
+  },
+  {
+    id: 4,
+    title: "Bečka šnicla",
+    desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje. Ovo ukusno jelo čini tanak odrezak mesa, obilno telećeg ili svinjskog, koji je prvo umočen u brašno, zatim u jaja i na kraju u krušne mrvice ili prezlu.",
+    image: mealTrans4,
+    fullImage: mealImg4
   },
 ]
 

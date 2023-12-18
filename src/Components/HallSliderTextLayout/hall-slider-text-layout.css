@@ -2,11 +2,12 @@
     width: 100%;
     height: auto;
     padding: 3rem 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .hstl-content-wrap {
-    width: 50%;
+    width: 100%;
     height: 540px;
     display: flex;
     align-items: center;
@@ -116,7 +117,7 @@
 
 .hstl-slider {
     height: 540px;
-    width: 50%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -147,7 +148,8 @@
     }
 
     .hall-slider-text-layout {
-        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "slider" "text";
     }
 
     .hstl-content-wrap {
@@ -159,6 +161,14 @@
     .hstl-slider {
         width: 100%;
         height: 480px;
+    }
+
+    .hstl-left {
+        grid-area: text;
+    }
+
+    .hstl-right {
+        grid-area: slider;
     }
 }
 
