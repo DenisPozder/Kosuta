@@ -34,7 +34,7 @@ const RestaurantHero = () => {
             <div className="rhwct-items">
               <h1>Dobrodošli u restoran Košuta</h1>
               <h3 className='rhcwt-h3'>Restoran Košuta je idilično utočište gastronomskih užitaka smešteno u srcu prirode, gde se spojila elegancija i autentičnost. Sa prozračnim i prostranim interijerom, restoran odiše toplinom i ugodnom atmosferom, stvarajući savršeno okruenje za uživanje u vrhunskoj kulinarskoj ponudi.</h3>
-              <Link to='/restoran/jelovnik'><h3>Pogledajte još</h3></Link>
+              <Link to='/restoran/jelovnik'><h3>Pogledajte jelovnik</h3></Link>
             </div>
           </div>
         </div>
