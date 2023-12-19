@@ -24,6 +24,15 @@ import svecana6Img from '../../../../Assets/Hall/svecana35.jpg'
 import svecana7Img from '../../../../Assets/Hall/svecana42.jpg'
 import svecana8Img from '../../../../Assets/Hall/svecana46.jpg'
 import svecana9Img from '../../../../Assets/Hall/svecana61.jpg'
+import gardenImg1 from '../../../../Assets/Restaurant/restaurantGarden14.jpg'
+import gardenImg2 from '../../../../Assets/Restaurant/restaurantGarden13.jpg'
+import gardenImg3 from '../../../../Assets/Restaurant/restaurantGarden12.jpg'
+import gardenImg4 from '../../../../Assets/Restaurant/restaurantGarden5.jpg'
+import gardenImg5 from '../../../../Assets/Restaurant/restaurantGarden1.jpg'
+import gardenImg6 from '../../../../Assets/Restaurant/restaurantGarden2.jpg'
+import gardenImg7 from '../../../../Assets/Restaurant/restaurantGarden9.jpg'
+import gardenImg8 from '../../../../Assets/Restaurant/restaurantGarden3.jpg'
+import gardenImg9 from '../../../../Assets/Restaurant/restaurantGarden6.jpg'
 
 const AllHallsData = [
     {
@@ -189,47 +198,47 @@ const AllHallsData = [
         images: [
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg1
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg2
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg3
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg4
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg5
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg6
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg7
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg8
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: gardenImg9
                 }
             },
         ]
