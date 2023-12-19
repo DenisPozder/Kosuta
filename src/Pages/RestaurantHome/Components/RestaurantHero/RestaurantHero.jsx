@@ -5,6 +5,7 @@ import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
 import restaurantTree2 from '../../../../Assets/Hall/forestTree2.png'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import restaurantImg from '../../../../Assets/Restaurant/restaurantImage.jpg'
 
 const RestaurantHero = () => {
 
@@ -22,7 +23,7 @@ const RestaurantHero = () => {
         <div className="rh-bird3"></div>
       </div>
       <div className="rh-wrap">
-        <video src={igraliste} loop muted autoPlay playsInline></video>
+        <LazyLoadImage src={restaurantImg} alt='Slika restorana' />
         <div className="rhw-overlay"></div>
         <div className="rhw-top">4</div>
         <LazyLoadImage src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />

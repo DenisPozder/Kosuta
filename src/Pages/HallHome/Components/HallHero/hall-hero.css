@@ -5,18 +5,39 @@
     overflow: hidden;
 }
 
-.hh-video {
+.hh-image-slider {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
-.hh-video video {
+.hh-image-slider .hh-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hh-image-slider .hh-slider .hh-slider-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: imageSlider 1s ease forwards;
+}
+
+@keyframes imageSlider {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hh-image-slider .hh-slider .hh-slider-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    user-select: none;
-    pointer-events: none;
 }
 
 .hh-overlay {
