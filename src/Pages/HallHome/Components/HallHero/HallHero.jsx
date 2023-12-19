@@ -6,6 +6,7 @@ import bigHall from '../../../../Assets/Hall/hall1.jpg'
 import mediumHall from '../../../../Assets/Hall/svecana2.jpg'
 import smallHall from '../../../../Assets/Hall/kamin13.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useTranslation } from 'react-i18next';
 
 const hallImages = [
   {
@@ -21,6 +22,7 @@ const hallImages = [
 
 const HallHero = () => {
 
+  const { t } = useTranslation('hallHome')
   const [ current, setCurrent ] = useState(0)
   const length = hallImages.length
   const timeout = useRef(null)
@@ -66,9 +68,9 @@ const HallHero = () => {
       <div className="hh-overlay"></div>
       <div className="hh-content">
         <div className="hh-content-text">
-          <h1 className='hh-title'><span>Košuta</span><span>Proslave</span></h1>
-          <h3 className='hh-desc'>Ušuškan unutar bujnog zagrljaja visokih četinara, Košuta nudi jedinstvenu fuziju modernog ambijenta i detalja prirode. Potopite svoje događaje u neuporedivu lepotu ovog prostora, gde se raskoš susreće s spokojem prirode</h3>
-          <Link to='/sale'><h3>izaberi salu</h3><FaAngleRight /></Link>
+          <h1 className='hh-title'><span>{t('hhTitle1')}</span><span>{t('hhTitle2')}</span></h1>
+          <h3 className='hh-desc'>{t('hhDesc')}</h3>
+          <Link to='/sale'><h3>{t('hhBtn')}</h3><FaAngleRight /></Link>
         </div>
       </div>
     </div>

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './restaurant-navbar.css'
-import kosutaLogo from '../../Assets/kosutaLogo.png'
+import kosutaLogo from '../../Assets/logo.svg'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useTranslation } from 'react-i18next'
+import { IoIosCall } from "react-icons/io";
+
 
 const restaurantNavbarLinks = [
   {
@@ -90,7 +92,7 @@ const RestaurantNavbar = () => {
           }
         </div>
         <div className="rn-btn-content">
-          <Link to='#' className='rn-contact'>{t('rhBtn')}</Link>
+          <Link to='tel:066 52 555 25' className='rn-contact'><p>{t('rhBtn')}</p><IoIosCall /></Link>
           <button className='rn-menu' onClick={toggleMenu}><BiMenuAltRight /></button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './hall-footer.css'
-import Logo from '../../Assets/kosutaLogo.png'
+import Logo from '../../Assets/logoDark.svg'
 import { Link } from 'react-router-dom'
 import { AiFillCopyrightCircle } from 'react-icons/ai'
 
@@ -38,7 +38,7 @@ const HallFooter = () => {
       <div className="hf-content">
         <div className="hf-column">
           <Link className="hfc-logo">
-            <img src={Logo} alt="Košuta Logo" />
+            <img src={Logo} alt="Logo restorana" />
           </Link>
           <h3>Na vratima će vas sačekati naše čuveno gostoprimstvo, u salama tradicija i autentična dekoracija</h3>
         </div>

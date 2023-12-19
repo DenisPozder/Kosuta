@@ -3,8 +3,12 @@ import './hall-slider-text-layout.css'
 import HSTSlider from './HSTSlider/HSTSlider'
 import { Link } from 'react-router-dom'
 import { FaAngleRight } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
-const HallSliderTextLayout = ({title1, title2, desc, images, layout, capacity, autoplayDuration, link}) => {
+const HallSliderTextLayout = ({title1, engTitle1, engTitle2, title2, engDesc, desc, images, layout, capacity, autoplayDuration, link}) => {
+
+    const { i18n } = useTranslation('')
+
   return (
     <div className={`hall-slider-text-layout`}>
         {
@@ -15,11 +19,11 @@ const HallSliderTextLayout = ({title1, title2, desc, images, layout, capacity, a
                 </div>
                 <div className="hstl-content-wrap slide-in from-right">
                     <div className="hstl-text">
-                    <h1 className='hstl-title'><span>{title1}</span><span>{title2}</span></h1>
+                    <h1 className='hstl-title'><span>{i18n.language === 'sr' ? title1 : engTitle1}</span><span>{i18n.language === 'sr' ? title2 : engTitle2}</span></h1>
                     <p className='hstl-desc'>{desc}</p>
-                    <h2 className='hstl-capacity'>Kapacitet: <span>{capacity}</span></h2>
+                    <h2 className='hstl-capacity'>{i18n.language === 'sr' ? "Kapacitet:" : "Capacity:"} <span>{capacity}</span></h2>
                     <div className="hstl-btn">
-                    <Link to={link}><h3>Rezerviši salu</h3><FaAngleRight /></Link>
+                    <Link to={link}><h3>{i18n.language === 'sr' ? "Rezerviši salu" : "Reserve hall"}</h3><FaAngleRight /></Link>
                     </div>
                     </div>
                 </div>
@@ -28,11 +32,11 @@ const HallSliderTextLayout = ({title1, title2, desc, images, layout, capacity, a
                 <>
                 <div className="hstl-content-wrap slide-in from-left">
                     <div className="hstl-text hstl-left">
-                    <h1 className='hstl-title'><span>{title1}</span><span>{title2}</span></h1>
+                    <h1 className='hstl-title'><span>{i18n.language === 'sr' ? title1 : engTitle1}</span><span>{i18n.language === 'sr' ? title2 : engTitle2}</span></h1>
                     <p className='hstl-desc'>{desc}</p>
-                    <h2 className='hstl-capacity'>Kapacitet: <span>{capacity}</span></h2>
+                    <h2 className='hstl-capacity'>{i18n.language === 'sr' ? "Kapacitet:" : "Capacity:"} <span>{capacity}</span></h2>
                     <div className="hstl-btn">
-                    <Link to={link}><h3>Rezerviši salu</h3><FaAngleRight /></Link>
+                    <Link to={link}><h3>{i18n.language === 'sr' ? "Rezerviši salu" : "Reserve hall"}</h3><FaAngleRight /></Link>
                     </div>
                     </div>
                 </div>

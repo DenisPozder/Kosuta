@@ -1,13 +1,17 @@
 import React from 'react'
 import './hall-text.css'
+import { useTranslation } from 'react-i18next'
 
 const HallText = () => {
+
+  const { t } = useTranslation('hallHome')
+
   return (
     <div className="hall-text fade-in">
-        <p>Restoran Košuta ogranizuje poslovne ručkove, proslave, svadbe i slučna okupljanja. <br/>
-        Sala je opremljena centralnom klimatizacijom i ventilacijom. <br/>
-        Meniji po izboru, već od 18 EUR po osobi. <br/>
-        Cene su podložne promenama i željama gostiju</p>
+        <p>{t('hhText1')} <br/>
+        {t('hhText2')} <br/>
+        {t('hhText3')} <br/>
+        {t('hhText4')}</p>
     </div>
   )
 }

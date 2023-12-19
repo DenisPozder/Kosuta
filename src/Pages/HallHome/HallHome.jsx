@@ -19,11 +19,15 @@ import svecana4Img from '../../Assets/Hall/svecana29.jpg'
 import svecana5Img from '../../Assets/Hall/svecana39.jpg'
 import svecana6Img from '../../Assets/Hall/svecana59.jpg'
 import svecana7Img from '../../Assets/Hall/svecana68.jpg'
+import { useTranslation } from 'react-i18next'
 
 const HallData = [
   {
     title1: "Sala",
+    engTitle1: "Hall",
     title2: "Grande",
+    engTitle2: "Grande",
+    engDesc: "",
     desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
     images: [
       {
@@ -55,7 +59,10 @@ const HallData = [
   },
   {
     title1: "Svečana",
+    engTitle1: "Congress",
     title2: "Sala",
+    engTitle2: "Hall",
+    engDesc: "",
     desc: "Svečana sala pruža ugodan prostor koji se svojim raskošnim enterijerom i pripodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
     images: [
       {
@@ -87,7 +94,10 @@ const HallData = [
   },
   {
     title1: "Kamin",
+    engTitle1: "Kamin",
     title2: "Sala",
+    engTitle2: "Hall",
+    engDesc: "",
     desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
     images: [
       {

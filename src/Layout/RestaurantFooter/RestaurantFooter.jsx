@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../Assets/kosutaLogo.png'
+import Logo from '../../Assets/logo.svg'
 import { Link } from 'react-router-dom'
 import { AiFillCopyrightCircle } from 'react-icons/ai'
 import './restaurant-footer.css'

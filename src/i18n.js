@@ -9,6 +9,7 @@ import restaurantAboutSerbian from './locales/oNama.json'
 import restaurantGameroomSerbian from './locales/igraonica.json'
 import restaurantMenuSerbian from './locales/restoranMeni.json'
 import restaurantGallerySerbian from './locales/restoranGalerija.json'
+import hallHomeSerbian from './locales/salePočetna.json'
 
 // English language imports
 import restaurantHomeEnglish from './locales/restaurantHome.json'
@@ -17,6 +18,7 @@ import restaurantAboutEnglish from './locales/aboutUs.json'
 import restaurantGameroomEnglish from './locales/playroom.json'
 import restaurantMenuEnglish from './locales/restaurantMenu.json'
 import restaurantGalleryEnglish from './locales/restaurantGallery.json'
+import hallHomeEnglish from './locales/hallHome.json'
 
 const storedLanguage = localStorage.getItem('i18nextLng') || 'sr';
 
@@ -31,7 +33,8 @@ i18n
                 about: restaurantAboutSerbian,
                 gameroom: restaurantGameroomSerbian,
                 restaurantMenu: restaurantMenuSerbian,
-                restaurantGallery: restaurantGallerySerbian
+                restaurantGallery: restaurantGallerySerbian,
+                hallHome: hallHomeSerbian
             },
             en: {
                 restaurantHome: restaurantHomeEnglish,
@@ -39,7 +42,8 @@ i18n
                 about: restaurantAboutEnglish,
                 gameroom: restaurantGameroomEnglish,
                 restaurantMenu: restaurantMenuEnglish,
-                restaurantGallery: restaurantGalleryEnglish
+                restaurantGallery: restaurantGalleryEnglish,
+                hallHome: hallHomeEnglish
             }
         },
         lng: storedLanguage,

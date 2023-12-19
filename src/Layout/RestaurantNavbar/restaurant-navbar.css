@@ -46,12 +46,12 @@
 
  .rn-content .rn-logo {
     width: auto;
-    height: 90px;
+    height: 50px;
 }
 
  .rn-content .rn-logo img {
     width: auto;
-    height: 90px;
+    height: 50px;
 }
 
  .rn-content .rn-links {
@@ -137,6 +137,10 @@
     text-decoration: none;
 }
 
+.rn-content .rn-btn-content .rn-contact svg {
+    display: none;
+}
+
 .rn-content .rn-btn-content .rn-menu {
     display: flex;
     align-items: center;
@@ -215,14 +219,36 @@
     .rn-contact {
         width: 180px !important;
     }
+
+    .rn-content .rn-logo {
+        width: auto;
+        height: 40px;
+    }
+    
+     .rn-content .rn-logo img {
+        width: auto;
+        height: 40px;
+    }
+
+    .rn-contact {
+        width: auto !important;
+    }
+
+    .rn-content .rn-btn-content .rn-contact svg {
+        display: block;
+        padding: 0 1rem;
+        height: auto;
+        font-size: 1.2rem;
+        color: var(--dark-color);
+    }
+
+    .rn-content .rn-btn-content .rn-contact p {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .rn-content {
         margin: 0 5px;
-    }
-
-    .rn-contact {
-        width: 140px !important;
     }
 }

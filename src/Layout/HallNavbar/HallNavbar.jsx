@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './hall-navbar.css'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import kosutaLogo from '../../Assets/kosutaLogo.png'
+import kosutaLogo from '../../Assets/logo.svg'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
 
