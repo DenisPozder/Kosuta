@@ -7,6 +7,7 @@ import mealImg1 from '../../../../../Assets/Restaurant/meal1.jpg'
 import mealImg2 from '../../../../../Assets/Restaurant/meal2.jpg'
 import mealImg3 from '../../../../../Assets/Restaurant/meal3.jpg'
 import mealImg4 from '../../../../../Assets/Restaurant/meal4.jpg'
+import { useTranslation } from 'react-i18next';
 
 const slideWidth = 280;
 
@@ -14,28 +15,35 @@ const _items = [
     {
         meal: {
             title: "Njeguška Pršuta",
+            engTitle: "",
             desc: "Njeguška Pršuta, tradicionalni crnogorski delikates, predstavlja vrhunski sušeni i dimljeni pršut koji potiče iz sela Njeguši",
+            engDesc: "",
             image: mealImg1
         }
     },
     {
         meal: {
             title: "Pljeskavica",
+            engTitle: "",
             desc: "Pljeskavica je sočni mesni burger pripremljena od pažljivo odabrane mešavine mlevenog mesa, često kombinujući junetinu i svinjetinu.",
+            engDesc: "",
             image: mealImg2
         }
     },
     {
         meal: {
-            title: "Pileći file na žaru",
+            engTitle: "",
             desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima.",
+            engDesc: "",
             image: mealImg3
         }
     },
     {
         meal: {
             title: "Bečka šnicla",
+            engTitle: "",
             desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje",
+            engDesc: "",
             image: mealImg4
         }
     },
@@ -76,6 +84,7 @@ const createItem = (position, idx) => {
 
 const RMItem = ({pos, idx, activeIdx}) => {
     const item = createItem(pos, idx, activeIdx)
+    const { i18n } = useTranslation('')
 
     return (
         <div className="rm-item" style={item.styles}>
@@ -85,8 +94,8 @@ const RMItem = ({pos, idx, activeIdx}) => {
             </div>
             <div className="rm-item-bottom">
                 <div className="rm-itemb-text">
-                    <h1><MdDinnerDining /><span>{item.meal.title}</span></h1>
-                    <p>{item.meal.desc}</p>
+                    <h1><MdDinnerDining /><span>{i18n.language === 'sr' ? item.meal.title : item.meal.engTitle}</span></h1>
+                    <p>{i18n.language === 'sr' ? item.meal.desc : item.meal.engDesc}</p>
                 </div>
             </div>
             </div>

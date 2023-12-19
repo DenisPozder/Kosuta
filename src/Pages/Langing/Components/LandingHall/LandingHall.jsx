@@ -3,8 +3,12 @@ import './landing-hall.css'
 import { Link } from 'react-router-dom'
 import hallTable from '../../../../Assets/Landing/hallTable.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
+import hallImg from '../../../../Assets/Hall/kamin13.jpg'
 
 const LandingHall = () => {
+
+  const { i18n } = useTranslation('')
 
   useEffect(() => {
     const landingHall = document.querySelector('.landing-hall')
@@ -46,12 +50,14 @@ const LandingHall = () => {
 
   return (
     <Link to="/početna" className="landing-hall">
+      <img className='lh-main-img' src={hallImg} alt="Slika sala" />
+      <div className="lh-main-overlay"></div>
       <div className="lh-table parallax-hall" data-speedx="0.009" data-speedy="0.09" data-speedz="0.50" data-rotation="0.2">
         <img src={hallTable} alt="Dekorativna slika" />
       </div>
-      <h1 className='lh-text parallax-hall' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Proslave</span></h1>
+      <h1 className='lh-text parallax-hall' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>{i18n.language === 'sr' ? 'Proslave' : 'Celebrations'}</span></h1>
       <div className='lh-button-content'>
-        <Link className='lh-button' to={'/početna'}><h3>Posetite sale</h3></Link>
+        <Link className='lh-button' to={'/početna'}><h3>{i18n.language === 'sr' ? 'posetite sale' : 'visit halls'}</h3></Link>
       </div>
       <div className="vignette"></div>
       <div className="lp-top-overlay"></div>

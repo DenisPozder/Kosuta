@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './rg-component.css'
 import { RestaurantGalleryData } from '../../../../RestaurantData/RestaurantGalleryData'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
 
 const TagButton = ({ name, handleSetTag, isActive }) => {
   return (
@@ -13,6 +14,7 @@ const TagButton = ({ name, handleSetTag, isActive }) => {
 
 const RGComponent = () => {
 
+  const { t } = useTranslation('restaurantGallery')
   const [ tag, setTag ] = useState('sve')
   const [ filteredImages, setFilteredImages ] = useState([])
 
@@ -53,9 +55,9 @@ const RGComponent = () => {
   return (
     <div className="rg-component">
         <div className="rgc-content">
-            <h1>naša foto galerija</h1>
+            <h1>{t('rgcTitle')}</h1>
             <div className="rgc-categories">
-              <div className='rgc-text'><h3>foto galerija</h3></div>
+              <div className='rgc-text'><h3>{t('rgcBanner')}</h3></div>
               <TagButton name='sve' handleSetTag={setTag} isActive={tag === 'sve'} />
               <TagButton name='interijer' handleSetTag={setTag} isActive={tag === 'interijer'}  />
               <TagButton name='bašta' handleSetTag={setTag} isActive={tag === 'bašta'}  />

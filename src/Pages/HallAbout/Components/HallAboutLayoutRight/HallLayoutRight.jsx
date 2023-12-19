@@ -2,14 +2,18 @@ import React from 'react'
 import './hall-layout-right.css'
 import parking from '../../../../Assets/Hall/parking.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
 
 const HallLayoutRight = () => {
+
+  const { t } = useTranslation('about')
+
   return (
     <div className="hall-layout-right">
         <div className="hlr-content">
             <div className="hlr-column slide-in from-left">
-                <h1><span>parking</span><span>za goste</span></h1>
-                <p>Udahnut u ambijent restorana, parking se besprekorno spaja sa funkcionalnošću i estetikom. Okružen zelenilom i blagim osvetljenjem, ima jednostavan pristup za goste restorana.</p>
+                <h1><span>{t('alrTitle1')}</span><span>{t('alrTitle2')}</span></h1>
+                <p>{t('alrDesc')}</p>
             </div>
             <div className="hlr-column slide-in from-right">
                 <LazyLoadImage src={parking} alt="Slika našeg parkinga" />

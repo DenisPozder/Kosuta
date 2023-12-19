@@ -15,28 +15,36 @@ const MenuPageFood = [
   {
     id: 1,
     title: "Njeguška pršuta",
+    engTitle: "",
     desc: "Njeguška Pršuta, tradicionalni crnogorski delikates, predstavlja vrhunski sušeni i dimljeni pršut koji potiče iz sela Njeguši. Priprema Njeguškog pršuta počinje odabranim komadom svinjskog buta, koji se najpre soli radi konzerviranja. Nakon soljenja, pršut se ostavlja da odmara, a zatim se izlaže dimu sušenja.",
+    engDesc: "",
     image: mealTrans1,
     fullImage: mealImg1
   },
   {
     id: 2,
     title: "Pljeskavica",
+    engTitle: "",
     desc: "Pljeskavica je sočni mesni burger pripremljena od pažljivo odabrane mešavine mlevenog mesa, često kombinujući junetinu i svinjetinu. Meso se oblikuje u ravne ploške i peče na roštilju ili tiganju. Ključni elementi pljeskavice su bogat ukus mesa, sočnost i karakteristična tekstura koja ostaje mekana unutar hrskave kore.",
+    engDesc: "",
     image: mealTrans2,
     fullImage: mealImg2
   },
   {
     id: 3,
     title: "Pileći file na žaru",
+    engTitle: "",
     desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima kako bi se pojačao ukus i sočnost mesa. Nakom mariniranja, pileći fileti se stavljaju na roštilj, gde se peku do savršene sočnosti i zlatno smeđe boje. Jelo je poznato po blagoj i svežoj aromi piletine, uz dodatnu dimnu notu od roštilja",
+    engDesc: "",
     image: mealTrans3,
     fullImage: mealImg3
   },
   {
     id: 4,
     title: "Bečka šnicla",
+    engTitle: "",
     desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje. Ovo ukusno jelo čini tanak odrezak mesa, obilno telećeg ili svinjskog, koji je prvo umočen u brašno, zatim u jaja i na kraju u krušne mrvice ili prezlu.",
+    engDesc: "",
     image: mealTrans4,
     fullImage: mealImg4
   },

@@ -6,8 +6,12 @@ import tree2 from '../../../../Assets/Hall/forestTree2.png'
 import tree3 from '../../../../Assets/Hall/forestTree3.png'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
 
 const RestaurantGameroom = () => {
+
+  const { t } = useTranslation('restaurantHome')
+
   return (
     <div className="restaurant-gameroom">
         <div className="rg-radial-overlay"></div>
@@ -20,9 +24,9 @@ const RestaurantGameroom = () => {
             <LazyLoadImage src={gameroom} alt="Slika Igrališta" />
             <div className="rgc-wrap">
                 <div className="rgcw-content">
-                    <h1 className='slide-in from-top'>Igraonica</h1>
-                    <h3 className='rgcw-h3 fade-in'>Dečija igraonica u našem restoranu predstavlja čarobno carstvo zabave za najmlađe posetitelje. Sa svetlim bojama, veselim muralima i sigurnim igralištima, naša igraonica je dizajnirana kako bi pružila deci nezaboravno iskustvo igre i druženja. Sa mnoštvom interaktivnih igračaka, penjalica, tobogana i kreativnih kutaka, naše igralište poziva decu na istraživanje, učenje i smeh.</h3>
-                    <Link className='slide-in from-bottom' to='/restoran/igraonica'><h3>Pogledajte još</h3></Link>
+                    <h1 className='slide-in from-top'>{t('rgTitle')}</h1>
+                    <h3 className='rgcw-h3 fade-in'>{t('rgDesc')}</h3>
+                    <Link className='slide-in from-bottom' to='/restoran/igraonica'><h3>{t('rgBtn')}</h3></Link>
                 </div>
             </div>
         </div>

@@ -47,10 +47,10 @@ const RestaurantHome = () => {
 
         update(e.clientX)
     })
-},[])
+  },[])
 
-/*----- Intersection Observer -----*/
-useEffect(() => {
+  /*----- Intersection Observer -----*/
+  useEffect(() => {
 
   const faders = document.querySelectorAll('.fade-in')
   const sliders = document.querySelectorAll('.slide-in')
@@ -79,7 +79,7 @@ useEffect(() => {
     appearOnScroll.observe(slider)
   })
 
-},[])
+  },[])
 
 const crackRef = useRef(null)
 

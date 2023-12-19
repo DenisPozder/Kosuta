@@ -2,8 +2,12 @@ import React from 'react'
 import './restaurant-menu-card.css'
 import topLeaves from '../../../../../Assets/Landing/topLeaves.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
 
 const RestaurantMenuCard = ({ slide, index, current }) => {
+
+    const { i18n } = useTranslation('')
+
   return (
     <div className="restaurant-menu-card">
         {
@@ -19,8 +23,8 @@ const RestaurantMenuCard = ({ slide, index, current }) => {
                             <div className="rmcs-inner">
                                 <div className="rmcs-left">
                                     <div className="rmcs-items">
-                                    <h1>{slide.title}</h1>
-                                    <h3>{slide.desc}</h3>
+                                    <h1>{i18n.language === 'sr' ? slide.title : slide.engTitle}</h1>
+                                    <h3>{i18n.language === 'sr' ? slide.desc : slide.engDesc}</h3>
                                     </div>
                                 </div>
                                 <div className="rmcs-right">

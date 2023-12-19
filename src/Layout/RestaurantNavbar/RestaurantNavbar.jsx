@@ -4,31 +4,39 @@ import kosutaLogo from '../../Assets/kosutaLogo.png'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { useTranslation } from 'react-i18next'
 
 const restaurantNavbarLinks = [
   {
     title: "Početna",
-    link: "/restoran/početna"
+    link: "/restoran/početna",
+    engTitle: "Home"
   },
   {
     title: "O nama",
-    link: "/restoran/o-nama"
+    link: "/restoran/o-nama",
+    engTitle: "About Us"
   },
   {
     title: "Igraonica",
-    link: '/restoran/igraonica'
+    link: '/restoran/igraonica',
+    engTitle: "Playroom"
   },
   {
     title: "Jelovnik i pića",
-    link: "/restoran/jelovnik"
+    link: "/restoran/jelovnik",
+    engTitle: "Menu and drinks"
   },
   {
     title: "Galerija",
-    link: "/restoran/galerija"
+    link: "/restoran/galerija",
+    engTitle: "Gallery"
   },
 ]
 
 const RestaurantNavbar = () => {
+
+  const { t, i18n } = useTranslation('restaurantHeader')
 
   const location = useLocation()
   const isRelativePage = [
@@ -77,12 +85,12 @@ const RestaurantNavbar = () => {
           </div>
           {
             restaurantNavbarLinks.map((restaurantLink, index) => (
-              <NavLink to={restaurantLink.link} key={index}>{restaurantLink.title}</NavLink>
+              <NavLink to={restaurantLink.link} key={index}>{i18n.language === 'sr' ? restaurantLink.title : restaurantLink.engTitle}</NavLink>
             ))
           }
         </div>
         <div className="rn-btn-content">
-          <Link to='#' className='rn-contact'>Kontaktirajte nas</Link>
+          <Link to='#' className='rn-contact'>{t('rhBtn')}</Link>
           <button className='rn-menu' onClick={toggleMenu}><BiMenuAltRight /></button>
         </div>
       </div>

@@ -7,8 +7,12 @@ import animalImg from '../../../../Assets/Landing/animal.png'
 import plants from '../../../../Assets/Landing/plants.png'
 import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
+import restaurantImg from '../../../../Assets/Restaurant/restaurantImage.jpg'
 
 const LandingRestaurant = () => {
+
+    const { i18n } = useTranslation('')
 
     useEffect(() => {
         const landingRestaurant = document.querySelector('.landing-restaurant')
@@ -53,15 +57,17 @@ const LandingRestaurant = () => {
         <div className="vignette"></div>
         <div className="lp-top-overlay"></div>
         <div className="lp-bottom-overlay"></div>
+        <div className="lr-main-overlay"></div>
+        <img className='lr-main-img' src={restaurantImg} alt="Slika restorana" />
         <div className="lr-leaves parallax" data-speedx="0.10" data-speedy="0.10" data-speedz="0" data-rotation="0">
             <LazyLoadImage src={restaurantLeaves} alt="Dekorativna slika" />
         </div>
         <div className="lr-table parallax" data-speedx="0.05" data-speedy="0.05" data-speedz="0.70" data-rotation="0">
             <LazyLoadImage src={restaurantTable} alt="Dekorativna slika" />
         </div>
-        <h1 className='lr-text parallax' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>Restoran</span></h1>
+        <h1 className='lr-text parallax' data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-rotation="0">Košuta <span>{i18n.language === 'sr' ? 'Restoran' : "Restaurant"}</span></h1>
         <div className='lr-button-content'>
-            <Link className='lr-button' to={'/restoran/početna'}><h3>Posetite restoran</h3></Link>
+            <Link className='lr-button' to={'/restoran/početna'}><h3>{i18n.language === 'sr' ? 'Posetite restoran' : 'Visit restaurant'}</h3></Link>
         </div>
         <div className="lr-animal parallax" data-speedx="0.03" data-speedy="0.03" data-speedz="0.80" data-rotation="0.18">
             <LazyLoadImage src={animalImg} alt="Dekorativna slika" />
