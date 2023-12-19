@@ -71,6 +71,12 @@
     height: 420px;
     border-radius: 20px;
     position: relative;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.in-viewport {
+    opacity: 1;
 }
 
 .hgc-gallery-image:hover::after {

@@ -15,6 +15,36 @@ const HallGalleryComponent = () => {
     const [ gallery, setGallery ] = useState([])
 
     useEffect(() => {
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5
+        }
+    
+        const handleIntersection = (entries, observer) => {
+          entries.forEach((entry) => {
+            if(entry.isIntersecting) {
+              entry.target.classList.add('in-viewport')
+              observer.unobserve(entry.target);
+            }else {
+              entry.target.classList.remove('in-viewport')
+            }
+          })
+        }
+    
+        const observer = new IntersectionObserver(handleIntersection, options)
+        const images = document.querySelectorAll('.hgc-gallery-image')
+    
+        images.forEach((image) => {
+          observer.observe(image)
+        })
+    
+        return () => {
+          observer.disconnect()
+        }
+      },[gallery])
+
+    useEffect(() => {
         category === 'sve' ? setGallery(HallGalleryData) : setGallery(HallGalleryData.filter(image => image.category === category))
       },[category])
 
@@ -30,7 +60,7 @@ const HallGalleryComponent = () => {
         <div className="hgc-content">
             {
                 gallery.map((image, index) => (
-                    <div className='hgc-gallery-image' key={`${category}-${index}`}>
+                    <div className='hgc-gallery-image in-viewport' key={`${category}-${index}`}>
                         <LazyLoadImage src={image.image} alt={`Slika ${index + 1}`} />
                     </div>
                 ))
