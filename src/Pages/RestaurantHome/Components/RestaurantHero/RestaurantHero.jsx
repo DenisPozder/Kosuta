@@ -23,7 +23,7 @@ const RestaurantHero = () => {
         <div className="rh-bird3"></div>
       </div>
       <div className="rh-wrap">
-        <LazyLoadImage src={restaurantImg} alt='Slika restorana' />
+        <LazyLoadImage className='rhw-img' src={restaurantImg} alt='Slika restorana' />
         <div className="rhw-overlay"></div>
         <div className="rhw-top">4</div>
         <LazyLoadImage src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
