@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './hall-menu-component.css'
 import foodImg from '../../../../Assets/Hall/foodImg.jpg'
-import kosutaLogo from '../../../../Assets/kosutaLogo.png'
+import kosutaLogo from '../../../../Assets/logo.svg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const HallMenuData = [
