@@ -1,7 +1,7 @@
 .restaurant-gallery-slider {
     width: 100%;
     height: auto;
-    padding: 3rem 0;
+    padding-bottom: 3rem;
     position: relative;
     overflow: hidden;
 }

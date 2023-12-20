@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react'
 import './restaurant-celebrations.css'
 import LeavesLeft from '../../../../Assets/Restaurant/leavesImg.png'
 import TreeLeft from '../../../../Assets/Restaurant/TreeLeft.png'
-import restaurantImg1 from '../../../../Assets/Restaurant/restaurantImg4.jpg'
-import restaurantImg2 from '../../../../Assets/Restaurant/restaurantImg7.jpg'
-import restaurantImg3 from '../../../../Assets/Restaurant/restaurantImg12.jpg'
-import restaurantImg4 from '../../../../Assets/Restaurant/restaurantImg27.jpg'
-import restaurantImg5 from '../../../../Assets/Restaurant/restaurantImg40.jpg'
+import restaurantImg1 from '../../../../Assets/Restaurant/restaurantImage.jpg'
+import restaurantImg2 from '../../../../Assets/Restaurant/restaurantImg2.jpg'
+import restaurantImg3 from '../../../../Assets/Restaurant/restaurantImg4.jpg'
+import restaurantImg4 from '../../../../Assets/Restaurant/restaurantImg5.jpg'
+import restaurantImg5 from '../../../../Assets/Restaurant/restaurantImg6.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { useTranslation } from 'react-i18next'
 
@@ -63,8 +63,8 @@ const RestaurantCelebrations = () => {
 
   return (
     <div className="restaurant-celebrations">
-        <LazyLoadImage src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
-        <LazyLoadImage src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
+        <img src={TreeLeft} alt="Dekorativna slika" className='rc-tree-left parallax fade-in' data-speedx="0.009" data-speedy="0.01" data-speedz="0" data-rotation="0" />
+        <img src={LeavesLeft} alt="Dekorativna slika" className='rc-leaves-img' />
         <div className="restaurant-celebrations-content">
             <div className="rcc-column">
                 <h1 className='slide-in from-left'>{t('rcTitle')}</h1>

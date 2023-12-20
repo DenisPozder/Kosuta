@@ -32,6 +32,7 @@ const _items = [
     },
     {
         meal: {
+            title: "Pileći file na žaru",
             engTitle: "",
             desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima.",
             engDesc: "",

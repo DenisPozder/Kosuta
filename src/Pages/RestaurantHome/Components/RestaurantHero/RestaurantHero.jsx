@@ -29,8 +29,8 @@ const RestaurantHero = () => {
         <LazyLoadImage className='rhw-img' src={restaurantImg} alt='Slika restorana' />
         <div className="rhw-overlay"></div>
         <div className="rhw-top"></div>
-        <LazyLoadImage src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
-        <LazyLoadImage src={restaurantTree2} alt="Dekorativna slika" className='rhw-tree2-img parallax' data-speedx="0.007" data-speedy="0.07" data-speedz="0.04" data-rotation="0.1" />
+        <img src={restaurantTree} alt="Dekorativna slika" className='rhw-tree1-img parallax' data-speedx="0.01" data-speedy="0.02" data-speedz="0.02" data-rotation="0" />
+        <img src={restaurantTree2} alt="Dekorativna slika" className='rhw-tree2-img parallax' data-speedx="0.007" data-speedy="0.07" data-speedz="0.04" data-rotation="0.1" />
         <div className="rhw-tree2-overlay"></div>
         <div className="rhw-content">
           <div className="rhwc-text">

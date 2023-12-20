@@ -17,7 +17,7 @@ const RestaurantGameroom = () => {
         <div className="rg-radial-overlay"></div>
         <div className="rg-top-overlay"></div>
         <div className="rg-bottom-overlay"></div>
-        <LazyLoadImage src={tree2} alt="Dekorativna slika" className='rg-tree2 parallax fade-in' data-speedx="0.03" data-speedy="0.024" data-speedz="0.05" data-rotation="0.02" />
+        <img src={tree2} alt="Dekorativna slika" className='rg-tree2 parallax fade-in' data-speedx="0.03" data-speedy="0.024" data-speedz="0.05" data-rotation="0.02" />
         <div className="rg-tree1-overlay"></div>
         <div className="rg-tree3-overlay"></div>
         <div className="rg-content">
