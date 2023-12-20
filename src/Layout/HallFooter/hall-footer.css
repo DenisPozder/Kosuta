@@ -33,14 +33,14 @@
 .hf-column:nth-child(1) h3 {
     font-family: var(--hall-font);
     margin: 1rem 0;
-    color: var(--dark-color);
+    color: var(--hall-dark);
     user-select: none;
 }
 
 .hf-column:nth-child(2) h1 {
     text-align: center;
     font-family: var(--hall-font);
-    color: var(--dark-color);
+    color: var(--hall-dark);
     user-select: none;
 }
 
@@ -48,7 +48,7 @@
     width: 100%;
     height: auto;
     margin-top: 1rem;
-    background-color: var(--dark-color);
+    background-color: var(--hall-dark);
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--dark-color);
+    font-family: var(--hall-dark);
 }
 
 .hfc-days p:nth-child(1) {
@@ -86,21 +86,21 @@
 .hf-column:nth-child(3) h1 {
     text-align: center;
     font-family: var(--hall-font);
-    color: var(--dark-color);
+    color: var(--hall-dark);
     user-select: none;
 }
 
 .hf-column:nth-child(3) h3 {
     text-align: center;
     font-family: var(--hall-font);
-    color: var(--dark-color);
+    color: var(--hall-dark);
     margin-top: 1rem;
     user-select: none;
 }
 
 .hf-column:nth-child(3) a {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--hall-dark);
     font-family: var(--hall-font);
     font-size: 1.4rem;
     margin-top: 1rem;
@@ -109,7 +109,7 @@
 .hf-copyright {
     width: 100%;
     height: 50px;
-    background-color: var(--dark-color);
+    background-color: var(--hall-dark);
     display: flex;
     align-items: center;
     justify-content: center;

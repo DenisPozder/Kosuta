@@ -43,7 +43,7 @@ const CardsData = [
         secondEngTitle: "",
         // firstDesc: "MAJ - SEPTEMBAR",
         // firstEngDesc: "",
-        secondDesc: "KAPACITET: 24",
+        secondDesc: "KAPACITET: 50+",
         secondEngDesc: "",
         title: "24 parking mesta",
         engTitle: "",

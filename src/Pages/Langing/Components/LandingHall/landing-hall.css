@@ -63,9 +63,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .landing-hall {
+        height: 50vh;
+    }
+
     .lh-text {
         font-size: 2.8rem;
-        top: calc(50% - 10%);
+        top: calc(50% - 15%);
     }
 
     .landing-hall {
@@ -82,7 +86,7 @@
     .lh-button-content {
         display: block;
         position: absolute;
-        top: calc(50% + 10%);
+        top: calc(50% + 15%);
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 102;

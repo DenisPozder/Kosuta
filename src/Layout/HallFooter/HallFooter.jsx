@@ -43,7 +43,7 @@ const HallFooter = () => {
           <h3>Na vratima će vas sačekati naše čuveno gostoprimstvo, u salama tradicija i autentična dekoracija</h3>
         </div>
         <div className="hf-column">
-          <h1>Radno Vreme</h1>
+          <h1>Radno Vreme: 10AM - 9PM</h1>
           <div className="hfc-days">
             {
               days.map((day, index) => (

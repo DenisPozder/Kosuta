@@ -56,3 +56,9 @@
 .language-switcher .ls-btn:last-child {
     margin-top: 1rem;
 }
+
+@media only screen and (max-width: 480px) {
+    .ls-content {
+        width: 90% !important;
+    }
+}

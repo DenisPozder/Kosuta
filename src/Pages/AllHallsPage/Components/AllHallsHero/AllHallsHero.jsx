@@ -1,5 +1,5 @@
 import React from 'react'
-import HallImg from '../../../../Assets/Restaurant/restaurantImg4.jpg'
+import HallImg from '../../../../Assets/Hall/kamin4.jpg'
 import { Link } from 'react-router-dom'
 import { FaChevronRight } from "react-icons/fa";
 import './all-halls-hero.css'

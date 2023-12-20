@@ -151,7 +151,7 @@
 
 @media only screen and (max-width: 768px) {
     .lr-text {
-        top: calc(50% - 10%);
+        top: calc(50% - 15%);
     }
 
     .landing-restaurant {
@@ -172,7 +172,7 @@
     .lr-button-content {
         display: block;
         position: absolute;
-        top: calc(50% + 10%);
+        top: calc(50% + 15%);
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 102;
@@ -236,9 +236,14 @@
     .lr-main-img {
         display: block;
     }
+
+    .landing-restaurant {
+        height: 50vh !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+
     .lr-text {
         font-size: 2rem;
     }
