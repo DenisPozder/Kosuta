@@ -57,7 +57,7 @@ const HallHero = () => {
               {
                 index === current && (
                   <div className="hh-slider-card">
-                    <LazyLoadImage src={image.image} alt={`${index + 1}`} />
+                   <img src={image.image} className="hh-slider-blocks" />
                   </div>
                 )
               }
