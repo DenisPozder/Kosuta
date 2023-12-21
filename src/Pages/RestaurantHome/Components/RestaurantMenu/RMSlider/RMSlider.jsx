@@ -15,36 +15,36 @@ const _items = [
     {
         meal: {
             title: "Njeguška Pršuta",
-            engTitle: "",
+            engTitle: "Njeguši Prosciutto",
             desc: "Njeguška Pršuta, tradicionalni crnogorski delikates, predstavlja vrhunski sušeni i dimljeni pršut koji potiče iz sela Njeguši",
-            engDesc: "",
+            engDesc: "Njeguši Prosciutto, a traditional Montenegrin delicacy, is a superbly dried and smoked prosciutto originating from the village of Njeguši",
             image: mealImg1
         }
     },
     {
         meal: {
             title: "Pljeskavica",
-            engTitle: "",
+            engTitle: "'Pljeskavica' Burger",
             desc: "Pljeskavica je sočni mesni burger pripremljena od pažljivo odabrane mešavine mlevenog mesa, često kombinujući junetinu i svinjetinu.",
-            engDesc: "",
+            engDesc: "The burger is a juicy meat burger prepared from a carefully selected mixture of minced meat, often combining beef and pork.",
             image: mealImg2
         }
     },
     {
         meal: {
             title: "Pileći file na žaru",
-            engTitle: "",
+            engTitle: "Grilled chicken fillet",
             desc: "Pileći file na žaru je ukusno jelo koje se priprema od sočnih pilećih fileta pečenih na roštilju. Fileti se obično pripremaju u začinima.",
-            engDesc: "",
+            engDesc: "Grilled chicken fillet is a delicious dish prepared from juicy grilled chicken fillets. Fillets are usually prepared in spices to enhance the taste and juiciness of the meat.",
             image: mealImg3
         }
     },
     {
         meal: {
             title: "Bečka šnicla",
-            engTitle: "",
-            desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje",
-            engDesc: "",
+            engTitle: "Vienna steak",
+            desc: "Bečka šnicla poznata i kao Bečki odrezak, je klasik austrijske kuhinje i jedno od najpoznatijih jela svetske kuhinje.",
+            engDesc: "The Vienna Steak is a classic of Austrian cuisine and one of the most famous dishes of world cuisine.",
             image: mealImg4
         }
     },

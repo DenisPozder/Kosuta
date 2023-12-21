@@ -127,10 +127,18 @@
     .ghc-text {
         margin: 0 10px;
     }
+
+    .ghc-text h3 {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .ghc-text {
         margin: 0 5px;
+    }
+
+    .ghc-text h3 {
+        font-size: .9rem;
     }
 }

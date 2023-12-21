@@ -4,35 +4,44 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import kosutaLogo from '../../Assets/logo.svg'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { CiMenuBurger } from "react-icons/ci";
+import { useTranslation } from 'react-i18next';
 
 const HallNavbarLinks = [
     {
         title: 'rezervacije',
+        engTitle: 'reservations',
         link: "/početna"
     },
     {
         title: 'sve sale',
+        engTitle: 'all halls',
         link: "/sale"
     },
     {
         title: 'meni',
+        engTitle: 'menu',
         link: "/meni"
     },
     {
         title: 'kontakt',
+        engTitle: 'contact',
         link: "/kontakt"
     },
     {
         title: 'o nama',
+        engTitle: 'about us',
         link: "/o-nama"
     },
     {
         title: 'galerija',
+        engTitle: 'gallery',
         link: "/galerija"
     },
 ]
 
 const HallNavbar = () => {
+
+    const { i18n } = useTranslation('')
 
     const location = useLocation()
     const isRelativePage = [
@@ -80,7 +89,7 @@ const HallNavbar = () => {
                 </button>
                 {
                     HallNavbarLinks.map((link, index) => (
-                        <NavLink to={link.link} key={index}>{link.title}</NavLink>
+                        <NavLink to={link.link} key={index}>{i18n.language === 'sr' ? link.title : link.engTitle}</NavLink>
                     ))
                 }
             </div>

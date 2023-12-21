@@ -133,6 +133,7 @@
     justify-content: space-between;
     color: var(--white);
     font-weight: 100;
+    font-size: 1.2rem;
 }
 
 .rm-item-inner .rm-item-bottom .rm-itemb-text h1 svg {
@@ -143,5 +144,5 @@
     text-align: left;
     color: var(--white);
     font-family: var(--restaurant-font);
-    font-size: .9rem;
+    font-size: .8rem;
 }

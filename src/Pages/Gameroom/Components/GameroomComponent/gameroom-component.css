@@ -65,10 +65,6 @@
     .grc-column:nth-child(1) {
         height: auto;
     }
-
-    .grc-column:nth-child(1) h3 {
-        font-size: 1rem;
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -77,12 +73,16 @@
     }
 
     .grc-column:nth-child(1) h3 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 376px) {
     .grc-content {
         margin: 0 5px;
+    }
+
+    .grc-column:nth-child(1) h3 {
+        font-size: .9rem;
     }
 }

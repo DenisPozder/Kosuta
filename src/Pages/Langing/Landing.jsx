@@ -5,7 +5,7 @@ import LanguageSwitcher from '../../Components/LanguageSwitcher/LanguageSwitcher
 const Landing = () => {
   return (
     <section className="page-section">
-      <LanguageSwitcher />
+      <LanguageSwitcher isLandingPage={true} />
       <LandingComponent />
     </section>
   )

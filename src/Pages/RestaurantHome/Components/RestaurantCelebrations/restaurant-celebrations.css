@@ -175,7 +175,7 @@
     }
 
     .rcc-column:nth-child(1) h3 {
-        font-size: 1.1rem;
+        font-size: 1rem !important;
     }
     
     .rc-branch2-img {
@@ -203,6 +203,6 @@
     }
 
     .rcc-column:nth-child(1) h3 {
-        font-size: 1rem;
+        font-size: .9rem !important;
     }
 }

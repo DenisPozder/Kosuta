@@ -33,11 +33,14 @@ import gardenImg6 from '../../../../Assets/Restaurant/restaurantGarden2.jpg'
 import gardenImg7 from '../../../../Assets/Restaurant/restaurantGarden9.jpg'
 import gardenImg8 from '../../../../Assets/Restaurant/restaurantGarden3.jpg'
 import gardenImg9 from '../../../../Assets/Restaurant/restaurantGarden6.jpg'
+import { useTranslation } from 'react-i18next'
 
 const AllHallsData = [
     {
         title: "sala grande",
+        engTitle: "",
         desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
+        engDesc: "",
         category: "grande",
         images: [
             {
@@ -89,7 +92,9 @@ const AllHallsData = [
     },
     {
         title: "svečana sala",
+        engTitle: "",
         desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
+        engDesc: "",
         category: "svecana",
         images: [
             {
@@ -141,7 +146,9 @@ const AllHallsData = [
     },
     {
         title: "kamin sala",
+        engTitle: "",
         desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
+        engDesc: "",
         category: "kamin",
         images: [
             {
@@ -193,7 +200,9 @@ const AllHallsData = [
     },
     {
         title: "bašta",
+        engTitle: "",
         desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
+        engDesc: "",
         category: "basta",
         images: [
             {
@@ -254,6 +263,8 @@ const TabButton = ({title, isActive, handleSetButton, category}) => {
 }
 
 const AllHallsTabs = () => {
+
+    const { t, i18n } = useTranslation('allHalls')
     const [ category, setCategory ] = useState('grande')
     const [ content, setContent ] = useState([])
 
@@ -307,12 +318,12 @@ useEffect(() => {
                 content.map((item, index) => (
                     <div key={`${category}-${index}`}>
                         <div className="aht-text">
-                            <h1 className='slide-in from-top'>{item.title}</h1>
-                            <p className='slide-in from-bottom'>{item.desc}</p>
+                            <h1 className='slide-in from-top'>{i18n.language === 'sr' ? item.title : item.engTitle}</h1>
+                            <p className='slide-in from-bottom'>{i18n.language === 'sr' ? item.desc : item.engDesc}</p>
                         </div>
                         <AllHallsSlider images={item.images} />
                         <div className="aht-button-wrap slide-in from-bottom">
-                            <Link className='aht-button' to={'/rezervacije'}><h3>rezerviši salu</h3><FaChevronRight /></Link>
+                            <Link className='aht-button' to={'/rezervacije'}><h3>{t('ahtBtn')}</h3><FaChevronRight /></Link>
                         </div>
                     </div>
                 ))

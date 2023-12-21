@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Open+Sans&family=Poly:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT&family=Open+Sans&family=Poly:ital@0;1&display=swap');
 
 :root {
-  --restaurant-font: 'Old Standard TT', serif;
+  --restaurant-font: 'Montserrat', sans-serif;
   --hall-font: 'Poly', serif;
   --restaurant-background: #9AB498;
   --restaurant-title: #01B636;

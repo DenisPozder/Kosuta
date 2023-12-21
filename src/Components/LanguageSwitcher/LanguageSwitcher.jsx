@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './language-switcher.css'
 import { useTranslation } from 'react-i18next'
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ isLandingPage }) => {
 
     const { i18n } = useTranslation()
     const [ showSwitcher, setShowSwitcher ] = useState(false)
@@ -13,12 +13,16 @@ const LanguageSwitcher = () => {
     }
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowSwitcher(true)
-        }, 1000)
+        if(isLandingPage) {
+            const timer = setTimeout(() => {
+                setShowSwitcher(true)
+            }, 1000)
 
-        return () => clearTimeout(timer)
-    },[])
+            return () => clearTimeout(timer)
+        }else {
+            setShowSwitcher(true)
+        }
+    },[isLandingPage])
 
   return (
     <div className={`language-switcher ${showSwitcher ? "show" : "hide"}`}>

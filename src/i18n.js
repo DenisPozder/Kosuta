@@ -10,6 +10,9 @@ import restaurantGameroomSerbian from './locales/igraonica.json'
 import restaurantMenuSerbian from './locales/restoranMeni.json'
 import restaurantGallerySerbian from './locales/restoranGalerija.json'
 import hallHomeSerbian from './locales/salePočetna.json'
+import allHallsSerbian from './locales/sveSale.json'
+import allHallsMenuSerbian from './locales/saleMeni.json'
+import restaurantFooterSerbian from './locales/restoranFuter.json'
 
 // English language imports
 import restaurantHomeEnglish from './locales/restaurantHome.json'
@@ -19,6 +22,9 @@ import restaurantGameroomEnglish from './locales/playroom.json'
 import restaurantMenuEnglish from './locales/restaurantMenu.json'
 import restaurantGalleryEnglish from './locales/restaurantGallery.json'
 import hallHomeEnglish from './locales/hallHome.json'
+import allHallsEnglish from './locales/allHalls.json'
+import allHallsMenuEnglish from './locales/hallMenu.json'
+import restaurantFooterEnglish from './locales/restaurantFooter.json'
 
 const storedLanguage = localStorage.getItem('i18nextLng') || 'sr';
 
@@ -34,7 +40,10 @@ i18n
                 gameroom: restaurantGameroomSerbian,
                 restaurantMenu: restaurantMenuSerbian,
                 restaurantGallery: restaurantGallerySerbian,
-                hallHome: hallHomeSerbian
+                hallHome: hallHomeSerbian,
+                allHalls: allHallsSerbian,
+                hallMenu: allHallsMenuSerbian,
+                restaurantFooter: restaurantFooterSerbian
             },
             en: {
                 restaurantHome: restaurantHomeEnglish,
@@ -43,7 +52,10 @@ i18n
                 gameroom: restaurantGameroomEnglish,
                 restaurantMenu: restaurantMenuEnglish,
                 restaurantGallery: restaurantGalleryEnglish,
-                hallHome: hallHomeEnglish
+                hallHome: hallHomeEnglish,
+                allHalls: allHallsEnglish,
+                hallMenu: allHallsMenuEnglish,
+                restaurantFooter: restaurantFooterEnglish
             }
         },
         lng: storedLanguage,

@@ -161,7 +161,7 @@
     }
 
     .rmc-column:nth-child(2) .rmc-h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .rmc-column:nth-child(1) .rmc-tree1 {
@@ -222,6 +222,6 @@
     }
 
     .rmc-column:nth-child(2) .rmc-h3 {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }

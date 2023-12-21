@@ -60,7 +60,7 @@
 
 .hal-column:nth-child(2) a {
     display: flex;
-    width: 200px;
+    width: 250px;
     height: 45px;
     align-items: center;
     justify-content: space-around;
