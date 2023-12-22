@@ -24,19 +24,23 @@ import restaurantImg22 from '../Assets/Restaurant/restaurantGarden15.jpg'
 export const RestaurantGalleryData = [
     {
         image: restaurantImg1,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg2,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg3,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg4,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg5,
@@ -44,70 +48,87 @@ export const RestaurantGalleryData = [
     },
     {
         image: restaurantImg6,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg7,
-        tag: "interijer"
+        tag: "interijer",
+        engTag: "interior"
     },
     {
         image: restaurantImg8,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg9,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg10,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg11,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg12,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg13,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg14,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg15,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg16,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg17,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg18,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg19,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg20,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg21,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
     {
         image: restaurantImg22,
-        tag: "bašta"
+        tag: "bašta",
+        engTag: "garden"
     },
 ]

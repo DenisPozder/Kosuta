@@ -4,18 +4,19 @@ import { RestaurantGalleryData } from '../../../../RestaurantData/RestaurantGall
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { useTranslation } from 'react-i18next'
 
-const TagButton = ({ name, handleSetTag, isActive }) => {
+const TagButton = ({ name, engName, handleSetTag, isActive }) => {
+  const { i18n } = useTranslation('')
   return (
-    <button className={`rgc-button ${isActive ? 'rgb-active' : ''}`} onClick={() => handleSetTag(name)}>
-      <h3>{name.toUpperCase()}</h3>
+    <button className={`rgc-button ${isActive ? 'rgb-active' : ''}`} onClick={() => handleSetTag(i18n.language === 'sr' ? name : engName)}>
+      <h3>{i18n.language === 'sr' ? name.toUpperCase() : engName.toUpperCase()}</h3>
     </button>
   )
 }
 
 const RGComponent = () => {
 
-  const { t } = useTranslation('restaurantGallery')
-  const [ tag, setTag ] = useState('sve')
+  const { t, i18n } = useTranslation('restaurantGallery')
+  const [ tag, setTag ] = useState(i18n.language === 'sr' ? 'sve' : 'all')
   const [ filteredImages, setFilteredImages ] = useState([])
 
   useEffect(() => {
@@ -49,8 +50,14 @@ const RGComponent = () => {
   },[filteredImages])
 
   useEffect(() => {
-    tag === 'sve' ? setFilteredImages(RestaurantGalleryData) : setFilteredImages(RestaurantGalleryData.filter(image => image.tag === tag))
-  },[tag])
+    console.log('Language:', i18n.language)
+    console.log('Tag:', tag)
+    if(i18n.language === 'sr') {
+      setFilteredImages(tag === 'sve' ? RestaurantGalleryData : RestaurantGalleryData.filter(image => image.tag === tag))
+    }else {
+      setFilteredImages(tag === 'all' ? RestaurantGalleryData : RestaurantGalleryData.filter(image => image.engTag === tag))
+    }
+  },[tag, i18n.language])
 
   return (
     <div className="rg-component">
@@ -58,9 +65,9 @@ const RGComponent = () => {
             <h1>{t('rgcTitle')}</h1>
             <div className="rgc-categories">
               <div className='rgc-text'><h3>{t('rgcBanner')}</h3></div>
-              <TagButton name='sve' handleSetTag={setTag} isActive={tag === 'sve'} />
-              <TagButton name='interijer' handleSetTag={setTag} isActive={tag === 'interijer'}  />
-              <TagButton name='bašta' handleSetTag={setTag} isActive={tag === 'bašta'}  />
+              <TagButton engName={'all'} name={'sve'} handleSetTag={setTag} isActive={tag === (i18n.language === 'sr' ? 'sve' : 'all')} />
+              <TagButton engName={'interior'} name={'interijer'} handleSetTag={setTag} isActive={tag === (i18n.language === 'sr' ? 'interijer' : 'interior')}  />
+              <TagButton engName={'garden'} name={'bašta'} handleSetTag={setTag} isActive={tag === (i18n.language === 'sr' ? 'bašta' : 'garden')}  />
             </div>
             <div className="rgc-gallery">
               {filteredImages.map((image, index) => (
