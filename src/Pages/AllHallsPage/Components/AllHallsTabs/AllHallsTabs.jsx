@@ -38,9 +38,9 @@ import { useTranslation } from 'react-i18next'
 const AllHallsData = [
     {
         title: "sala grande",
-        engTitle: "",
-        desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
-        engDesc: "",
+        engTitle: "event hall grande",
+        desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
+        engDesc: "The 'Grande' Hall provides an elegant space. With its luxurious interior decorated with warm tones and natural decorations, the hall creates a hospitable atmosphere for different occasions, from weddings to corporate gatherings.",
         category: "grande",
         images: [
             {
@@ -92,9 +92,9 @@ const AllHallsData = [
     },
     {
         title: "svečana sala",
-        engTitle: "",
+        engTitle: "the ceremonial hall",
         desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
-        engDesc: "",
+        engDesc: "The ceremonial hall provides a pleasant space. With its luxurious interior and floor decorations provides a suitable environment for all types of gatherings with a limited number of guests.",
         category: "svecana",
         images: [
             {
@@ -146,9 +146,9 @@ const AllHallsData = [
     },
     {
         title: "kamin sala",
-        engTitle: "",
-        desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
-        engDesc: "",
+        engTitle: "fireplace hall",
+        desc: "Kamin sala, naš dragulj za proslave, pruža jedinstveno iskustvo u srcu naše destinacije. Sa toplinom kamina, modernom opremom i udobnim nameštajem, stvaramo nezaboravne trenutke za različite događaje. Vaši specijalni momenti su kod nas u sigurnim rukama.",
+        engDesc: "Fireplace Hall, our celebratory gem, provides a unique experience in the heart of our haven. With the warmth of the fireplace, modern equipment and comfortable furniture, we create unforgettable moments for all events. Your special moments are in safe hands with us.",
         category: "kamin",
         images: [
             {
@@ -200,9 +200,9 @@ const AllHallsData = [
     },
     {
         title: "bašta",
-        engTitle: "",
-        desc: "Svečana sala pruža ugodan prostor koji sa svojim raskošnim enterijerom i prirodnim dekoracijama pruža prikladno okruženje za sve vrste okupljanja sa ograničenim brojem gostiju.",
-        engDesc: "",
+        engTitle: "garden",
+        desc: "Naša prelepa bašta je dragulj među destinacijama za proslave, smeštena u sklopu restorana s kapacitetom od 200 mesta. Ova očaravajuća oaza je otvorena od maja do septembra, pružajući gostima jedinstvenu priliku da svoje posebne trenutke dele pod vedrim nebom. Uz zelenilo drveća i miris cveća, ova prostrana bašta stvara idiličan ambijent za svadbe, rođendane ili korporativne događaje. Uživajte u svežem vazduhu i prijatnom ambijentu dok obeležavate važne trenutke u životu.",
+        engDesc: "Our beautiful garden is a jewel among celebration destinations, located within the restaurant with a capacity of 200 seats. This enchanting oasis is open from May to September, offering guests a unique opportunity to share their special moments under the clear sky. With the greenery of trees and the fragrance of flowers, this spacious garden creates an ideal setting for weddings, birthdays or corporate events. Enjoy the fresh air and pleasant ambience while creating memories for life.",
         category: "basta",
         images: [
             {
@@ -254,10 +254,11 @@ const AllHallsData = [
     }
 ]
 
-const TabButton = ({title, isActive, handleSetButton, category}) => {
+const TabButton = ({title, engTitle, isActive, handleSetButton, category}) => {
+    const { i18n } = useTranslation('')
     return (
         <button className={`tab-button ${isActive ? "active" : ""}`} onClick={() => handleSetButton(category)}>
-            <h3>{title}</h3>
+            <h3>{i18n.language === 'sr' ? title : engTitle}</h3>
         </button>
     )
 }
@@ -307,10 +308,10 @@ useEffect(() => {
   return (
     <div className="all-halls-tabs">
         <div className="aht-tabs fade-in">
-            <TabButton category={'grande'} title={'200 - 400 gostiju'} handleSetButton={setCategory} isActive={category === 'grande'} />
-            <TabButton category={'svecana'} title={'100 - 170 gostiju'} handleSetButton={setCategory} isActive={category === 'svecana'} />
-            <TabButton category={'kamin'} title={'do 80 gostiju'} handleSetButton={setCategory} isActive={category === 'kamin'} />
-            <TabButton category={'basta'} title={'200 gostiju (bašta)'} handleSetButton={setCategory} isActive={category === 'basta'} />
+            <TabButton category={'grande'} engTitle={'200 - 400 guests'} title={'200 - 400 gostiju'} handleSetButton={setCategory} isActive={category === 'grande'} />
+            <TabButton category={'svecana'} engTitle={'100 - 170 guests'} title={'100 - 170 gostiju'} handleSetButton={setCategory} isActive={category === 'svecana'} />
+            <TabButton category={'kamin'} engTitle={'up to 80 guests'} title={'do 80 gostiju'} handleSetButton={setCategory} isActive={category === 'kamin'} />
+            <TabButton category={'basta'} engTitle={'200 guests (garden)'} title={'200 gostiju (bašta)'} handleSetButton={setCategory} isActive={category === 'basta'} />
         </div>
         <div className="aht-wrap">
             <div className="aht-content">

@@ -1,6 +1,5 @@
 import React from 'react'
 import './restaurant-hero.css'
-import igraliste from '../../../../Assets/Igraliste.mp4'
 import restaurantTree from '../../../../Assets/Landing/restaurantTree.png'
 import restaurantTree2 from '../../../../Assets/Hall/forestTree2.png'
 import { Link } from 'react-router-dom'

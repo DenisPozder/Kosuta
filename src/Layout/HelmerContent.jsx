@@ -1,11 +1,11 @@
 import React from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-const HelmerContent = ({ title, description, keywords, canonical }) => {
+const HelmetContent = ({ title, description, keywords, canonical }) => {
   return (
     <HelmetProvider>
         <Helmet>
-            <title>{`${title} - Košuta`}</title>
+            <title>{`${title}`}</title>
             <meta name='description' content={description} />
             <meta name='keywords' content={keywords} />
             <link rel='canonical' href={canonical} />
@@ -14,4 +14,4 @@ const HelmerContent = ({ title, description, keywords, canonical }) => {
   )
 }
 
-export default HelmerContent
+export default HelmetContent

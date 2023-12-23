@@ -3,6 +3,7 @@ import './hall-footer.css'
 import Logo from '../../Assets/logoDark.svg'
 import { Link } from 'react-router-dom'
 import { AiFillCopyrightCircle } from 'react-icons/ai'
+import { useTranslation } from 'react-i18next'
 
 const getCurrentTime = () => {
   const now = new Date()
@@ -17,11 +18,14 @@ const getCurrentDay = () => {
 }
 
 const HallFooter = () => {
-
+  const { t, i18n } = useTranslation('restaurantFooter')
   const openingHour = 10.0
   const closingHour = 21.0
   const days = [
     "Nedelja", "Ponedeljak", "Utorak", "Sreda", "Četvratak", "Petak", "Subota"
+  ]
+  const engDays = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   ]
   const currentDay = getCurrentDay()
   const currentTime = getCurrentTime()
@@ -30,7 +34,7 @@ const HallFooter = () => {
 
   for(let i = 0; i < 7; i++){
     const isOpen = currentTime >= openingHour && currentTime < closingHour
-    status[i] = isOpen ? "Otvoreno" : "Zatvoreno"
+    status[i] = isOpen ? t('rfOpen') : t('rfClosed')
   }
 
   return (
@@ -40,10 +44,10 @@ const HallFooter = () => {
           <Link className="hfc-logo">
             <img src={Logo} alt="Logo restorana" />
           </Link>
-          <h3>Na vratima će vas sačekati naše čuveno gostoprimstvo, u salama tradicija i autentična dekoracija</h3>
+          <h3>{t('rfDesc')}</h3>
         </div>
         <div className="hf-column">
-          <h1>Radno Vreme: 10AM - 9PM</h1>
+          <h1>{t('rfTime')}</h1>
           <div className="hfc-days">
             {
               days.map((day, index) => (
@@ -56,8 +60,8 @@ const HallFooter = () => {
           </div>
         </div>
         <div className="hf-column">
-          <h1>Rezervacije</h1>
-          <h3>Rezervišite svoje mesto pozivom na broj :</h3>
+          <h1>{t('rfRes')}</h1>
+          <h3>{t('rfDesc2')}</h3>
           <Link to="tel:+3810665255525">066 5255525</Link>
         </div>
       </div>

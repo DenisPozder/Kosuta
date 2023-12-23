@@ -14,9 +14,11 @@ const HallLayoutLeft = () => {
             <div className="hall-layout-left-column slide-in from-left">
             <LazyLoadImage src={gameroomImg} alt="Igraonica" />
             </div>
-            <div className="hall-layout-left-column slide-in from-right">
-                <h1><span>{t('allTitle1')}</span><span>{t('allTitle2')}</span></h1>
+            <div className="hall-layout-left-column slide-in from-right hc-animation">
+              <div className="hllc-content">
+              <h1><span>{t('allTitle1')}</span><span>{t('allTitle2')}</span></h1>
                 <p>{t('allDesc')}</p>
+              </div>
             </div>
         </div>
     </div>

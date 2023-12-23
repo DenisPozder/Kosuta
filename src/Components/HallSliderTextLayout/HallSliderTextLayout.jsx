@@ -20,7 +20,7 @@ const HallSliderTextLayout = ({title1, engTitle1, engTitle2, title2, engDesc, de
                 <div className="hstl-content-wrap hstl-content-wrap-normal slide-in from-right">
                     <div className="hstl-text">
                     <h1 className='hstl-title'><span>{i18n.language === 'sr' ? title1 : engTitle1}</span><span>{i18n.language === 'sr' ? title2 : engTitle2}</span></h1>
-                    <p className='hstl-desc'>{desc}</p>
+                    <p className='hstl-desc'>{i18n.language === 'sr' ? desc : engDesc}</p>
                     <h2 className='hstl-capacity'>{i18n.language === 'sr' ? "Kapacitet:" : "Capacity:"} <span>{capacity}</span></h2>
                     <div className="hstl-btn">
                     <Link to={link}><h3>{i18n.language === 'sr' ? "Rezerviši salu" : "Reserve hall"}</h3><FaAngleRight /></Link>
@@ -33,7 +33,7 @@ const HallSliderTextLayout = ({title1, engTitle1, engTitle2, title2, engDesc, de
                 <div className="hstl-content-wrap hstl-content-wrap-reverse slide-in from-left">
                     <div className="hstl-text hstl-left">
                     <h1 className='hstl-title'><span>{i18n.language === 'sr' ? title1 : engTitle1}</span><span>{i18n.language === 'sr' ? title2 : engTitle2}</span></h1>
-                    <p className='hstl-desc'>{desc}</p>
+                    <p className='hstl-desc'>{i18n.language === 'sr' ? desc : engDesc}</p>
                     <h2 className='hstl-capacity'>{i18n.language === 'sr' ? "Kapacitet:" : "Capacity:"} <span>{capacity}</span></h2>
                     <div className="hstl-btn">
                     <Link to={link}><h3>{i18n.language === 'sr' ? "Rezerviši salu" : "Reserve hall"}</h3><FaAngleRight /></Link>

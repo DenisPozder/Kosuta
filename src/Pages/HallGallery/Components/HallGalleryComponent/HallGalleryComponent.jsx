@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react'
 import './hall-gallery-component.css'
 import { HallGalleryData } from '../../../../HallData/HallGalleryData'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useTranslation } from 'react-i18next'
 
-const HGCButton = ({ title, isActive, handleGalleryButton, category }) => {
+const HGCButton = ({ title, engTitle, isActive, handleGalleryButton, category }) => {
+  const { i18n } = useTranslation('')
     return (
-        <button className={`hgc-btn ${isActive ? "active" : ""}`} onClick={() => handleGalleryButton(category)}>{title}</button>
+        <button className={`hgc-btn ${isActive ? "active" : ""}`} onClick={() => handleGalleryButton(category)}>{i18n.language === 'sr' ? title : engTitle}</button>
     )
 }
 
 const HallGalleryComponent = () => {
-
+    const { i18n } = useTranslation('')
     const [ category, setCategory ] = useState('sve')
     const [ gallery, setGallery ] = useState([])
 
@@ -50,12 +52,12 @@ const HallGalleryComponent = () => {
 
   return (
     <div className="hall-gallery-component">
-        <h1 className='hgc-title'>Dobrodošli u našu galeriju</h1>
+        <h1 className='hgc-title'>{i18n.language === 'sr' ? 'Dobrodošli u našu galeriju' : 'Welcome to our gallery'}</h1>
         <div className="hall-gallery-header">
-            <HGCButton title={"sve"} category={"sve"} handleGalleryButton={setCategory} isActive={category === "sve"} />
-            <HGCButton title={"grande"} category={"grande"} handleGalleryButton={setCategory} isActive={category === "grande"} />
-            <HGCButton title={"svečana"} category={"svečana"} handleGalleryButton={setCategory} isActive={category === "svečana"} />
-            <HGCButton title={"kamin"} category={"kamin"} handleGalleryButton={setCategory} isActive={category === "kamin"} />
+            <HGCButton title={"sve"} engTitle={'all'} category={"sve"} handleGalleryButton={setCategory} isActive={category === "sve"} />
+            <HGCButton title={"grande"} engTitle={'grande'} category={"grande"} handleGalleryButton={setCategory} isActive={category === "grande"} />
+            <HGCButton title={"svečana"} engTitle={'ceremonial'} category={"svečana"} handleGalleryButton={setCategory} isActive={category === "svečana"} />
+            <HGCButton title={"kamin"} engTitle={'fireplace'} category={"kamin"} handleGalleryButton={setCategory} isActive={category === "kamin"} />
         </div>
         <div className="hgc-content">
             {

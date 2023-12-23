@@ -8,46 +8,46 @@ import { useTranslation } from 'react-i18next'
 const HallMenuData = [
     {
       title: "Predjelo",
-      engTitle: "",
+      engTitle: "APPETIZERS",
       category: "32",
       subTitle: [
         {
           title: "mesni proizvodi",
-          engTitle: "",
+          engTitle: "MEAT",
           paragraphs: [
             {
               title: "Pršuta Njeguška, Svinjska pečenica, Goveđa pečenica, Kulen, Budimska",
-              engTitle: ""
+              engTitle: "Njeguši Prosciutto, pork prosciutto, beef prosciutto, Kulen sausage, Budim sausage"
             }
           ]
         },
         {
           title: "sirevi",
-          engTitle: "",
+          engTitle: "CHEESES",
           paragraphs: [
             {
               title: "Kajmak, Mladi sir, Kačkavalj",
-              engTitle: "",
+              engTitle: "Kajmak, fresh cheese, Kashkaval",
             },
           ]
         },
         {
           title: "peciva",
-          engTitle: "",
+          engTitle: "PASTRIES",
           paragraphs: [
             {
               title: "Proja, Pita sa mesom, Pita sa sirom",
-              engTitle: "",
+              engTitle: "Cornbread, meat pie, cheese pie",
             },
           ]
         },
         {
           title: "dodaci",
-          engTitle: "",
+          engTitle: "ADDITIONS",
           paragraphs: [
             {
               title: "Masline",
-              engTitle: "",
+              engTitle: "Olives",
             }
           ]
         },
@@ -55,56 +55,56 @@ const HallMenuData = [
     },
     {
       title: "Salate",
-      engTitle: "",
+      engTitle: "SALADS",
       category: "32",
       subTitle: [
         {
           title: "Ruska",
-          engTitle: "",
+          engTitle: "Russian salad",
         },
         {
           title: "Kupus salata",
-          engTitle: "",
+          engTitle: "Cabbage salad",
         },
         {
           title: "Sezonska",
-          engTitle: "",
+          engTitle: "Seasonal salad",
         },
       ]
     },
     {
       title: "Čorba",
-      engTitle: "",
+      engTitle: "SOUPS",
       category: "32",
       subTitle: [
         {
           title: "Teleća",
-          engTitle: "",
+          engTitle: "Veal broth",
         }
       ]
     },
     {
       title: "Glavno jelo",
-      engTitle: "",
+      engTitle: "MAIN COURSE",
       category: "32",
       subTitle: [
         {
           title: "roštilj",
-          engTitle: "",
+          engTitle: "GRILL",
           paragraphs: [
             {
               title: "Pljeskavica, Ćevapi, Vešalica, Pileće belo meso, Dimljeni vrat, Domaća kobasica, Pileći batak",
-              engTitle: "",
+              engTitle: "Burger, Kebabs, Hanger, Chicken fillets, Smoked pork neck, Homemade sausage, Chicken drumsticks",
             },
           ]
         },
         {
           title: "prilog",
-          engTitle: "",
+          engTitle: "SIDE DISH",
           paragraphs: [
             {
               title: "Pekarski krompir",
-              engTitle: "",
+              engTitle: "Baked potatoes",
             }
           ]
         }
@@ -112,76 +112,76 @@ const HallMenuData = [
     },
     {
       title: "Piće",
-      engTitle: "",
+      engTitle: "DRINKS",
       category: "32",
       subTitle: [
         {
           title: "rakije",
-          engTitle: "",
+          engTitle: "RAKIJA",
           paragraphs: [
             {
               title: "Dunja, Kajsija, Šljiva, Loza, Viljamovka",
-              engTitle: "",
+              engTitle: "Quince, Apricot, Plum, Grape, Viljamovka ( pear )",
             },
           ]
         },
         {
           title: "vina",
-          engTitle: "",
+          engTitle: "WINE",
           paragraphs: [
             {
               title: "Crveno vino 0,7l, Roze vino 0,7l, Belo vino 0,7l ( Vinarija Oplenac )",
-              engTitle: "",
+              engTitle: "Red wine 0.7l, Rosé 0.7l, White wine 0.7l (Winery Oplenac)",
             },
           ]
         },
         {
           title: "pivo",
-          engTitle: "",
+          engTitle: "BEER",
           paragraphs: [
             {
               title: "Lav Premium 0,33l, Lav točeno 0,33l",
-              engTitle: "",
+              engTitle: "Lav Premium 0.33l, Lav draught 0.33l",
             },
           ]
         },
         {
           title: "voda",
-          engTitle: "",
+          engTitle: "WATER",
           paragraphs: [
             {
               title: "Knjaz Miloš gazirana, Aqua Viva negazirana",
-              engTitle: "",
+              engTitle: "Knjaz Miloš mineral carbonated, Aqua Viva non-carbonated",
             },
           ]
         },
         {
           title: "sokovi",
-          engTitle: "",
+          engTitle: "JUICES",
           paragraphs: [
             {
               title: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Jabuka, Jagoda, Breskva, Đus",
-              engTitle: "",
+              engTitle: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Apple, Strawberry, Peach, Juice",
             },
           ]
         },
         {
           title: "ostala pića",
-          engTitle: "",
+          engTitle: "OTHER DRINKS",
           paragraphs: [
             {
               title: "Vermut, Vodka, Vinjak, Dzin, Pelinkovac",
-              engTitle: "",
+              engTitle: "Vermouth, Vodka, Vinjak, Gin, Pelinkovac",
             },
           ]
         },
         {
           title: "kafa",
-          engTitle: "",
+          engTitle: "COFFEE",
           paragraphs: [
             {
               title: "Kafa domaća, Kafa espresso, Nes kafa",
-              engTitle: "",
+              engTitle: "Homemade coffee, Espresso, Nescafe",
             },
           ]
         },
@@ -189,46 +189,46 @@ const HallMenuData = [
     },
     {
       title: "Predjelo",
-      engTitle: "",
+      engTitle: "APPETIZERS",
       category: "34",
       subTitle: [
         {
           title: "mesni proizvodi",
-          engTitle: "",
+          engTitle: "MEAT",
           paragraphs: [
             {
               title: "Pršuta Njeguška, Svinjska pečenica, Goveđa pečenica, Kulen, Budimska",
-              engTitle: "",
+              engTitle: "Njeguši Prosciutto, pork prosciutto, beef prosciutto, Kulen sausage, Budim sausage",
             }
           ]
         },
         {
           title: "sirevi",
-          engTitle: "",
+          engTitle: "CHEESES",
           paragraphs: [
             {
               title: "Kajmak, Mladi sir, Kačkavalj",
-              engTitle: "",
+              engTitle: "Kajmak, fresh cheese, Kashkaval",
             },
           ]
         },
         {
           title: "peciva",
-          engTitle: "",
+          engTitle: "PASTRIES",
           paragraphs: [
             {
               title: "Proja, Pita sa mesom, Pita sa sirom",
-              engTitle: "",
+              engTitle: "Cornbread, meat pie, cheese pie",
             },
           ]
         },
         {
           title: "dodaci",
-          engTitle: "",
+          engTitle: "ADDITIONS",
           paragraphs: [
             {
               title: "Masline",
-              engTitle: "",
+              engTitle: "Olives",
             }
           ]
         },
@@ -236,87 +236,87 @@ const HallMenuData = [
     },
     {
       title: "Salate",
-      engTitle: "",
+      engTitle: "SALADS",
       category: "34",
       subTitle: [
         {
           title: "Ruska",
-          engTitle: "",
+          engTitle: "Russian salad",
         },
         {
           title: "Kupus salata",
-          engTitle: "",
+          engTitle: "Cabbage salad",
         },
         {
           title: "Sezonska",
-          engTitle: "",
+          engTitle: "Seasonal salad",
         },
       ]
     },
     {
       title: "Čorba",
-      engTitle: "",
+      engTitle: "SOUPS",
       category: "34",
       subTitle: [
         {
           title: "Teleća",
-          engTitle: "",
+          engTitle: "Veal broth",
         }
       ]
     },
     {
       title: "Međujelo",
-      engTitle: "",
+      engTitle: "IN BETWEEN",
       category: "34",
       subTitle: [
         {
           title: "Sarmice od želja sa kiselim kupusom",
-          engTitle: "",
+          engTitle: "Herb stuffed sour cabbage rolls",
         }
       ]
     },
     {
       title: "Glavno jelo",
-      engTitle: "",
+      engTitle: "MAIN COURSE",
       category: "34",
       subTitle: [
         {
           title: "roštilj",
-          engTitle: "",
+          engTitle: "GRILL",
           paragraphs: [
             {
               title: "Pljeskavica, Ćevapi, Vešalica, Pileće belo meso, Dimljeni vrat, Domaća kobasica, Pileći batak",
-              engTitle: "",
+              engTitle: "Burger, Kebabs, Hanger, Chicken fillets, Smoked pork neck, Homemade sausage, Chicken drumsticks",
             },
           ]
         },
         {
           title: "teleći medaljoni",
-          engTitle: "",
+          engTitle: "VEAL MEDALLIONS",
           paragraphs: [
             {
               title: "Sa vrganjima i šampinjonima",
-              engTitle: "",
+              engTitle: "with boletus and champignons",
             }
           ]
         },
         {
           title: "pohovana piletina",
-          engTitle: "",
+          engTitle: "BREADED CHICKEN",
           paragraphs: [
             {
               title: "Sa susamom i tartat sosom",
-              engTitle: "",
+              engTitle: "with sesame and tartare sauce",
             }
           ]
         },
         {
           title: "prilog",
-          engTitle: "",
+          engTitle: "SIDE DISH",
           paragraphs: [
             {
               title: "Pekarski krompir",
-              engTitle: "",
+              engTitle: "Baked potatoes",
             }
           ]
         }
@@ -324,86 +324,86 @@ const HallMenuData = [
     },
     {
       title: "Piće",
-      engTitle: "",
+      engTitle: "DRINKS",
       category: "34",
       subTitle: [
         {
           title: "rakije",
-          engTitle: "",
+          engTitle: "RAKIJA",
           paragraphs: [
             {
               title: "Dunja, Kajsija, Šljiva, Loza, Viljamovka",
-              engTitle: "",
+              engTitle: "Quince, Apricot, Plum, Grape, Viljamovka ( pear )",
             },
           ]
         },
         {
           title: "medene rakije",
-          engTitle: "",
+          engTitle: "HONEY SPICED RAKIJA",
           paragraphs: [
             {
               title: "Malina, Dunja Jabuka i cimet",
-              engTitle: "",
+              engTitle: "Raspberry, Quince, Apple - cinnamon",
             },
           ]
         },
         {
           title: "vina",
-          engTitle: "",
+          engTitle: "WINE",
           paragraphs: [
             {
               title: "Crveno vino 0,7l, Roze vino 0,7l, Belo vino 0,7l ( Vinarija Oplenac )",
-              engTitle: "",
+              engTitle: "Red wine 0.7l, Rosé 0.7l, White wine 0.7l (Winery Oplenac)",
             },
           ]
         },
         {
           title: "pivo",
-          engTitle: "",
+          engTitle: "BEER",
           paragraphs: [
             {
               title: "Lav Premium 0,33l, Lav točeno 0,33l, Tuborg 0,33l",
-              engTitle: "",
+              engTitle: "Lav Premium 0.33l, Lav draught 0.33l, Tuborg 0.33l",
             },
           ]
         },
         {
           title: "voda",
-          engTitle: "",
+          engTitle: "WATER",
           paragraphs: [
             {
               title: "Knjaz Miloš gazirana, Aqua Viva negazirana",
-              engTitle: "",
+              engTitle: "Knjaz Miloš mineral carbonated, Aqua Viva non-carbonated",
             },
           ]
         },
         {
           title: "sokovi",
-          engTitle: "",
+          engTitle: "JUICES",
           paragraphs: [
             {
               title: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Jabuka, Jagoda, Breskva, Đus",
-              engTitle: "",
+              engTitle: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Apple, Strawberry, Peach, Juice",
             },
           ]
         },
         {
           title: "ostala pića",
-          engTitle: "",
+          engTitle: "OTHER DRINKS",
           paragraphs: [
             {
               title: "Vermut, Vodka, Vinjak, Dzin, Pelinkovac",
-              engTitle: "",
+              engTitle: "Vermouth, Vodka, Vinjak, Gin, Pelinkovac",
             },
           ]
         },
         {
           title: "kafa",
-          engTitle: "",
+          engTitle: "COFFEE",
           paragraphs: [
             {
               title: "Kafa domaća, Kafa espresso, Nes kafa",
-              engTitle: "",
+              engTitle: "Homemade coffee, Espresso, Nescafe",
             },
           ]
         },
@@ -411,46 +411,46 @@ const HallMenuData = [
     },
     {
       title: "Predjelo",
-      engTitle: "",
+      engTitle: "APPETIZERS",
       category: "37",
       subTitle: [
         {
           title: "mesni proizvodi",
-          engTitle: "",
+          engTitle: "MEAT",
           paragraphs: [
             {
               title: "Pršuta Njeguška, Svinjska pečenica, Goveđa pečenica, Kulen, Budimska",
-              engTitle: "",
+              engTitle: "Njeguši Prosciutto, pork prosciutto, beef prosciutto, Kulen sausage, Budim sausage",
             }
           ]
         },
         {
           title: "sirevi",
-          engTitle: "",
+          engTitle: "CHEESES",
           paragraphs: [
             {
               title: "Kajmak, Mladi sir, Kačkavalj",
-              engTitle: "",
+              engTitle: "Kajmak, fresh cheese, Kashkaval",
             },
           ]
         },
         {
           title: "peciva",
-          engTitle: "",
+          engTitle: "PASTRIES",
           paragraphs: [
             {
               title: "Proja, Pita sa mesom, Pita sa sirom",
-              engTitle: "",
+              engTitle: "Cornbread, meat pie, cheese pie",
             },
           ]
         },
         {
           title: "dodaci",
-          engTitle: "",
+          engTitle: "ADDITIONS",
           paragraphs: [
             {
               title: "Masline",
-              engTitle: "",
+              engTitle: "Olives",
             }
           ]
         },
@@ -458,91 +458,91 @@ const HallMenuData = [
     },
     {
       title: "Salate",
-      engTitle: "",
+      engTitle: "SALADS",
       category: "37",
       subTitle: [
         {
           title: "Ruska",
-          engTitle: "",
+          engTitle: "Russian salad",
         },
         {
           title: "Kupus salata",
-          engTitle: "",
+          engTitle: "Cabbage salad",
         },
         {
           title: "Sezonska",
-          engTitle: "",
+          engTitle: "Seasonal salad",
         },
       ]
     },
     {
       title: "Čorba",
-      engTitle: "",
+      engTitle: "SOUPS",
       category: "37",
       subTitle: [
         {
           title: "Teleća",
-          engTitle: "",
+          engTitle: "Veal broth",
         }
       ]
     },
     {
       title: "Međujelo",
-      engTitle: "",
+      engTitle: "IN BETWEEN",
       category: "37",
       subTitle: [
         {
           title: "Sarmice od želja sa kiselim kupusom",
-          engTitle: "",
+          engTitle: "Herb stuffed sour cabbage rolls",
         }
       ]
     },
     {
       title: "Glavno jelo",
-      engTitle: "",
+      engTitle: "MAIN COURSE",
       category: "37",
       subTitle: [
         {
           title: "roštilj",
-          engTitle: "",
+          engTitle: "GRILL",
           paragraphs: [
             {
               title: "Pljeskavica, Ćevapi, Vešalica, Pileće belo meso, Dimljeni vrat, Domaća kobasica, Pileći batak",
-              engTitle: "",
+              engTitle: "Burger, Kebabs, Hanger, Chicken fillets, Smoked pork neck, Homemade sausage, Chicken drumsticks",
             },
           ]
         },
         {
           title: "teleći medaljoni",
-          engTitle: "",
+          engTitle: "VEAL MEDALLIONS",
           paragraphs: [
             {
               title: "Sa vrganjima i šampinjonima",
-              engTitle: "",
+              engTitle: "with boletus and champignons",
             }
           ]
         },
         {
           title: "pohovana piletina",
-          engTitle: "",
+          engTitle: "BREADED CHICKEN",
           paragraphs: [
             {
               title: "Sa susamom i tartat sosom",
-              engTitle: "",
+              engTitle: "with sesame and tartare sauce",
             }
           ]
         },
         {
           title: "ćuretina sa mlincima",
-          engTitle: "",
+          engTitle: "TURKEY WITH 'MLINCI'",
         },
         {
           title: "prilog",
-          engTitle: "",
+          engTitle: "SIDE DISH",
           paragraphs: [
             {
               title: "Pekarski krompir",
-              engTitle: "",
+              engTitle: "Baked potatoes",
             }
           ]
         }
@@ -550,101 +550,101 @@ const HallMenuData = [
     },
     {
       title: "pećenje",
-      engTitle: "",
+      engTitle: "ROAST",
       category: "37",
       subTitle: [
         {
           title: "Svinjsko pečenje",
-          engTitle: "",
+          engTitle: "PORK ROAST",
         },
         {
           title: "Jagnjeće pečenje",
-          engTitle: "",
+          engTitle: "LAMB ROAST",
         },
       ]
     },
     {
       title: "Piće",
-      engTitle: "",
+      engTitle: "DRINKS",
       category: "37",
       subTitle: [
         {
           title: "rakije",
-          engTitle: "",
+          engTitle: "RAKIJA",
           paragraphs: [
             {
               title: "Dunja, Kajsija, Šljiva, Loza, Viljamovka",
-              engTitle: "",
+              engTitle: "Quince, Apricot, Plum, Grape, Viljamovka ( pear )",
             },
           ]
         },
         {
           title: "medene rakije",
-          engTitle: "",
+          engTitle: "HONEY SPICED RAKIJA",
           paragraphs: [
             {
               title: "Malina, Dunja Jabuka i cimet",
-              engTitle: "",
+              engTitle: "Raspberry, Quince, Apple - cinnamon",
             },
           ]
         },
         {
           title: "vina",
-          engTitle: "",
+          engTitle: "WINE",
           paragraphs: [
             {
               title: "Crveno vino 0,7l, Roze vino 0,7l, Belo vino 0,7l ( Vinarija Oplenac )",
-              engTitle: "",
+              engTitle: "Red wine 0.7l, Rosé 0.7l, White wine 0.7l (Winery Oplenac)",
             },
           ]
         },
         {
           title: "pivo",
-          engTitle: "",
+          engTitle: "BEER",
           paragraphs: [
             {
               title: "Lav Premium 0,33l, Lav točeno 0,33l, Tuborg 0,33l, Budweiser tamno 0,33l",
-              engTitle: "",
+              engTitle: "Lav Premium 0.33l, Lav draught 0.33l, Tuborg 0.33l, Budweiser dark 0.33l",
             },
           ]
         },
         {
           title: "voda",
-          engTitle: "",
+          engTitle: "WATER",
           paragraphs: [
             {
               title: "Knjaz Miloš gazirana, Aqua Viva negazirana",
-              engTitle: "",
+              engTitle: "Knjaz Miloš mineral carbonated, Aqua Viva non-carbonated",
             },
           ]
         },
         {
           title: "sokovi",
-          engTitle: "",
+          engTitle: "JUICES",
           paragraphs: [
             {
               title: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Jabuka, Jagoda, Breskva, Đus",
-              engTitle: "",
+              engTitle: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Apple, Strawberry, Peach, Juice",
             },
           ]
         },
         {
           title: "ostala pića",
-          engTitle: "",
+          engTitle: "OTHER DRINKS",
           paragraphs: [
             {
               title: "Vermut, Vodka, Vinjak, Dzin, Pelinkovac",
-              engTitle: "",
+              engTitle: "Vermouth, Vodka, Vinjak, Gin, Pelinkovac",
             },
           ]
         },
         {
           title: "kafa",
-          engTitle: "",
+          engTitle: "COFFEE",
           paragraphs: [
             {
               title: "Kafa domaća, Kafa espresso, Nes kafa",
-              engTitle: "",
+              engTitle: "Homemade coffee, Espresso, Nescafe",
             },
           ]
         },
@@ -652,46 +652,46 @@ const HallMenuData = [
     },
     {
       title: "Predjelo",
-      engTitle: "",
+      engTitle: "APPETIZERS",
       category: "45",
       subTitle: [
         {
           title: "mesni proizvodi",
-          engTitle: "",
+          engTitle: "MEAT",
           paragraphs: [
             {
               title: "Pršuta Njeguška, Svinjska pečenica, Goveđa pečenica, Kulen, Budimska",
-              engTitle: "",
+              engTitle: "Njeguši Prosciutto, pork prosciutto, beef prosciutto, Kulen sausage, Budim sausage",
             }
           ]
         },
         {
           title: "sirevi",
-          engTitle: "",
+          engTitle: "CHEESES",
           paragraphs: [
             {
               title: "Kajmak, Mladi sir, Kačkavalj",
-              engTitle: "",
+              engTitle: "Kajmak, fresh cheese, Kashkaval",
             },
           ]
         },
         {
           title: "peciva",
-          engTitle: "",
+          engTitle: "PASTRIES",
           paragraphs: [
             {
               title: "Proja, Pita sa mesom, Pita sa sirom",
-              engTitle: "",
+              engTitle: "Cornbread, meat pie, cheese pie",
             },
           ]
         },
         {
           title: "dodaci",
-          engTitle: "",
+          engTitle: "ADDITIONS",
           paragraphs: [
             {
               title: "Masline",
-              engTitle: "",
+              engTitle: "Olives",
             }
           ]
         },
@@ -699,81 +699,81 @@ const HallMenuData = [
     },
     {
       title: "Salate",
-      engTitle: "",
+      engTitle: "SALADS",
       category: "45",
       subTitle: [
         {
           title: "Ruska",
-          engTitle: "",
+          engTitle: "Russian salad",
         },
         {
           title: "Kupus salata",
-          engTitle: "",
+          engTitle: "Cabbage salad",
         },
         {
           title: "Sezonska",
-          engTitle: "",
+          engTitle: "Seasonal salad",
         },
       ]
     },
     {
       title: "Čorba",
-      engTitle: "",
+      engTitle: "SOUPS",
       category: "45",
       subTitle: [
         {
           title: "Teleća",
-          engTitle: "",
+          engTitle: "Veal broth",
         }
       ]
     },
     {
       title: "Međujelo",
-      engTitle: "",
+      engTitle: "IN BETWEEN",
       category: "45",
       subTitle: [
         {
           title: "Sarmice od želja sa kiselim kupusom",
-          engTitle: "",
+          engTitle: "Herb stuffed sour cabbage rolls",
         }
       ]
     },
     {
       title: "Glavno jelo",
-      engTitle: "",
+      engTitle: "MAIN COURSE",
       category: "45",
       subTitle: [
         {
           title: "roštilj",
-          engTitle: "",
+          engTitle: "GRILL",
           paragraphs: [
             {
               title: "Pljeskavica, Ćevapi, Vešalica, Pileće belo meso, Dimljeni vrat, Domaća kobasica, Pileći batak",
-              engTitle: "",
+              engTitle: "Burger, Kebabs, Hanger, Chicken fillets, Smoked pork neck, Homemade sausage, Chicken drumsticks",
             },
           ]
         },
         {
           title: "teleći medaljoni",
-          engTitle: "",
+          engTitle: "VEAL MEDALLIONS",
           paragraphs: [
             {
               title: "Sa vrganjima i šampinjonima",
-              engTitle: "",
+              engTitle: "with boletus and champignons",
             }
           ]
         },
         {
           title: "ćuretina sa mlincima",
-          engTitle: "",
+          engTitle: "TURKEY WITH 'MLINCI'",
         },
         {
           title: "prilog",
-          engTitle: "",
+          engTitle: "SIDE DISH",
           paragraphs: [
             {
               title: "Pekarski krompir",
-              engTitle: "",
+              engTitle: "Baked potatoes",
             }
           ]
         }
@@ -781,111 +781,111 @@ const HallMenuData = [
     },
     {
       title: "pećenje",
-      engTitle: "",
+      engTitle: "ROAST",
       category: "45",
       subTitle: [
         {
           title: "Svinjsko pečenje",
-          engTitle: "",
+          engTitle: "PORK ROAST",
         },
         {
           title: "Jagnjeće pečenje",
-          engTitle: "",
+          engTitle: "LAMB ROAST",
         },
       ]
     },
     {
       title: "Piće",
-      engTitle: "",
+      engTitle: "DRINKS",
       category: "45",
       subTitle: [
         {
           title: "rakije",
-          engTitle: "",
+          engTitle: "RAKIJA",
           paragraphs: [
             {
               title: "Dunja, Kajsija, Šljiva, Loza, Viljamovka",
-              engTitle: "",
+              engTitle: "Quince, Apricot, Plum, Grape, Viljamovka ( pear )",
             },
           ]
         },
         {
           title: "medene rakije",
-          engTitle: "",
+          engTitle: "HONEY SPICED RAKIJA",
           paragraphs: [
             {
               title: "Malina, Dunja Jabuka i cimet",
-              engTitle: "",
+              engTitle: "Raspberry, Quince, Apple - cinnamon",
             },
           ]
         },
         {
           title: "vina",
-          engTitle: "",
+          engTitle: "WINE",
           paragraphs: [
             {
               title: "Crveno vino 0,7l, Roze vino 0,7l, Belo vino 0,7l ( Vinarija Oplenac )",
-              engTitle: "",
+              engTitle: "Red wine 0.7l, Rosé 0.7l, White wine 0.7l (Winery Oplenac)",
             },
           ]
         },
         {
           title: "pivo",
-          engTitle: "",
+          engTitle: "BEER",
           paragraphs: [
             {
               title: "Lav Premium 0,33l, Lav točeno 0,33l, Tuborg 0,33l, Budweiser tamno 0,33l",
-              engTitle: "",
+              engTitle: "Lav Premium 0.33l, Lav draught 0.33l, Tuborg 0.33l, Budweiser dark 0.33l",
             },
           ]
         },
         {
           title: "voda",
-          engTitle: "",
+          engTitle: "WATER",
           paragraphs: [
             {
               title: "Knjaz Miloš gazirana, Aqua Viva negazirana",
-              engTitle: "",
+              engTitle: "Knjaz Miloš mineral carbonated, Aqua Viva non-carbonated",
             },
           ]
         },
         {
           title: "sokovi",
-          engTitle: "",
+          engTitle: "JUICES",
           paragraphs: [
             {
               title: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Jabuka, Jagoda, Breskva, Đus",
-              engTitle: "",
+              engTitle: "Coca-Cola, Coca-Cola Zero, Fanta, Bitter Lemon, Tonic Water, Sprite, Apple, Strawberry, Peach, Juice",
             },
           ]
         },
         {
           title: "ostala pića",
-          engTitle: "",
+          engTitle: "OTHER DRINKS",
           paragraphs: [
             {
               title: "Vermut, Vodka, Vinjak, Dzin, Pelinkovac",
-              engTitle: "",
+              engTitle: "Vermouth, Vodka, Vinjak, Gin, Pelinkovac",
             },
           ]
         },
         {
           title: "strana pića",
-          engTitle: "",
+          engTitle: "FOREIGN DRINKS",
           paragraphs: [
             {
               title: "Martini, Campari, Tequila, Ballantines, Jeger",
-              engTitle: "",
+              engTitle: "Martini, Campari, Tequilla, Ballantine's, Jägermeister",
             },
           ]
         },
         {
           title: "kafa",
-          engTitle: "",
+          engTitle: "COFFEE",
           paragraphs: [
             {
               title: "Kafa domaća, Kafa espresso, Nes kafa",
-              engTitle: "",
+              engTitle: "Homemade coffee, Espresso, Nescafe",
             },
           ]
         },
@@ -893,10 +893,11 @@ const HallMenuData = [
     },
 ]
 
-const HallMenuTab = ({ title, isActive, handleTabButton, category }) => {
+const HallMenuTab = ({ title, engTitle, isActive, handleTabButton, category }) => {
+  const { i18n } = useTranslation('')
   return (
     <button className={`hall-menu-tab ${isActive ? "active" : ""}`} onClick={() => handleTabButton(category)}>
-      {title}
+      {i18n.language === 'sr' ? title : engTitle}
     </button>
   )
 }
@@ -947,10 +948,10 @@ useEffect(() => {
   return (
     <div className="hall-menu-component">
         <div className="hall-menu-header fade-in">
-          <HallMenuTab category={'32'} title={i18n.language === 'sr' ? "32€ po osobi" : "32€"} handleTabButton={setCategory} isActive={category === "32"} />
-          <HallMenuTab category={'34'} title={i18n.language === 'sr' ? "34€ po osobi" : "34€"} handleTabButton={setCategory} isActive={category === "34"} />
-          <HallMenuTab category={'37'} title={i18n.language === 'sr' ? "37€ po osobi" : "37€"} handleTabButton={setCategory} isActive={category === "37"} />
-          <HallMenuTab category={'45'} title={i18n.language === 'sr' ? "45€ po osobi" : "45€"} handleTabButton={setCategory} isActive={category === "45"} />
+          <HallMenuTab category={'32'} engTitle={'32€ per person'} title={'32€ po osobi'} handleTabButton={setCategory} isActive={category === "32"} />
+          <HallMenuTab category={'34'} engTitle={'34€ per person'} title={'34€ po osobi'} handleTabButton={setCategory} isActive={category === "34"} />
+          <HallMenuTab category={'37'} engTitle={'37€ per person'} title={'37€ po osobi'} handleTabButton={setCategory} isActive={category === "37"} />
+          <HallMenuTab category={'45'} engTitle={'45€ per person'} title={'45€ po osobi'} handleTabButton={setCategory} isActive={category === "45"} />
         </div>
         <div className="hmc-content">
           <div className="hmc-container">

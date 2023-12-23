@@ -234,6 +234,26 @@
     .hstl-content-wrap .hstl-text {
         margin-left: 25px;
     }
+
+    .hstl-content-wrap-reverse::after {
+        width: 85%;
+        height: 80%;
+    }
+    
+    .hstl-content-wrap-reverse::before {
+        width: 95%;
+        height: 80%;
+    }
+
+    .hstl-content-wrap-normal::after {
+        width: 85%;
+        height: 80%;
+    }
+    
+    .hstl-content-wrap-normal::before {
+        width: 95%;
+        height: 80%;
+    }
 }
 
 @media only screen and (max-width: 768px) {

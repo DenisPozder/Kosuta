@@ -1,71 +1,96 @@
-import React, { useEffect } from 'react'
-import HallLayout from '../../Layout/HallLayout/HallLayout'
-import HallAboutHero from './Components/HallAboutHero/HallAboutHero'
-import HallAboutLocation from './Components/HallAboutLocation/HallAboutLocation'
-import HallLayoutRight from './Components/HallAboutLayoutRight/HallLayoutRight'
-import HallLayoutLeft from './Components/HallAboutLayoutLeft/HallLayoutLeft'
-import { useLocation } from 'react-router-dom'
-import RestaurantLayout from '../../Layout/RestaurantLayout/RestaurantLayout'
+import React, { useEffect } from "react";
+import HallLayout from "../../Layout/HallLayout/HallLayout";
+import HallAboutHero from "./Components/HallAboutHero/HallAboutHero";
+import HallAboutLocation from "./Components/HallAboutLocation/HallAboutLocation";
+import HallLayoutRight from "./Components/HallAboutLayoutRight/HallLayoutRight";
+import HallLayoutLeft from "./Components/HallAboutLayoutLeft/HallLayoutLeft";
+import { useLocation } from "react-router-dom";
+import RestaurantLayout from "../../Layout/RestaurantLayout/RestaurantLayout";
+import HelmetContent from "../../Layout/HelmerContent";
 
 const HallAbout = () => {
+  const location = useLocation();
 
-  const location = useLocation()
+  /*----- Intersection Observer -----*/
+  useEffect(() => {
+    const faders = document.querySelectorAll(".fade-in");
+    const sliders = document.querySelectorAll(".slide-in");
 
+    const appearOptions = {
+      threshold: 0,
+      rootMargin: "0px 0px -200px 0px",
+    };
 
-        /*----- Intersection Observer -----*/
-useEffect(() => {
+    const appearOnScroll = new IntersectionObserver(function (
+      entries,
+      appearOnScroll
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },
+    appearOptions);
 
-  const faders = document.querySelectorAll('.fade-in')
-  const sliders = document.querySelectorAll('.slide-in')
+    faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
 
-  const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -200px 0px"
-  }
-
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-    entries.forEach(entry => {
-      if(!entry.isIntersecting) {
-        return;
-      }else {
-        entry.target.classList.add('appear')
-        appearOnScroll.unobserve(entry.target)
-      }
-    })
-  }, appearOptions)
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader)
-  })
-
-  sliders.forEach(slider => {
-    appearOnScroll.observe(slider)
-  })
-
-},[])
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }, []);
 
   return location.pathname === "/restoran/o-nama" ? (
-    <RestaurantLayout>
-        <section className='page-section'>
+    <>
+      <HelmetContent
+        title={"O nama"}
+        description={
+          "Restoran Košuta sa veoma dugom tradicijom, ali u novom ruhu smešten u samom srcu Košutnja, u najlepšem delu Beograda daleko od gradske vreve."
+        }
+        keywords={
+          "restoran, jelo, jela, piće, pića, jelovnik, meni, početna, košuta restoran, restoran košuta, o nama, kratko o nama"
+        }
+        canonical={""}
+      />
+      <RestaurantLayout>
+        <section className="page-section">
           <HallAboutHero />
           <HallAboutLocation />
           <HallLayoutRight />
           <HallLayoutLeft />
         </section>
-    </RestaurantLayout>
+      </RestaurantLayout>
+    </>
   ) : (
-    <HallLayout>
-    <section className='page-section'>
-      <HallAboutHero />
-      <HallAboutLocation />
-      <HallLayoutRight />
-      <HallLayoutLeft />
-    </section>
-</HallLayout>
-  )
-}
+    <>
+      <HelmetContent
+        title={"O nama"}
+        description={
+          "Restoran Košuta sa veoma dugom tradicijom, ali u novom ruhu smešten u samom srcu Košutnja, u najlepšem delu Beograda daleko od gradske vreve."
+        }
+        keywords={
+          "restoran, jelo, jela, piće, pića, jelovnik, meni, početna, košuta restoran, restoran košuta, o nama, kratko o nama"
+        }
+        canonical={""}
+      />
+      <HallLayout>
+        <section className="page-section">
+          <HallAboutHero />
+          <HallAboutLocation />
+          <HallLayoutRight />
+          <HallLayoutLeft />
+        </section>
+      </HallLayout>
+    </>
+  );
+};
 
-export default HallAbout
+export default HallAbout;
 
 // Meal 4 Becka Snicla
 // Meal 3 Pileci File na zaru
