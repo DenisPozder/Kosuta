@@ -124,38 +124,571 @@ import svecana70 from '../Assets/Hall/svecana70.jpg'
 import svecana71 from '../Assets/Hall/svecana71.jpg'
 import svecana72 from '../Assets/Hall/svecana72.jpg'
 import svecana73 from '../Assets/Hall/svecana73.jpg'
+import grande1 from '../Assets/Hall/grande1.jpg'
+import grande2 from '../Assets/Hall/grande2.jpg'
+import grande3 from '../Assets/Hall/grande3.jpg'
+import grande4 from '../Assets/Hall/grande4.jpg'
+import grande5 from '../Assets/Hall/grande5.jpg'
+import grande6 from '../Assets/Hall/grande6.jpg'
+import grande7 from '../Assets/Hall/grande7.jpg'
+import grande8 from '../Assets/Hall/grande8.jpg'
+import grande9 from '../Assets/Hall/grande9.jpg'
+import grande10 from '../Assets/Hall/grande10.jpg'
+import grande11 from '../Assets/Hall/grande11.jpg'
+import grande12 from '../Assets/Hall/grande12.jpg'
+import grande13 from '../Assets/Hall/grande13.jpg'
+import grande14 from '../Assets/Hall/grande14.jpg'
+import grande15 from '../Assets/Hall/grande15.jpg'
+import grande16 from '../Assets/Hall/grande16.jpg'
+import grande17 from '../Assets/Hall/grande17.jpg'
+import grande18 from '../Assets/Hall/grande18.jpg'
+import grande19 from '../Assets/Hall/grande19.jpg'
+import grande20 from '../Assets/Hall/grande20.jpg'
+import grande21 from '../Assets/Hall/grande21.jpg'
+import grande22 from '../Assets/Hall/grande22.jpg'
+import grande23 from '../Assets/Hall/grande23.jpg'
+import grande24 from '../Assets/Hall/grande24.jpg'
+import grande25 from '../Assets/Hall/grande25.jpg'
+import grande26 from '../Assets/Hall/grande26.jpg'
+import grande27 from '../Assets/Hall/grande27.jpg'
+import grande28 from '../Assets/Hall/grande28.jpg'
+import grande29 from '../Assets/Hall/grande29.jpg'
+import grande30 from '../Assets/Hall/grande30.jpg'
+import grande31 from '../Assets/Hall/grande31.jpg'
+import grande32 from '../Assets/Hall/grande32.jpg'
+import grande33 from '../Assets/Hall/grande33.jpg'
+import grande34 from '../Assets/Hall/grande34.jpg'
+import grande35 from '../Assets/Hall/grande35.jpg'
+import grande36 from '../Assets/Hall/grande36.jpg'
+import grande37 from '../Assets/Hall/grande37.jpg'
+import grande38 from '../Assets/Hall/grande38.jpg'
+import grande39 from '../Assets/Hall/grande39.jpg'
+import grande40 from '../Assets/Hall/grande40.jpg'
+import grande41 from '../Assets/Hall/grande41.jpg'
+import grande42 from '../Assets/Hall/grande42.jpg'
+import grande43 from '../Assets/Hall/grande43.jpg'
+import grande44 from '../Assets/Hall/grande44.jpg'
+import grande45 from '../Assets/Hall/grande45.jpg'
+import grande46 from '../Assets/Hall/grande46.jpg'
+import grande47 from '../Assets/Hall/grande47.jpg'
+import grande48 from '../Assets/Hall/grande48.jpg'
+import grande49 from '../Assets/Hall/grande49.jpg'
+import grande50 from '../Assets/Hall/grande50.jpg'
+import grande51 from '../Assets/Hall/grande51.jpg'
+import grande52 from '../Assets/Hall/grande52.jpg'
+import grande53 from '../Assets/Hall/grande53.jpg'
+import grande54 from '../Assets/Hall/grande54.jpg'
+import grande55 from '../Assets/Hall/grande55.jpg'
+import grande56 from '../Assets/Hall/grande56.jpg'
+import grande57 from '../Assets/Hall/grande57.jpg'
+import grande58 from '../Assets/Hall/grande58.jpg'
+import grande59 from '../Assets/Hall/grande59.jpg'
+import grande60 from '../Assets/Hall/grande60.jpg'
+import grande61 from '../Assets/Hall/grande61.jpg'
+import grande62 from '../Assets/Hall/grande62.jpg'
+import grande63 from '../Assets/Hall/grande63.jpg'
+import grande64 from '../Assets/Hall/grande64.jpg'
+import grande65 from '../Assets/Hall/grande65.jpg'
+import grande66 from '../Assets/Hall/grande66.jpg'
+import grande67 from '../Assets/Hall/grande67.jpg'
+import grande68 from '../Assets/Hall/grande68.jpg'
+import grande69 from '../Assets/Hall/grande69.jpg'
+import grande70 from '../Assets/Hall/grande70.jpg'
+import grande71 from '../Assets/Hall/grande71.jpg'
+import grande72 from '../Assets/Hall/grande72.jpg'
+import grande73 from '../Assets/Hall/grande73.jpg'
+import grande74 from '../Assets/Hall/grande74.jpg'
+import grande75 from '../Assets/Hall/grande75.jpg'
+import grande76 from '../Assets/Hall/grande76.jpg'
+import grande77 from '../Assets/Hall/grande77.jpg'
+import grande78 from '../Assets/Hall/grande78.jpg'
+import grande79 from '../Assets/Hall/grande79.jpg'
+import grande80 from '../Assets/Hall/grande80.jpg'
+import grande81 from '../Assets/Hall/grande81.jpg'
+import grande82 from '../Assets/Hall/grande82.jpg'
+import grande83 from '../Assets/Hall/grande83.jpg'
+import grande84 from '../Assets/Hall/grande84.jpg'
+import grande85 from '../Assets/Hall/grande85.jpg'
+import grande86 from '../Assets/Hall/grande86.jpg'
+import grande87 from '../Assets/Hall/grande87.jpg'
+import grande88 from '../Assets/Hall/grande88.jpg'
+import grande89 from '../Assets/Hall/grande89.jpg'
+import grande90 from '../Assets/Hall/grande90.jpg'
+import grande91 from '../Assets/Hall/grande91.jpg'
+import grande92 from '../Assets/Hall/grande92.jpg'
+import grande93 from '../Assets/Hall/grande93.jpg'
+import grande94 from '../Assets/Hall/grande94.jpg'
+import grande95 from '../Assets/Hall/grande95.jpg'
+import grande96 from '../Assets/Hall/grande96.jpg'
+import grande97 from '../Assets/Hall/grande97.jpg'
+import grande98 from '../Assets/Hall/grande98.jpg'
+import grande99 from '../Assets/Hall/grande99.jpg'
+import grande100 from '../Assets/Hall/grande100.jpg'
+import grande101 from '../Assets/Hall/grande101.jpg'
+import grande102 from '../Assets/Hall/grande102.jpg'
+import grande103 from '../Assets/Hall/grande103.jpg'
+import grande104 from '../Assets/Hall/grande104.jpg'
+import grande105 from '../Assets/Hall/grande105.jpg'
+import grande106 from '../Assets/Hall/grande106.jpg'
+import grande107 from '../Assets/Hall/grande107.jpg'
+import grande108 from '../Assets/Hall/grande108.jpg'
+import grande109 from '../Assets/Hall/grande109.jpg'
+import grande110 from '../Assets/Hall/grande110.jpg'
+import grande111 from '../Assets/Hall/grande111.jpg'
+import grande112 from '../Assets/Hall/grande112.jpg'
+import grande113 from '../Assets/Hall/grande113.jpg'
 
 export const HallGalleryData = [
     {
-        image: hallImg,
-        category: "sve"
-    },
-    {
-        image: hallImg,
-        category: "sve"
-    },
-    {
-        image: hallImg,
-        category: "sve"
-    },
-    {
-        image: hallImg,
-        category: "sve"
-    },
-    {
-        image: hallImg,
+        image: grande1,
         category: "grande"
     },
     {
-        image: hallImg,
+        image: grande2,
         category: "grande"
     },
     {
-        image: hallImg,
+        image: grande3,
         category: "grande"
     },
     {
-        image: hallImg,
+        image: grande4,
+        category: "grande"
+    },
+    {
+        image: grande5,
+        category: "grande"
+    },
+    {
+        image: grande6,
+        category: "grande"
+    },
+    {
+        image: grande7,
+        category: "grande"
+    },
+    {
+        image: grande8,
+        category: "grande"
+    },
+    {
+        image: grande9,
+        category: "grande"
+    },
+    {
+        image: grande10,
+        category: "grande"
+    },
+    {
+        image: grande11,
+        category: "grande"
+    },
+    {
+        image: grande12,
+        category: "grande"
+    },
+    {
+        image: grande13,
+        category: "grande"
+    },
+    {
+        image: grande14,
+        category: "grande"
+    },
+    {
+        image: grande15,
+        category: "grande"
+    },
+    {
+        image: grande16,
+        category: "grande"
+    },
+    {
+        image: grande17,
+        category: "grande"
+    },
+    {
+        image: grande18,
+        category: "grande"
+    },
+    {
+        image: grande19,
+        category: "grande"
+    },
+    {
+        image: grande20,
+        category: "grande"
+    },
+    {
+        image: grande21,
+        category: "grande"
+    },
+    {
+        image: grande22,
+        category: "grande"
+    },
+    {
+        image: grande23,
+        category: "grande"
+    },
+    {
+        image: grande24,
+        category: "grande"
+    },
+    {
+        image: grande25,
+        category: "grande"
+    },
+    {
+        image: grande26,
+        category: "grande"
+    },
+    {
+        image: grande27,
+        category: "grande"
+    },
+    {
+        image: grande28,
+        category: "grande"
+    },
+    {
+        image: grande29,
+        category: "grande"
+    },
+    {
+        image: grande30,
+        category: "grande"
+    },
+    {
+        image: grande31,
+        category: "grande"
+    },
+    {
+        image: grande32,
+        category: "grande"
+    },
+    {
+        image: grande33,
+        category: "grande"
+    },
+    {
+        image: grande34,
+        category: "grande"
+    },
+    {
+        image: grande35,
+        category: "grande"
+    },
+    {
+        image: grande36,
+        category: "grande"
+    },
+    {
+        image: grande37,
+        category: "grande"
+    },
+    {
+        image: grande38,
+        category: "grande"
+    },
+    {
+        image: grande39,
+        category: "grande"
+    },
+    {
+        image: grande40,
+        category: "grande"
+    },
+    {
+        image: grande41,
+        category: "grande"
+    },
+    {
+        image: grande42,
+        category: "grande"
+    },
+    {
+        image: grande43,
+        category: "grande"
+    },
+    {
+        image: grande44,
+        category: "grande"
+    },
+    {
+        image: grande45,
+        category: "grande"
+    },
+    {
+        image: grande46,
+        category: "grande"
+    },
+    {
+        image: grande47,
+        category: "grande"
+    },
+    {
+        image: grande48,
+        category: "grande"
+    },
+    {
+        image: grande49,
+        category: "grande"
+    },
+    {
+        image: grande50,
+        category: "grande"
+    },
+    {
+        image: grande51,
+        category: "grande"
+    },
+    {
+        image: grande52,
+        category: "grande"
+    },
+    {
+        image: grande53,
+        category: "grande"
+    },
+    {
+        image: grande54,
+        category: "grande"
+    },
+    {
+        image: grande55,
+        category: "grande"
+    },
+    {
+        image: grande56,
+        category: "grande"
+    },
+    {
+        image: grande57,
+        category: "grande"
+    },
+    {
+        image: grande58,
+        category: "grande"
+    },
+    {
+        image: grande59,
+        category: "grande"
+    },
+    {
+        image: grande60,
+        category: "grande"
+    },
+    {
+        image: grande61,
+        category: "grande"
+    },
+    {
+        image: grande62,
+        category: "grande"
+    },
+    {
+        image: grande63,
+        category: "grande"
+    },
+    {
+        image: grande64,
+        category: "grande"
+    },
+    {
+        image: grande65,
+        category: "grande"
+    },
+    {
+        image: grande66,
+        category: "grande"
+    },
+    {
+        image: grande67,
+        category: "grande"
+    },
+    {
+        image: grande68,
+        category: "grande"
+    },
+    {
+        image: grande69,
+        category: "grande"
+    },
+    {
+        image: grande70,
+        category: "grande"
+    },
+    {
+        image: grande71,
+        category: "grande"
+    },
+    {
+        image: grande72,
+        category: "grande"
+    },
+    {
+        image: grande73,
+        category: "grande"
+    },
+    {
+        image: grande74,
+        category: "grande"
+    },
+    {
+        image: grande75,
+        category: "grande"
+    },
+    {
+        image: grande76,
+        category: "grande"
+    },
+    {
+        image: grande77,
+        category: "grande"
+    },
+    {
+        image: grande78,
+        category: "grande"
+    },
+    {
+        image: grande79,
+        category: "grande"
+    },
+    {
+        image: grande80,
+        category: "grande"
+    },
+    {
+        image: grande81,
+        category: "grande"
+    },
+    {
+        image: grande82,
+        category: "grande"
+    },
+    {
+        image: grande83,
+        category: "grande"
+    },
+    {
+        image: grande84,
+        category: "grande"
+    },
+    {
+        image: grande85,
+        category: "grande"
+    },
+    {
+        image: grande86,
+        category: "grande"
+    },
+    {
+        image: grande87,
+        category: "grande"
+    },
+    {
+        image: grande88,
+        category: "grande"
+    },
+    {
+        image: grande89,
+        category: "grande"
+    },
+    {
+        image: grande90,
+        category: "grande"
+    },
+    {
+        image: grande91,
+        category: "grande"
+    },
+    {
+        image: grande92,
+        category: "grande"
+    },
+    {
+        image: grande93,
+        category: "grande"
+    },
+    {
+        image: grande94,
+        category: "grande"
+    },
+    {
+        image: grande95,
+        category: "grande"
+    },
+    {
+        image: grande96,
+        category: "grande"
+    },
+    {
+        image: grande97,
+        category: "grande"
+    },
+    {
+        image: grande98,
+        category: "grande"
+    },
+    {
+        image: grande99,
+        category: "grande"
+    },
+    {
+        image: grande100,
+        category: "grande"
+    },
+    {
+        image: grande101,
+        category: "grande"
+    },
+    {
+        image: grande102,
+        category: "grande"
+    },
+    {
+        image: grande103,
+        category: "grande"
+    },
+    {
+        image: grande104,
+        category: "grande"
+    },
+    {
+        image: grande105,
+        category: "grande"
+    },
+    {
+        image: grande106,
+        category: "grande"
+    },
+    {
+        image: grande107,
+        category: "grande"
+    },
+    {
+        image: grande108,
+        category: "grande"
+    },
+    {
+        image: grande109,
+        category: "grande"
+    },
+    {
+        image: grande110,
+        category: "grande"
+    },
+    {
+        image: grande111,
+        category: "grande"
+    },
+    {
+        image: grande112,
+        category: "grande"
+    },
+    {
+        image: grande113,
         category: "grande"
     },
     {

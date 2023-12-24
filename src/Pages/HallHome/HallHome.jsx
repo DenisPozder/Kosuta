@@ -19,8 +19,14 @@ import svecana4Img from "../../Assets/Hall/svecana29.jpg";
 import svecana5Img from "../../Assets/Hall/svecana39.jpg";
 import svecana6Img from "../../Assets/Hall/svecana59.jpg";
 import svecana7Img from "../../Assets/Hall/svecana68.jpg";
-import { useTranslation } from "react-i18next";
 import HelmetContent from "../../Layout/HelmerContent";
+import grande1 from '../../Assets/Hall/grande1.jpg'
+import grande2 from '../../Assets/Hall/grande16.jpg'
+import grande3 from '../../Assets/Hall/grande31.jpg'
+import grande4 from '../../Assets/Hall/grande34.jpg'
+import grande5 from '../../Assets/Hall/grande45.jpg'
+import grande6 from '../../Assets/Hall/grande51.jpg'
+import grande7 from '../../Assets/Hall/grande83.jpg'
 
 const HallData = [
   {
@@ -33,25 +39,25 @@ const HallData = [
     desc: "Sala 'Grande' pruža elegantan prostor koji sa svojim raskošnim enterijerom ukrašenim toplim tonovima i prirodnim dekoracijama, dvorana stvara gostoljubivu atmosferu za različita prilike, od venčanja do korporativnik okupljanja.",
     images: [
       {
-        image: hall1,
+        image: grande1,
       },
       {
-        image: hall1,
+        image: grande2,
       },
       {
-        image: hall1,
+        image: grande3,
       },
       {
-        image: hall1,
+        image: grande4,
       },
       {
-        image: hall1,
+        image: grande5,
       },
       {
-        image: hall1,
+        image: grande6,
       },
       {
-        image: hall1,
+        image: grande7,
       },
     ],
     layout: "left",

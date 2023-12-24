@@ -5,7 +5,6 @@ import sampleImage2 from '../../../../Assets/Hall/hall2.jpg'
 import AllHallsSlider from '../AllHallsSlider/AllHallsSlider'
 import { Link } from 'react-router-dom'
 import { FaChevronRight } from 'react-icons/fa'
-import SampleSlider from '../SampleSlider/SampleSlider'
 import kamin1Img from '../../../../Assets/Hall/kamin4.jpg'
 import kamin2Img from '../../../../Assets/Hall/kamin17.jpg'
 import kamin3Img from '../../../../Assets/Hall/kamin26.jpg'
@@ -34,6 +33,15 @@ import gardenImg7 from '../../../../Assets/Restaurant/restaurantGarden9.jpg'
 import gardenImg8 from '../../../../Assets/Restaurant/restaurantGarden3.jpg'
 import gardenImg9 from '../../../../Assets/Restaurant/restaurantGarden6.jpg'
 import { useTranslation } from 'react-i18next'
+import grande1 from '../../../../Assets/Hall/grande3.jpg'
+import grande2 from '../../../../Assets/Hall/grande35.jpg'
+import grande3 from '../../../../Assets/Hall/grande50.jpg'
+import grande4 from '../../../../Assets/Hall/grande53.jpg'
+import grande5 from '../../../../Assets/Hall/grande55.jpg'
+import grande6 from '../../../../Assets/Hall/grande59.jpg'
+import grande7 from '../../../../Assets/Hall/grande66.jpg'
+import grande8 from '../../../../Assets/Hall/grande94.jpg'
+import grande9 from '../../../../Assets/Hall/grande111.jpg'
 
 const AllHallsData = [
     {
@@ -45,47 +53,47 @@ const AllHallsData = [
         images: [
             {
                 image: {
-                    img: sampleImage
+                    img: grande1
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande2
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande3
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande4
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande5
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande6
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande7
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande8
                 }
             },
             {
                 image: {
-                    img: sampleImage
+                    img: grande9
                 }
             },
         ]
