@@ -31,17 +31,17 @@ const WinterAnimation = () => {
       }
 
       static addFlakes() {
-        const x = Math.ceil(Math.random() * w)
-        const speed = Math.ceil(Math.random() * 5)
-        const radius = 10* Math.PI
-
-        flakes.push({
-          x:x,
-          y:0,
-          speed:speed,
-          radius:radius,
-        })
-      }
+          const x = Math.ceil(Math.random() * w)
+          const speed = Math.ceil(Math.random() * 5)
+          const radius = 10* Math.PI
+  
+          flakes.push({
+            x:x,
+            y:0,
+            speed:speed,
+            radius:radius,
+          })
+        }
 
       static addSnow() {
         ctx.clearRect(0, 0, w, h)
@@ -66,7 +66,7 @@ const WinterAnimation = () => {
 
     window.addEventListener('resize', handleResize)
 
-    setInterval(() => snowfall.snowFall(), 20)
+    setInterval(() => snowfall.snowFall(), 30)
 
     return () => {
       window.removeEventListener('resize', handleResize)
