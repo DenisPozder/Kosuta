@@ -79,9 +79,11 @@
 }
 
 .rf-column:nth-child(3) {
+    text-align: center;
+    align-items: center;
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
+    width: 100%;
 }
 
 .rf-column:nth-child(3) h1 {

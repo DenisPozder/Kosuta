@@ -90,6 +90,16 @@
     color: var(--hall-dark);
     user-select: none;
     font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+.hf-column:nth-child(3) {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .hf-column:nth-child(3) h3 {
@@ -98,6 +108,7 @@
     color: var(--hall-dark);
     margin-top: 1rem;
     user-select: none;
+    width: 100%;
 }
 
 .hf-column:nth-child(3) a {
@@ -106,6 +117,7 @@
     font-family: var(--hall-font);
     font-size: 1.4rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .hf-copyright {
