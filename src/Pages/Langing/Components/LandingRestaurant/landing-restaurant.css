@@ -79,10 +79,6 @@
     font-weight: 900;
 }
 
-.lr-button-content {
-    display: none;
-}
-
 /*----- Tree -----*/
 .lr-tree {
     position: absolute;
@@ -97,6 +93,77 @@
 .lr-tree img {
     height: 110%;
     width: auto;
+}
+
+.lr-text {
+    top: calc(50% - 15%);
+}
+
+.landing-restaurant {
+    width: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.landing-restaurant h1 {
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+.vignette {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(250,250,250,0.7) );
+}
+
+.lr-button-content {
+    display: block;
+    position: absolute;
+    top: calc(50% + 15%) !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 102;
+}
+
+.lr-button-content .lr-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 45px;
+    background-color: var(--white);
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    user-select: all !important;
+    pointer-events: all !important;
+}
+
+.lr-button-content .lr-button::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+    left: 5%;
+    bottom: -25%;
+    z-index: -1;
+    filter: blur(5px);
+    opacity: .6;
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+.lr-main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.lr-main-img {
+    display: block;
 }
 
 /*----- Vignette -----*/
@@ -137,10 +204,6 @@
     pointer-events: none;
     transition: 0.45s cubic-bezier(.2, .49, .32, .99);
     transform: translate(-50%, -50%);
-}
-
-::selection {
-    background-color: #0b372dbb;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -215,22 +278,6 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.5);
-    }
-
-    .lr-leaves {
-        display: none;
-    }
-
-    .lr-table {
-        display: none;
-    }
-
-    .lr-animal {
-        display: none;
-    }
-
-    .lr-plants {
-        display: none;
     }
 
     .lr-main-img {
