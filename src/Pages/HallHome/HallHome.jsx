@@ -137,6 +137,42 @@ const HallData = [
     autoplayDuration: 8000,
     link: "/rezervacije",
   },
+  {
+    title1: "Košuta",
+    engTitle1: "Košuta",
+    title2: "Bašta",
+    engTitle2: "Garden",
+    engDesc:
+      "Our beautiful garden is a jewel among celebration destinations, located within the restaurant with a capacity of 200 seats. This enchanting oasis is open from May to September, offering guests a unique opportunity to share their special moments under the clear sky.",
+    desc: "Naša prelepa bašta je dragulj među destinacijama za proslave, smeštena u sklopu restorana s kapacitetom od 200 mesta. Ova očaravajuća oaza je otvorena od maja do septembra, pružajući gostima jedinstvenu priliku da svoje posebne trenutke dele pod vedrim nebom.",
+    images: [
+      {
+        image: svecana1Img,
+      },
+      {
+        image: svecana2Img,
+      },
+      {
+        image: svecana3Img,
+      },
+      {
+        image: svecana4Img,
+      },
+      {
+        image: svecana5Img,
+      },
+      {
+        image: svecana6Img,
+      },
+      {
+        image: svecana7Img,
+      },
+    ],
+    layout: "right",
+    capacity: "200",
+    autoplayDuration: 6000,
+    link: "/rezervacije",
+  },
 ];
 
 const HallHome = () => {
