@@ -22,7 +22,7 @@
 
 .hl-restaurant p {
     color: var(--white);
-    font-size: .8rem;
+    font-size: .6rem;
     font-family: var(--restaurant-font);
 }
 
@@ -40,6 +40,7 @@
     justify-content: center;
     color: var(--dark-color);
     font-weight: bold;
+    font-size: .8rem;
     font-family: var(--restaurant-font);
     animation: showElement 5s ease infinite;
 }
