@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './hall-hero.css'
 import {Link} from 'react-router-dom'
 import { FaAngleRight } from "react-icons/fa6";
-import bigHall from '../../../../Assets/Hall/hall1.jpg'
+import bigHall from '../../../../Assets/Hall/grande60.jpg'
 import mediumHall from '../../../../Assets/Hall/svecana2.jpg'
 import smallHall from '../../../../Assets/Hall/kamin13.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component';

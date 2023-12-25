@@ -23,9 +23,9 @@ import HelmetContent from "../../Layout/HelmerContent";
 import grande1 from '../../Assets/Hall/grande1.jpg'
 import grande2 from '../../Assets/Hall/grande16.jpg'
 import grande3 from '../../Assets/Hall/grande31.jpg'
-import grande4 from '../../Assets/Hall/grande34.jpg'
+import grande4 from '../../Assets/Hall/grande111.jpg'
 import grande5 from '../../Assets/Hall/grande45.jpg'
-import grande6 from '../../Assets/Hall/grande51.jpg'
+import grande6 from '../../Assets/Hall/grande50.jpg'
 import grande7 from '../../Assets/Hall/grande83.jpg'
 
 const HallData = [
