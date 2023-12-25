@@ -49,13 +49,22 @@ const HallFooter = () => {
         <div className="hf-column">
           <h1>{t('rfTime')}</h1>
           <div className="hfc-days">
-            {
+          {
+              i18n.language === 'sr' ? (
               days.map((day, index) => (
                 <p key={index} className={currentDay === index ? "current-day" : ""}>
                   {day}
                   {currentDay === index && <span>{status[index]}</span>}
                 </p>
               ))
+              ) : (
+                engDays.map((engDay, engIndex) => (
+                  <p key={engIndex} className={currentDay === engIndex ? "current-day" : ""}>
+                  {engDay}
+                  {currentDay === engIndex && <span>{status[engIndex]}</span>}
+                </p>
+                ))
+              )
             }
           </div>
         </div>

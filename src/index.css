@@ -83,3 +83,22 @@ body {
     opacity: 1;
   }
 }
+
+.toggle-language {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--hall-dark);
+  border-radius: 50%;
+  z-index: 9999;
+  border: 2px solid var(--white);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+}

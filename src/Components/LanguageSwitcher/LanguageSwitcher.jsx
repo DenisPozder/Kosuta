@@ -28,7 +28,7 @@ const LanguageSwitcher = ({ isLandingPage }) => {
     <div className={`language-switcher ${showSwitcher ? "show" : "hide"}`}>
         <div className="ls-content">
         <button className='ls-btn' onClick={() => changeLanguage('sr')}>{i18n.language === 'sr' ? 'Srpski' : 'Serbian'}</button>
-        <button className='ls-btn' onClick={() => changeLanguage('en')}>{i18n.language === 'sr' ? 'Engleski' : 'English'}</button>
+        <button className='ls-btn' onClick={() => changeLanguage('en')}>{i18n.language === 'sr' ? 'English' : 'English'}</button>
         </div>
     </div>
   )
