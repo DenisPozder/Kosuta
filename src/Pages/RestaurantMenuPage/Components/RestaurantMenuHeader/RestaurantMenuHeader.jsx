@@ -25,49 +25,49 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Zakuska 'Košuta' (za 2 osobe)",
                     engTitle: "Appetizer 'Košuta' (for 2)",
-                    price: "1500"
+                    price: "1600"
                 },
                 {
                     id: 2,
                     title: "Njeguška pršuta",
                     engTitle: "Njeguši Prosciutto",
-                    price: "700"
+                    price: "750"
                 },
                 {
                     id: 3,
                     title: "Goveđa pršuta",
                     engTitle: "Beef prosciutto",
-                    price: "650"
+                    price: "700"
                 },
                 {
                     id: 4,
                     title: "Svinjska pršuta",
                     engTitle: "Pork prosciutto",
-                    price: "650"
+                    price: "700"
                 },
                 {
                     id: 5,
                     title: "Tvrdi sir",
                     engTitle: "Hard cheese",
-                    price: "450"
+                    price: "500"
                 },
                 {
                     id: 6,
                     title: "Kajmak",
                     engTitle: "Kajmak cheese",
-                    price: "500"
+                    price: "600"
                 },
                 {
                     id: 7,
                     title: "Mladi sir",
                     engTitle: "Fresh cheese",
-                    price: "400"
+                    price: "450"
                 },
                 {
                     id: 8,
                     title: "Pečurke na žaru",
                     engTitle: "Grilled mushrooms",
-                    price: "450"
+                    price: "500"
                 },
                 {
                     id: 9,
@@ -85,7 +85,7 @@ const RestaurantMenuHeader = () => {
                     id: 11,
                     title: "Cezar salata",
                     engTitle: "Caesar salad",
-                    price: "750"
+                    price: "850"
                 },
             ]
         },
@@ -99,7 +99,7 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Teleća čorba",
                     engTitle: "Veal broth",
-                    price: "320"
+                    price: "380"
                 },
                 {
                     id: 2,
@@ -111,7 +111,7 @@ const RestaurantMenuHeader = () => {
                     id: 3,
                     title: "Riblja čorba",
                     engTitle: "Fish soup",
-                    price: "270"
+                    price: "300"
                 },
             ]
         },
@@ -137,7 +137,7 @@ const RestaurantMenuHeader = () => {
                     id: 3,
                     title: "Teleće pečenje ispod sača - porcija ( prilog pekarski krompir )",
                     engTitle: "Veal roast under the bell - portion ( side dish baked potatoes )",
-                    price: "1600"
+                    price: "1700"
                 },
                 {
                     id: 4,
@@ -157,25 +157,25 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Pomfrit",
                     engTitle: "French fries",
-                    price: "350"
+                    price: "400"
                 },
                 {
                     id: 2,
                     title: "Krompir ispod sača",
                     engTitle: "Potatoes under the bell",
-                    price: "250"
+                    price: "300"
                 },
                 {
                     id: 3,
                     title: "Grilovano povrće",
                     engTitle: "Grilled vegetables",
-                    price: "550"
+                    price: "600"
                 },
                 {
                     id: 4,
                     title: "Kuver",
                     engTitle: "Couvert",
-                    price: "100"
+                    price: "150"
                 },
             ]
         },
@@ -189,79 +189,79 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Ćevapi ( prilog pomfrit )",
                     engTitle: "Kebabs (side dish french fries)",
-                    price: "750"
+                    price: "850"
                 },
                 {
                     id: 2,
                     title: "Pljeskavica ( prilog pomfrit )",
                     engTitle: "'Pljeskavica' burger ( side dish french fries )",
-                    price: "750"
+                    price: "850"
                 },
                 {
                     id: 3,
                     title: "Ćevapi na kajmaku ( prilog pomfrit )",
                     engTitle: "Kebabs with kajmak (side dish french fries)",
-                    price: "820"
+                    price: "900"
                 },
                 {
                     id: 4,
                     title: "Pljeskavica u kajmaku ( prilog pomfrit )",
                     engTitle: "Pljeskavica with kajmak (side dish french fries)",
-                    price: "820"
+                    price: "900"
                 },
                 {
                     id: 5,
                     title: "Gurmanska pljeskavica ( prilog pomfrit )",
                     engTitle: "Gourmet pljeskavica (side dish french fries)",
-                    price: "850"
+                    price: "900"
                 },
                 {
                     id: 6,
                     title: "Bela vešalica ( prilog pomfrit )",
                     engTitle: "White hanger (side dish french fries)",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 7,
                     title: "Dimljeni vrat ( prilog pomfrit )",
                     engTitle: "Smoked pork neck (side dish french fries)",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 8,
                     title: "Ražnjići svinjski ( prilog pomfrit )",
                     engTitle: "Pork skewers (side dish french fries)",
-                    price: "800"
+                    price: "900"
                 },
                 {
                     id: 9,
                     title: "Leskovački uštipci ( prilog pomfrit )",
                     engTitle: "Leskovac fritters (side dish french fries)",
-                    price: "800"
+                    price: "900"
                 },
                 {
                     id: 10,
                     title: "Svinjski file na žaru ( prilog pomfrit )",
                     engTitle: "Grilled pork fillet ( side dish french fries )",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 11,
                     title: "Domaća dimljena kobasica ( prilog pomfrit )",
                     engTitle: "Homemade smoked sausage (side dish french fries)",
-                    price: "780"
+                    price: "880"
                 },
                 {
                     id: 12,
                     title: "Mešano meso 800g ( prilog pomfrit )",
                     engTitle: "Mixed meat 800g (side dish french fries)",
-                    price: "1450"
+                    price: "1600"
                 },
                 {
                     id: 13,
                     title: "Dimljena vešalica ( prilog pomfrit )",
                     engTitle: "Smoked hanger (side dish french fries)",
-                    price: "900"
+                    price: "1000"
                 },
             ]
         },
@@ -301,13 +301,13 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Sos od pečuraka",
                     engTitle: "Mushroom sauce",
-                    price: "300"
+                    price: "350"
                 },
                 {
                     id: 2,
                     title: "Tartar sos",
                     engTitle: "Tartare sauce",
-                    price: "170"
+                    price: "250"
                 },
             ]
         },
@@ -321,31 +321,31 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Pileći file na žaru",
                     engTitle: "Grilled chicken fillet",
-                    price: "760"
+                    price: "860"
                 },
                 {
                     id: 2,
                     title: "Pileći batak ( prilog pomfrit )",
                     engTitle: "Chicken drumsticks (side dish french fries)",
-                    price: "700"
+                    price: "800"
                 },
                 {
                     id: 3,
                     title: "Piletina sa mlincima i mileramom",
                     engTitle: "Chicken with mlinci and sour milk",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 4,
                     title: "Pileći file pohovan sa susamom ( prilog pomfrit )",
                     engTitle: "Chicken fillet fried with sesame (side dish french fries)",
-                    price: "850"
+                    price: "950"
                 },
                 {
                     id: 5,
                     title: "Pileći file u četiri vrste sira ( prilog pomfrit )",
                     engTitle: "Chicken fillet Quattro Fromaggi (side dish french fries)",
-                    price: "860"
+                    price: "960"
                 },
             ]
         },
@@ -359,61 +359,61 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Punjena vešalica ( prilog pomfrit )",
                     engTitle: "Stuffed hanger (side dish french fries)",
-                    price: "1000"
+                    price: "1100"
                 },
                 {
                     id: 2,
                     title: "Rolovana vešalica u slanini ( prilog pomfrit )",
                     engTitle: "Bacon rolled hanger (side dish french fries)",
-                    price: "1050"
+                    price: "1150"
                 },
                 {
                     id: 3,
                     title: "Karađordeva šnicla ( prilog pomfrit, tartar sos )",
                     engTitle: "'Karadjordje' steak (side dish french fries, tartare sauce)",
-                    price: "1000"
+                    price: "1100"
                 },
                 {
                     id: 4,
                     title: "Bečka šnicla ( prilog pomfrit )",
                     engTitle: "Vienna steak (side dish french fries)",
-                    price: "800"
+                    price: "1000"
                 },
                 {
                     id: 5,
                     title: "Pariska šnicla ( prilog pomfrit )",
                     engTitle: "Paris steak (side dish french fries)",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 6,
                     title: "Natur šnicla ( prilog pomfrit )",
                     engTitle: "Nature steak (side dish french fries)",
-                    price: "850"
+                    price: "950"
                 },
                 {
                     id: 7,
                     title: "Medaljoni u sosu od pečuraka ( prilog pomfrit )",
                     engTitle: "Medallions in mushroom sauce (side dish french fries)",
-                    price: "950"
+                    price: "1100"
                 },
                 {
                     id: 8,
                     title: "Plava traka ( prilog pomfrit )",
                     engTitle: "Blue ribbon (side dish french fries)",
-                    price: "1000"
+                    price: "1100"
                 },
                 {
                     id: 9,
                     title: "Dimljena svinjska rebra u kajmaku ( prilog pekarski krompir )",
                     engTitle: "Smoked pork ribs in kajmak ( side dish baked potatoes )",
-                    price: "1000"
+                    price: "1100"
                 },
                 {
                     id: 10,
                     title: "Doručak ( prilog pomfrit )",
                     engTitle: "Breakfast (side dish french fries)",
-                    price: "450"
+                    price: "550"
                 },
             ]
         },
@@ -427,7 +427,7 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Fileti dimljene pastrmke ( prilog blitva, bareni krompir )",
                     engTitle: "Smoked trout fillets ( side dish swiss chard, boiled potatoes)",
-                    price: "1170"
+                    price: "1300"
                 },
             ]
         },
@@ -441,13 +441,13 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Srpska salata",
                     engTitle: "Serbian salad",
-                    price: "370"
+                    price: "470"
                 },
                 {
                     id: 2,
                     title: "Šopska salata",
                     engTitle: "Traditional (Šopska) salad",
-                    price: "390"
+                    price: "490"
                 },
                 {
                     id: 3,
@@ -459,97 +459,97 @@ const RestaurantMenuHeader = () => {
                     id: 4,
                     title: "Grčka salata",
                     engTitle: "Greek salad",
-                    price: "440"
+                    price: "540"
                 },
                 {
                     id: 5,
                     title: "Vitaminska salata",
                     engTitle: "Vitamin salad",
-                    price: "340"
+                    price: "440"
                 },
                 {
                     id: 6,
                     title: "Zelena salata",
                     engTitle: "Green salad",
-                    price: "290"
+                    price: "390"
                 },
                 {
                     id: 7,
                     title: "Paradajz salata",
                     engTitle: "Tomato salad",
-                    price: "340"
+                    price: "440"
                 },
                 {
                     id: 8,
                     title: "Paradajz salata sa sirom",
                     engTitle: "Tomato salad with cheese",
-                    price: "390"
+                    price: "490"
                 },
                 {
                     id: 9,
                     title: "Krastavac salata",
                     engTitle: "Cucumber salad",
-                    price: "340"
+                    price: "440"
                 },
                 {
                     id: 10,
                     title: "Ajvar ( domaci )",
                     engTitle: "Ajvar ( homemade )",
-                    price: "490"
+                    price: "590"
                 },
                 {
                     id: 11,
                     title: "Urnebes salata",
                     engTitle: "'Urnebes' salad",
-                    price: "340"
+                    price: "440"
                 },
                 {
                     id: 12,
                     title: "Ljuta paprika u ulju ( komad )",
                     engTitle: "Hot pepper in oil ( one piece )",
-                    price: "190"
+                    price: "290"
                 },
                 {
                     id: 13,
                     title: "Kupus salata",
                     engTitle: "Cabbage salad",
-                    price: "290"
+                    price: "390"
                 },
                 {
                     id: 14,
                     title: "Mešana sezonska salata",
                     engTitle: "Mixed seasonal salad",
-                    price: "320"
+                    price: "420"
                 },
                 {
                     id: 15,
                     title: "Bašta salata",
                     engTitle: "Garden salad",
-                    price: "900"
+                    price: "1000"
                 },
                 {
                     id: 16,
                     title: "Rotkvice",
                     engTitle: "Radishes",
-                    price: "240"
+                    price: "340"
                 },
                 {
                     id: 17,
                     title: "Mladi luk",
                     engTitle: "Spring onions",
-                    price: "240"
+                    price: "340"
                 },
                 {
                     id: 18,
                     title: "Tarator",
                     engTitle: "Tartare",
-                    price: "320"
+                    price: "420"
                 },
                 {
                     id: 19,
                     title: "Paprika u ulju pečena",
                     engTitle: "Roasted paprika in oil",
-                    price: "330"
+                    price: "430"
                 },
             ]
         },
@@ -563,19 +563,19 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Voćna torta",
                     engTitle: "Fruitcake",
-                    price: "390"
+                    price: "490"
                 },
                 {
                     id: 2,
                     title: "Čokoladna torta",
                     engTitle: "Chocolate cake",
-                    price: "390"
+                    price: "490"
                 },
                 {
                     id: 3,
                     title: "Baklava",
                     engTitle: "'Baklava'",
-                    price: "390"
+                    price: "490"
                 },
                 {
                     id: 4,
@@ -587,7 +587,7 @@ const RestaurantMenuHeader = () => {
                     id: 5,
                     title: "Tulumba",
                     engTitle: "'Tulumba'",
-                    price: "340"
+                    price: "440"
                 },
                 {
                     id: 6,
@@ -599,7 +599,7 @@ const RestaurantMenuHeader = () => {
                     id: 7,
                     title: "Urmašice",
                     engTitle: "'Urmašice' syrup biscuits",
-                    price: "340"
+                    price: "440"
                 },
             ]
         },
@@ -941,31 +941,31 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Coca cola ( 0,33l )",
                     engTitle: "Coca cola ( 0,33l )",
-                    price: "250"
+                    price: "350"
                 },
                 {
                     id: 2,
                     title: "Fanta ( 0,33l )",
                     engTitle: "Fanta ( 0,33l )",
-                    price: "250"
+                    price: "350"
                 },
                 {
                     id: 3,
                     title: "Sprite ( 0,33l )",
                     engTitle: "Sprite ( 0,33l )",
-                    price: "250"
+                    price: "350"
                 },
                 {
                     id: 4,
                     title: "Bitter Lemon ( 0,33l )",
                     engTitle: "Bitter Lemon ( 0,33l )",
-                    price: "250"
+                    price: "350"
                 },
                 {
                     id: 5,
                     title: "Tonic Watter ( 0,33l )",
                     engTitle: "Tonic Water ( 0,33l )",
-                    price: "250"
+                    price: "350"
                 },
             ]
         },
@@ -979,31 +979,31 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Đus ( 0,25l )",
                     engTitle: "Juice ( 0.25l )",
-                    price: "270"
+                    price: "370"
                 },
                 {
                     id: 2,
                     title: "Jagoda ( 0,25l )",
                     engTitle: "Strawberry ( 0.25l )",
-                    price: "270"
+                    price: "370"
                 },
                 {
                     id: 3,
                     title: "Breskva ( 0,25l )",
                     engTitle: "Peach ( 0.25l )",
-                    price: "270"
+                    price: "370"
                 },
                 {
                     id: 4,
                     title: "Jabuka ( 0,25l )",
                     engTitle: "Apple ( 0.25l )",
-                    price: "270"
+                    price: "370"
                 },
                 {
                     id: 5,
                     title: "Borovnica ( 0,25l )",
                     engTitle: "Blueberry ( 0.25l )",
-                    price: "230"
+                    price: "370"
                 },
             ]
         },
@@ -1215,31 +1215,31 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Viljamovka ( 0,3l )",
                     engTitle: "Viljamovka ( pear ) ( 0.03l )",
-                    price: "280"
+                    price: "380"
                 },
                 {
                     id: 2,
                     title: "Kajsija ( 0,3l )",
                     engTitle: "Apricot ( 0.03l )",
-                    price: "280"
+                    price: "380"
                 },
                 {
                     id: 3,
                     title: "Dunja ( 0,3l )",
                     engTitle: "Quince ( 0.03l )",
-                    price: "280"
+                    price: "380"
                 },
                 {
                     id: 4,
                     title: "Šljiva ( 0,3l )",
                     engTitle: "Plum ( 0.03l )",
-                    price: "280"
+                    price: "380"
                 },
                 {
                     id: 5,
                     title: "Loza ( 0,3l )",
                     engTitle: "Grape ( 0.03l )",
-                    price: "280"
+                    price: "380"
                 },
             ]
         },
@@ -1253,19 +1253,19 @@ const RestaurantMenuHeader = () => {
                     id: 1,
                     title: "Dunja ( 0,3l )",
                     engTitle: "Quince ( 0.03l )",
-                    price: "240"
+                    price: "340"
                 },
                 {
                     id: 2,
                     title: "Malina ( 0,3l )",
                     engTitle: "Raspberry ( 0.03l )",
-                    price: "240"
+                    price: "340"
                 },
                 {
                     id: 3,
                     title: "Jabuka - cimet ( 0,3l )",
                     engTitle: "Apple - cinnamon ( 0.03l )",
-                    price: "240"
+                    price: "340"
                 },
             ]
         },
