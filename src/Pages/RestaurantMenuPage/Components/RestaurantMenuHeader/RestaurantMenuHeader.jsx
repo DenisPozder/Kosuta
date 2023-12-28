@@ -69,20 +69,20 @@ const RestaurantMenuHeader = () => {
                     engTitle: "Grilled mushrooms",
                     price: "500"
                 },
+                // {
+                //     id: 9,
+                //     title: "Proja",
+                //     engTitle: "Cornbread",
+                //     price: "*"
+                // },
+                // {
+                //     id: 10,
+                //     title: "Masline",
+                //     engTitle: "Olives",
+                //     price: "*"
+                // },
                 {
                     id: 9,
-                    title: "Proja",
-                    engTitle: "Cornbread",
-                    price: "*"
-                },
-                {
-                    id: 10,
-                    title: "Masline",
-                    engTitle: "Olives",
-                    price: "*"
-                },
-                {
-                    id: 11,
                     title: "Cezar salata",
                     engTitle: "Caesar salad",
                     price: "850"
@@ -101,14 +101,14 @@ const RestaurantMenuHeader = () => {
                     engTitle: "Veal broth",
                     price: "380"
                 },
+                // {
+                //     id: 2,
+                //     title: "Supa pileća",
+                //     engTitle: "Chicken Soups",
+                //     price: "*"
+                // },
                 {
                     id: 2,
-                    title: "Supa pileća",
-                    engTitle: "Chicken Soups",
-                    price: "*"
-                },
-                {
-                    id: 3,
                     title: "Riblja čorba",
                     engTitle: "Fish soup",
                     price: "300"
@@ -121,30 +121,30 @@ const RestaurantMenuHeader = () => {
             engTitle: "Roast",
             category: "meals",
             items: [
+                // {
+                //     id: 1,
+                //     title: "Jagnjeće pečenje sa ražnja ( 1kg )",
+                //     engTitle: "Spit roasted lamb ( 1kg )",
+                //     price: "*"
+                // },
+                // {
+                //     id: 2,
+                //     title: "Praseće pečenje ( 1kg )",
+                //     engTitle: "Roasted pork ( 1kg )",
+                //     price: "*"
+                // },
                 {
                     id: 1,
-                    title: "Jagnjeće pečenje sa ražnja ( 1kg )",
-                    engTitle: "Spit roasted lamb ( 1kg )",
-                    price: "*"
-                },
-                {
-                    id: 2,
-                    title: "Praseće pečenje ( 1kg )",
-                    engTitle: "Roasted pork ( 1kg )",
-                    price: "*"
-                },
-                {
-                    id: 3,
                     title: "Teleće pečenje ispod sača - porcija ( prilog pekarski krompir )",
                     engTitle: "Veal roast under the bell - portion ( side dish baked potatoes )",
                     price: "1700"
                 },
-                {
-                    id: 4,
-                    title: "Jagnjeće pečenje ispod sača - porcija",
-                    engTitle: "Lamb roast under the bell - portion",
-                    price: "*"
-                },
+                // {
+                //     id: 4,
+                //     title: "Jagnjeće pečenje ispod sača - porcija",
+                //     engTitle: "Lamb roast under the bell - portion",
+                //     price: "*"
+                // },
             ]
         },
         {
@@ -449,104 +449,104 @@ const RestaurantMenuHeader = () => {
                     engTitle: "Traditional (Šopska) salad",
                     price: "490"
                 },
+                // {
+                //     id: 3,
+                //     title: "Cvekla",
+                //     engTitle: "Beetroot salad",
+                //     price: "*"
+                // },
                 {
                     id: 3,
-                    title: "Cvekla",
-                    engTitle: "Beetroot salad",
-                    price: "*"
-                },
-                {
-                    id: 4,
                     title: "Grčka salata",
                     engTitle: "Greek salad",
                     price: "540"
                 },
                 {
-                    id: 5,
+                    id: 4,
                     title: "Vitaminska salata",
                     engTitle: "Vitamin salad",
                     price: "440"
                 },
                 {
-                    id: 6,
+                    id: 5,
                     title: "Zelena salata",
                     engTitle: "Green salad",
                     price: "390"
                 },
                 {
-                    id: 7,
+                    id: 6,
                     title: "Paradajz salata",
                     engTitle: "Tomato salad",
                     price: "440"
                 },
                 {
-                    id: 8,
+                    id: 7,
                     title: "Paradajz salata sa sirom",
                     engTitle: "Tomato salad with cheese",
                     price: "490"
                 },
                 {
-                    id: 9,
+                    id: 8,
                     title: "Krastavac salata",
                     engTitle: "Cucumber salad",
                     price: "440"
                 },
                 {
-                    id: 10,
+                    id: 9,
                     title: "Ajvar ( domaci )",
                     engTitle: "Ajvar ( homemade )",
                     price: "590"
                 },
                 {
-                    id: 11,
+                    id: 10,
                     title: "Urnebes salata",
                     engTitle: "'Urnebes' salad",
                     price: "440"
                 },
                 {
-                    id: 12,
+                    id: 11,
                     title: "Ljuta paprika u ulju ( komad )",
                     engTitle: "Hot pepper in oil ( one piece )",
                     price: "290"
                 },
                 {
-                    id: 13,
+                    id: 12,
                     title: "Kupus salata",
                     engTitle: "Cabbage salad",
                     price: "390"
                 },
                 {
-                    id: 14,
+                    id: 13,
                     title: "Mešana sezonska salata",
                     engTitle: "Mixed seasonal salad",
                     price: "420"
                 },
                 {
-                    id: 15,
+                    id: 14,
                     title: "Bašta salata",
                     engTitle: "Garden salad",
                     price: "1000"
                 },
                 {
-                    id: 16,
+                    id: 15,
                     title: "Rotkvice",
                     engTitle: "Radishes",
                     price: "340"
                 },
                 {
-                    id: 17,
+                    id: 16,
                     title: "Mladi luk",
                     engTitle: "Spring onions",
                     price: "340"
                 },
                 {
-                    id: 18,
+                    id: 17,
                     title: "Tarator",
                     engTitle: "Tartare",
                     price: "420"
                 },
                 {
-                    id: 19,
+                    id: 18,
                     title: "Paprika u ulju pečena",
                     engTitle: "Roasted paprika in oil",
                     price: "430"
@@ -577,26 +577,26 @@ const RestaurantMenuHeader = () => {
                     engTitle: "'Baklava'",
                     price: "490"
                 },
+                // {
+                //     id: 4,
+                //     title: "Palačinke ( snikers, eurokrem, marmelada, orasi i med )",
+                //     engTitle: "Crepes ( snickers, chocolate cream, marmalade, walnuts and honey )",
+                //     price: "340"
+                // },
                 {
                     id: 4,
-                    title: "Palačinke ( snikers, eurokrem, marmelada, orasi i med )",
-                    engTitle: "Crepes ( snickers, chocolate cream, marmalade, walnuts and honey )",
-                    price: "340"
-                },
-                {
-                    id: 5,
                     title: "Tulumba",
                     engTitle: "'Tulumba'",
                     price: "440"
                 },
                 {
-                    id: 6,
+                    id: 5,
                     title: "Sladoled ( kugla )",
                     engTitle: "Ice cream ( scoop )",
                     price: "100"
                 },
                 {
-                    id: 7,
+                    id: 6,
                     title: "Urmašice",
                     engTitle: "'Urmašice' syrup biscuits",
                     price: "440"
