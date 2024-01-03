@@ -69,6 +69,7 @@
 .landing-hall h1 {
     user-select: none !important;
     pointer-events: none !important;
+    font-family: var(--restaurant-font);
 }
 
 .lh-button-content {
@@ -93,6 +94,7 @@
     position: relative;
     user-select: all !important;
     pointer-events: all !important;
+    font-family: var(--restaurant-font);
 }
 
 .lh-button-content .lh-button::after {

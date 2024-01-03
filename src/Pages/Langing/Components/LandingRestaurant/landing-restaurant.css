@@ -108,6 +108,7 @@
 .landing-restaurant h1 {
     pointer-events: none !important;
     user-select: none !important;
+    font-family: var(--restaurant-font);
 }
 
 .vignette {
@@ -136,6 +137,7 @@
     position: relative;
     user-select: all !important;
     pointer-events: all !important;
+    font-family: var(--restaurant-font);
 }
 
 .lr-button-content .lr-button::after {
