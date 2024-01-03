@@ -15,6 +15,7 @@ import HallReservationPage from './Pages/HallReservationPage/HallReservationPage
 import HallGallery from './Pages/HallGallery/HallGallery';
 import HallContact from './Pages/HallContact/HallContact';
 import SeasonalAnimation from './Components/SeasonalAnimation/SeasonalAnimation';
+import WinterAnimation from './Components/WinterAnimation/WinterAnimation';
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
   
   return (
     <ScrollToTop>
-      <SeasonalAnimation currentDate={currentDate} />
+      {/* <SeasonalAnimation currentDate={currentDate} /> */}
+      <WinterAnimation />
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/restoran/početna' element={<RestaurantHome />} />
