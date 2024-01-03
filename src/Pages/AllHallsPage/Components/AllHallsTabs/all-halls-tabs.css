@@ -82,6 +82,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 4rem;
+    font-family: "Brandon", sans-serif;
 }
 
 .aht-text h1::after {
@@ -101,6 +102,8 @@
     max-width: 800px;
     text-align: center;
     margin-bottom: 2rem;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .aht-button-wrap {
@@ -129,6 +132,7 @@
     z-index: 1;
     color: var(--white);
     transition: .4s ease;
+    font-family: "Brandon", sans-serif;
 }
 
 .aht-button svg {

@@ -17,7 +17,7 @@ const ContactComponent = () => {
                 <h1 className='cc-title'><span className='cc-span1'>{t('hcTitle1')}</span><span className='cc-span2'>{t('hcTitle2')}</span></h1>
                 <p className='cc-desc'>{t('hcDesc')}</p>
                 <div className="cc-btns">
-                    <Link to={'tel:066 52 555 25'} className='cc-call'><h3><span>{i18n.language === 'sr' ? 'telefon' : 'phone'}</span><span>066 52 555 25</span></h3></Link>
+                    <Link to={'tel:066 52 555 25'} className='cc-call'><h3><span>{i18n.language === 'sr' ? 'telefon: ' : 'phone: '}</span><span>066 52 555 25</span></h3></Link>
                     <div className='cc-email'><h3><span>EMAIL: </span><span>info@kosuta.rs</span></h3></div>
                 </div>
             </div>

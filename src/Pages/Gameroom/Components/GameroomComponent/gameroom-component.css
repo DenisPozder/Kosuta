@@ -30,7 +30,7 @@
 
 .grc-column:nth-child(1) h3 {
     color: var(--restaurant-text);
-    font-family: var(--hall-font);
+    font-family: var(--restaurant-font);
     user-select: none;
 }
 

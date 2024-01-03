@@ -50,6 +50,7 @@
     position: relative;
     margin-bottom: 4rem;
     animation: appearTextLeft .4s ease forwards;
+    font-family: "Brandon", sans-serif;
 }
 
 .cc-title::after {
@@ -69,6 +70,7 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .2s;
+    font-family: "Brandon", sans-serif;
 }
 
 .cc-btns {
@@ -91,6 +93,7 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .4s;
+    font-family: "Brandon", sans-serif;
 }
 
 .cc-call span:first-child {
@@ -109,6 +112,7 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .6s;
+    font-family: "Brandon", sans-serif;
 }
 
 .cc-email span:first-child {

@@ -130,6 +130,7 @@
     user-select: none;
     margin-bottom: 4rem;
     position: relative;
+    font-family: "Brandon", sans-serif;
 }
 
 .hstl-content-wrap .hstl-text .hstl-title::after {
@@ -148,17 +149,21 @@
     color: var(--white);
     margin-bottom: 2rem;
     user-select: none;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hstl-content-wrap .hstl-text .hstl-capacity {
     color: var(--white);
     margin-bottom: 2rem;
+    font-family: "Brandon", sans-serif;
 }
 
 .hstl-content-wrap .hstl-text .hstl-capacity span {
     margin-left: 1rem;
     user-select: none;
     font-weight: 100;
+    font-family: "Brandon", sans-serif;
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn {
@@ -184,6 +189,7 @@
     user-select: none;
     z-index: 2;
     transition: color .4s ease;
+    font-family: "Brandon", sans-serif;
 }
 
 .hstl-content-wrap .hstl-text .hstl-btn a:hover h3 {

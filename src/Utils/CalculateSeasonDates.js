@@ -1,3 +1,5 @@
+import { format } from 'date-fns';
+
 export function CalculateSeasonDates(year) {
     const springStart = new Date(year, 2, 1);
     const springEnd = new Date(year, 4, 31);
@@ -8,10 +10,12 @@ export function CalculateSeasonDates(year) {
     const winterStart = new Date(year, 11, 1);
     const winterEnd = new Date(year + 1, 1, 29);
 
+    const formatDate = (date) => format(date, "yyyy-MM-dd")
+
     return {
-        spring: { start: springStart, end: springEnd },
-        summer: { start: summerStart, end: summerEnd },
-        autumn: { start: autumnStart, end: autumnEnd },
-        winter: { start: winterStart, end: winterEnd }
+        spring: { start: formatDate(springStart), end: formatDate(springEnd) },
+        summer: { start: formatDate(summerStart), end: formatDate(summerEnd) },
+        autumn: { start: formatDate(autumnStart), end: formatDate(autumnEnd) },
+        winter: { start: formatDate(winterStart), end: formatDate(winterEnd) }
     }
 }

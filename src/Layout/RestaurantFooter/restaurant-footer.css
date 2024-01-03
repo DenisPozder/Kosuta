@@ -64,6 +64,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: var(--restaurant-font);
+    font-size: 1.2rem;
 }
 
 .rfc-days p:nth-child(1) {

@@ -38,6 +38,7 @@
     flex-direction: column;
     margin-bottom: 4rem;
     position: relative;
+    font-family: "Brandon", sans-serif;
 }
 
 .hlr-column:nth-child(1) .hlr-column-content h1::after {
@@ -54,6 +55,8 @@
 .hlr-column:nth-child(1) .hlr-column-content p {
     max-width: 400px;
     color: var(--white);
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hlr-column:nth-child(2) img {

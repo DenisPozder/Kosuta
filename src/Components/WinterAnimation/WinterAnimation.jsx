@@ -32,7 +32,7 @@ const WinterAnimation = () => {
 
       static addFlakes() {
           const x = Math.ceil(Math.random() * w)
-          const speed = Math.ceil(Math.random() * 3)
+          const speed = Math.ceil(Math.random() * 5)
           const radius = 10* Math.PI
   
           flakes.push({

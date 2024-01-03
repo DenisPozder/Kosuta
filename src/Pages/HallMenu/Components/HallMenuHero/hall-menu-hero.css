@@ -50,6 +50,7 @@
     position: relative;
     margin-bottom: 4rem;
     animation: appearTextLeft .4s ease forwards;
+    font-family: "Brandon", sans-serif;
 }
 
 .hmh-title::after {
@@ -69,6 +70,8 @@
     animation: appearTextLeft .4s ease forwards;
     animation-delay: .2s;
     opacity: 0;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hmh-btn {
@@ -91,6 +94,7 @@
     z-index: 1;
     color: var(--white);
     user-select: none;
+    font-family: "Brandon", sans-serif;
 }
 
 @media only screen and (max-width: 1440px) {

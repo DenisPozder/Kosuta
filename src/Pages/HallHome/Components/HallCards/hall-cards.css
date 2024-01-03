@@ -30,6 +30,7 @@
     z-index: 1;
     transition: all .4s ease;
     text-transform: uppercase;
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card:nth-child(2) {
@@ -72,6 +73,7 @@
 
 .hall-card-text p {
     height: 0;
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card-text h1 {
@@ -82,6 +84,7 @@
     opacity: 0;
     height: 0;
     transition: opacity .4s ease, height .4s ease, transform .4s ease;
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card.active {
@@ -93,6 +96,7 @@
     opacity: 0;
     transform: translateX(-100%);
     height: 0;
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card.active .hall-card-text {
@@ -127,6 +131,7 @@
     opacity: 1;
     transform: translateX(0);
     height: auto;
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card.active .hct-overlay {
@@ -162,6 +167,7 @@
     height: auto;
     opacity: 1;
     transform: translateX(0);
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-card.active .hall-card-text .hct-may {
@@ -169,6 +175,7 @@
     height: auto;
     opacity: 1;
     transform: translateX(0);
+    font-family: "Brandon", sans-serif;
 }
 
 @media only screen and (max-width: 1440px) {

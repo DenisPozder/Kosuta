@@ -52,6 +52,7 @@
     position: relative;
     margin-bottom: 4rem;
     color: var(--white);
+    font-family: "Brandon", sans-serif;
 }
 
 .hall-layout-left-column:nth-child(2) .hllc-content h1::after {
@@ -68,6 +69,8 @@
 .hall-layout-left-column:nth-child(2) .hllc-content p {
     color: var(--white);
     max-width: 400px;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1440px) {

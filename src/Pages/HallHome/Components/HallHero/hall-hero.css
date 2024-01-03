@@ -80,6 +80,7 @@
     user-select: none;
     text-transform: uppercase;
     animation: appearTextLeft .4s ease forwards;
+    font-family: "Brandon", sans-serif;
 }
 
 .hh-content-text .hh-title::after {
@@ -101,6 +102,7 @@
     animation: appearTextLeft .4s ease forwards;
     animation-delay: .2s;
     opacity: 0;
+    font-family: "Brandon", sans-serif;
 }
 
 .hh-content-text a {
@@ -138,6 +140,7 @@
     color: var(--restaurant-background);
     z-index: 2;
     transition: color .4s ease;
+    font-family: "Brandon", sans-serif;
 }
 
 .hh-content-text a:hover h3 {

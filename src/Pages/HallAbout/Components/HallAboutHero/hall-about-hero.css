@@ -49,6 +49,7 @@
     position: relative;
     margin-bottom: 4rem;
     animation: appearTextLeft .4s ease forwards;
+    font-family: "Brandon", sans-serif;
 }
 
 .hah-title::after {
@@ -68,6 +69,8 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .2s;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hah-desc2 {
@@ -77,6 +80,8 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .4s;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hah-btn {
@@ -123,6 +128,14 @@
 
     .hah-btn {
         margin-top: 1rem;
+    }
+
+    .hah-desc1 {
+        font-size: 1.1rem;
+    }
+    
+    .hah-desc2 {
+        font-size: 1.1rem;
     }
 }
 

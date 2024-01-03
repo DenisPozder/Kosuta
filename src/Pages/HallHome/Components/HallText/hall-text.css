@@ -10,4 +10,6 @@
 .hall-text p {
     text-align: center;
     color: var(--white);
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }

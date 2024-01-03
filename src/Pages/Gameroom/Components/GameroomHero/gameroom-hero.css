@@ -54,7 +54,7 @@
 }
 
 .ghc-text h1 {
-    font-family: var(--hall-font);
+    font-family: var(--restaurant-font);
     color: var(--white);
     margin-bottom: 3rem;
     text-align: center;
@@ -77,7 +77,7 @@
 }
 
 .ghc-text h3 {
-    font-family: var(--hall-font);
+    font-family: var(--restaurant-font);
     color: var(--white);
     text-align: center;
     user-select: none;

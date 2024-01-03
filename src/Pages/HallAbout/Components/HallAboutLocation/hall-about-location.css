@@ -52,6 +52,7 @@
     color: var(--white);
     margin-bottom: 4rem;
     position: relative;
+    font-family: "Brandon", sans-serif;
 }
 
 .hal-column:nth-child(2) .hal-column-content h1::after {
@@ -69,6 +70,8 @@
     max-width: 400px;
     color: var(--white);
     margin-bottom: 2rem;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hal-column:nth-child(2) .hal-column-content a {
@@ -88,6 +91,7 @@
     color: var(--white);
     transition: .4s ease;
     font-weight: 100;
+    font-family: "Brandon", sans-serif;
 }
 
 .hal-column:nth-child(2) .hal-column-content a::after {

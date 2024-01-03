@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT&family=Open+Sans&family=Poly:ital@0;1&display=swap');
 
 :root {
-  --restaurant-font: 'Montserrat', sans-serif;
+  --restaurant-font: "Brandon", sans-serif;;
   --hall-font: 'Poly', serif;
   --restaurant-background: #9AB498;
   --restaurant-title: #01B636;
@@ -9,6 +9,11 @@
   --dark-color: #0b372d;
   --restaurant-text: #05251d;
   --hall-dark: #3A4D39;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url('./Assets/Brandon.otf') format('opentype');
 }
 
 * {

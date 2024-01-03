@@ -38,6 +38,7 @@
     position: relative;
     margin-bottom: 4rem;
     animation: appearTextLeft .4s ease forwards;
+    font-family: "Brandon", sans-serif;
 }
 
 .ahh-title::after {
@@ -57,6 +58,8 @@
     animation: appearTextLeft .4s ease forwards;
     opacity: 0;
     animation-delay: .2s;
+    font-family: "Brandon", sans-serif;
+    font-size: 1.2rem;
 }
 
 .ahh-btn {
@@ -79,6 +82,7 @@
     z-index: 1;
     color: var(--restaurant-background);
     transition: .4s ease;
+    font-family: "Brandon", sans-serif;
 }
 
 .ahh-btn svg {
